@@ -1,0 +1,32 @@
+name: deploy to pages
+
+on:
+  push:
+    branches: [source]
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: setup mdBook
+        uses: peaceiris/actions-mdbook@v1
+        with:
+          mdbook-version: latest
+      
+      - name: build mdBook docs
+        run: cd docs && mdbook build
+
+      - name: assemble website
+        run: |
+          mkdir public
+          mv website/* public
+          mv docs/book public/docs
+
+      - name: deploy
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          deploy_key: ${{ secrets.ACTIONS_DEPLOY_KEY }}
+          publish_dir: ./public
+          publish_branch: master
