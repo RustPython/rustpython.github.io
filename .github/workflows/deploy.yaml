@@ -1,4 +1,4 @@
-name: deploy to pages
+name: Deploy to Github Pages
 
 on:
   push:
@@ -18,7 +18,7 @@ jobs:
       - name: build mdBook docs
         run: cd docs && mdbook build
 
-      - name: assemble website
+      - name: assemble website files
         run: |
           mkdir public
           mv website/* public
@@ -30,3 +30,4 @@ jobs:
           deploy_key: ${{ secrets.ACTIONS_DEPLOY_KEY }}
           publish_dir: ./public
           publish_branch: master
+          enable_jekyll: true
