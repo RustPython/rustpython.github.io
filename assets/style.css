@@ -1,0 +1,199 @@
+/* common html elements  */
+
+body {
+    font-family: 'Fira Sans', sans-serif;
+    margin: 0;
+}
+
+a {
+    color: #000;
+}
+
+p {
+    line-height: 1.75em;
+    font-size: 1.1em;
+}
+
+hr {
+    border: 0px;
+  border-top: 1px solid #000;
+}
+
+h1 {
+  font-family: 'Sen', sans-serif;
+  font-size: 1.5em;
+  margin-top: 2em;
+}
+
+mark.post-date {
+  background-color: #F74C00;
+  color: #fff;
+  padding: 5px 15px 5px 15px;
+}
+
+
+/* width  */
+.w-100 {
+    width: 100%;
+}
+
+.w-80 {
+    width: 80%;
+}
+
+/* colors */
+.bg-light {
+    background-color: #F6F8FA;
+}
+
+.bg-rust {
+    background-color: #F74C00;
+}
+
+.text-white {
+    color: #fff;
+}
+
+
+/* alignment */
+.m-auto{
+    margin: auto;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.text-justify {
+    text-align: justify;
+}
+
+.float-left {
+  float: left;
+}
+
+/* margins and padding */
+
+.m-small {
+  margin: 0.75em;
+}
+
+.mb-1 {
+  margin-bottom: 1em;
+}
+
+.mt-1 {
+    margin-top: 1em;
+}
+
+.mt-2 {
+    margin-top: 2em;
+}
+
+.mt-4 {
+    margin-top: 4em;
+}
+
+.pl-2 {
+    padding-left: 2em;
+}
+
+.pr-2 {
+    padding-right: 2em;
+}
+
+.p-2 {
+    padding: 2em;
+}
+
+.pr-1 {
+    padding-right: 1em;
+}
+
+/* lists  */
+
+ul.list-inline {
+    list-style: none;
+    display: inline-block;
+    padding:0;
+}
+
+.list-unstyled {
+    list-style: none;
+    margin: 0;
+    padding:0;
+}
+
+.list-contributors {
+    list-style: none;
+    padding: 0;
+}
+
+.list-contributors li {
+    border: 1px solid #000;
+    display: inline-block;
+    padding: 2px 10px 2px 10px;
+    margin-right: 1em;
+    margin-top: 1em;
+}
+
+.post-link  {
+    font-size: 1.2em;
+}
+
+.img-fluid {
+    width: 100%;
+}
+
+.post-date a {
+  background-color: #000;
+  color: #fff;
+}
+
+.border {
+    border: 1px solid darkgray;
+}
+
+.border-bottom {
+    border-bottom: 1px solid #000;
+}
+
+
+/* custom classes */
+.title {
+    font-family: 'Sen', sans-serif;
+    font-size: 3em;
+}
+
+.section-title {
+    font-family: 'Sen', sans-serif;
+    font-size: 1.5em;
+}
+
+.logo {
+    height: 80px;
+}
+
+
+.goal {
+    line-height: 1.5em;
+}
+
+.goal:last-child{
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.code {
+    background-color: #F6F8FA;
+    line-height: 2em;
+    display:table;
+    margin-top: 1em;
+    padding-left: 1em;
+    padding-right: 1em;
+    letter-spacing: 2px;
+}

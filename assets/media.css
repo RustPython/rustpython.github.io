@@ -1,0 +1,70 @@
+
+/* phones  */
+@media (max-width: 768px) {
+
+    .mt-sm-1 {
+          margin-top: 1em;
+      }
+
+    .mt-sm-2 {
+        margin-top: 2em;
+    }
+
+    .d-sm-none {
+        display: none;
+    }
+
+
+    .title {
+        font-size: 1.5em;
+    }
+
+    .section-title {
+      font-size: 1em;
+    }
+
+}
+
+
+/* desktop , tablets */
+@media (min-width: 768px) {
+    .mt-md-4 {
+        margin-top: 4em;
+    }
+
+    .pl-md-2{
+        padding-left: 2em;
+    }
+
+    .d-md-flex {
+        display: flex;
+    }
+
+    .w-md-50 {
+        width: 50%;
+    }
+
+    .w-md-30 {
+        width: 30%;
+    }
+
+    .w-md-75 {
+      width: 75%;
+    }
+
+    .text-md-center {
+      text-align: center;
+    }
+
+}
+
+/* fixes for ipad  */
+@media (min-width: 992px) {
+  .ml-lg-20-percent {
+      margin-left: 20%;
+  }
+
+  .w-lg-30 {
+    width: 30%;
+  }
+}

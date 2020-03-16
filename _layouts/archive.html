@@ -1,0 +1,41 @@
+---
+layout: default
+---
+
+<section>
+    <div class="w-80 m-auto mt-md-4 mt-sm-2">
+        <div class="d-md-flex">
+            <div class="d-sm-none">
+              <img class="logo" src="{{site.baseurl}}/assets/img/rust-python-logo.svg" alt="RustPython Logo">
+            </div>
+            <div class="pl-md-2">
+              <div class="section-title">Archive</div>
+                <div class="title">{{ site.title }} {{ page.title | escape }}</div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<div class="w-80 m-auto  mt-md-4 mt-sm-2">
+  {%- if site.posts.size > 0 -%}
+    <ul class="list-unstyled ">
+      {%- for post in site.posts -%}
+      <li class="blog-entry mt-4">
+        {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
+        <!-- flex container -->
+        <div class="d-md-flex">
+          <div class="pl-md-2 mt-1">
+            <mark class="post-date">{{ post.date | date: date_format }}</mark>
+          </div>
+          <div class="pl-md-2 mt-1 w-md-50 ">
+            <a class="post-link" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
+            {%- if site.show_excerpts -%}
+                <p>{{ post.excerpt }}</p>
+            {%- endif -%}
+          </div>
+        </div>
+      </li>
+      {%- endfor -%}
+    </ul>
+  {%- endif -%}
+</div>

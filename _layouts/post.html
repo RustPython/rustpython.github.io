@@ -1,0 +1,28 @@
+---
+layout: default
+---
+
+<!-- header section -->
+<section>
+    <div class="w-80 m-auto mt-md-4 mt-sm-2">
+        <div class="d-md-flex">
+            <div class="">
+              <div class="section-title">{{ site.title }} Blog</div>
+                <div class="title w-80 mt-sm-1"> {{ page.title | escape }}</div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- date and content -->
+<section>
+  <div class="w-80 m-auto mt-2">
+    <div class="w-md-75 d-flex">
+      {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
+      <mark class="post-date">{{ page.date | date: date_format }}</mark>
+      <div class="w-md-75">
+        {{ content }}
+      </div>
+    </div>
+  </div>
+</section>

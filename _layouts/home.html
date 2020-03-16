@@ -1,0 +1,104 @@
+---
+layout: default
+---
+
+<!-- site title, logo and description -->
+<!-- to update, edit the global site config.yaml -->
+<section>
+    <div class="w-md-50 m-auto mt-md-4 mt-sm-2">
+        <div class="d-md-flex ml-lg-20-percent">
+            <div class="pl-2 d-sm-none"><img class="logo" src="{{site.baseurl}}/assets/img/rust-python-logo.svg" alt="RustPython Logo">
+            </div>
+            <div class="pl-2">
+                <div class="title">{{ site.title }}</div>
+                <div class="">
+                    <p class="w-80">
+                       {{ site.description }}
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- explainer image, paragraph and links to demos -->
+<!-- to update, edit index.markdown file in the root folder  -->
+<section class="p-2">
+    <div class="m-auto w-md-30 mt-md-4">
+        <img class="img-fluid" src="{{site.baseurl}}/assets/img/explainer.jpg" alt="RustPython Explainer">
+    </div>
+    <div class="mt-md-4 mt-sm-2 w-md-50 m-auto">
+        <p class="mt-md-4 text-justify">
+          {{ page.explainer }}
+        </p>
+    </div>
+    <div class="text-md-center">
+        <ul class="list-inline">
+          {% for demo in page.demo %}
+            <li class="float-left m-small"><a rel="noopener" rel="noreferrer" href="{{ demo.url }}" target="_blank">{{ demo.label }}</a></li>
+          {% endfor %}
+        </ul>
+    </div>
+</section>
+
+<!-- installation instructions -->
+<!-- to update, edit the parameters in the index.markdown file -->
+<section class="p-2">
+    <div class="text-center">
+        <div class="section-title"> Installation</div>
+        {% for install in page.installation %}
+          <mark class="code m-auto"> {{ install.command }} </mark>
+        {% endfor %}
+        <div class="mt-1"> <small><a rel="noopener" rel="noreferrer" href="{{ page.build-from-source-link }}" target="_blank">OR BUILD FROM SOURCE</a> </small></div>
+    </div>
+</section>
+
+<!-- goals and why rustpython -->
+<!-- to update, edit the parameters in the index.markdown file -->
+<section class="bg-light">
+    <div class="w-80 m-auto p-2">
+        <div class="section-title">Goals</div>
+        <div id="goals" class="d-md-flex ">
+            {% for goals in page.goals %}
+            <div class="bg-rust text-white p-2 w-md-30 mt-2 goal">
+              {{ goals.goal }}
+            </div>
+            {% endfor %}
+        </div>
+        <div class="d-md-flex  mt-2">
+            <div class="w-md-50">
+                 {{ content }}
+            </div>
+            <div class="w-md-50 mt-2">
+                <div class="border p-2 w-lg-30 w-md-50 m-auto mt-2">
+                    <div>
+                        <strong> Learn more </strong>
+                        <!-- list of posts where category is "featured" -->
+                        <ul class="list-unstyled">
+                            {%- for post in site.posts -%}
+                              {% if post.categories contains "featured" %}
+                                <li class="mt-1"> <a  href="{{ post.url | relative_url }}">   {{ post.title | escape }} </a></li>
+                              {% endif %}
+                            {%- endfor -%}
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- contributor list -->
+<!-- to edit, update _data/contributors.json -->
+<section>
+    <div class="w-80 m-auto p-2">
+        <div class="section-title"> Contributors </div>
+        <p class="w-80">{{ site.contributor_excerpt}}</p>
+        <ul class="list-contributors">
+            {% for contributor in site.data.contributors %}
+                <li><a rel="noopener" rel="noreferrer" href="https://github.com/{{ contributor.github_username }}" target="_blank">{{ contributor.github_username }}</a></li>
+            {% endfor %}
+        </ul>
+        <div><small><a href="#">HOW TO CONTRIBUTE</a></small></div>
+    </div>
+</section>

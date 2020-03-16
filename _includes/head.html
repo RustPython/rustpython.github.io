@@ -1,0 +1,23 @@
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{site.title}}</title>
+  <meta name="description" content="{{site.description}}">
+  <!-- google fonts -->
+  <link defer async href="https://fonts.googleapis.com/css?family=Fira+Sans|Sen:800&display=swap" rel="stylesheet">
+  <!-- stylesheet and webmanifest -->
+  <link defer async rel="stylesheet" href="{{ "/assets/style.css" | relative_url }}">
+  <link defer async rel="stylesheet" href="{{ "/assets/media.css" | relative_url }}">
+  <link rel="manifest" href="{{site.baseurl}}/manifest.webmanifest">
+
+  {%- seo -%}
+
+  <link rel="canonical" href="{{ site.url }}"/>
+  <link rel="apple-touch-icon" href="{{site.baseurl}}/assets/apple-touch-icon.png">
+
+  {%- feed_meta -%}
+  {%- if jekyll.environment == 'production' and site.google_analytics -%}
+    {%- include google-analytics.html -%}
+  {%- endif -%}
+</head>
