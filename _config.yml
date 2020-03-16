@@ -28,7 +28,7 @@ github: https://github.com/RustPython/RustPython/
 docs: https://github.com/RustPython/docs/
 gitter: https://gitter.im/rustpython/Lobby
 show_excerpts: true
-contributor_excerpt: "edit me in config.yml file at the root folder."
+contributor_excerpt: "" # TODO: write something here, goes right under "Contributors" heading
 
 navigation:
   - title: Blog
