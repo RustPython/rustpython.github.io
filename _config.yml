@@ -20,8 +20,8 @@
 
 title: "RustPython"
 description: "An open source Python-3 (CPython >= 3.5.0) Interpreter written in Rust 🐍 😱 🤘"
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://mireille-raad.github.io/rustpython.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+baseurl: "/rustpython.github.io" # the subpath of your site, e.g. /blog
+url: "https://mireille-raad.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 github_username:  RustPython
 disclaimer: "The disclaimer not to use this in production. Update this in the config.yml file at the root."
 github: https://github.com/RustPython/RustPython/
