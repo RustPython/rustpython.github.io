@@ -1,6 +1,0 @@
-[book]
-authors = ["RustPython Contributors"]
-language = "en"
-multilingual = false
-src = "src"
-title = "RustPython docs"
