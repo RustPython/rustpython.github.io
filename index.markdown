@@ -38,4 +38,4 @@ IronPython is well-integrated with .NET, which means IronPython can use the .NET
 
 We want to unlock the same possibilities that Jython and IronPython enable, but for the Rust programming language. Then we want to do more. Using RustPython, we want to compile Python to WebAssembly and allow users to run their Python code natively in the browser.  
 
-Check the "learn more" section for an explainer of all those jargon-y words. Read the blog for more in-depth technical discussion.
+Check the "learn more" section for an explainer of all those jargon-y words, or read the blog for more in-depth technical discussion.
