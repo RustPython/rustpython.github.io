@@ -3,7 +3,7 @@
 # To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 
 layout: home
-explainer: "CPython is the common implementation of Python. We love C, but we love Rust a little more 😉... that's why we are creating a Rust alternative. We are doing it for fun, to learn and to have a useful, usable and hopefully better implementation of Python in Rust."
+explainer: "CPython is the common implementation of Python. We love C, but we love Rust a little more 😉... that's why we're working on a RustPython, a Python implementation written in Rust. We are doing it for fun, to learn about writing interpreters, and to have a useful, usable and embeddable implementation of Python in Rust."
 
 build-from-source-link: https://github.com/RustPython/RustPython
 
