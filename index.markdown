@@ -3,7 +3,7 @@
 # To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 
 layout: home
-explainer: "Edit this in index.markdown file. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi mollitia delectus explicabo architecto velit neque nostrum nesciunt maxime laboriosam modi? Quisquam eveniet mollitia, in perspiciatis quod voluptatibus eligendi quia quidem."
+explainer: "CPython is the common implementation of Python. We love C, but we love Rust a little more 😉... that's why we're working on a RustPython, a Python implementation written in Rust. We are doing it for fun, to learn about writing interpreters, and to have a useful, usable and embeddable implementation of Python in Rust."
 
 build-from-source-link: https://github.com/RustPython/RustPython
 
@@ -23,8 +23,19 @@ goals:
   - goal: "Fast, reliable and secure implementation of Python that can be used with Rust or compiled to WebAssembly. "
 ---
 
-# Why RustPython, not CPython
+# Why RustPython?
 
-Edit me in index.markdown file. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+There are many implementations of Python. For example:
+- [CPython](https://github.com/python/cpython) (C), which is the most common
+- [Jython](https://www.jython.org/) (Java)
+- [IronPython](https://ironpython.net/) (.NET)
+- [PyPy](https://www.pypy.org/) (Python)  
+- [Stackless](http://www.stackless.com/)
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+Each of these implementations offer some benefits: Jython, for example, compiles Python source code to Java byte code, then routes it to the Java Virtual Machine. Because Python code is translated to Java byte code, it looks and feels like a true Java program at runtime and so it integrates well with Java applications.   
+
+IronPython is well-integrated with .NET, which means IronPython can use the .NET framework and Python libraries or vice versa.
+
+We want to unlock the same possibilities that Jython and IronPython enable, but for the Rust programming language. Then we want to do more. Using RustPython, we want to compile Python to WebAssembly and allow users to run their Python code natively in the browser.  
+
+Check the "learn more" section for an explainer of all those jargon-y words, or read the blog for more in-depth technical discussion.
