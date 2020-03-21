@@ -44,25 +44,30 @@
         width: 50%;
     }
 
-    .w-md-30 {
-        width: 30%;
+    .w-md-25 {
+        width: 25%;
     }
 
-    .w-md-75 {
-      width: 75%;
+    .w-md-80 {
+      width: 80%;
     }
 
     .text-md-center {
       text-align: center;
     }
 
+    .goal:last-child{
+      margin-left: 2em;
+    }
+
+    .float-md-right {
+      float: right;
+    }
+
 }
 
 /* fixes for ipad  */
 @media (min-width: 992px) {
-  .ml-lg-20-percent {
-      margin-left: 20%;
-  }
 
   .w-lg-30 {
     width: 30%;

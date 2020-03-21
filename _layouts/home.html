@@ -5,14 +5,14 @@ layout: default
 <!-- site title, logo and description -->
 <!-- to update, edit the global site config.yaml -->
 <section>
-    <div class="w-md-50 m-auto mt-md-4 mt-sm-2">
-        <div class="d-md-flex ml-lg-20-percent">
-            <div class="pl-2 d-sm-none"><img class="logo" src="{{site.baseurl}}/assets/img/rust-python-logo.svg" alt="RustPython Logo">
+    <div class="w-100 m-auto mt-2">
+        <div class="d-md-flex justify-center">
+            <div class="d-sm-none"><img class="logo" src="{{site.baseurl}}/assets/img/rust-python-logo.svg" alt="RustPython Logo">
             </div>
-            <div class="pl-2">
+            <div class="w-md-25 pl-2">
                 <div class="title">{{ site.title }}</div>
                 <div class="">
-                    <p class="w-80">
+                    <p>
                        {{ site.description }}
                     </p>
                 </div>
@@ -23,19 +23,19 @@ layout: default
 
 <!-- explainer image, paragraph and links to demos -->
 <!-- to update, edit index.markdown file in the root folder  -->
-<section class="p-2">
-    <div class="m-auto w-md-30 mt-md-4">
+<section>
+    <div class="m-auto w-md-25 mt-2">
         <img class="img-fluid" src="{{site.baseurl}}/assets/img/explainer.jpg" alt="RustPython Explainer">
     </div>
     <div class="mt-md-4 mt-sm-2 w-md-50 m-auto">
-        <p class="mt-md-4 text-justify">
+        <p class="mt-md-4">
           {{ page.explainer }}
         </p>
     </div>
     <div class="text-md-center">
         <ul class="list-inline">
           {% for demo in page.demo %}
-            <li class="float-left m-small"><a rel="noopener" rel="noreferrer" href="{{ demo.url }}" target="_blank">{{ demo.label }}</a></li>
+            <li class="float-left pr-1 mt-1"><a rel="noopener" rel="noreferrer" href="{{ demo.url }}" target="_blank">{{ demo.label }}</a></li>
           {% endfor %}
         </ul>
     </div>
@@ -43,11 +43,11 @@ layout: default
 
 <!-- installation instructions -->
 <!-- to update, edit the parameters in the index.markdown file -->
-<section class="p-2">
+<section>
     <div class="text-center">
         <div class="section-title"> Installation</div>
         {% for install in page.installation %}
-          <mark class="code m-auto"> {{ install.command }} </mark>
+          <mark class="code d-table m-auto mt-1"> {{ install.command }} </mark>
         {% endfor %}
         <div class="mt-1"> <small><a rel="noopener" rel="noreferrer" href="{{ page.build-from-source-link }}" target="_blank">OR BUILD FROM SOURCE</a> </small></div>
     </div>
@@ -55,13 +55,15 @@ layout: default
 
 <!-- goals and why rustpython -->
 <!-- to update, edit the parameters in the index.markdown file -->
-<section class="bg-light">
-    <div class="w-80 m-auto p-2">
+<section class="bg-light mt-2">
+    <div class="w-md-80 m-auto">
         <div class="section-title">Goals</div>
-        <div id="goals" class="d-md-flex ">
+        <div class="d-md-flex ">
             {% for goals in page.goals %}
-            <div class="bg-rust text-white p-2 w-md-30 mt-2 goal">
-              {{ goals.goal }}
+            <div class="w-md-50 mt-2 goal bg-rust">
+              <div class=" text-white p-2">
+                    {{ goals.goal }}
+              </div>
             </div>
             {% endfor %}
         </div>
@@ -70,8 +72,7 @@ layout: default
                  {{ content }}
             </div>
             <div class="w-md-50 mt-2">
-                <div class="border p-2 w-lg-30 w-md-50 m-auto mt-2">
-                    <div>
+                <div class="border w-md-50 float-md-right mt-md-4 p-2">
                         <strong> Learn more </strong>
                         <!-- list of posts where category is "featured" -->
                         <ul class="list-unstyled">
@@ -81,7 +82,6 @@ layout: default
                               {% endif %}
                             {%- endfor -%}
                         </ul>
-                    </div>
                 </div>
             </div>
         </div>
@@ -91,7 +91,7 @@ layout: default
 <!-- contributor list -->
 <!-- to edit, update _data/contributors.json -->
 <section>
-    <div class="w-80 m-auto p-2">
+    <div class="w-md-80 m-auto">
         <div class="section-title"> Contributors </div>
         <p class="w-80">{{ site.contributor_excerpt}}</p>
         <ul class="list-contributors">
@@ -99,7 +99,9 @@ layout: default
                 <li><a rel="noopener" rel="noreferrer" href="https://github.com/{{ contributor.github_username }}" target="_blank">{{ contributor.github_username }}</a></li>
             {% endfor %}
         </ul>
-        <div><small><a href="https://github.com/RustPython/RustPython/graphs/contributors">VIEW MORE</a></small></div>
-        <div><small><a href="https://github.com/RustPython/RustPython/#contributing">HOW TO CONTRIBUTE</a></small></div>
+        <div class="d-md-flex">
+          <div class="pr-1 mt-1"><small><a href="https://github.com/RustPython/RustPython/graphs/contributors">VIEW MORE</a></small></div>
+          <div class="mt-1"><small><a href="https://github.com/RustPython/RustPython/#contributing">HOW TO CONTRIBUTE</a></small></div>
+        </div>
     </div>
 </section>

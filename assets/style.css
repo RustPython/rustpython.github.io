@@ -2,35 +2,54 @@
 
 body {
     font-family: 'Fira Sans', sans-serif;
-    margin: 0;
+    margin: 0em;
+}
+
+section {
+  padding: 2em;
 }
 
 a {
     color: #000;
 }
 
-p {
+p , li {
     line-height: 1.75em;
     font-size: 1.1em;
 }
 
 hr {
-    border: 0px;
+  border: 0px;
   border-top: 1px solid #000;
 }
 
-h1 {
+hr.dashed {
+  border: 0px;
+  border-top: 1px dashed #ccc;
+}
+
+h1, h2, h3, h4, h5, h6 {
   font-family: 'Sen', sans-serif;
+}
+
+h1 {
   font-size: 1.5em;
   margin-top: 2em;
 }
 
-mark.post-date {
+mark.post-date , mark.highlight {
   background-color: #F74C00;
   color: #fff;
   padding: 5px 15px 5px 15px;
 }
 
+.code , code {
+    background-color: #F6F8FA;
+    letter-spacing: 2px;
+    line-height: 1.75em;
+    font-size: 1.1em;
+    padding: 5px;
+}
 
 /* width  */
 .w-100 {
@@ -60,16 +79,17 @@ mark.post-date {
     margin: auto;
 }
 
+.d-table {
+  display: table;
+}
+
 .text-center {
     text-align: center;
 }
 
 .justify-center {
     justify-content: center;
-}
-
-.text-justify {
-    text-align: justify;
+      align-items: center;
 }
 
 .float-left {
@@ -77,10 +97,6 @@ mark.post-date {
 }
 
 /* margins and padding */
-
-.m-small {
-  margin: 0.75em;
-}
 
 .mb-1 {
   margin-bottom: 1em;
@@ -97,6 +113,9 @@ mark.post-date {
 .mt-4 {
     margin-top: 4em;
 }
+.pl-1 {
+  padding-left: 1em;
+}
 
 .pl-2 {
     padding-left: 2em;
@@ -108,6 +127,10 @@ mark.post-date {
 
 .p-2 {
     padding: 2em;
+}
+
+.m-2 {
+  margin: 2em;
 }
 
 .pr-1 {
@@ -183,17 +206,10 @@ ul.list-inline {
     line-height: 1.5em;
 }
 
-.goal:last-child{
-  margin-right: auto;
-  margin-left: auto;
-}
-
-.code {
-    background-color: #F6F8FA;
-    line-height: 2em;
-    display:table;
-    margin-top: 1em;
-    padding-left: 1em;
-    padding-right: 1em;
-    letter-spacing: 2px;
+.blog-intro {
+  background-color:  #F6F8FA;
+  padding-left: 2em;
+  padding-right: 2em;
+  padding-top: 1em;
+  padding-bottom: 1em;
 }

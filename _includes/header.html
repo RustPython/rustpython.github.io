@@ -1,9 +1,9 @@
 <header>
   <nav class="menu  w-100 text-center border-bottom">
       <ul class="list-inline">
-            <li class="m-small float-left"><a href="{{ site.baseurl }}">Home</a></li>
+            <li class="float-left pl-1 pr-1"><a href="{{ site.url }}">Home</a></li>
           {% for item in site.navigation %}
-	  <li class="m-small float-left"><a href="{{ item.url | relativeurl }}">{{item.title}}</a></li>
+	           <li class="float-left pr-1"><a href="{{ item.url | relativeurl }}">{{item.title}}</a></li>
           {% endfor %}
       </ul>
   </nav>
