@@ -23,12 +23,13 @@ description: "An open source Python-3 (CPython >= 3.5.0) Interpreter written in 
 # baseurl: "/" # the subpath of your site, e.g. /blog
 url: "https://rustpython.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 github_username:  RustPython
-disclaimer: "The disclaimer not to use this in production. Update this in the config.yml file at the root."
+disclaimer: "RustPython is in a development phase and should not be used in production or a fault intolerant setting. Our current build supports only a subset of Python syntax."
 github: https://github.com/RustPython/RustPython/
 docs: https://github.com/RustPython/docs/
 gitter: https://gitter.im/rustpython/Lobby
 show_excerpts: true
 contributor_excerpt: "" # TODO: write something here, goes right under "Contributors" heading
+blog-intro: Create an issue if you read something wrong. Edit posts or create new ones via PR on <a target="_blank" href="https://github.com/RustPython/rustpython.github.io">github.com/RustPython/rustpython.github.io</a>
 
 navigation:
   - title: Blog
