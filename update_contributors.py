@@ -4,7 +4,7 @@ import os.path
 
 CONTRIBUTORS_URL = "http://api.github.com/repos/RustPython/RustPython/contributors"
 CONTRIBUTORS_FILE = os.path.join(
-    os.path.dirname(__file__), "website/_data/contributors.json"
+    os.path.dirname(__file__), "_data/contributors.json"
 )
 
 contributors = json.load(urlopen(CONTRIBUTORS_URL))
