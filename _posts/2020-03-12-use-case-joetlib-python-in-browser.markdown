@@ -5,16 +5,17 @@ date:   2020-03-12 11:34:01 -0400
 categories: ["featured", "usecase"]
 ---
 
-Use case posts are curated from gitter chats and from github issues. You can also submit your use case as a post via Pull request. Tell us about what you are using RustPython for!  
+Use case posts are curated from gitter chats and from github issues. You can share your use case via a Pull request or by creating an issue on [rustpython.github.io](https://github.com/RustPython/rustpython.github.io) with the keyword [use-case] somewhere in the title.
 
 ---
-Submitted by: [Joetib](https://github.com/Joetib)
+Submitted by: [Joetib](https://github.com/Joetib). See discussion in this [github issue](https://github.com/RustPython/RustPython/issues/1760).
+
 ## RustPython in the web can be one of it's best use cases
 
 ## Summary
 RustPython in the web can be one of it's best use cases.
 
-The python community have been pushing to have python run in the browser. Many such implementations have been brython, skulpt, Batavia etc. Likened with batavia's approach to run python bytecode in the browser, I have been wondering if rustpytgon can ship only it's virtual machine to do similar task.
+The python community have been pushing to have python run in the browser. Many such implementations have been such as brython, skulpt, Batavia etc. Likened with batavia's approach to run python bytecode in the browser, I have been wondering if rustpytgon can ship only it's virtual machine to do similar task.
 
 ## Detailed Explanation
 Rustpython's wasm module currently is about 4.5mb. This size is too big to be inculcated in most projects.
