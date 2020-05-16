@@ -23,6 +23,14 @@
       font-size: 1em;
     }
 
+    .d-mobile-none {
+      display: none;
+    }
+
+    .text-mobile-right {
+      text-align: right;
+  }
+
 }
 
 
@@ -63,7 +71,15 @@
     .float-md-right {
       float: right;
     }
+    
+    .row .cell {
+      line-height: 30px;
+    }
 
+    .text-md-right {
+      text-align: right;
+    }
+      
 }
 
 /* fixes for ipad  */

@@ -6,44 +6,68 @@ body {
 }
 
 section {
-  padding: 2em;
+    padding: 2em;
 }
 
 a {
     color: #000;
 }
 
-p , li {
+p,
+li {
     line-height: 1.75em;
     font-size: 1.1em;
 }
 
 hr {
-  border: 0px;
-  border-top: 1px solid #000;
+    border: 0px;
+    border-top: 1px solid #000;
 }
 
 hr.dashed {
-  border: 0px;
-  border-top: 1px dashed #ccc;
+    border: 0px;
+    border-top: 1px dashed #ccc;
 }
 
-h1, h2, h3, h4, h5, h6 {
-  font-family: 'Sen', sans-serif;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Sen', sans-serif;
+}
+
+.font-secondary {
+    font-family: 'Sen', sans-serif;
+}
+
+.text-small {
+    font-size: 0.9rem;
+}
+
+.text-muted {
+    color: darkslategray;
+}
+
+.text-uppercase {
+    text-transform: uppercase;
 }
 
 h1 {
-  font-size: 1.5em;
-  margin-top: 2em;
+    font-size: 1.5em;
+    margin-top: 2em;
 }
 
-mark.post-date , mark.highlight {
-  background-color: #F74C00;
-  color: #fff;
-  padding: 5px 15px 5px 15px;
+mark.post-date,
+mark.highlight {
+    background-color: #F74C00;
+    color: #fff;
+    padding: 5px 15px 5px 15px;
 }
 
-.code , code {
+.code,
+code {
     background-color: #F6F8FA;
     letter-spacing: 2px;
     line-height: 1.75em;
@@ -75,12 +99,16 @@ mark.post-date , mark.highlight {
 
 
 /* alignment */
-.m-auto{
+.d-flex-space-between {
+    justify-content: space-between;
+}
+
+.m-auto {
     margin: auto;
 }
 
 .d-table {
-  display: table;
+    display: table;
 }
 
 .text-center {
@@ -89,17 +117,21 @@ mark.post-date , mark.highlight {
 
 .justify-center {
     justify-content: center;
-      align-items: center;
+    align-items: center;
 }
 
 .float-left {
-  float: left;
+    float: left;
 }
 
 /* margins and padding */
 
+.padding-small {
+    padding: 5px;
+}
+
 .mb-1 {
-  margin-bottom: 1em;
+    margin-bottom: 1em;
 }
 
 .mt-1 {
@@ -113,8 +145,10 @@ mark.post-date , mark.highlight {
 .mt-4 {
     margin-top: 4em;
 }
+
+
 .pl-1 {
-  padding-left: 1em;
+    padding-left: 1em;
 }
 
 .pl-2 {
@@ -130,7 +164,7 @@ mark.post-date , mark.highlight {
 }
 
 .m-2 {
-  margin: 2em;
+    margin: 2em;
 }
 
 .pr-1 {
@@ -142,13 +176,13 @@ mark.post-date , mark.highlight {
 ul.list-inline {
     list-style: none;
     display: inline-block;
-    padding:0;
+    padding: 0;
 }
 
 .list-unstyled {
     list-style: none;
     margin: 0;
-    padding:0;
+    padding: 0;
 }
 
 .list-contributors {
@@ -164,7 +198,7 @@ ul.list-inline {
     margin-top: 1em;
 }
 
-.post-link  {
+.post-link {
     font-size: 1.2em;
 }
 
@@ -173,8 +207,8 @@ ul.list-inline {
 }
 
 .post-date a {
-  background-color: #000;
-  color: #fff;
+    background-color: #000;
+    color: #fff;
 }
 
 .border {
@@ -207,9 +241,97 @@ ul.list-inline {
 }
 
 .blog-intro {
-  background-color:  #F6F8FA;
-  padding-left: 2em;
-  padding-right: 2em;
-  padding-top: 1em;
-  padding-bottom: 1em;
+    background-color: #F6F8FA;
+    padding-left: 2em;
+    padding-right: 2em;
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+/* test results */
+
+.results-test {
+    margin-top: 50px;
+    color: #fff;
+    font-size: 1.1rem;
+    background-color: #F74C00;
+    word-wrap: anywhere;
+}
+
+.results-test-title {
+    font-family: 'Sen', sans-serif;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+
+.results-case-wrapper>div {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.results-case {
+    background-color: white;
+    border-left: 1px solid #000;
+    border-right: 1px solid #000;
+    pointer-events: auto;
+}
+
+.results-case-list-item {
+    background-color: white;
+    color: #000;
+}
+
+/* flex table for results */
+.tbl {
+    display: flex;
+    flex-direction: column;
+}
+
+.row {
+    display: flex;
+}
+
+.cell {
+    flex: 4;
+    border-bottom: 1px solid lightslategray;
+    align-self: end;
+}
+
+.cell:nth-child(1) {
+    flex: 2;
+}
+
+.cell:nth-child(2) {
+    flex: 2;
+}
+
+.cell:nth-child(3) {
+    flex: 1;
+}
+
+
+.row .cell {
+    box-sizing: border-box;
+    padding: 5px;
+}
+
+.passed::after {
+    content: " 🚀 👌";
+    padding: 5px;
+}
+
+.skipped::after {
+    content: "  🤷‍♀️";
+}
+
+/* filters */
+
+.filter {
+    cursor: pointer;
+    padding: 5px;
+    margin: 5px;
+}
+
+.filter.active {
+    background-color: #FFD43B;
 }

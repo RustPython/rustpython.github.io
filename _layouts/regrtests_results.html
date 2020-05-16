@@ -1,0 +1,100 @@
+---
+layout: default
+---
+
+<div class="w-80 m-auto mt-2">
+  <div class="d-md-flex">
+    <div class="d-sm-none">
+      <img class="logo" src="{{site.baseurl}}/assets/img/rust-python-logo.svg" alt="RustPython Logo">
+    </div>
+    <div class="pl-md-2">
+      <div class="title">{{ site.title }}</div>
+      <div class="section-title">{{ page.title }} </div>
+    </div>
+  </div>
+</div>
+
+<div class="w-80 m-auto mt-4">
+  <div class="font-secondary section-title">Filters</div>
+  <div class="d-md-flex mt-1 ">
+    <div data-filter="all" class="filter active pr-2"> All </div>
+    <div data-filter="passed" class="filter pr-2"> Passed </div>
+    <div data-filter="skipped" class="filter pr-2"> Skipped </div>
+    <div data-filter="" class="filter"> Empty </div>
+  </div>
+</div>
+
+<!--  content -->
+<div class="w-80 m-auto">
+  <div class="m-auto">
+    {% for test in site.data.regrtests_results.suites %}
+    <div class="results-suites">
+      {% for result in test %}
+      <div class="results-test">
+
+        {% if result.module %}
+        <div class="padding-small">
+          <span class="font-secondary">Module:</span>
+          {{result.module }}
+        </div>
+        {% endif %}
+
+        {% if result.name %}
+        <div class="padding-small">
+          <span class="font-secondary">Name: </span>
+          {{result.name }}
+        </div>
+        {% endif %}
+
+        {% if result.class %}
+        <div class="padding-small">
+          <span class="font-secondary">Class: </span>
+          {{result.class }}
+        </div>
+        {% endif %}
+
+        <div class="results-case-wrapper">
+          {% for cases in result.cases %}
+          <div class="results-case">
+            <div class="tbl results-case-list">
+              <!-- for each case -->
+              {% for case in cases %}
+              <div data-status="{{case.result}}" class="row results-case-list-details">
+
+                {% if case.method %}
+                <div class="cell results-case-list-item">
+                  <span class="text-small text-muted">METHOD:</span>
+                  {{case.method }}
+                </div>
+                {% endif %}
+
+                {% if case.result %}
+                <div class="cell  {{case.result }} results-case-list-item  text-mobile-right">
+                  <span class="text-small text-muted d-mobile-none">RESULT:</span>
+                  {{case.result }}
+                </div>
+                {% endif %}
+
+                {% if case.execution_time %}
+                <div class="cell results-case-list-item text-md-right d-mobile-none">
+                  <span class="text-small text-muted">EXEC TIME:</span>
+                  {{case.execution_time }}
+                </div>
+                {% endif %}
+
+              </div>
+              {% endfor %}
+              <!-- end for each case -->
+            </div>
+          </div>
+          {% endfor %}
+        </div>
+
+      </div>
+      {% endfor %}
+    </div>
+    {% endfor %}
+  </div>
+</div>
+
+<script src="/assets/js/regrtests_results.js"></script>
