@@ -47,15 +47,15 @@
   <div class="row">
     <div class="cell">
         <span class="font-secondary">Passed: </span>
-        {{ result.num_passed }} ({{ pass_percent }}%)
+        {{ include.pass }} ({{ pass_percent }}%)
     </div>
     <div class="cell">
         <span class="font-secondary">Skipped: </span>
-        {{ result.num_skipped }} ({{ skip_percent }}%)
+        {{ include.skip }} ({{ skip_percent }}%)
     </div>
     <div class ="cell">
         <span class="font-secondary">Failed: </span>
-        {{ result.num_failed }} ({{ fail_percent }}%)
+        {{ include.fail }} ({{ fail_percent }}%)
     </div>
   </div>
   <div class="row" 
