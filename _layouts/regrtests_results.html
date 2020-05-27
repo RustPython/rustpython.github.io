@@ -25,6 +25,7 @@ layout: default
 </div>
 
 <!--  content -->
+{% capture tables %}
 <div class="w-80 m-auto">
   <div class="m-auto">
 
@@ -85,7 +86,7 @@ layout: default
           {% for cases in result.cases %}
           <div class="results-case">
             <div class="tbl results-case-list">
-              <!-- for each case -->
+              {% comment %} for each case {% endcomment %}
               {% for case in cases %}
               <div data-status="{{case.result}}" class="row results-case-list-details">
 
@@ -128,7 +129,7 @@ layout: default
 
               </div>
               {% endfor %}
-              <!-- end for each case -->
+              {% comment %} end for each case {% endcomment %}
             </div>
           </div>
           {% endfor %}
@@ -140,5 +141,10 @@ layout: default
     {% endfor %}
   </div>
 </div>
+{% endcapture %}
+
+{%- assign tables = tables | split: "
+"-%}
+{%- for line in tables -%}{{ line | strip }}{%- endfor -%}
 
 <script src="/assets/js/regrtests_results.js"></script>
