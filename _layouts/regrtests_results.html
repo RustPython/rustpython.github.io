@@ -27,6 +27,22 @@ layout: default
 <!--  content -->
 <div class="w-80 m-auto">
   <div class="m-auto">
+
+    <div class="results-suites">
+      <div class="results-test">
+        <div class="padding-small">
+          <h2 class="font-secondary">Summary:</span>
+        </div>
+          {% assign regrtests_results = site.data.regrtests_results %}
+          {% include regrtest_summary.html 
+              pass=regrtests_results.num_passed 
+              skip=regrtests_results.num_skipped 
+              fail=regrtests_results.num_failed 
+              extime=regrtests_results.execution_time
+          %}
+      </div>
+    </div>
+
     {% for test in site.data.regrtests_results.suites %}
     
     <div class="results-suites">
@@ -60,7 +76,7 @@ layout: default
           </div>
           {% if result.num_passed and result.num_skipped and result.num_failed %}
             <div class="w-md-50 float-md-right">
-              {% include regrtest_summery.html pass=result.num_passed skip=result.num_skipped fail=result.num_failed %}
+              {% include regrtest_summary.html pass=result.num_passed skip=result.num_skipped fail=result.num_failed extime=result.execution_time %}
             </div>
           {% endif %}
         </div>

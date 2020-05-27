@@ -36,6 +36,13 @@
         <span class="font-secondary">Total Tests: </span>
         {{ result_total }}
     </div>
+    <div class ="cell">
+      {% if include.extime %}
+      <span class="font-secondary">Exec Time: </span>
+      {{ include.extime }}
+      {% endif %}
+    </div>
+    
   </div>
   <div class="row">
     <div class="cell">
