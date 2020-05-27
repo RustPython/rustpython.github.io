@@ -99,7 +99,23 @@ layout: default
                 {% if case.result %}
                 <div class="cell  {{case.result }} results-case-list-item  text-mobile-right">
                   <span class="text-small text-muted d-mobile-none">RESULT:</span>
-                  {{case.result }}
+                  <span class="case-result">{{case.result }}</span>
+                  {%- if case.result == "skipped" -%}
+                    {%- assign note = case.note | default: result.note-%}
+                    {%- assign lownote = note | downcase -%}
+                    {%- if lownote contains "todo: rustpython" -%}
+                      {%- assign note = lownote | remove: "todo: rustpython," | remove: "todo: rustpython:" | remove: "todo: rustpython" | strip -%}
+                      {%- if note and note != "" %}
+                        <span class="text-small text-muted d-mobile-none">TO RESOLVE:</span>
+                        <span class="d-mobile-none case-note">{{ note }}</span>
+                      {%- endif -%}
+                    {%- elsif note == "implementation detail specific to cpython" -%}
+                        <span class="text-small text-muted d-mobile-none">(CPython only)</span>
+                    {%- else -%}
+                        <span class="text-small text-muted d-mobile-none">not skipped by us:</span>
+                        <span class="text-small d-mobile-none case-note">{{ note }}</span>
+                    {%- endif -%}
+                  {%- endif -%}
                 </div>
                 {% endif %}
 

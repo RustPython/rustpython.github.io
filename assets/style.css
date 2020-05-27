@@ -315,12 +315,12 @@ ul.list-inline {
     padding: 5px;
 }
 
-.passed::after {
+.passed > .case-result::after {
     content: " 🚀 👌";
     padding: 5px;
 }
 
-.skipped::after {
+.skipped > .case-result::after {
     content: "  🤷‍♀️";
 }
 
