@@ -335,3 +335,11 @@ ul.list-inline {
 .filter.active {
     background-color: #FFD43B;
 }
+
+/* classes used in the results summary */
+
+.cell_summary {
+    flex: 4;
+    border-bottom: 1px solid white;
+    align-self: end;
+}
