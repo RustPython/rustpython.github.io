@@ -28,30 +28,42 @@ layout: default
 <div class="w-80 m-auto">
   <div class="m-auto">
     {% for test in site.data.regrtests_results.suites %}
+    
     <div class="results-suites">
       {% for result in test %}
+      
       <div class="results-test">
+        <div class="d-md-flex">
+          <div class="w-md-50">
+            {% if result.module %}
+            <div class="padding-small">
+              <span class="font-secondary">Module:</span>
+              {{result.module }}
+            </div>
+            {% endif %}
 
-        {% if result.module %}
-        <div class="padding-small">
-          <span class="font-secondary">Module:</span>
-          {{result.module }}
-        </div>
-        {% endif %}
+            {% if result.name %}
+            <div class="padding-small">
+              <span class="font-secondary">Name: </span>
+              {{result.name }}
+            </div>
+            {% endif %}
 
-        {% if result.name %}
-        <div class="padding-small">
-          <span class="font-secondary">Name: </span>
-          {{result.name }}
-        </div>
-        {% endif %}
+            {% if result.class %}
+            <div class="padding-small">
+              <span class="font-secondary">Class: </span>
+              {{result.class }}
+            </div>
+            {% endif %}
 
-        {% if result.class %}
-        <div class="padding-small">
-          <span class="font-secondary">Class: </span>
-          {{result.class }}
+            
+          </div>
+          {% if result.num_passed and result.num_skipped and result.num_failed %}
+            <div class="w-md-50 float-md-right">
+              {% include regrtest_summery.html pass=result.num_passed skip=result.num_skipped fail=result.num_failed %}
+            </div>
+          {% endif %}
         </div>
-        {% endif %}
 
         <div class="results-case-wrapper">
           {% for cases in result.cases %}
