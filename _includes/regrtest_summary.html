@@ -4,8 +4,9 @@
 {% assign fail_percent = include.fail | times: 100.0 | divided_by: result_total | round: 2 %}
 
 {% assign pass_color = "#4c1" %}
-{% assign skip_color = "#dfb317" %}
+{% assign skip_color = "#e4df12" %}
 {% assign fail_color = "#fe7d37" %}
+{% assign bar_height = "20px" %}
 
 {%if include.svg %}
 
@@ -32,11 +33,11 @@
 
 <div class="tbl padding-small">
   <div class="row">
-    <div class ="cell">
+    <div class ="cell_summary">
         <span class="font-secondary">Total Tests: </span>
         {{ result_total }}
     </div>
-    <div class ="cell">
+    <div class ="cell_summary">
       {% if include.extime %}
       <span class="font-secondary">Exec Time: </span>
       {{ include.extime }}
@@ -45,26 +46,26 @@
     
   </div>
   <div class="row">
-    <div class="cell">
+    <div class="cell_summary">
         <span class="font-secondary">Passed: </span>
         {{ include.pass }} ({{ pass_percent }}%)
     </div>
-    <div class="cell">
+    <div class="cell_summary">
         <span class="font-secondary">Skipped: </span>
         {{ include.skip }} ({{ skip_percent }}%)
     </div>
-    <div class ="cell">
+    <div class ="cell_summary">
         <span class="font-secondary">Failed: </span>
         {{ include.fail }} ({{ fail_percent }}%)
     </div>
   </div>
   <div class="row" 
     style="background: linear-gradient(to right, 
-            green {{ pass_percent }}%, 
-              yellow {{ pass_percent }}% {{ skip_percent | plus: pass_percent }}%, 
-              red {{ skip_percent | plus: pass_percent }}% {{ fail_percent | plus: pass_percent | plus: skip_percent }}%
+              {{ pass_color }} {{ pass_percent }}%, 
+              {{ skip_color }} {{ pass_percent }}% {{ skip_percent | plus: pass_percent }}%, 
+              {{ fail_color }} {{ skip_percent | plus: pass_percent }}% {{ fail_percent | plus: pass_percent | plus: skip_percent }}%
             ); 
-           height: 40px;">
+           height: {{ bar_height }};">
 
   </div>
 </div>
