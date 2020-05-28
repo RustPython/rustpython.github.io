@@ -324,6 +324,10 @@ ul.list-inline {
     content: "  🤷‍♀️";
 }
 
+.case-result::after {
+    margin-right: 5px;
+}
+
 /* filters */
 
 .filter {

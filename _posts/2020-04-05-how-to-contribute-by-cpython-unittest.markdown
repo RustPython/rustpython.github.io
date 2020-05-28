@@ -13,6 +13,8 @@ Let's find an incompatibility issue and fix it.
 
 1. See `Lib/test` directory of the project. There are many `test_` prefixed files like `test_unicode.py`.
 2. Try to open one of them. It might look just fine at a glance - but search for `TODO: RUSTPYTHON` in the files. There are tons of skipped, marked as an expected failure or commented out tests.
+  1. Alternatively, try looking at the [regression tests results]({% link pages/regression-tests-results.markdown %}) to find skipped ones; some of them have
+     notes for a way to resolve the issue.
 3. Choose one or two interesting bugs. Remove the test blocker - skip, expectedFailure or comments.
 4. Try to fix them.
 
