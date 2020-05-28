@@ -315,17 +315,20 @@ ul.list-inline {
     padding: 5px;
 }
 
-.passed > .case-result::after {
-    content: " 🚀 👌";
+.case-result::after {
     padding: 5px;
 }
 
-.skipped > .case-result::after {
-    content: "  🤷‍♀️";
+.passed > .case-result::after {
+    content: "🚀 👌";
 }
 
-.case-result::after {
-    margin-right: 5px;
+.skipped > .case-result::after {
+    content: "🤷‍♀️";
+}
+
+.expected_failure > .case-result::after {
+    content: "😔";
 }
 
 /* filters */

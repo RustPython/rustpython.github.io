@@ -20,6 +20,7 @@ layout: default
     <div data-filter="all" class="filter active pr-2"> All </div>
     <div data-filter="passed" class="filter pr-2"> Passed </div>
     <div data-filter="skipped" class="filter pr-2"> Skipped </div>
+    <div data-filter="expected_failure" class="filter pr-2"> Expected Failures </div>
     <div data-filter="" class="filter"> Empty </div>
   </div>
 </div>
@@ -98,9 +99,9 @@ layout: default
                 {% endif %}
 
                 {% if case.result %}
-                <div class="cell  {{case.result }} results-case-list-item  text-mobile-right">
+                <div class="cell {{ case.result }} results-case-list-item text-mobile-right">
                   <span class="text-small text-muted d-mobile-none">RESULT: </span>
-                  <span class="case-result">{{case.result }}</span>
+                  <span class="case-result">{{ case.result | replace: "_", " " }}</span>
                   {%- if case.result == "skipped" -%}
                     {%- assign note = case.note | default: result.note-%}
                     {%- assign lownote = note | downcase -%}
