@@ -315,13 +315,20 @@ ul.list-inline {
     padding: 5px;
 }
 
-.passed::after {
-    content: " 🚀 👌";
+.case-result::after {
     padding: 5px;
 }
 
-.skipped::after {
-    content: "  🤷‍♀️";
+.passed > .case-result::after {
+    content: "🚀 👌";
+}
+
+.skipped > .case-result::after {
+    content: "🤷‍♀️";
+}
+
+.expected_failure > .case-result::after {
+    content: "😔";
 }
 
 /* filters */

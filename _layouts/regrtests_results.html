@@ -20,11 +20,13 @@ layout: default
     <div data-filter="all" class="filter active pr-2"> All </div>
     <div data-filter="passed" class="filter pr-2"> Passed </div>
     <div data-filter="skipped" class="filter pr-2"> Skipped </div>
-    <div data-filter="" class="filter"> Empty </div>
+    <div data-filter="expected_failure" class="filter pr-2"> Expected Failures </div>
+    <div data-filter="" class="filter ml-auto"> Summary only </div>
   </div>
 </div>
 
 <!--  content -->
+{% capture tables %}
 <div class="w-80 m-auto">
   <div class="m-auto">
 
@@ -36,8 +38,8 @@ layout: default
           {% assign regrtests_results = site.data.regrtests_results %}
           {% include regrtest_summary.html 
               pass=regrtests_results.num_passed 
+              expectedfail=regrtests_results.num_expected_failures
               skip=regrtests_results.num_skipped 
-              fail=regrtests_results.num_failed 
               extime=regrtests_results.execution_time
           %}
       </div>
@@ -76,7 +78,7 @@ layout: default
           </div>
           {% if result.num_passed and result.num_skipped and result.num_failed %}
             <div class="w-md-50 float-md-right">
-              {% include regrtest_summary.html pass=result.num_passed skip=result.num_skipped fail=result.num_failed extime=result.execution_time %}
+              {% include regrtest_summary.html pass=result.num_passed expectedfail=result.num_expected_failures skip=result.num_skipped extime=result.execution_time %}
             </div>
           {% endif %}
         </div>
@@ -85,7 +87,7 @@ layout: default
           {% for cases in result.cases %}
           <div class="results-case">
             <div class="tbl results-case-list">
-              <!-- for each case -->
+              {% comment %} for each case {% endcomment %}
               {% for case in cases %}
               <div data-status="{{case.result}}" class="row results-case-list-details">
 
@@ -97,9 +99,25 @@ layout: default
                 {% endif %}
 
                 {% if case.result %}
-                <div class="cell  {{case.result }} results-case-list-item  text-mobile-right">
-                  <span class="text-small text-muted d-mobile-none">RESULT:</span>
-                  {{case.result }}
+                <div class="cell {{ case.result }} results-case-list-item text-mobile-right">
+                  <span class="text-small text-muted d-mobile-none">RESULT: </span>
+                  <span class="case-result">{{ case.result | replace: "_", " " }}</span>
+                  {%- if case.result == "skipped" -%}
+                    {%- assign note = case.note | default: result.note-%}
+                    {%- assign lownote = note | downcase -%}
+                    {%- if lownote contains "todo: rustpython" -%}
+                      {%- assign note = lownote | remove: "todo: rustpython," | remove: "todo: rustpython:" | remove: "todo: rustpython" | strip -%}
+                      {%- if note and note != "" %}
+                        <span class="text-small text-muted d-mobile-none">TO RESOLVE: </span>
+                        <span class="d-mobile-none case-note">{{ note }}</span>
+                      {%- endif -%}
+                    {%- elsif note == "implementation detail specific to cpython" -%}
+                        <span class="text-small text-muted d-mobile-none">(CPython only)</span>
+                    {%- else -%}
+                        <span class="text-small text-muted d-mobile-none">not skipped by us: </span>
+                        <span class="text-small d-mobile-none case-note">{{ note }}</span>
+                    {%- endif -%}
+                  {%- endif -%}
                 </div>
                 {% endif %}
 
@@ -112,7 +130,7 @@ layout: default
 
               </div>
               {% endfor %}
-              <!-- end for each case -->
+              {% comment %} end for each case {% endcomment %}
             </div>
           </div>
           {% endfor %}
@@ -124,5 +142,10 @@ layout: default
     {% endfor %}
   </div>
 </div>
+{% endcapture %}
+
+{%- assign tables = tables | split: "
+"-%}
+{%- for line in tables -%}{{ line | strip }}{%- endfor -%}
 
 <script src="/assets/js/regrtests_results.js"></script>

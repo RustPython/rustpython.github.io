@@ -80,6 +80,9 @@
       text-align: right;
     }
       
+    .ml-auto {
+        margin-left: auto !important;
+    }
 }
 
 /* fixes for ipad  */
