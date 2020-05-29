@@ -1,11 +1,11 @@
-{% assign result_total = include.pass | plus: include.skip | plus: include.fail %}
+{% assign result_total = include.pass | plus: include.expectedfail | plus: include.skip %}
 {% assign pass_percent = include.pass | times: 100.0 | divided_by: result_total | round: 2 %}
+{% assign expectedfail_percent = include.expectedfail | times: 100.0 | divided_by: result_total | round: 2 %}
 {% assign skip_percent = include.skip | times: 100.0 | divided_by: result_total | round: 2 %}
-{% assign fail_percent = include.fail | times: 100.0 | divided_by: result_total | round: 2 %}
 
 {% assign pass_color = "#4c1" %}
-{% assign skip_color = "#e4df12" %}
-{% assign fail_color = "#fe7d37" %}
+{% assign expectedfail_color = "#e4df12" %}
+{% assign skip_color = "#fe7d37" %}
 {% assign bar_height = "20px" %}
 
 {%if include.svg %}
@@ -14,16 +14,16 @@
     <g shape-rendering="crispEdges">
       <rect width="49" height="20" fill="#555" />
       <rect x="49" width="65" height="20" fill="{{ pass_color }}" />
-      <rect x="114" width="65" height="20" fill="{{ skip_color }}" />
-      <rect x="179" width="65" height="20" fill="{{ fail_color }}" />
+      <rect x="114" width="65" height="20" fill="{{ expectedfail_color }}" />
+      <rect x="179" width="65" height="20" fill="{{ skip_color }}" />
     </g>
     <g fill="#fff" text-anchor="middle" font-family="Verdana,Geneva,DejaVu Sans,sans-serif"
       text-rendering="geometricPrecision" font-size="110">
       <text x="255" y="140" transform="scale(.1)"
         textLength="390">Results</text>
       <text x="805" y="140" transform="scale(.1)" textLength="550">Pass {{ pass_percent  | round: 1 }}%</text>
-      <text x="1455" y="140" transform="scale(.1)" textLength="550">Skip {{ skip_percent | round: 1 }}%</text>
-      <text x="2105" y="140" transform="scale(.1)" textLength="550">Fail {{ fail_percent | round: 1 }}%</text>
+      <text x="1455" y="140" transform="scale(.1)" textLength="550">Expected Failure {{ expectedfail_percent | round: 1 }}%</text>
+      <text x="2105" y="140" transform="scale(.1)" textLength="550">Skip {{ skip_percent | round: 1 }}%</text>
     </g>
   </svg>
     
@@ -50,20 +50,20 @@
         <span class="font-secondary">Passed: </span>
         {{ include.pass }} ({{ pass_percent }}%)
     </div>
+    <div class ="cell_summary">
+        <span class="font-secondary">Expected Failure: </span>
+        {{ include.expectedfail }} ({{ expectedfail_percent }}%)
+    </div>
     <div class="cell_summary">
         <span class="font-secondary">Skipped: </span>
         {{ include.skip }} ({{ skip_percent }}%)
-    </div>
-    <div class ="cell_summary">
-        <span class="font-secondary">Failed: </span>
-        {{ include.fail }} ({{ fail_percent }}%)
     </div>
   </div>
   <div class="row" 
     style="background: linear-gradient(to right, 
               {{ pass_color }} {{ pass_percent }}%, 
-              {{ skip_color }} {{ pass_percent }}% {{ skip_percent | plus: pass_percent }}%, 
-              {{ fail_color }} {{ skip_percent | plus: pass_percent }}% {{ fail_percent | plus: pass_percent | plus: skip_percent }}%
+              {{ expectedfail_color }} {{ pass_percent }}% {{ expectedfail_percent | plus: pass_percent }}%, 
+              {{ skip_color }} {{ expectedfail_percent | plus: pass_percent }}% {{ skip_percent | plus: pass_percent | plus: expectedfail_percent }}%
             ); 
            height: {{ bar_height }};">
 
