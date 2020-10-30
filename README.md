@@ -1,5 +1,7 @@
 # rustpython.github.io
 
+<img src="./logo.png" width="125" height="125" align="right" />
+
 ## Getting started
 
 This site uses Jekyll. You can find instructions for how to install and configure Jekyll on [https://jekyllrb.com/docs/](https://jekyllrb.com/docs/).
@@ -14,13 +16,17 @@ You can contribute by:
 
 You can write a blog post in any language. There are no strict writing guidelines, but if you need ones, checkout [Digital Ocean Technical writing guides](https://www.digitalocean.com/community/tutorials/digitalocean-s-technical-writing-guidelines).
 
-As for what to write about, if you think it is worth sharing, then it is worth writing a blog post about (as long as it is about RustPython).
+As for what to write about, if you think it is worth sharing, then it is worth writing about (as long as it is about RustPython).
 
-If you need inspiration, you can check out the issues marked with the label `content`, you can also write a how-to, a technical article about something you learned while contributing to RustPython, a use case or just notes to self for how to configure something.
+If you need inspiration:
+- you can check out the issues marked with the label `content`,
+- you can write a how-to, a technical article about something you learned while contributing to RustPython, a use case or just notes-to-future-self for how to configure something.
 
 ### Adding posts
 
-The `_posts` folder is where the blog posts are. To create a new post create a markdown file iwth this pattern: `YEAR-MONTH-DAY-title.md`, for example: `2020-10-01-why-rust-python-is-awesome.markdown`
+The `_posts` folder is where the blog posts are.  
+
+To create a new post create a markdown file with this pattern: `YEAR-MONTH-DAY-title.md`, for example: `2020-10-01-why-rust-python-is-awesome.markdown`
 
 Here is how the content of that file should look like.
 
@@ -43,7 +49,7 @@ To edit the homepage, you can modifty these files:
 - `index.markdown`
 - `_config.yml`
 
-`config.yml` has setting like section titles and hyperlinks.
+`config.yml` has settings like section titles and hyperlinks.
 
 `index.markdown` has the text.  
 
@@ -56,8 +62,6 @@ The theme doesn't rely on any css frameworks or javascript. It is just a super s
 ### Color Scheme
 
 The color scheme is that of the RustPython Logo:
-
-![logo.png](./logo.png)
 
 ![#F74C00](https://via.placeholder.com/15/F74C00/000000?text=+) `#F74C00` or `rgb(247, 76, 0)`  
 
