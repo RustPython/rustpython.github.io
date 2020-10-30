@@ -1,33 +1,66 @@
-# README
+# rustpython.github.io
 
-This is a Jekyll site + theme for [RustPython](https://github.com/RustPython/RustPython).
+## Getting started
 
-There are three things on this site:
+This site uses Jekyll. You can find instructions for how to install and configure Jekyll on [https://jekyllrb.com/docs/](https://jekyllrb.com/docs/).
 
-- Homepage
-- Blog (archive + single post)
-- Links to Github/Gitter/Docs/other resources, etc...
+## How to Contribute
+You can contribute by:
+- writing an article,
+- improving the theme (developers),
+- improving the design of the site by sharing mockups or ideas (UX and designers).
 
-## How to edit the homepage
+## Writing
 
-To edit the homepage, you can edit:
+You can write a blog post in any language. There are no strict writing guidelines, but if you need ones, checkout [Digital Ocean Technical writing guides](https://www.digitalocean.com/community/tutorials/digitalocean-s-technical-writing-guidelines).
 
-- `index.markdown` in the root directory.
-- `_config.yml` also in the root directory.
-- `_data/contributors.json` or run `update_contributors.py`
+As for what to write about, if you think it is worth sharing, then it is worth writing a blog post about (as long as it is about RustPython).
 
-`config.yml` has setting like section titles, where links go to etc...  
-`index.markdown` has the longer text content.  
-`contributors.json` has a list of the top contributors. I figured we can automate how this is generated or update through pull requests.
+If you need inspiration, you can check out the issues marked with the label `content`, you can also write a how-to, a technical article about something you learned while contributing to RustPython, a use case or just notes to self for how to configure something.
 
-## How to edit the blog.
+### Adding posts
 
-Create regular jekyll posts under **\_posts** . To feature a post on the homepage under _the learn more_ section, add the category "featured" to the post.
+The `_posts` folder is where the blog posts are. To create a new post create a markdown file iwth this pattern: `YEAR-MONTH-DAY-title.md`, for example: `2020-10-01-why-rust-python-is-awesome.markdown`
 
-## How to edit links, menus and other details.
+Here is how the content of that file should look like.
 
-Use `_config.yml`.
+```
+---
+layout: post
+title:  "Why RustPython is awesome!"
+---
 
-## The theme
+Content goes here.
 
-The theme doesn't rely on any css framework/ and no javascript. Just super simple modification to the minima theme. There are two stylesheets, `style.css` and `media.css`. I did not use `main.css` because it conflicts with minima's stylesheet. I haven't done a Jekyll theme in a while, so contributions are welcome.
+```
+
+Once you have your post ready, submit a pull request. 
+
+### Editing the homepage
+
+To edit the homepage, you can modifty these files:
+
+- `index.markdown`
+- `_config.yml`
+
+`config.yml` has setting like section titles and hyperlinks.
+
+`index.markdown` has the text.  
+
+`contributors.json` is automatically generated and has a list of the top contributors.
+
+## Improving the theme.
+
+The theme doesn't rely on any css frameworks or javascript. It is just a super simple modification to the Jekyll `minima` theme. 
+
+### Color Scheme
+
+The color scheme is that of the RustPython Logo:
+
+![logo.png](./logo.png)
+
+![#F74C00](https://via.placeholder.com/15/F74C00/000000?text=+) `#F74C00` or `rgb(247, 76, 0)`  
+
+![#306998](https://via.placeholder.com/15/306998/000000?text=+) `#306998` or `rgb(48, 105, 152)`  
+
+![#ffd43b](https://via.placeholder.com/15/ffd43b/000000?text=+) `#ffd43b` or `rgb(255, 212, 59)`  
