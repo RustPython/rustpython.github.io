@@ -206,6 +206,10 @@ ul.list-inline {
     width: 100%;
 }
 
+.blog-content p > img {
+    max-width: 100%;
+}
+
 .post-date a {
     background-color: #000;
     color: #fff;
