@@ -39,7 +39,3 @@ IronPython is well-integrated with .NET, which means IronPython can use the .NET
 We want to unlock the same possibilities that Jython and IronPython enable, but for the Rust programming language. In addition, thanks to Rusts' minimal runtime, we're able to compile RustPython to WebAssembly and allow users to run their Python code easily in the browser.
 
 Check the "learn more" section for an explainer of all those jargon-y words, or read the blog for more in-depth technical discussion.
-
-### Other Resources
-
-- [CPython test compatibility]({% link pages/regression-tests-results.markdown %})
