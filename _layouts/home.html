@@ -7,13 +7,14 @@ layout: default
 <section>
     <div class="w-100 m-auto mt-2">
         <div class="d-md-flex justify-center">
-            <div class="d-sm-none"><img class="logo" src="{{site.baseurl}}/assets/img/rust-python-logo.svg" alt="RustPython Logo">
+            <div class="d-sm-none"><img class="logo" src="{{site.baseurl}}/assets/img/rust-python-logo.svg"
+                    alt="RustPython Logo">
             </div>
             <div class="w-md-25 pl-2">
                 <div class="title">{{ site.title }}</div>
                 <div class="">
                     <p>
-                       {{ site.description }}
+                        {{ site.description }}
                     </p>
                 </div>
             </div>
@@ -29,14 +30,15 @@ layout: default
     </div>
     <div class="mt-md-4 mt-sm-2 w-md-50 m-auto">
         <p class="mt-md-4">
-          {{ page.explainer }}
+            {{ page.explainer }}
         </p>
     </div>
     <div class="text-md-center">
         <ul class="list-inline">
-          {% for demo in page.demo %}
-            <li class="float-left pr-1 mt-1"><a rel="noopener" rel="noreferrer" href="{{ demo.url }}" target="_blank">{{ demo.label }}</a></li>
-          {% endfor %}
+            {% for demo in page.demo %}
+            <li class="float-left pr-1 mt-1"><a rel="noopener" rel="noreferrer" href="{{ demo.url }}"
+                    target="_blank">{{ demo.label }}</a></li>
+            {% endfor %}
         </ul>
     </div>
 </section>
@@ -47,9 +49,10 @@ layout: default
     <div class="text-center">
         <div class="section-title"> Installation</div>
         {% for install in page.installation %}
-          <mark class="code d-table m-auto mt-1"> {{ install.command }} </mark>
+        <mark class="code d-table m-auto mt-1"> {{ install.command }} </mark>
         {% endfor %}
-        <div class="mt-1"> <small><a rel="noopener" rel="noreferrer" href="{{ page.build-from-source-link }}" target="_blank">OR BUILD FROM SOURCE</a> </small></div>
+        <div class="mt-1"> <small><a rel="noopener" rel="noreferrer" href="{{ page.build-from-source-link }}"
+                    target="_blank">OR BUILD FROM SOURCE</a> </small></div>
     </div>
 </section>
 
@@ -61,28 +64,37 @@ layout: default
         <div class="d-md-flex ">
             {% for goals in page.goals %}
             <div class="w-md-50 mt-2 goal bg-rust">
-              <div class=" text-white p-2">
+                <div class=" text-white p-2">
                     {{ goals.goal }}
-              </div>
+                </div>
             </div>
             {% endfor %}
         </div>
         <div class="d-md-flex  mt-2">
             <div class="w-md-50">
-                 {{ content }}
+                {{ content }}
             </div>
             <div class="w-md-50 mt-2">
                 <div class="border w-md-50 float-md-right mt-md-4 p-2">
-                        <strong> Learn more </strong>
-                        <!-- list of posts where category is "featured" -->
-                        <ul class="list-unstyled">
-                            {%- for post in site.posts -%}
-                              {% if post.categories contains "featured" %}
-                                <li class="mt-1"> <a  href="{{ post.url | relative_url }}">   {{ post.title | escape }} </a></li>
-                              {% endif %}
-                            {%- endfor -%}
-                        </ul>
+                    <strong> Featured Posts </strong>
+                    <!-- list of posts where category is "featured" -->
+                    <ul class="list-unstyled">
+                        {%- for post in site.categories.featured limit:3 -%}
+                        <li class="mt-1"> <a href="{{ post.url | relative_url }}"> {{ post.title | escape }} </a></li>
+                        {%- endfor -%}
+                    </ul>
                 </div>
+
+                <div class="border w-md-50 float-md-right mt-md-4 p-2">
+                    <strong> Dashboard </strong>
+                    <!-- list of posts where category is "featured" -->
+                    <ul class="list-unstyled">
+                        {%- for dashboard in site.dashboards -%}
+                        <li class="mt-1"> <a href="{{ dashboard.url | relative_url }}"> {{ dashboard.title | escape }} </a></li>
+                        {%- endfor -%}
+                    </ul>
+                </div>
+
             </div>
         </div>
     </div>
@@ -96,12 +108,15 @@ layout: default
         <p class="w-80">{{ site.contributor_excerpt}}</p>
         <ul class="list-contributors">
             {% for contributor in site.data.contributors %}
-                <li><a rel="noopener" rel="noreferrer" href="https://github.com/{{ contributor.github_username }}" target="_blank">{{ contributor.github_username }}</a></li>
+            <li><a rel="noopener" rel="noreferrer" href="https://github.com/{{ contributor.github_username }}"
+                    target="_blank">{{ contributor.github_username }}</a></li>
             {% endfor %}
         </ul>
         <div class="d-md-flex">
-          <div class="pr-1 mt-1"><small><a href="https://github.com/RustPython/RustPython/graphs/contributors">VIEW MORE</a></small></div>
-          <div class="mt-1"><small><a href="https://github.com/RustPython/RustPython/#contributing">HOW TO CONTRIBUTE</a></small></div>
+            <div class="pr-1 mt-1"><small><a href="https://github.com/RustPython/RustPython/graphs/contributors">VIEW
+                        MORE</a></small></div>
+            <div class="mt-1"><small><a href="https://github.com/RustPython/RustPython/#contributing">HOW TO
+                        CONTRIBUTE</a></small></div>
         </div>
     </div>
 </section>

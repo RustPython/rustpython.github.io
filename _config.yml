@@ -41,6 +41,10 @@ navigation:
   - title: Gitter
     url: https://gitter.im/rustpython/Lobby
 
+dashboards:
+  - title: CPython test compatibility 
+    url: /pages/regression-tests-results.html
+
 # Build settings
 theme: minima
 plugins:
