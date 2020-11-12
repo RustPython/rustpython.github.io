@@ -2,7 +2,8 @@
 layout: post
 title:  "How to contribute to RustPython by CPython unittest"
 date:   2020-04-05 01:45:00 +0900
-categories: guideline, featured
+categories: [guideline, featured]
+permalink:  guideline/2020/04/04/how-to-contribute-by-cpython-unittest.html
 ---
 
 At the very end of 2019, we finally reached one of the short-term goals: CPython unittest support. Due to this enhancement, finding CPython compatibility is easier than before.
@@ -20,9 +21,7 @@ Let's find an incompatibility issue and fix it.
 
 Here is a quick tip to run single unittest file.
 
-```sh
-$ RUSTPYTHONPATH=Lib cargo run --release Lib/test/test_unicode.py
-```
+`$ RUSTPYTHONPATH=Lib cargo run --release Lib/test/test_unicode.py`
 
 ## Add a new unittest file
 Because CPython unittest is not perfectly working in RustPython, we are doing this one by one with editings.
