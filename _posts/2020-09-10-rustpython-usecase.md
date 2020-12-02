@@ -20,7 +20,7 @@ The hope is that this post inspires you to contribute to RustPython.
 
 This [blog post](https://hacks.mozilla.org/2019/03/iodide-an-experimental-tool-for-scientific-communicatiodide-for-scientific-communication-exploration-on-the-web/) on Mozilla Hacks frames the need for scientific computing in the browser. It focuses on communication. Scientists need to communicate better with policymakers, journalists or interested citizens. One might argue that there is an even greater need for better and more efficient communication within the scientific community. 
 
-Since Mozilla's post in 2019, a lot has happened! (no joke, there was a global pandemic and an atmosphere of mistrust in science).  
+Since Mozilla's post in 2019, a lot has happened! (no joke, there's now a global pandemic and an atmosphere of mistrust in science).  
 There is a paramount need to "agree on facts" and have verifiable, data-based and model-driven discussions. At a minimum, there is a need to change how discussions are conducted and move them from being centered around "opinion" and "personality" to being focused on "data" and "models". These models need to be demistified in order to rebuild trust in science. One of the many ways to achieve this is by exposing how models work and let anyone interact with them. Scientists need to meet people in the environement used by most: the browser.
 
 ## Sharing scientific work should be as easy and worry-free as sharing a google doc
