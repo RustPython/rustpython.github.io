@@ -29,7 +29,7 @@ Coders and the technical community can help. We need to make it extremly simple 
 Imagine if we asked people to configure a server every time that they wanted to share a google doc. Imagine that every time you needed to open a document on your computer, you will need to install custom fonts with specific versions and then install and configure yet another version of a PDF reader. Opening old documents would most likely require you to rollback your changes. If anything breaks, your document won't work. On top of everything, all of this would require adminitrative access.
 
 ## Thinking outside the box
-Re-thinking how scientific code works, in a "server-less" world, in an ubquious tool such as the browser can yield a lot of benefits.
+Re-thinking how scientific code works in a "serverless" world, using such a ubiquitous tool like the browser, can yield a lot of benefits.
 
 Usually re-thinking how something works requires thinking with a long-term mindset, being open to experimentation and trying a new approach instead of adopting incremental improvements. Thinking outside the box is easier said than done. Here is where RustPython comes in.
 
