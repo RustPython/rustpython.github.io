@@ -42,7 +42,7 @@ There is a merit to a fresh start with a new Python interpreter that has "runnin
 The trade-off is that you have a whole interpreter to write, a standard library and so many other libraries to support. It is not a road for the faint hearted or for someone who needs a production ready environment. In fact, while RustPython supports the full Python syntax, it doesn't support the Standard Library at the moment.
 
 ## What about?
-When talking about new tools, technical debate can get intense -- very quickly. Sure, there are a few other approaches, For example:
+When talking about new tools, technical debate can get intense very quickly. Sure, there are a few other approaches, For example:
 - What about compiling CPython to WebAssembly?
 - What about using Javascript for scientific computing? Javascript is very advanced and much different from what it used to be!
 - What's wrong with servers and what about using Docker?
