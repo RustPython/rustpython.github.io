@@ -35,7 +35,7 @@ Usually re-thinking how something works requires thinking with a long-term minds
 
 ## The role of RustPython
 
-The promise of RustPython for scientific computing in the browser is simple. Rust is a new and modern programming language. It plays nicely with WebAssembly. By writing an interpreter for Python in Rust, you can compile that interpreter to WebAssembly. Since WebAssembly runs in the browser, this means you get yourself an interpreter for Python that runs in the browser. In other words, someone can type python code in a browser and the browser can load an interpreter that understands it.
+The promise of RustPython for scientific computing in the browser is simple. Rust is a new and modern programming language. It plays nicely with WebAssembly. By writing an interpreter for Python in Rust, you can compile that interpreter to WebAssembly, and since WebAssembly runs in the browser, you get yourself an interpreter for Python that runs in the browser. In other words, someone can type python code in a browser and we can load an interpreter that understands it.
 
 There is a merit to a fresh start with a new Python interpreter that has "running in the browser" as a use case. There is freedom of choice that comes from not having to worry about a huge codebase and a benefit to using a modern programming language like Rust.
 
