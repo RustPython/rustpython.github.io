@@ -52,7 +52,7 @@ All the above approaches have their merit. Usually, there are multiple ways to s
 
 Besides, scientific computing in the browser is one of the use cases for RustPython. Another use case for example is exposing Python scripting in an application written in Rust. This would allow quickly tweaking logic where Rust's compile times would be inhibitive.
 
-If you were looking for a motivation to contribute to RustPython, hopefully scientific computing in the browswer is a good one among many.
+If you were looking for a reason to contribute to RustPython, hopefully scientific computing in the browser is a good one among many.
 
 # Sample code
 
