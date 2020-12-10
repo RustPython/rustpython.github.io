@@ -3,7 +3,11 @@
 # To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 
 layout: home
-explainer: "CPython is the common implementation of Python. We love C, but we love Rust a little more 😉... that's why we're working on a RustPython, a Python implementation written in Rust. We are doing it for fun, to learn about writing interpreters, and to have a useful, usable and embeddable implementation of Python in Rust."
+explainer:
+  RustPython is a Python interpreter written in Rust. RustPython can be
+  embedded into Rust programs to use Python as a scripting language for your
+  application, or it can be compiled to WebAssembly in order to run Python
+  in the browser. RustPython is free and open-source under the MIT license.
 
 build-from-source-link: https://github.com/RustPython/RustPython
 
@@ -19,8 +23,23 @@ installation:
   - command: "conda install rustpython -c conda-forge"
 
 goals:
-  - goal: "Full Python-3 environment entirely in Rust (not CPython bindings) with a clean implementation, without compatiblity hacks. "
-  - goal: "Fast, reliable and secure implementation of Python that can be used with Rust or compiled to WebAssembly. "
+  - goal:
+      Full Python-3 environment entirely in Rust (not CPython bindings), with
+      a clean implementation and no compatiblity hacks.
+    # TODO: integrate this into the "goals" boxes
+    progress:
+      # TODO: actually measure how much of the test suite we run
+      RustPython can currently run a little less than half of the CPython
+      regression test suite, and our API is relatively unstable and
+      doesn't require decades of backwards-compatibility.
+  - goal:
+      Fast, reliable and secure implementation of Python that can be used
+      from Rust or compiled to WebAssembly.
+    progress:
+      RustPython currently runs about 10 times slower than CPython, but there's
+      still lots of optimizations to be made. RustPython can be easily embedded
+      into Rust programs simply by adding a line to Cargo.toml, and natively
+      supports WebAssembly; see our demo above.
 ---
 
 # Why RustPython?

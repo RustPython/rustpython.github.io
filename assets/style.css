@@ -112,6 +112,11 @@ code.highlighter-rouge, mark.code {
   color: #fff;
 }
 
+.color-py {
+  background-color: #ffd343;
+  color: #306998;
+}
+
 /* alignment */
 .d-flex-space-between {
   justify-content: space-between;
@@ -129,6 +134,12 @@ code.highlighter-rouge, mark.code {
   text-align: center;
 }
 
+.valign-center {
+  display:flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .justify-center {
   justify-content: center;
   align-items: center;
@@ -142,6 +153,10 @@ code.highlighter-rouge, mark.code {
 
 .padding-small {
   padding: 5px;
+}
+
+.vpad-small {
+  padding: 5px 0;
 }
 
 .mb-1 {
@@ -249,6 +264,15 @@ ul.list-inline {
 
 .logo {
   height: 80px;
+}
+
+.explainer-icon {
+  height: 30px;
+  margin-right: 5px;
+}
+
+.rustpy-name {
+  padding: 5px 7px;
 }
 
 .goal {
