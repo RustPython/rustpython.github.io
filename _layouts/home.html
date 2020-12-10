@@ -26,7 +26,48 @@ layout: default
 <!-- to update, edit index.markdown file in the root folder  -->
 <section>
     <div class="m-auto w-md-25 mt-2">
-        <img class="img-fluid" src="{{site.baseurl}}/assets/img/explainer.jpg" alt="RustPython Explainer">
+        <table class="w-100">
+            <tr>
+               <td class="valign-center vpad-small">
+                    <img class="explainer-icon" src="{{site.baseurl}}/assets/img/python-logo.svg" alt="Python Logo">
+                    Python
+               </td>
+                <td></td><td></td>
+            </tr>
+            <tr>
+                <td class="valign-center vpad-small">
+                    ↓
+                </td>
+                <td></td><td></td>
+            </tr>
+            <tr>
+                <td><div class="padding-small text-center">
+                    <!-- inline css to get it to look like one word, despite the padding classes -->
+                    <span class="bg-rust rustpy-name text-white" style="padding-right: 1px;">Rust</span
+                    ><span class="color-py rustpy-name" style="padding-left: 0;">Python</span>
+                </div></td>
+                <td class="text-center padding-small">
+                    →
+                </td>
+                <td><div class="valign-center padding-small text-center">Python embedded in Rust apps</div></td>
+            </tr>
+            <tr>
+                <td class="valign-center vpad-small">
+                    ↓
+                </td>
+                <td></td><td></td>
+            </tr>
+            <tr>
+                <td><div class="valign-center vpad-small">
+                    <img class="explainer-icon" src="{{site.baseurl}}/assets/img/wasm-logo.svg" alt="WebAssembly Logo">
+                    WebAssembly
+                </div></td>
+                <td class="text-center padding-small">
+                    →
+                </td>
+                <td><div class="valign-center padding-small text-center">Python on the Web</div></td>
+            </tr>
+        </table>
     </div>
     <div class="mt-md-4 mt-sm-2 w-md-50 m-auto">
         <p class="mt-md-4">
