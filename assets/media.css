@@ -34,7 +34,7 @@
 }
 
 
-/* desktop , tablets */
+/* smaller laptops, tablets */
 @media (min-width: 768px) {
     .mt-md-4 {
         margin-top: 4em;
@@ -83,6 +83,12 @@
     .ml-auto {
         margin-left: auto !important;
     }
+}
+
+@media (min-width: 1366px) {
+  .w-lg-25 {
+    width: 25%;
+  }
 }
 
 /* fixes for ipad  */
