@@ -16,6 +16,8 @@ demo:
    label: 'Hello World!'
  - url: "https://rustpython.github.io/demo/"
    label: 'Online demo running on WebAssembly'
+ - url: "https://rustpython.github.io/demo/notebook"
+   label: 'Notebook'
 
 installation:
   - command: "cargo install rustpython"
