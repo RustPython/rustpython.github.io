@@ -6,21 +6,21 @@ date:   2020-04-02 11:34:01 -0400
 
 This post goes over the RustPython parser. You can see the source code at [RustPython/parser/](https://github.com/RustPython/RustPython/tree/master/parser).
 
-When you write code in python and run it, an interpreter, such as the RustPython interpreter, acts as the translator between you and your machine.
+When you write code in Python and run it, an interpreter, such as the RustPython interpreter, acts as the translator between you and your machine.
 
-The interpreter has the job of turning your human code into byte code that a python virtual machine can run. Bytecode is an intermediate code between source code and machine code. This makes it portable across multiple hardware and operating systems. Bytecode "works" as long as you implement a virtual machine(vm) that can run it. There is a performance penalty for this flexibility. RustPython has a vm under [RustPython/vm/](https://github.com/RustPython/RustPython/tree/master/vm). Other posts, will go into the details of that vm but now let's figure out how to turn code into bytecode.
+The interpreter has the job of turning your human code into bytecode that a Python virtual machine can run. Bytecode is an intermediate code between source code and machine code. This makes it portable across multiple hardware and operating systems. Bytecode "works" as long as you implement a virtual machine (vm) that can run it. There is a performance penalty for this flexibility. RustPython has a vm under [RustPython/vm/](https://github.com/RustPython/RustPython/tree/master/vm). Other posts will go into the details of that vm but now let's figure out how to turn code into bytecode.
 
 
-## How does bytecode look like 
+## What bytecode looks like 
 
-Seeing is believing. To see what bytecode looks like, you can use a Python module called [`dis`](https://docs.python.org/3/library/dis.html). dis stands for disassembler. You can write source code then see how its bytecode looks like. Here is an example:
+Seeing is believing. To see what bytecode looks like, you can use a Python module called [`dis`](https://docs.python.org/3/library/dis.html). "dis" is short of for _dis_assembler. You can write source code then see how its bytecode looks like. Here is an example:
 
 ![bytecode](/assets/media/bytecode.jpg)
 
 
-## How RustPython turns your code to bytecode
+## How RustPython turns your code into bytecode
 
-Here are the main steps that RustPython currently does:  
+Here are the main steps that RustPython currently goes through:  
 - parse the line of source code into tokens  
 - determine if the tokens have a valid syntax  
 - create an Abstract Syntax Tree (AST)  
@@ -31,7 +31,7 @@ This list of steps introduces some new concepts like: tokens and abstract syntax
 
 ### Step 1: parsing source code into tokens
 
-The fastest way to understand what tokens are, is to see them. Conveniently, Python comes with a [tokenizer](https://docs.python.org/3/library/tokenize.html).   Here is what happen if I run the tokenizer on the function that I created earlier.  
+The fastest way to understand what tokens are, is to see them. Conveniently, Python comes with a [tokenizer](https://docs.python.org/3/library/tokenize.html). Here is what happens if I run the tokenizer on the function that I created above.  
 
 `$ python -m tokenize file.py`
 
@@ -46,12 +46,12 @@ def add(x,y):
 ![tokenzizing](/assets/media/tokenizing.jpg)
 
 
-A picture IS worth a thousand word 😛 Those are the tokens. They are the basic "units" in the programming language. They are the keywords and operators that you typed. Even new lines and identations count.
+A picture IS worth a thousand words 😛 Those are the tokens. They are the basic "units" of the programming language. They are the keywords and operators that you typed. Even new lines and identation count.
 
 If you want to sound fancy:
 - The tokens are the basic "lexical components"
 - The parsing process is called "lexical analysis"
-- The thing that does the process is a "lexer"
+- The thing that does this is a "lexer"
 
 Here is the link to the RustPython lexer.
 
@@ -59,7 +59,7 @@ Here is the link to the RustPython lexer.
 [source code](https://github.com/RustPython/RustPython/blob/master/parser/src/lexer.rs)  
 
 
-If you want dive into the details of lexical analysis, check out [Python in a nutshell / Lexical structure](https://learning.oreilly.com/library/view/python-in-a/9781491913833/ch03.html#python_language-id00003)  
+If you want to dive into the details of lexical analysis, check out [Python in a nutshell / Lexical structure](https://learning.oreilly.com/library/view/python-in-a/9781491913833/ch03.html#python_language-id00003)  
 
 
 ### Step 2 : determine if the tokens are valid syntax
@@ -70,8 +70,8 @@ In the previous step, if you add random stuff to your function and tokenize it, 
 
 So don't hate on the whole interpreter when you get error messages! or at least don't hate on the tokenizer!
 
-To determine if the tokens are valid syntax, first you need a definition of what a valid syntax is. Python has a defined "grammar" or set of rules. The official reference is on [this link](https://docs.python.org/3/reference/grammar.html). There, you will find a machine readable file. You may read a book to know the rules of python, but words are too "fluffy", an algorithm that verifies if rules are followed needs a very strict set of rules encoded in a file. [This video](https://www.youtube.com/watch?v=KGMFvy2d5OI) explains the Python grammar and the file's notation.
-As the presenter puts it, this is the spirit of the beast (python) and it is only ~10KB 😭 (compare that to the size of python books you had to read!)
+To determine if the tokens are valid syntax, first you need a definition of what a valid syntax is. Python has a defined "grammar" or set of rules. The official reference is on [this link](https://docs.python.org/3/reference/grammar.html). There, you will find a machine readable file. You may read a book to know the rules of Python, but words are too "fluffy", an algorithm that verifies if the rules are followed needs a very strict set of rules encoded in a file. [This video](https://www.youtube.com/watch?v=KGMFvy2d5OI) explains the Python grammar and the file's notation.
+As the presenter puts it, this is the spirit of the beast (Python) and it is only ~10KB 😭 (compare that to the size of the Python books you had to read!)
 
 So, we have the rules or grammar of a programming language in a machine encoded format... now we need to write something that verifies that those rules were followed... This sounds like something that other people could use and like something that should exist as an open source project! 🤔
 
@@ -91,7 +91,7 @@ You can do:
 
 ## Recap 🥴 🥵
 
-As a recap, when you write a line of python code and "run it", here is what the RustPython interpreter does:
+As a recap, when you write a line of Python code and "run it", here is what the RustPython interpreter does:
 
 **INPUT: your code** (in `file.py` or interactive shell)  
 ⬇️ parse the line of source code into tokens  
