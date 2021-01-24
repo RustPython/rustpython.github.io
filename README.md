@@ -1,4 +1,4 @@
-# rustpython.github.io
+# [rustpython.github.io](https://rustpython.github.io)
 
 <img src="./logo.png" width="125" height="125" align="right" />
 
