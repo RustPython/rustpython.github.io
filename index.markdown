@@ -26,7 +26,7 @@ installation:
 
 goals:
   - goal:
-      Full Python-3 environment entirely in Rust (not CPython bindings), with
+      Full Python 3 environment entirely in Rust (not CPython bindings), with
       a clean implementation and no compatiblity hacks.
     # TODO: integrate this into the "goals" boxes
     progress:
@@ -53,10 +53,10 @@ There are many implementations of Python. For example:
 - [PyPy](https://www.pypy.org/) (Python)  
 - [Stackless](http://www.stackless.com/)
 
-Each of these implementations offer some benefits: Jython, for example, compiles Python source code to Java byte code, then routes it to the Java Virtual Machine. Because Python code is translated to Java byte code, it looks and feels like a true Java program at runtime and so it integrates well with Java applications.   
+Each of these implementations offer some benefits: Jython, for example, compiles Python 2 source code to Java byte code, then routes it to the Java Virtual Machine. Because Python code is translated to Java bytecode, it looks and feels like a true Java program at runtime and so it integrates well with Java applications.   
 
-IronPython is well-integrated with .NET, which means IronPython can use the .NET framework and Python libraries or vice versa.
+IronPython is well-integrated with .NET, which means IronPython can use the .NET framework and Python 2 libraries or vice versa.
 
 We want to unlock the same possibilities that Jython and IronPython enable, but for the Rust programming language. In addition, thanks to Rusts' minimal runtime, we're able to compile RustPython to WebAssembly and allow users to run their Python code easily in the browser.
 
-Check the "learn more" section for an explainer of all those jargon-y words, or read the blog for more in-depth technical discussion.
+Check out the "learn more" section for an explainer of all those jargon-y words, or read the blog for more in-depth technical discussion.
