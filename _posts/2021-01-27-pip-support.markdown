@@ -7,7 +7,7 @@ categories: [featured]
 
 7380 commits and 1940 pull requests later, **pip** and **get-pip.py** are working with RustPython 🎉  🎉. pip can install itself and setuptools!
 
-This updated is brought to you from [@coolreader18's](https://github.com/coolreader18) terminal by asciinema 🍿.
+This update is brought to you from [@coolreader18's](https://github.com/coolreader18) terminal by asciinema 🍿.
 
 ## get-pip.py
 [![asciicast](https://asciinema.org/a/3pAZSfrFeIbEUzpPyXtvYZCeN.svg)](https://asciinema.org/a/3pAZSfrFeIbEUzpPyXtvYZCeN)
