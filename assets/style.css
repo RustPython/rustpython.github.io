@@ -234,7 +234,7 @@ ul.list-inline {
   width: 100%;
 }
 
-.blog-content p > img {
+.blog-content p > img , .blog-content img {
   max-width: 100%;
 }
 
