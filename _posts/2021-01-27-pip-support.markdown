@@ -22,4 +22,4 @@ This update is brought to you from [@coolreader18's](https://github.com/coolread
 
 
 ## What you need to do
-This update is so fresh, things are not merged into the `master` or `release` branches yet. For now, to test this out, you have to merge `coolreader18/fix-http` `coolreader18/csv-writer` `coolreader18/misc-os` `coolreader18/name-mangling` `update-python-version` `coolreader18/empty-map-cformat`.
+This update is so fresh, things are not merged into the `master` or `release` branches yet. For now, to test this out, you have to checkout the `pip-merg` branch, and make sure to build with the `ssl` feature:
