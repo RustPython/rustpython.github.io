@@ -1,0 +1,33 @@
+---
+layout: default
+---
+
+<section>
+    <div class="w-80 m-auto mt-2">
+        <div class="d-md-flex">
+            <div class="d-sm-none">
+                <img class="logo" src="{{site.baseurl}}/assets/img/rust-python-logo.svg" alt="RustPython Logo">
+            </div>
+            <div class="pl-md-2">
+                <div class="section-title">Benchmarks</div>
+                <div class="title">{{ site.title }} {{ page.title | escape }}</div>
+                <small>{{ site.benchmarks-intro }}</small>
+            </div>
+        </div>
+    </div>
+</section>
+
+<div class="w-80 m-auto mt-2">
+    <div class="benchmarks-intro">
+        {{ content }}
+    </div>
+
+    {% for image in site.static_files %}
+    {% if image.path contains 'benchmarks' %}
+    <figure>
+        <img src="{{ site.baseurl }}{{ image.path }}" alt="image" width="30%" />
+        <figcaption>{{ image.name }}</figcaption>
+    </figure>
+    {% endif %}
+    {% endfor %}
+</div>

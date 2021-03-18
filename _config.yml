@@ -36,6 +36,8 @@ navigation:
     url: /blog
   - title: Docs
     url: /docs
+  - title: Benchmarks
+    url: /benchmarks
   - title: GitHub
     url: https://github.com/RustPython/RustPython/
   - title: Gitter
