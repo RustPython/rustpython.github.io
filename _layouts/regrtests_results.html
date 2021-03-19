@@ -22,6 +22,7 @@ layout: default
     <div data-filter="skipped" class="filter pr-2"> Skipped </div>
     <div data-filter="expected_failure" class="filter pr-2"> Expected Failures </div>
     <div data-filter="" class="filter ml-auto"> Summary only </div>
+    <div class="filter"><a target="_blank" class="text-decoration-none" href="https://github.com/RustPython/rustpython.github.io/blob/master/_data/regrtests_results.json">Json file</a></div>
   </div>
 </div>
 
@@ -31,8 +32,8 @@ layout: default
   <div class="m-auto">
 
     <div class="results-suites">
-      <div class="results-test">
-        <div class="padding-small">
+      <div class="results-test ">
+        <div class="padding-small bg-rust text-white">
           <h2 class="font-secondary">Summary:</span>
         </div>
           {% assign regrtests_results = site.data.regrtests_results %}
@@ -49,9 +50,9 @@ layout: default
     
     <div class="results-suites">
       {% for result in test %}
-      
+     
       <div class="results-test">
-        <div class="d-md-flex">
+        <div class="results-test-header d-md-flex">
           <div class="w-md-50">
             {% if result.module %}
             <div class="padding-small">
