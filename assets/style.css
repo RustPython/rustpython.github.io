@@ -54,6 +54,10 @@ h6 {
   text-transform: uppercase;
 }
 
+.text-decoration-none {
+  text-decoration: none;
+}
+
 h1 {
   font-size: 1.5em;
   margin-top: 2em;
@@ -289,11 +293,15 @@ ul.list-inline {
 
 /* test results */
 
+.results-test-header {
+  background-color: #f8f8f8;
+}
+
 .results-test {
   margin-top: 50px;
-  color: #fff;
+  color: #000;
+  border: 1px solid black;
   font-size: 1.1rem;
-  background-color: #f74c00;
   word-wrap: anywhere;
 }
 
@@ -303,15 +311,7 @@ ul.list-inline {
   text-transform: capitalize;
 }
 
-.results-case-wrapper > div {
-  padding-left: 10px;
-  padding-right: 10px;
-}
-
 .results-case {
-  background-color: white;
-  border-left: 1px solid #000;
-  border-right: 1px solid #000;
   pointer-events: auto;
 }
 
