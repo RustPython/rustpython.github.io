@@ -119,7 +119,7 @@ layout: default
                     <!-- list of posts where category is "featured" -->
                     <ul class="list-unstyled">
                         {%- for post in site.categories.featured limit:3 -%}
-                        <li class="mt-1"> <a href="{{ post.permalink | permalink }}"> {{ post.title | escape }} </a></li>
+                        <li class="mt-1"> <a href="{{ post.url | permalink }}"> {{ post.title | escape }} </a></li>
                         {%- endfor -%}
                     </ul>
                 </div>
