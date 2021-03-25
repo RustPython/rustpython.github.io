@@ -3,7 +3,7 @@ layout: post
 title:  "How to contribute to RustPython using CPython's unit tests"
 date:   2020-04-05 01:45:00 +0900
 categories: [guideline, featured]
-permalink:  guideline/2020/04/04/how-to-contribute-by-cpython-unittest.html
+redirect_from: /guideline/2020/04/04/how-to-contribute-by-cpython-unittest.html
 ---
 
 At the very end of 2019, we finally reached one of our short-term goals: CPython `unittest` support which makes finding CPython compatibility errors easier than ever.

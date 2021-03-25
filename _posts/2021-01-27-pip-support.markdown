@@ -3,6 +3,7 @@ layout: post
 title:  "pip is working! 🎉  🎉 "
 date:   2021-01-27 01:45:00 +0900
 categories: [featured]
+redirect_from: /featured/2021/01/26/pip-support.html
 ---
 
 7380 commits and 1940 pull requests later, **pip** and **get-pip.py** are working with RustPython 🎉  🎉. pip can install itself and setuptools!

@@ -2,6 +2,7 @@
 layout: post
 title:  "Introduction to the RustPython parser"
 date:   2020-04-02 11:34:01 -0400
+redirect_from: /2020/04/02/thing-explainer-parser.html
 ---
 
 This post goes over the RustPython parser. You can see the source code at [RustPython/parser/](https://github.com/RustPython/RustPython/tree/master/parser).
