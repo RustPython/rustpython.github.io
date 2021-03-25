@@ -22,12 +22,55 @@ layout: default
         {{ content }}
     </div>
 
+    <!-- TODO clean up this code a bit -->
+
+    {% assign folders = "" | split: ", " %}
     {% for image in site.static_files %}
-    {% if image.path contains 'benchmarks' %}
-    <figure>
-        <img src="{{ site.baseurl }}{{ image.path }}" alt="image" width="30%" />
-        <figcaption>{{ image.name }}</figcaption>
-    </figure>
+    {% if image.path contains 'criterion/' %}
+    {% assign imagepath = image.path | split: "/" %}
+    {% for subpath in imagepath %}
+    {% if forloop.index0 == 3 %}
+    {% assign folders = folders | append: pathName %}
     {% endif %}
     {% endfor %}
+    {% endif %}
+    {% endfor %}
+    {% assign folders = folders | uniq %}
+
+    <!-- {% assign folders = "" | split: ", " %}
+    {% for folder in site.static_files %}
+    {% if folder.path contains 'criterion/' %}
+    {% assign temp = folder.path | split: 'criterion/' %}
+    {% assign pathName = temp[1] | split: '/' | first %}
+    {% assign pathName = pathName | split: ", " %}
+    {% assign folders = folders | concat: pathName %}
+    {% endif %}
+    {% endfor%}
+    {% assign folders = folders | uniq %} -->
+
+    <!-- TODO check if the folders list is empty, if so, display corresponding message -->
+    <!-- TODO add text that explains the violin plots -->
+
+    <ul class="tab" data-tab="benchmarks">
+        {% for folder in folders %}
+        <li {% if forloop.index==1 %} class="active" {% endif %}>
+            <a href="">{{ folder }}</a>
+        </li>
+        {% endfor%}
+    </ul>
+    <ul class="tab-content" id="benchmarks">
+        {% for folder in folders %}
+        <li {% if forloop.index==1 %} class="active" {% endif %}>
+            <br>
+            {% for image in site.static_files %}
+            {% if image.path contains folder %}
+            <figure>
+                <img src="{{ site.baseurl }}{{ image.path }}" alt="image" width="50%" />
+                <figcaption>{{ image.name }}</figcaption>
+            </figure>
+            {% endif %}
+            {% endfor%}
+        </li>
+        {% endfor%}
+    </ul>
 </div>
