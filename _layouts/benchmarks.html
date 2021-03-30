@@ -9,8 +9,8 @@ layout: default
                 <img class="logo" src="{{site.baseurl}}/assets/img/rust-python-logo.svg" alt="RustPython Logo">
             </div>
             <div class="pl-md-2">
-                <div class="section-title">Benchmarks</div>
-                <div class="title">{{ site.title }} {{ page.title | escape }}</div>
+                <div class="section-title">RustPython</div>
+                <div class="title">{{ page.title | escape }}</div>
                 <small>{{ site.benchmarks-intro }}</small>
             </div>
         </div>
@@ -21,8 +21,6 @@ layout: default
     <div class="benchmarks-intro">
         {{ content }}
     </div>
-
-    <!-- TODO clean up this code a bit -->
 
     {% assign folders = "" | split: ", " %}
     {% for image in site.static_files %}
@@ -48,9 +46,11 @@ layout: default
     {% endfor%}
     {% assign folders = folders | uniq %} -->
 
-    <!-- TODO check if the folders list is empty, if so, display corresponding message -->
-    <!-- TODO add text that explains the violin plots -->
-
+    {% if folders.size == 0 %}
+    <p style="color: red;">There are no benchmarks to be displayed.</p>
+    <p>This shouldn't be happening, please contact one of the maintainers
+        through <a href="https://gitter.im/rustpython/Lobby">Gitter</a> to report this problem.</p>
+    {% else %}
     <ul class="tab" data-tab="benchmarks">
         {% for folder in folders %}
         <li {% if forloop.index==1 %} class="active" {% endif %}>
@@ -65,7 +65,7 @@ layout: default
             {% for image in site.static_files %}
             {% if image.path contains folder %}
             <figure>
-                <img src="{{ site.baseurl }}{{ image.path }}" alt="image" width="50%" />
+                <img src="{{ site.baseurl }}{{ image.path }}" alt="image" />
                 <figcaption>{{ image.name }}</figcaption>
             </figure>
             {% endif %}
@@ -73,4 +73,5 @@ layout: default
         </li>
         {% endfor%}
     </ul>
+    {% endif %}
 </div>

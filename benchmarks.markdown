@@ -3,4 +3,8 @@ layout: benchmarks
 title: Benchmarks
 ---
 
-RustPython is an awesome Python interpreter! On this page you can see how it compares to CPython.
+This page displays some benchmarks that determine the performance of RustPython.
+
+Most of these benchmarks compare RustPython to CPython.
+
+More information about the benchmarks can be found on [the RustPython GitHub repo](https://github.com/RustPython/RustPython/tree/master/benches).
