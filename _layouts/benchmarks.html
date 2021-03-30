@@ -24,17 +24,18 @@ layout: default
 
     {% assign folders = "" | split: ", " %}
     {% for image in site.static_files %}
-    {% if image.path contains 'criterion/' %}
-    {% assign imagepath = image.path | split: "/" %}
-    {% for subpath in imagepath %}
-    {% if forloop.index0 == 3 %}
-    {% assign folders = folders | append: pathName %}
-    {% endif %}
-    {% endfor %}
-    {% endif %}
+        {% if image.path contains 'criterion/' %}
+            {% assign imagepath = image.path | split: "/" %}
+            {% for subpath in imagepath %}
+                {% if forloop.index0 == 3 %}
+                    {% assign folders = folders | append: pathName %}
+                {% endif %}
+            {% endfor %}
+        {% endif %}
     {% endfor %}
     {% assign folders = folders | uniq %}
 
+    <!-- The code block below does exactly the same as the one above, which one is cleaner? -->
     <!-- {% assign folders = "" | split: ", " %}
     {% for folder in site.static_files %}
     {% if folder.path contains 'criterion/' %}
@@ -63,12 +64,12 @@ layout: default
         <li {% if forloop.index==1 %} class="active" {% endif %}>
             <br>
             {% for image in site.static_files %}
-            {% if image.path contains folder %}
-            <figure>
-                <img src="{{ site.baseurl }}{{ image.path }}" alt="image" />
-                <figcaption>{{ image.name }}</figcaption>
-            </figure>
-            {% endif %}
+                {% if image.path contains folder %}
+                <figure>
+                    <img src="{{ site.baseurl }}{{ image.path }}" alt="image" />
+                    <figcaption>{{ image.name }}</figcaption>
+                </figure>
+                {% endif %}
             {% endfor%}
         </li>
         {% endfor%}
