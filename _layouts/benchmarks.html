@@ -21,31 +21,17 @@ layout: default
     <div class="benchmarks-intro">
         {{ content }}
     </div>
-
+   
     {% assign folders = "" | split: ", " %}
-    {% for image in site.static_files %}
-        {% if image.path contains 'criterion/' %}
-            {% assign imagepath = image.path | split: "/" %}
-            {% for subpath in imagepath %}
-                {% if forloop.index0 == 3 %}
-                    {% assign folders = folders | append: pathName %}
-                {% endif %}
-            {% endfor %}
-        {% endif %}
-    {% endfor %}
-    {% assign folders = folders | uniq %}
-
-    <!-- The code block below does exactly the same as the one above, which one is cleaner? -->
-    <!-- {% assign folders = "" | split: ", " %}
     {% for folder in site.static_files %}
-    {% if folder.path contains 'criterion/' %}
-    {% assign temp = folder.path | split: 'criterion/' %}
-    {% assign pathName = temp[1] | split: '/' | first %}
-    {% assign pathName = pathName | split: ", " %}
-    {% assign folders = folders | concat: pathName %}
-    {% endif %}
+        {% if folder.path contains 'criterion/' %}
+            {% assign temp = folder.path | split: 'criterion/' %}
+            {% assign pathName = temp[1] | split: '/' | first %}
+            {% assign pathName = pathName | split: ", " %}
+            {% assign folders = folders | concat: pathName %}
+        {% endif %}
     {% endfor%}
-    {% assign folders = folders | uniq %} -->
+    {% assign folders = folders | uniq %}
 
     {% if folders.size == 0 %}
     <p style="color: red;">There are no benchmarks to be displayed.</p>
