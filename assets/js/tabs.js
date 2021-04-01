@@ -26,9 +26,9 @@ window.addEventListener('load', function () {
       link.addEventListener('click', function (event) {
         event.preventDefault();
 
-        liTab = link.parentNode;
-        ulTab = liTab.parentNode;
-        position = getChildPosition(liTab);
+        const liTab = link.parentNode;
+        const ulTab = liTab.parentNode;
+        const position = getChildPosition(liTab);
         if (liTab.className.includes('active')) {
           return;
         }
