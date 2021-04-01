@@ -34,8 +34,9 @@ window.addEventListener('load', function () {
         }
 
         removeActiveClasses(ulTab);
-        tabContentId = ulTab.getAttribute('data-tab');
-        tabContentElement = document.getElementById(tabContentId);
+        const tabContentId = ulTab.getAttribute('data-tab');
+        const tabContentElement = document.getElementById(tabContentId);
+
         removeActiveClasses(tabContentElement);
 
         tabContentElement.querySelectorAll('li')[position].classList.add('active');
