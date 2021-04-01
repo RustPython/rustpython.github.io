@@ -6,7 +6,8 @@ function removeActiveClasses(ulElement) {
     });
   }
 
-  const getChildPosition = function (element) {
+  function getChildPosition(element) {
+
         var parent = element.parentNode;
         var i = 0;
         for (var i = 0; i < parent.children.length; i++) {
