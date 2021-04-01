@@ -30,6 +30,7 @@ gitter: https://gitter.im/rustpython/Lobby
 show_excerpts: true
 contributor_excerpt: "" # TODO: write something here, goes right under "Contributors" heading
 blog-intro: Create an issue if you see something wrong. Edit posts or create new ones via PR on <a target="_blank" href="https://github.com/RustPython/rustpython.github.io">github.com/RustPython/rustpython.github.io</a>
+benchmarks-intro: More information about the benchmarks can be found on <a target="_blank" href="https://github.com/RustPython/RustPython">github.com/RustPython/RustPython</a>
 
 navigation:
   - title: Blog

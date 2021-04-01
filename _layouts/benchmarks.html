@@ -21,7 +21,7 @@ layout: default
     <div class="benchmarks-intro">
         {{ content }}
     </div>
-   
+
     {% assign folders = "" | split: ", " %}
     {% for folder in site.static_files %}
         {% if folder.path contains 'criterion/' %}
@@ -40,7 +40,7 @@ layout: default
     {% else %}
     <ul class="tab" data-tab="benchmarks">
         {% for folder in folders %}
-        <li {% if forloop.index==1 %} class="active" {% endif %}>
+        <li {% if forloop.index==1 %} class="active" {% endif %} style="font-weight: bold;">
             <a href="">{{ folder }}</a>
         </li>
         {% endfor%}
