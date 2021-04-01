@@ -1,4 +1,5 @@
-const removeActiveClasses = function (ulElement) {
+function removeActiveClasses(ulElement) {
+
     const lis = ulElement.querySelectorAll('li');
     Array.prototype.forEach.call(lis, function(li) {
         li.classList.remove('active');
