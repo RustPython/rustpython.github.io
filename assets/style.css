@@ -283,7 +283,7 @@ ul.list-inline {
   line-height: 1.5em;
 }
 
-.blog-intro {
+.blog-intro, .benchmarks-intro {
   background-color: #f6f8fa;
   padding-left: 2em;
   padding-right: 2em;

@@ -1,0 +1,64 @@
+---
+layout: default
+---
+
+<section>
+    <div class="w-80 m-auto mt-2">
+        <div class="d-md-flex">
+            <div class="d-sm-none">
+                <img class="logo" src="{{site.baseurl}}/assets/img/rust-python-logo.svg" alt="RustPython Logo">
+            </div>
+            <div class="pl-md-2">
+                <div class="section-title">RustPython</div>
+                <div class="title">{{ page.title | escape }}</div>
+                <small>{{ site.benchmarks-intro }}</small>
+            </div>
+        </div>
+    </div>
+</section>
+
+<div class="w-80 m-auto mt-2">
+    <div class="benchmarks-intro">
+        {{ content }}
+    </div>
+
+    {% assign folders = "" | split: ", " %}
+    {% for folder in site.static_files %}
+        {% if folder.path contains 'criterion/' %}
+            {% assign temp = folder.path | split: 'criterion/' %}
+            {% assign pathName = temp[1] | split: '/' | first %}
+            {% assign pathName = pathName | split: ", " %}
+            {% assign folders = folders | concat: pathName %}
+        {% endif %}
+    {% endfor%}
+    {% assign folders = folders | uniq %}
+
+    {% if folders.size == 0 %}
+    <p style="color: red;">There are no benchmarks to be displayed.</p>
+    <p>This shouldn't be happening, please contact one of the maintainers
+        through <a href="https://gitter.im/rustpython/Lobby">Gitter</a> to report this problem.</p>
+    {% else %}
+    <ul class="tab" data-tab="benchmarks">
+        {% for folder in folders %}
+        <li {% if forloop.index==1 %} class="active" {% endif %} style="font-weight: bold;">
+            <a href="">{{ folder }}</a>
+        </li>
+        {% endfor%}
+    </ul>
+    <ul class="tab-content" id="benchmarks">
+        {% for folder in folders %}
+        <li {% if forloop.index==1 %} class="active" {% endif %}>
+            <br>
+            {% for image in site.static_files %}
+                {% if image.path contains folder %}
+                <figure>
+                    <img src="{{ site.baseurl }}{{ image.path }}" alt="image" />
+                    <figcaption>{{ image.name }}</figcaption>
+                </figure>
+                {% endif %}
+            {% endfor%}
+        </li>
+        {% endfor%}
+    </ul>
+    {% endif %}
+</div>
