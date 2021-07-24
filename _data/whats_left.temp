@@ -106,8 +106,6 @@ set_iterator.__getattribute__ inherited
 set_iterator.__reduce__ inherited
 list_iterator.__doc__ inherited
 list_iterator.__getattribute__ inherited
-list_iterator.__reduce__ inherited
-list_iterator.__setstate__
 range_iterator.__doc__ inherited
 range_iterator.__getattribute__ inherited
 range_iterator.__length_hint__
@@ -120,9 +118,6 @@ str_iterator.__reduce__ inherited
 str_iterator.__setstate__
 tuple_iterator.__doc__ inherited
 tuple_iterator.__getattribute__ inherited
-tuple_iterator.__length_hint__
-tuple_iterator.__reduce__ inherited
-tuple_iterator.__setstate__
 _abc (entire module)
 _blake2 (entire module)
 _datetime (entire module)
@@ -141,20 +136,15 @@ _symtable (entire module)
 _tracemalloc (entire module)
 cmath (entire module)
 grp (entire module)
-pyexpat (entire module)
-spwd (entire module)
 syslog (entire module)
 xxsubtype (entire module)
 _bootlocale (entire module)
 _strptime (entire module)
 _sysconfigdata__linux_x86_64-linux-gnu (entire module)
 _sysconfigdata__x86_64-linux-gnu (entire module)
-binhex (entire module)
 bz2 (entire module)
 cProfile (entire module)
-cgitb (entire module)
 contextvars (entire module)
-crypt (entire module)
 ctypes (entire module)
 curses (entire module)
 dataclasses (entire module)
@@ -167,16 +157,13 @@ lzma (entire module)
 mailbox (entire module)
 mailcap (entire module)
 modulefinder (entire module)
-nntplib (entire module)
 pickletools (entire module)
-pipes (entire module)
 poplib (entire module)
 profile (entire module)
 pstats (entire module)
 pyclbr (entire module)
 rlcompleter (entire module)
 sitecustomize (entire module)
-smtpd (entire module)
 smtplib (entire module)
 sqlite3 (entire module)
 symbol (entire module)
@@ -219,11 +206,7 @@ _testmultiphase (entire module)
 _uuid (entire module)
 _xxsubinterpreters (entire module)
 _xxtestfuzz (entire module)
-audioop (entire module)
 mmap (entire module)
-nis (entire module)
-ossaudiodev (entire module)
-parser (entire module)
 readline (entire module)
 xxlimited (entire module)
 _pydecimal (exists but not importable: module 'numbers' has no attribute 'Number')
@@ -639,11 +622,7 @@ _socket.VMADDR_CID_HOST
 _socket.VMADDR_PORT_ANY
 _socket.VM_SOCKETS_INVALID_VERSION
 _socket.gethostbyname_ex
-_socket.getservbyport
 _socket.herror
-_socket.if_indextoname
-_socket.if_nameindex
-_socket.if_nametoindex
 _sre.copyright
 _thread._ExceptHookArgs
 _thread._excepthook
@@ -921,6 +900,18 @@ posix.wait4
 posix.waitid
 posix.waitid_result
 posix.writev
+pyexpat.EXPAT_VERSION
+pyexpat.ErrorString
+pyexpat.ExpatError
+pyexpat.XMLParserType
+pyexpat.XML_PARAM_ENTITY_PARSING_ALWAYS
+pyexpat.XML_PARAM_ENTITY_PARSING_NEVER
+pyexpat.XML_PARAM_ENTITY_PARSING_UNLESS_STANDALONE
+pyexpat.error
+pyexpat.expat_CAPI
+pyexpat.features
+pyexpat.native_encoding
+pyexpat.version_info
 select.EPOLLERR
 select.EPOLLET
 select.EPOLLEXCLUSIVE
@@ -1008,6 +999,11 @@ zlib.ZLIB_VERSION
 zlib.__version__
 __future__.CO_FUTURE_ANNOTATIONS
 __future__.annotations
+_osx_support._SYSTEM_VERSION_TUPLE
+_osx_support._cache_default_sysroot
+_osx_support._default_sysroot
+_osx_support._get_system_version_tuple
+_osx_support._supports_arm64_builds
 abc._abc_init
 abc._abc_instancecheck
 abc._abc_register
@@ -1156,58 +1152,6 @@ hashlib.shake_256
 hmac._hashopenssl
 hmac._openssl_md_meths
 hmac.digest
-imghdr.PathLike
-imp.C_BUILTIN
-imp.C_EXTENSION
-imp.IMP_HOOK
-imp.NullImporter
-imp.PKG_DIRECTORY
-imp.PY_CODERESOURCE
-imp.PY_COMPILED
-imp.PY_FROZEN
-imp.PY_RESOURCE
-imp.PY_SOURCE
-imp.SEARCH_ERROR
-imp.SourcelessFileLoader
-imp._ERR_MSG
-imp._HackedGetData
-imp._LoadCompiledCompatibility
-imp._LoadSourceCompatibility
-imp._builtin_from_name
-imp._exec
-imp._fix_co_filename
-imp._load
-imp.acquire_lock
-imp.cache_from_source
-imp.create_dynamic
-imp.find_module
-imp.get_frozen_object
-imp.get_magic
-imp.get_suffixes
-imp.get_tag
-imp.importlib
-imp.init_builtin
-imp.init_frozen
-imp.is_builtin
-imp.is_frozen
-imp.is_frozen_package
-imp.load_compiled
-imp.load_dynamic
-imp.load_module
-imp.load_package
-imp.load_source
-imp.lock_held
-imp.machinery
-imp.new_module
-imp.os
-imp.release_lock
-imp.reload
-imp.source_from_cache
-imp.sys
-imp.tokenize
-imp.types
-imp.util
-imp.warnings
 inspect.CO_ITERABLE_COROUTINE
 inspect.CO_NESTED
 inspect.CO_NEWLOCALS
@@ -1465,7 +1409,6 @@ platform._pypy_sys_version_parser
 platform._sys_version
 platform._sys_version_cache
 platform._sys_version_parser
-plistlib.ParserCreate
 pprint.pp
 pydoc._adjust_cli_sys_path
 pydoc._get_revised_path
@@ -1477,6 +1420,8 @@ runpy.os
 selectors.EpollSelector
 selectors._PollLikeSelector
 shlex.join
+shutil._WIN_DEFAULT_PATHEXT
+shutil._is_immutable
 shutil._ntuple_diskusage
 shutil.disk_usage
 signal.ITIMER_PROF
@@ -1791,14 +1736,12 @@ socket.VMADDR_CID_HOST
 socket.VMADDR_PORT_ANY
 socket.VM_SOCKETS_INVALID_VERSION
 socket.gethostbyname_ex
-socket.getservbyport
 socket.herror
-socket.if_indextoname
-socket.if_nameindex
-socket.if_nametoindex
 socketserver.ForkingMixIn
 socketserver.ForkingTCPServer
 socketserver.ForkingUDPServer
+socketserver._NoThreads
+socketserver._Threads
 string._sentinel_dict
 symtable.CELL
 symtable.Class
@@ -1825,6 +1768,7 @@ symtable.__file__
 symtable._newSymbolTable
 symtable._symtable
 symtable.weakref
+sysconfig._ALWAYS_STR
 tempfile._rmtree
 test.__builtins__
 test.__cached__
@@ -2034,15 +1978,14 @@ urllib.response
 uuid.Enum
 uuid.SafeUUID
 uuid._AIX
-uuid._DARWIN
 uuid._GETTERS
 uuid._LINUX
 uuid._OS_GETTERS
-uuid._WINDOWS
 uuid._generate_time_safe
 uuid._has_uuid_generate_time_safe
 uuid._is_universal
 uuid._load_system_functions
+uuid._platform_system
 uuid._unix_getnode
 uuid._uuid
 uuid.platform
@@ -2055,7 +1998,6 @@ webbrowser.register_standard_browsers
 webbrowser.threading
 xml.dom
 xml.etree
-xml.parsers
 xml.sax
 zipfile._dedupe
 zipfile._difference
@@ -2318,6 +2260,7 @@ posix.times_result ValueError('no signature found') != (iterable=(), /)
 posix.uname_result ValueError('no signature found') != (iterable=(), /)
 pwd.__loader__ ValueError('no signature found') != ()
 pwd.struct_passwd ValueError('no signature found') != (iterable=(), /)
+pyexpat.__loader__ ValueError('no signature found') != ()
 select.__loader__ ValueError('no signature found') != ()
 sys.__loader__ ValueError('no signature found') != ()
 sys.excepthook None != (exc_type, exc_obj, exc_tb)
@@ -2365,6 +2308,7 @@ _collections_abc.range_iterator ValueError('no signature found') != ()
 _collections_abc.set_iterator ValueError('no signature found') != ()
 _collections_abc.str_iterator ValueError('no signature found') != ()
 _collections_abc.tuple_iterator ValueError('no signature found') != ()
+_osx_support._read_output (commandstring) != (commandstring, capture_stderr=False)
 _py_abc.ABCMeta (name, bases, namespace, **kwargs) != (name, bases, namespace, /, **kwargs)
 _pyio.BufferedIOBase ValueError('no signature found') != ()
 _pyio.DocDescriptor ValueError('no signature found') != ()
@@ -2394,6 +2338,7 @@ asyncio._get_running_loop () != None
 asyncio._set_running_loop (loop) != None
 asyncio.get_event_loop () != None
 asyncio.get_running_loop () != None
+asyncio.run (main, *, debug=False) != (main, *, debug=None)
 calendar.calendar None != (theyear, w=2, l=1, c=6, m=3)
 calendar.firstweekday None != ()
 calendar.month None != (theyear, themonth, w=0, l=0)
@@ -2403,14 +2348,6 @@ calendar.prmonth None != (theyear, themonth, w=0, l=0)
 calendar.prweek None != (theweek, width)
 calendar.week None != (theweek, width)
 calendar.weekheader None != (width)
-cgi.BytesIO ValueError('no signature found') != (initial_bytes=b'')
-cgi.FieldStorage (fp=None, headers=None, outerboundary=b'', environ=environ({'ACCEPT_EULA': 'Y', 'AGENT_TOOLSDIRECTORY': '/opt/hostedtoolcache', 'ANDROID_HOME': '/usr/local/lib/android/sdk', 'ANDROID_NDK_HOME': '/usr/local/lib/android/sdk/ndk-bundle', 'ANDROID_NDK_LATEST_HOME': '/usr/local/lib/android/sdk/ndk/22.1.7171670', 'ANDROID_NDK_ROOT': '/usr/local/lib/android/sdk/ndk-bundle', 'ANDROID_SDK_ROOT': '/usr/local/lib/android/sdk', 'ANT_HOME': '/usr/share/ant', 'AZURE_EXTENSION_DIR': '/opt/az/azcliextensions', 'BOOTSTRAP_HASKELL_NONINTERACTIVE': '1', 'CARGO': '/usr/share/rust/.rustup/toolchains/stable-x86_64-unknown-linux-gnu/bin/cargo', 'CARGO_HOME': '/home/runner/.cargo', 'CARGO_MANIFEST_DIR': '/home/runner/work/RustPython/RustPython', 'CARGO_PKG_AUTHORS': 'RustPython Team', 'CARGO_PKG_DESCRIPTION': 'A python interpreter written in rust.', 'CARGO_PKG_HOMEPAGE': '', 'CARGO_PKG_LICENSE': 'MIT', 'CARGO_PKG_LICENSE_FILE': '', 'CARGO_PKG_NAME': 'rustpython', 'CARGO_PKG_REPOSITORY': 'https://github.com/RustPython/RustPython', 'CARGO_PKG_VERSION': '0.1.2', 'CARGO_PKG_VERSION_MAJOR': '0', 'CARGO_PKG_VERSION_MINOR': '1', 'CARGO_PKG_VERSION_PATCH': '2', 'CARGO_PKG_VERSION_PRE': '', 'CHROMEWEBDRIVER': '/usr/local/share/chrome_driver', 'CHROME_BIN': '/usr/bin/google-chrome', 'CI': 'true', 'CONDA': '/usr/share/miniconda', 'DEBIAN_FRONTEND': 'noninteractive', 'DEPLOYMENT_BASEPATH': '/opt/runner', 'DOTNET_MULTILEVEL_LOOKUP': '0', 'DOTNET_NOLOGO': '1', 'DOTNET_SKIP_FIRST_TIME_EXPERIENCE': '1', 'GECKOWEBDRIVER': '/usr/local/share/gecko_driver', 'GITHUB_ACTION': '__run', 'GITHUB_ACTIONS': 'true', 'GITHUB_ACTION_REF': '', 'GITHUB_ACTION_REPOSITORY': '', 'GITHUB_ACTOR': 'coolreader18', 'GITHUB_API_URL': 'https://api.github.com', 'GITHUB_BASE_REF': '', 'GITHUB_ENV': '/home/runner/work/_temp/_runner_file_commands/set_env_8bda053d-a8bc-46e1-9f30-aaf83ef3e481', 'GITHUB_EVENT_NAME': 'schedule', 'GITHUB_EVENT_PATH': '/home/runner/work/_temp/_github_workflow/event.json', 'GITHUB_GRAPHQL_URL': 'https://api.github.com/graphql', 'GITHUB_HEAD_REF': '', 'GITHUB_JOB': 'whatsleft', 'GITHUB_PATH': '/home/runner/work/_temp/_runner_file_commands/add_path_8bda053d-a8bc-46e1-9f30-aaf83ef3e481', 'GITHUB_REF': 'refs/heads/master', 'GITHUB_REPOSITORY': 'RustPython/RustPython', 'GITHUB_REPOSITORY_OWNER': 'RustPython', 'GITHUB_RETENTION_DAYS': '90', 'GITHUB_RUN_ID': '1016816388', 'GITHUB_RUN_NUMBER': '94', 'GITHUB_SERVER_URL': 'https://github.com', 'GITHUB_SHA': '9b980df95be531d99c97fac545bdbd7d6a76fb74', 'GITHUB_WORKFLOW': 'Periodic checks/tasks', 'GITHUB_WORKSPACE': '/home/runner/work/RustPython/RustPython', 'GOROOT_1_14_X64': '/opt/hostedtoolcache/go/1.14.15/x64', 'GOROOT_1_15_X64': '/opt/hostedtoolcache/go/1.15.13/x64', 'GOROOT_1_16_X64': '/opt/hostedtoolcache/go/1.16.5/x64', 'GRAALVM_11_ROOT': '/usr/local/graalvm/graalvm-ce-java11-21.1.0', 'GRADLE_HOME': '/usr/share/gradle-7.1', 'HOME': '/home/runner', 'HOMEBREW_CELLAR': '"/home/linuxbrew/.linuxbrew/Cellar"', 'HOMEBREW_CLEANUP_PERIODIC_FULL_DAYS': '3650', 'HOMEBREW_NO_AUTO_UPDATE': '1', 'HOMEBREW_PREFIX': '"/home/linuxbrew/.linuxbrew"', 'HOMEBREW_REPOSITORY': '"/home/linuxbrew/.linuxbrew/Homebrew"', 'INVOCATION_ID': 'e0ad67f148cd484185d5aa4ddf167e8c', 'ImageOS': 'ubuntu20', 'ImageVersion': '20210628.1', 'JAVA_HOME': '/usr/lib/jvm/adoptopenjdk-11-hotspot-amd64', 'JAVA_HOME_11_X64': '/usr/lib/jvm/adoptopenjdk-11-hotspot-amd64', 'JAVA_HOME_8_X64': '/usr/lib/jvm/adoptopenjdk-8-hotspot-amd64', 'JOURNAL_STREAM': '8:22705', 'LANG': 'C.UTF-8', 'LD_LIBRARY_PATH': '/home/runner/work/RustPython/RustPython/target/release/deps:/home/runner/work/RustPython/RustPython/target/release:/usr/share/rust/.rustup/toolchains/stable-x86_64-unknown-linux-gnu/lib/rustlib/x86_64-unknown-linux-gnu/lib:/home/runner/.rustup/toolchains/stable-x86_64-unknown-linux-gnu/lib', 'LEIN_HOME': '/usr/local/lib/lein', 'LEIN_JAR': '/usr/local/lib/lein/self-installs/leiningen-2.9.6-standalone.jar', 'NVM_DIR': '/home/runner/.nvm', 'OLDPWD': '/home/runner/work/RustPython/RustPython', 'PATH': '/home/runner/.cargo/bin:/home/linuxbrew/.linuxbrew/bin:/home/linuxbrew/.linuxbrew/sbin:/home/runner/.local/bin:/opt/pipx_bin:/usr/share/rust/.cargo/bin:/home/runner/.config/composer/vendor/bin:/usr/local/.ghcup/bin:/home/runner/.dotnet/tools:/snap/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'PERFLOG_LOCATION_SETTING': 'RUNNER_PERFLOG', 'PIPX_BIN_DIR': '/opt/pipx_bin', 'PIPX_HOME': '/opt/pipx', 'POWERSHELL_DISTRIBUTION_CHANNEL': 'GitHub-Actions-ubuntu20', 'PWD': '/home/runner/work/RustPython/RustPython', 'RUNNER_OS': 'Linux', 'RUNNER_PERFLOG': '/home/runner/perflog', 'RUNNER_TEMP': '/home/runner/work/_temp', 'RUNNER_TOOL_CACHE': '/opt/hostedtoolcache', 'RUNNER_TRACKING_ID': 'github_85106591-33ec-46b6-9455-9cee97a969e3', 'RUNNER_USER': 'runner', 'RUNNER_WORKSPACE': '/home/runner/work/RustPython', 'RUSTPYTHONPATH': 'Lib', 'RUSTUP_HOME': '/home/runner/.rustup', 'RUSTUP_TOOLCHAIN': 'stable-x86_64-unknown-linux-gnu', 'RUST_RECURSION_COUNT': '1', 'SELENIUM_JAR_PATH': '/usr/share/java/selenium-server-standalone.jar', 'SHLVL': '2', 'SSL_CERT_DIR': '/usr/lib/ssl/certs', 'SSL_CERT_FILE': '/usr/lib/ssl/certs/ca-certificates.crt', 'SWIFT_PATH': '/usr/share/swift/usr/bin', 'USER': 'runner', 'VCPKG_INSTALLATION_ROOT': '/usr/local/share/vcpkg', 'XDG_CONFIG_HOME': '/home/runner/.config', '_': '/usr/share/rust/.cargo/bin/cargo'}), keep_blank_values=0, strict_parsing=0, limit=None, encoding='utf-8', errors='replace', max_num_fields=None) != (fp=None, headers=None, outerboundary=b'', environ=environ({'SELENIUM_JAR_PATH': '/usr/share/java/selenium-server-standalone.jar', 'CONDA': '/usr/share/miniconda', 'GITHUB_WORKSPACE': '/home/runner/work/RustPython/RustPython', 'JAVA_HOME_11_X64': '/usr/lib/jvm/adoptopenjdk-11-hotspot-amd64', 'GITHUB_PATH': '/home/runner/work/_temp/_runner_file_commands/add_path_8bda053d-a8bc-46e1-9f30-aaf83ef3e481', 'GITHUB_ACTION': '__run', 'JAVA_HOME': '/usr/lib/jvm/adoptopenjdk-11-hotspot-amd64', 'GITHUB_RUN_NUMBER': '94', 'GRADLE_HOME': '/usr/share/gradle-7.1', 'XDG_CONFIG_HOME': '/home/runner/.config', 'DOTNET_SKIP_FIRST_TIME_EXPERIENCE': '1', 'ANT_HOME': '/usr/share/ant', 'JAVA_HOME_8_X64': '/usr/lib/jvm/adoptopenjdk-8-hotspot-amd64', 'HOMEBREW_PREFIX': '"/home/linuxbrew/.linuxbrew"', 'HOMEBREW_CLEANUP_PERIODIC_FULL_DAYS': '3650', 'BOOTSTRAP_HASKELL_NONINTERACTIVE': '1', 'PIPX_BIN_DIR': '/opt/pipx_bin', 'PWD': '/home/runner/work/RustPython/RustPython/extra_tests', 'DEPLOYMENT_BASEPATH': '/opt/runner', 'GITHUB_ACTIONS': 'true', 'ANDROID_NDK_LATEST_HOME': '/usr/local/lib/android/sdk/ndk/22.1.7171670', 'GITHUB_SHA': '9b980df95be531d99c97fac545bdbd7d6a76fb74', 'POWERSHELL_DISTRIBUTION_CHANNEL': 'GitHub-Actions-ubuntu20', 'DOTNET_MULTILEVEL_LOOKUP': '0', 'GITHUB_REF': 'refs/heads/master', 'RUNNER_OS': 'Linux', 'HOME': '/home/runner', 'GITHUB_API_URL': 'https://api.github.com', 'LANG': 'C.UTF-8', 'RUNNER_TRACKING_ID': 'github_85106591-33ec-46b6-9455-9cee97a969e3', 'RUSTPYTHONPATH': 'Lib', 'RUNNER_TEMP': '/home/runner/work/_temp', 'GITHUB_ENV': '/home/runner/work/_temp/_runner_file_commands/set_env_8bda053d-a8bc-46e1-9f30-aaf83ef3e481', 'INVOCATION_ID': 'e0ad67f148cd484185d5aa4ddf167e8c', 'GITHUB_EVENT_PATH': '/home/runner/work/_temp/_github_workflow/event.json', 'GITHUB_EVENT_NAME': 'schedule', 'GITHUB_RUN_ID': '1016816388', 'ANDROID_NDK_HOME': '/usr/local/lib/android/sdk/ndk-bundle', 'HOMEBREW_NO_AUTO_UPDATE': '1', 'GITHUB_ACTOR': 'coolreader18', 'NVM_DIR': '/home/runner/.nvm', 'ANDROID_HOME': '/usr/local/lib/android/sdk', 'GOROOT_1_14_X64': '/opt/hostedtoolcache/go/1.14.15/x64', 'GITHUB_GRAPHQL_URL': 'https://api.github.com/graphql', 'ACCEPT_EULA': 'Y', 'RUNNER_USER': 'runner', 'USER': 'runner', 'GITHUB_SERVER_URL': 'https://github.com', 'HOMEBREW_CELLAR': '"/home/linuxbrew/.linuxbrew/Cellar"', 'PIPX_HOME': '/opt/pipx', 'GECKOWEBDRIVER': '/usr/local/share/gecko_driver', 'CHROMEWEBDRIVER': '/usr/local/share/chrome_driver', 'SHLVL': '2', 'ANDROID_SDK_ROOT': '/usr/local/lib/android/sdk', 'VCPKG_INSTALLATION_ROOT': '/usr/local/share/vcpkg', 'RUNNER_TOOL_CACHE': '/opt/hostedtoolcache', 'HOMEBREW_REPOSITORY': '"/home/linuxbrew/.linuxbrew/Homebrew"', 'ImageVersion': '20210628.1', 'DOTNET_NOLOGO': '1', 'GRAALVM_11_ROOT': '/usr/local/graalvm/graalvm-ce-java11-21.1.0', 'GITHUB_JOB': 'whatsleft', 'AZURE_EXTENSION_DIR': '/opt/az/azcliextensions', 'PERFLOG_LOCATION_SETTING': 'RUNNER_PERFLOG', 'GITHUB_REPOSITORY': 'RustPython/RustPython', 'ANDROID_NDK_ROOT': '/usr/local/lib/android/sdk/ndk-bundle', 'CHROME_BIN': '/usr/bin/google-chrome', 'GITHUB_RETENTION_DAYS': '90', 'JOURNAL_STREAM': '8:22705', 'RUNNER_WORKSPACE': '/home/runner/work/RustPython', 'LEIN_HOME': '/usr/local/lib/lein', 'LEIN_JAR': '/usr/local/lib/lein/self-installs/leiningen-2.9.6-standalone.jar', 'GITHUB_ACTION_REPOSITORY': '', 'PATH': '/home/linuxbrew/.linuxbrew/bin:/home/linuxbrew/.linuxbrew/sbin:/home/runner/.local/bin:/opt/pipx_bin:/usr/share/rust/.cargo/bin:/home/runner/.config/composer/vendor/bin:/usr/local/.ghcup/bin:/home/runner/.dotnet/tools:/snap/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'RUNNER_PERFLOG': '/home/runner/perflog', 'GITHUB_BASE_REF': '', 'CI': 'true', 'SWIFT_PATH': '/usr/share/swift/usr/bin', 'ImageOS': 'ubuntu20', 'GITHUB_REPOSITORY_OWNER': 'RustPython', 'GITHUB_HEAD_REF': '', 'GITHUB_ACTION_REF': '', 'GITHUB_WORKFLOW': 'Periodic checks/tasks', 'DEBIAN_FRONTEND': 'noninteractive', 'GOROOT_1_15_X64': '/opt/hostedtoolcache/go/1.15.13/x64', 'AGENT_TOOLSDIRECTORY': '/opt/hostedtoolcache', 'OLDPWD': '/home/runner/work/RustPython/RustPython', 'GOROOT_1_16_X64': '/opt/hostedtoolcache/go/1.16.5/x64', '_': '/usr/bin/python3'}), keep_blank_values=0, strict_parsing=0, limit=None, encoding='utf-8', errors='replace', max_num_fields=None)
-cgi.Mapping ValueError('no signature found') != ()
-cgi.StringIO ValueError('no signature found') != (initial_value='', newline='\n')
-cgi.TextIOWrapper ValueError('no signature found') != (buffer, encoding=None, errors=None, newline=None, line_buffering=False, write_through=False)
-cgi.parse (fp=None, environ=environ({'ACCEPT_EULA': 'Y', 'AGENT_TOOLSDIRECTORY': '/opt/hostedtoolcache', 'ANDROID_HOME': '/usr/local/lib/android/sdk', 'ANDROID_NDK_HOME': '/usr/local/lib/android/sdk/ndk-bundle', 'ANDROID_NDK_LATEST_HOME': '/usr/local/lib/android/sdk/ndk/22.1.7171670', 'ANDROID_NDK_ROOT': '/usr/local/lib/android/sdk/ndk-bundle', 'ANDROID_SDK_ROOT': '/usr/local/lib/android/sdk', 'ANT_HOME': '/usr/share/ant', 'AZURE_EXTENSION_DIR': '/opt/az/azcliextensions', 'BOOTSTRAP_HASKELL_NONINTERACTIVE': '1', 'CARGO': '/usr/share/rust/.rustup/toolchains/stable-x86_64-unknown-linux-gnu/bin/cargo', 'CARGO_HOME': '/home/runner/.cargo', 'CARGO_MANIFEST_DIR': '/home/runner/work/RustPython/RustPython', 'CARGO_PKG_AUTHORS': 'RustPython Team', 'CARGO_PKG_DESCRIPTION': 'A python interpreter written in rust.', 'CARGO_PKG_HOMEPAGE': '', 'CARGO_PKG_LICENSE': 'MIT', 'CARGO_PKG_LICENSE_FILE': '', 'CARGO_PKG_NAME': 'rustpython', 'CARGO_PKG_REPOSITORY': 'https://github.com/RustPython/RustPython', 'CARGO_PKG_VERSION': '0.1.2', 'CARGO_PKG_VERSION_MAJOR': '0', 'CARGO_PKG_VERSION_MINOR': '1', 'CARGO_PKG_VERSION_PATCH': '2', 'CARGO_PKG_VERSION_PRE': '', 'CHROMEWEBDRIVER': '/usr/local/share/chrome_driver', 'CHROME_BIN': '/usr/bin/google-chrome', 'CI': 'true', 'CONDA': '/usr/share/miniconda', 'DEBIAN_FRONTEND': 'noninteractive', 'DEPLOYMENT_BASEPATH': '/opt/runner', 'DOTNET_MULTILEVEL_LOOKUP': '0', 'DOTNET_NOLOGO': '1', 'DOTNET_SKIP_FIRST_TIME_EXPERIENCE': '1', 'GECKOWEBDRIVER': '/usr/local/share/gecko_driver', 'GITHUB_ACTION': '__run', 'GITHUB_ACTIONS': 'true', 'GITHUB_ACTION_REF': '', 'GITHUB_ACTION_REPOSITORY': '', 'GITHUB_ACTOR': 'coolreader18', 'GITHUB_API_URL': 'https://api.github.com', 'GITHUB_BASE_REF': '', 'GITHUB_ENV': '/home/runner/work/_temp/_runner_file_commands/set_env_8bda053d-a8bc-46e1-9f30-aaf83ef3e481', 'GITHUB_EVENT_NAME': 'schedule', 'GITHUB_EVENT_PATH': '/home/runner/work/_temp/_github_workflow/event.json', 'GITHUB_GRAPHQL_URL': 'https://api.github.com/graphql', 'GITHUB_HEAD_REF': '', 'GITHUB_JOB': 'whatsleft', 'GITHUB_PATH': '/home/runner/work/_temp/_runner_file_commands/add_path_8bda053d-a8bc-46e1-9f30-aaf83ef3e481', 'GITHUB_REF': 'refs/heads/master', 'GITHUB_REPOSITORY': 'RustPython/RustPython', 'GITHUB_REPOSITORY_OWNER': 'RustPython', 'GITHUB_RETENTION_DAYS': '90', 'GITHUB_RUN_ID': '1016816388', 'GITHUB_RUN_NUMBER': '94', 'GITHUB_SERVER_URL': 'https://github.com', 'GITHUB_SHA': '9b980df95be531d99c97fac545bdbd7d6a76fb74', 'GITHUB_WORKFLOW': 'Periodic checks/tasks', 'GITHUB_WORKSPACE': '/home/runner/work/RustPython/RustPython', 'GOROOT_1_14_X64': '/opt/hostedtoolcache/go/1.14.15/x64', 'GOROOT_1_15_X64': '/opt/hostedtoolcache/go/1.15.13/x64', 'GOROOT_1_16_X64': '/opt/hostedtoolcache/go/1.16.5/x64', 'GRAALVM_11_ROOT': '/usr/local/graalvm/graalvm-ce-java11-21.1.0', 'GRADLE_HOME': '/usr/share/gradle-7.1', 'HOME': '/home/runner', 'HOMEBREW_CELLAR': '"/home/linuxbrew/.linuxbrew/Cellar"', 'HOMEBREW_CLEANUP_PERIODIC_FULL_DAYS': '3650', 'HOMEBREW_NO_AUTO_UPDATE': '1', 'HOMEBREW_PREFIX': '"/home/linuxbrew/.linuxbrew"', 'HOMEBREW_REPOSITORY': '"/home/linuxbrew/.linuxbrew/Homebrew"', 'INVOCATION_ID': 'e0ad67f148cd484185d5aa4ddf167e8c', 'ImageOS': 'ubuntu20', 'ImageVersion': '20210628.1', 'JAVA_HOME': '/usr/lib/jvm/adoptopenjdk-11-hotspot-amd64', 'JAVA_HOME_11_X64': '/usr/lib/jvm/adoptopenjdk-11-hotspot-amd64', 'JAVA_HOME_8_X64': '/usr/lib/jvm/adoptopenjdk-8-hotspot-amd64', 'JOURNAL_STREAM': '8:22705', 'LANG': 'C.UTF-8', 'LD_LIBRARY_PATH': '/home/runner/work/RustPython/RustPython/target/release/deps:/home/runner/work/RustPython/RustPython/target/release:/usr/share/rust/.rustup/toolchains/stable-x86_64-unknown-linux-gnu/lib/rustlib/x86_64-unknown-linux-gnu/lib:/home/runner/.rustup/toolchains/stable-x86_64-unknown-linux-gnu/lib', 'LEIN_HOME': '/usr/local/lib/lein', 'LEIN_JAR': '/usr/local/lib/lein/self-installs/leiningen-2.9.6-standalone.jar', 'NVM_DIR': '/home/runner/.nvm', 'OLDPWD': '/home/runner/work/RustPython/RustPython', 'PATH': '/home/runner/.cargo/bin:/home/linuxbrew/.linuxbrew/bin:/home/linuxbrew/.linuxbrew/sbin:/home/runner/.local/bin:/opt/pipx_bin:/usr/share/rust/.cargo/bin:/home/runner/.config/composer/vendor/bin:/usr/local/.ghcup/bin:/home/runner/.dotnet/tools:/snap/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'PERFLOG_LOCATION_SETTING': 'RUNNER_PERFLOG', 'PIPX_BIN_DIR': '/opt/pipx_bin', 'PIPX_HOME': '/opt/pipx', 'POWERSHELL_DISTRIBUTION_CHANNEL': 'GitHub-Actions-ubuntu20', 'PWD': '/home/runner/work/RustPython/RustPython', 'RUNNER_OS': 'Linux', 'RUNNER_PERFLOG': '/home/runner/perflog', 'RUNNER_TEMP': '/home/runner/work/_temp', 'RUNNER_TOOL_CACHE': '/opt/hostedtoolcache', 'RUNNER_TRACKING_ID': 'github_85106591-33ec-46b6-9455-9cee97a969e3', 'RUNNER_USER': 'runner', 'RUNNER_WORKSPACE': '/home/runner/work/RustPython', 'RUSTPYTHONPATH': 'Lib', 'RUSTUP_HOME': '/home/runner/.rustup', 'RUSTUP_TOOLCHAIN': 'stable-x86_64-unknown-linux-gnu', 'RUST_RECURSION_COUNT': '1', 'SELENIUM_JAR_PATH': '/usr/share/java/selenium-server-standalone.jar', 'SHLVL': '2', 'SSL_CERT_DIR': '/usr/lib/ssl/certs', 'SSL_CERT_FILE': '/usr/lib/ssl/certs/ca-certificates.crt', 'SWIFT_PATH': '/usr/share/swift/usr/bin', 'USER': 'runner', 'VCPKG_INSTALLATION_ROOT': '/usr/local/share/vcpkg', 'XDG_CONFIG_HOME': '/home/runner/.config', '_': '/usr/share/rust/.cargo/bin/cargo'}), keep_blank_values=0, strict_parsing=0) != (fp=None, environ=environ({'SELENIUM_JAR_PATH': '/usr/share/java/selenium-server-standalone.jar', 'CONDA': '/usr/share/miniconda', 'GITHUB_WORKSPACE': '/home/runner/work/RustPython/RustPython', 'JAVA_HOME_11_X64': '/usr/lib/jvm/adoptopenjdk-11-hotspot-amd64', 'GITHUB_PATH': '/home/runner/work/_temp/_runner_file_commands/add_path_8bda053d-a8bc-46e1-9f30-aaf83ef3e481', 'GITHUB_ACTION': '__run', 'JAVA_HOME': '/usr/lib/jvm/adoptopenjdk-11-hotspot-amd64', 'GITHUB_RUN_NUMBER': '94', 'GRADLE_HOME': '/usr/share/gradle-7.1', 'XDG_CONFIG_HOME': '/home/runner/.config', 'DOTNET_SKIP_FIRST_TIME_EXPERIENCE': '1', 'ANT_HOME': '/usr/share/ant', 'JAVA_HOME_8_X64': '/usr/lib/jvm/adoptopenjdk-8-hotspot-amd64', 'HOMEBREW_PREFIX': '"/home/linuxbrew/.linuxbrew"', 'HOMEBREW_CLEANUP_PERIODIC_FULL_DAYS': '3650', 'BOOTSTRAP_HASKELL_NONINTERACTIVE': '1', 'PIPX_BIN_DIR': '/opt/pipx_bin', 'PWD': '/home/runner/work/RustPython/RustPython/extra_tests', 'DEPLOYMENT_BASEPATH': '/opt/runner', 'GITHUB_ACTIONS': 'true', 'ANDROID_NDK_LATEST_HOME': '/usr/local/lib/android/sdk/ndk/22.1.7171670', 'GITHUB_SHA': '9b980df95be531d99c97fac545bdbd7d6a76fb74', 'POWERSHELL_DISTRIBUTION_CHANNEL': 'GitHub-Actions-ubuntu20', 'DOTNET_MULTILEVEL_LOOKUP': '0', 'GITHUB_REF': 'refs/heads/master', 'RUNNER_OS': 'Linux', 'HOME': '/home/runner', 'GITHUB_API_URL': 'https://api.github.com', 'LANG': 'C.UTF-8', 'RUNNER_TRACKING_ID': 'github_85106591-33ec-46b6-9455-9cee97a969e3', 'RUSTPYTHONPATH': 'Lib', 'RUNNER_TEMP': '/home/runner/work/_temp', 'GITHUB_ENV': '/home/runner/work/_temp/_runner_file_commands/set_env_8bda053d-a8bc-46e1-9f30-aaf83ef3e481', 'INVOCATION_ID': 'e0ad67f148cd484185d5aa4ddf167e8c', 'GITHUB_EVENT_PATH': '/home/runner/work/_temp/_github_workflow/event.json', 'GITHUB_EVENT_NAME': 'schedule', 'GITHUB_RUN_ID': '1016816388', 'ANDROID_NDK_HOME': '/usr/local/lib/android/sdk/ndk-bundle', 'HOMEBREW_NO_AUTO_UPDATE': '1', 'GITHUB_ACTOR': 'coolreader18', 'NVM_DIR': '/home/runner/.nvm', 'ANDROID_HOME': '/usr/local/lib/android/sdk', 'GOROOT_1_14_X64': '/opt/hostedtoolcache/go/1.14.15/x64', 'GITHUB_GRAPHQL_URL': 'https://api.github.com/graphql', 'ACCEPT_EULA': 'Y', 'RUNNER_USER': 'runner', 'USER': 'runner', 'GITHUB_SERVER_URL': 'https://github.com', 'HOMEBREW_CELLAR': '"/home/linuxbrew/.linuxbrew/Cellar"', 'PIPX_HOME': '/opt/pipx', 'GECKOWEBDRIVER': '/usr/local/share/gecko_driver', 'CHROMEWEBDRIVER': '/usr/local/share/chrome_driver', 'SHLVL': '2', 'ANDROID_SDK_ROOT': '/usr/local/lib/android/sdk', 'VCPKG_INSTALLATION_ROOT': '/usr/local/share/vcpkg', 'RUNNER_TOOL_CACHE': '/opt/hostedtoolcache', 'HOMEBREW_REPOSITORY': '"/home/linuxbrew/.linuxbrew/Homebrew"', 'ImageVersion': '20210628.1', 'DOTNET_NOLOGO': '1', 'GRAALVM_11_ROOT': '/usr/local/graalvm/graalvm-ce-java11-21.1.0', 'GITHUB_JOB': 'whatsleft', 'AZURE_EXTENSION_DIR': '/opt/az/azcliextensions', 'PERFLOG_LOCATION_SETTING': 'RUNNER_PERFLOG', 'GITHUB_REPOSITORY': 'RustPython/RustPython', 'ANDROID_NDK_ROOT': '/usr/local/lib/android/sdk/ndk-bundle', 'CHROME_BIN': '/usr/bin/google-chrome', 'GITHUB_RETENTION_DAYS': '90', 'JOURNAL_STREAM': '8:22705', 'RUNNER_WORKSPACE': '/home/runner/work/RustPython', 'LEIN_HOME': '/usr/local/lib/lein', 'LEIN_JAR': '/usr/local/lib/lein/self-installs/leiningen-2.9.6-standalone.jar', 'GITHUB_ACTION_REPOSITORY': '', 'PATH': '/home/linuxbrew/.linuxbrew/bin:/home/linuxbrew/.linuxbrew/sbin:/home/runner/.local/bin:/opt/pipx_bin:/usr/share/rust/.cargo/bin:/home/runner/.config/composer/vendor/bin:/usr/local/.ghcup/bin:/home/runner/.dotnet/tools:/snap/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'RUNNER_PERFLOG': '/home/runner/perflog', 'GITHUB_BASE_REF': '', 'CI': 'true', 'SWIFT_PATH': '/usr/share/swift/usr/bin', 'ImageOS': 'ubuntu20', 'GITHUB_REPOSITORY_OWNER': 'RustPython', 'GITHUB_HEAD_REF': '', 'GITHUB_ACTION_REF': '', 'GITHUB_WORKFLOW': 'Periodic checks/tasks', 'DEBIAN_FRONTEND': 'noninteractive', 'GOROOT_1_15_X64': '/opt/hostedtoolcache/go/1.15.13/x64', 'AGENT_TOOLSDIRECTORY': '/opt/hostedtoolcache', 'OLDPWD': '/home/runner/work/RustPython/RustPython', 'GOROOT_1_16_X64': '/opt/hostedtoolcache/go/1.16.5/x64', '_': '/usr/bin/python3'}), keep_blank_values=0, strict_parsing=0)
-cgi.print_environ (environ=environ({'ACCEPT_EULA': 'Y', 'AGENT_TOOLSDIRECTORY': '/opt/hostedtoolcache', 'ANDROID_HOME': '/usr/local/lib/android/sdk', 'ANDROID_NDK_HOME': '/usr/local/lib/android/sdk/ndk-bundle', 'ANDROID_NDK_LATEST_HOME': '/usr/local/lib/android/sdk/ndk/22.1.7171670', 'ANDROID_NDK_ROOT': '/usr/local/lib/android/sdk/ndk-bundle', 'ANDROID_SDK_ROOT': '/usr/local/lib/android/sdk', 'ANT_HOME': '/usr/share/ant', 'AZURE_EXTENSION_DIR': '/opt/az/azcliextensions', 'BOOTSTRAP_HASKELL_NONINTERACTIVE': '1', 'CARGO': '/usr/share/rust/.rustup/toolchains/stable-x86_64-unknown-linux-gnu/bin/cargo', 'CARGO_HOME': '/home/runner/.cargo', 'CARGO_MANIFEST_DIR': '/home/runner/work/RustPython/RustPython', 'CARGO_PKG_AUTHORS': 'RustPython Team', 'CARGO_PKG_DESCRIPTION': 'A python interpreter written in rust.', 'CARGO_PKG_HOMEPAGE': '', 'CARGO_PKG_LICENSE': 'MIT', 'CARGO_PKG_LICENSE_FILE': '', 'CARGO_PKG_NAME': 'rustpython', 'CARGO_PKG_REPOSITORY': 'https://github.com/RustPython/RustPython', 'CARGO_PKG_VERSION': '0.1.2', 'CARGO_PKG_VERSION_MAJOR': '0', 'CARGO_PKG_VERSION_MINOR': '1', 'CARGO_PKG_VERSION_PATCH': '2', 'CARGO_PKG_VERSION_PRE': '', 'CHROMEWEBDRIVER': '/usr/local/share/chrome_driver', 'CHROME_BIN': '/usr/bin/google-chrome', 'CI': 'true', 'CONDA': '/usr/share/miniconda', 'DEBIAN_FRONTEND': 'noninteractive', 'DEPLOYMENT_BASEPATH': '/opt/runner', 'DOTNET_MULTILEVEL_LOOKUP': '0', 'DOTNET_NOLOGO': '1', 'DOTNET_SKIP_FIRST_TIME_EXPERIENCE': '1', 'GECKOWEBDRIVER': '/usr/local/share/gecko_driver', 'GITHUB_ACTION': '__run', 'GITHUB_ACTIONS': 'true', 'GITHUB_ACTION_REF': '', 'GITHUB_ACTION_REPOSITORY': '', 'GITHUB_ACTOR': 'coolreader18', 'GITHUB_API_URL': 'https://api.github.com', 'GITHUB_BASE_REF': '', 'GITHUB_ENV': '/home/runner/work/_temp/_runner_file_commands/set_env_8bda053d-a8bc-46e1-9f30-aaf83ef3e481', 'GITHUB_EVENT_NAME': 'schedule', 'GITHUB_EVENT_PATH': '/home/runner/work/_temp/_github_workflow/event.json', 'GITHUB_GRAPHQL_URL': 'https://api.github.com/graphql', 'GITHUB_HEAD_REF': '', 'GITHUB_JOB': 'whatsleft', 'GITHUB_PATH': '/home/runner/work/_temp/_runner_file_commands/add_path_8bda053d-a8bc-46e1-9f30-aaf83ef3e481', 'GITHUB_REF': 'refs/heads/master', 'GITHUB_REPOSITORY': 'RustPython/RustPython', 'GITHUB_REPOSITORY_OWNER': 'RustPython', 'GITHUB_RETENTION_DAYS': '90', 'GITHUB_RUN_ID': '1016816388', 'GITHUB_RUN_NUMBER': '94', 'GITHUB_SERVER_URL': 'https://github.com', 'GITHUB_SHA': '9b980df95be531d99c97fac545bdbd7d6a76fb74', 'GITHUB_WORKFLOW': 'Periodic checks/tasks', 'GITHUB_WORKSPACE': '/home/runner/work/RustPython/RustPython', 'GOROOT_1_14_X64': '/opt/hostedtoolcache/go/1.14.15/x64', 'GOROOT_1_15_X64': '/opt/hostedtoolcache/go/1.15.13/x64', 'GOROOT_1_16_X64': '/opt/hostedtoolcache/go/1.16.5/x64', 'GRAALVM_11_ROOT': '/usr/local/graalvm/graalvm-ce-java11-21.1.0', 'GRADLE_HOME': '/usr/share/gradle-7.1', 'HOME': '/home/runner', 'HOMEBREW_CELLAR': '"/home/linuxbrew/.linuxbrew/Cellar"', 'HOMEBREW_CLEANUP_PERIODIC_FULL_DAYS': '3650', 'HOMEBREW_NO_AUTO_UPDATE': '1', 'HOMEBREW_PREFIX': '"/home/linuxbrew/.linuxbrew"', 'HOMEBREW_REPOSITORY': '"/home/linuxbrew/.linuxbrew/Homebrew"', 'INVOCATION_ID': 'e0ad67f148cd484185d5aa4ddf167e8c', 'ImageOS': 'ubuntu20', 'ImageVersion': '20210628.1', 'JAVA_HOME': '/usr/lib/jvm/adoptopenjdk-11-hotspot-amd64', 'JAVA_HOME_11_X64': '/usr/lib/jvm/adoptopenjdk-11-hotspot-amd64', 'JAVA_HOME_8_X64': '/usr/lib/jvm/adoptopenjdk-8-hotspot-amd64', 'JOURNAL_STREAM': '8:22705', 'LANG': 'C.UTF-8', 'LD_LIBRARY_PATH': '/home/runner/work/RustPython/RustPython/target/release/deps:/home/runner/work/RustPython/RustPython/target/release:/usr/share/rust/.rustup/toolchains/stable-x86_64-unknown-linux-gnu/lib/rustlib/x86_64-unknown-linux-gnu/lib:/home/runner/.rustup/toolchains/stable-x86_64-unknown-linux-gnu/lib', 'LEIN_HOME': '/usr/local/lib/lein', 'LEIN_JAR': '/usr/local/lib/lein/self-installs/leiningen-2.9.6-standalone.jar', 'NVM_DIR': '/home/runner/.nvm', 'OLDPWD': '/home/runner/work/RustPython/RustPython', 'PATH': '/home/runner/.cargo/bin:/home/linuxbrew/.linuxbrew/bin:/home/linuxbrew/.linuxbrew/sbin:/home/runner/.local/bin:/opt/pipx_bin:/usr/share/rust/.cargo/bin:/home/runner/.config/composer/vendor/bin:/usr/local/.ghcup/bin:/home/runner/.dotnet/tools:/snap/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'PERFLOG_LOCATION_SETTING': 'RUNNER_PERFLOG', 'PIPX_BIN_DIR': '/opt/pipx_bin', 'PIPX_HOME': '/opt/pipx', 'POWERSHELL_DISTRIBUTION_CHANNEL': 'GitHub-Actions-ubuntu20', 'PWD': '/home/runner/work/RustPython/RustPython', 'RUNNER_OS': 'Linux', 'RUNNER_PERFLOG': '/home/runner/perflog', 'RUNNER_TEMP': '/home/runner/work/_temp', 'RUNNER_TOOL_CACHE': '/opt/hostedtoolcache', 'RUNNER_TRACKING_ID': 'github_85106591-33ec-46b6-9455-9cee97a969e3', 'RUNNER_USER': 'runner', 'RUNNER_WORKSPACE': '/home/runner/work/RustPython', 'RUSTPYTHONPATH': 'Lib', 'RUSTUP_HOME': '/home/runner/.rustup', 'RUSTUP_TOOLCHAIN': 'stable-x86_64-unknown-linux-gnu', 'RUST_RECURSION_COUNT': '1', 'SELENIUM_JAR_PATH': '/usr/share/java/selenium-server-standalone.jar', 'SHLVL': '2', 'SSL_CERT_DIR': '/usr/lib/ssl/certs', 'SSL_CERT_FILE': '/usr/lib/ssl/certs/ca-certificates.crt', 'SWIFT_PATH': '/usr/share/swift/usr/bin', 'USER': 'runner', 'VCPKG_INSTALLATION_ROOT': '/usr/local/share/vcpkg', 'XDG_CONFIG_HOME': '/home/runner/.config', '_': '/usr/share/rust/.cargo/bin/cargo'})) != (environ=environ({'SELENIUM_JAR_PATH': '/usr/share/java/selenium-server-standalone.jar', 'CONDA': '/usr/share/miniconda', 'GITHUB_WORKSPACE': '/home/runner/work/RustPython/RustPython', 'JAVA_HOME_11_X64': '/usr/lib/jvm/adoptopenjdk-11-hotspot-amd64', 'GITHUB_PATH': '/home/runner/work/_temp/_runner_file_commands/add_path_8bda053d-a8bc-46e1-9f30-aaf83ef3e481', 'GITHUB_ACTION': '__run', 'JAVA_HOME': '/usr/lib/jvm/adoptopenjdk-11-hotspot-amd64', 'GITHUB_RUN_NUMBER': '94', 'GRADLE_HOME': '/usr/share/gradle-7.1', 'XDG_CONFIG_HOME': '/home/runner/.config', 'DOTNET_SKIP_FIRST_TIME_EXPERIENCE': '1', 'ANT_HOME': '/usr/share/ant', 'JAVA_HOME_8_X64': '/usr/lib/jvm/adoptopenjdk-8-hotspot-amd64', 'HOMEBREW_PREFIX': '"/home/linuxbrew/.linuxbrew"', 'HOMEBREW_CLEANUP_PERIODIC_FULL_DAYS': '3650', 'BOOTSTRAP_HASKELL_NONINTERACTIVE': '1', 'PIPX_BIN_DIR': '/opt/pipx_bin', 'PWD': '/home/runner/work/RustPython/RustPython/extra_tests', 'DEPLOYMENT_BASEPATH': '/opt/runner', 'GITHUB_ACTIONS': 'true', 'ANDROID_NDK_LATEST_HOME': '/usr/local/lib/android/sdk/ndk/22.1.7171670', 'GITHUB_SHA': '9b980df95be531d99c97fac545bdbd7d6a76fb74', 'POWERSHELL_DISTRIBUTION_CHANNEL': 'GitHub-Actions-ubuntu20', 'DOTNET_MULTILEVEL_LOOKUP': '0', 'GITHUB_REF': 'refs/heads/master', 'RUNNER_OS': 'Linux', 'HOME': '/home/runner', 'GITHUB_API_URL': 'https://api.github.com', 'LANG': 'C.UTF-8', 'RUNNER_TRACKING_ID': 'github_85106591-33ec-46b6-9455-9cee97a969e3', 'RUSTPYTHONPATH': 'Lib', 'RUNNER_TEMP': '/home/runner/work/_temp', 'GITHUB_ENV': '/home/runner/work/_temp/_runner_file_commands/set_env_8bda053d-a8bc-46e1-9f30-aaf83ef3e481', 'INVOCATION_ID': 'e0ad67f148cd484185d5aa4ddf167e8c', 'GITHUB_EVENT_PATH': '/home/runner/work/_temp/_github_workflow/event.json', 'GITHUB_EVENT_NAME': 'schedule', 'GITHUB_RUN_ID': '1016816388', 'ANDROID_NDK_HOME': '/usr/local/lib/android/sdk/ndk-bundle', 'HOMEBREW_NO_AUTO_UPDATE': '1', 'GITHUB_ACTOR': 'coolreader18', 'NVM_DIR': '/home/runner/.nvm', 'ANDROID_HOME': '/usr/local/lib/android/sdk', 'GOROOT_1_14_X64': '/opt/hostedtoolcache/go/1.14.15/x64', 'GITHUB_GRAPHQL_URL': 'https://api.github.com/graphql', 'ACCEPT_EULA': 'Y', 'RUNNER_USER': 'runner', 'USER': 'runner', 'GITHUB_SERVER_URL': 'https://github.com', 'HOMEBREW_CELLAR': '"/home/linuxbrew/.linuxbrew/Cellar"', 'PIPX_HOME': '/opt/pipx', 'GECKOWEBDRIVER': '/usr/local/share/gecko_driver', 'CHROMEWEBDRIVER': '/usr/local/share/chrome_driver', 'SHLVL': '2', 'ANDROID_SDK_ROOT': '/usr/local/lib/android/sdk', 'VCPKG_INSTALLATION_ROOT': '/usr/local/share/vcpkg', 'RUNNER_TOOL_CACHE': '/opt/hostedtoolcache', 'HOMEBREW_REPOSITORY': '"/home/linuxbrew/.linuxbrew/Homebrew"', 'ImageVersion': '20210628.1', 'DOTNET_NOLOGO': '1', 'GRAALVM_11_ROOT': '/usr/local/graalvm/graalvm-ce-java11-21.1.0', 'GITHUB_JOB': 'whatsleft', 'AZURE_EXTENSION_DIR': '/opt/az/azcliextensions', 'PERFLOG_LOCATION_SETTING': 'RUNNER_PERFLOG', 'GITHUB_REPOSITORY': 'RustPython/RustPython', 'ANDROID_NDK_ROOT': '/usr/local/lib/android/sdk/ndk-bundle', 'CHROME_BIN': '/usr/bin/google-chrome', 'GITHUB_RETENTION_DAYS': '90', 'JOURNAL_STREAM': '8:22705', 'RUNNER_WORKSPACE': '/home/runner/work/RustPython', 'LEIN_HOME': '/usr/local/lib/lein', 'LEIN_JAR': '/usr/local/lib/lein/self-installs/leiningen-2.9.6-standalone.jar', 'GITHUB_ACTION_REPOSITORY': '', 'PATH': '/home/linuxbrew/.linuxbrew/bin:/home/linuxbrew/.linuxbrew/sbin:/home/runner/.local/bin:/opt/pipx_bin:/usr/share/rust/.cargo/bin:/home/runner/.config/composer/vendor/bin:/usr/local/.ghcup/bin:/home/runner/.dotnet/tools:/snap/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'RUNNER_PERFLOG': '/home/runner/perflog', 'GITHUB_BASE_REF': '', 'CI': 'true', 'SWIFT_PATH': '/usr/share/swift/usr/bin', 'ImageOS': 'ubuntu20', 'GITHUB_REPOSITORY_OWNER': 'RustPython', 'GITHUB_HEAD_REF': '', 'GITHUB_ACTION_REF': '', 'GITHUB_WORKFLOW': 'Periodic checks/tasks', 'DEBIAN_FRONTEND': 'noninteractive', 'GOROOT_1_15_X64': '/opt/hostedtoolcache/go/1.15.13/x64', 'AGENT_TOOLSDIRECTORY': '/opt/hostedtoolcache', 'OLDPWD': '/home/runner/work/RustPython/RustPython', 'GOROOT_1_16_X64': '/opt/hostedtoolcache/go/1.16.5/x64', '_': '/usr/bin/python3'}))
-cgi.test (environ=environ({'ACCEPT_EULA': 'Y', 'AGENT_TOOLSDIRECTORY': '/opt/hostedtoolcache', 'ANDROID_HOME': '/usr/local/lib/android/sdk', 'ANDROID_NDK_HOME': '/usr/local/lib/android/sdk/ndk-bundle', 'ANDROID_NDK_LATEST_HOME': '/usr/local/lib/android/sdk/ndk/22.1.7171670', 'ANDROID_NDK_ROOT': '/usr/local/lib/android/sdk/ndk-bundle', 'ANDROID_SDK_ROOT': '/usr/local/lib/android/sdk', 'ANT_HOME': '/usr/share/ant', 'AZURE_EXTENSION_DIR': '/opt/az/azcliextensions', 'BOOTSTRAP_HASKELL_NONINTERACTIVE': '1', 'CARGO': '/usr/share/rust/.rustup/toolchains/stable-x86_64-unknown-linux-gnu/bin/cargo', 'CARGO_HOME': '/home/runner/.cargo', 'CARGO_MANIFEST_DIR': '/home/runner/work/RustPython/RustPython', 'CARGO_PKG_AUTHORS': 'RustPython Team', 'CARGO_PKG_DESCRIPTION': 'A python interpreter written in rust.', 'CARGO_PKG_HOMEPAGE': '', 'CARGO_PKG_LICENSE': 'MIT', 'CARGO_PKG_LICENSE_FILE': '', 'CARGO_PKG_NAME': 'rustpython', 'CARGO_PKG_REPOSITORY': 'https://github.com/RustPython/RustPython', 'CARGO_PKG_VERSION': '0.1.2', 'CARGO_PKG_VERSION_MAJOR': '0', 'CARGO_PKG_VERSION_MINOR': '1', 'CARGO_PKG_VERSION_PATCH': '2', 'CARGO_PKG_VERSION_PRE': '', 'CHROMEWEBDRIVER': '/usr/local/share/chrome_driver', 'CHROME_BIN': '/usr/bin/google-chrome', 'CI': 'true', 'CONDA': '/usr/share/miniconda', 'DEBIAN_FRONTEND': 'noninteractive', 'DEPLOYMENT_BASEPATH': '/opt/runner', 'DOTNET_MULTILEVEL_LOOKUP': '0', 'DOTNET_NOLOGO': '1', 'DOTNET_SKIP_FIRST_TIME_EXPERIENCE': '1', 'GECKOWEBDRIVER': '/usr/local/share/gecko_driver', 'GITHUB_ACTION': '__run', 'GITHUB_ACTIONS': 'true', 'GITHUB_ACTION_REF': '', 'GITHUB_ACTION_REPOSITORY': '', 'GITHUB_ACTOR': 'coolreader18', 'GITHUB_API_URL': 'https://api.github.com', 'GITHUB_BASE_REF': '', 'GITHUB_ENV': '/home/runner/work/_temp/_runner_file_commands/set_env_8bda053d-a8bc-46e1-9f30-aaf83ef3e481', 'GITHUB_EVENT_NAME': 'schedule', 'GITHUB_EVENT_PATH': '/home/runner/work/_temp/_github_workflow/event.json', 'GITHUB_GRAPHQL_URL': 'https://api.github.com/graphql', 'GITHUB_HEAD_REF': '', 'GITHUB_JOB': 'whatsleft', 'GITHUB_PATH': '/home/runner/work/_temp/_runner_file_commands/add_path_8bda053d-a8bc-46e1-9f30-aaf83ef3e481', 'GITHUB_REF': 'refs/heads/master', 'GITHUB_REPOSITORY': 'RustPython/RustPython', 'GITHUB_REPOSITORY_OWNER': 'RustPython', 'GITHUB_RETENTION_DAYS': '90', 'GITHUB_RUN_ID': '1016816388', 'GITHUB_RUN_NUMBER': '94', 'GITHUB_SERVER_URL': 'https://github.com', 'GITHUB_SHA': '9b980df95be531d99c97fac545bdbd7d6a76fb74', 'GITHUB_WORKFLOW': 'Periodic checks/tasks', 'GITHUB_WORKSPACE': '/home/runner/work/RustPython/RustPython', 'GOROOT_1_14_X64': '/opt/hostedtoolcache/go/1.14.15/x64', 'GOROOT_1_15_X64': '/opt/hostedtoolcache/go/1.15.13/x64', 'GOROOT_1_16_X64': '/opt/hostedtoolcache/go/1.16.5/x64', 'GRAALVM_11_ROOT': '/usr/local/graalvm/graalvm-ce-java11-21.1.0', 'GRADLE_HOME': '/usr/share/gradle-7.1', 'HOME': '/home/runner', 'HOMEBREW_CELLAR': '"/home/linuxbrew/.linuxbrew/Cellar"', 'HOMEBREW_CLEANUP_PERIODIC_FULL_DAYS': '3650', 'HOMEBREW_NO_AUTO_UPDATE': '1', 'HOMEBREW_PREFIX': '"/home/linuxbrew/.linuxbrew"', 'HOMEBREW_REPOSITORY': '"/home/linuxbrew/.linuxbrew/Homebrew"', 'INVOCATION_ID': 'e0ad67f148cd484185d5aa4ddf167e8c', 'ImageOS': 'ubuntu20', 'ImageVersion': '20210628.1', 'JAVA_HOME': '/usr/lib/jvm/adoptopenjdk-11-hotspot-amd64', 'JAVA_HOME_11_X64': '/usr/lib/jvm/adoptopenjdk-11-hotspot-amd64', 'JAVA_HOME_8_X64': '/usr/lib/jvm/adoptopenjdk-8-hotspot-amd64', 'JOURNAL_STREAM': '8:22705', 'LANG': 'C.UTF-8', 'LD_LIBRARY_PATH': '/home/runner/work/RustPython/RustPython/target/release/deps:/home/runner/work/RustPython/RustPython/target/release:/usr/share/rust/.rustup/toolchains/stable-x86_64-unknown-linux-gnu/lib/rustlib/x86_64-unknown-linux-gnu/lib:/home/runner/.rustup/toolchains/stable-x86_64-unknown-linux-gnu/lib', 'LEIN_HOME': '/usr/local/lib/lein', 'LEIN_JAR': '/usr/local/lib/lein/self-installs/leiningen-2.9.6-standalone.jar', 'NVM_DIR': '/home/runner/.nvm', 'OLDPWD': '/home/runner/work/RustPython/RustPython', 'PATH': '/home/runner/.cargo/bin:/home/linuxbrew/.linuxbrew/bin:/home/linuxbrew/.linuxbrew/sbin:/home/runner/.local/bin:/opt/pipx_bin:/usr/share/rust/.cargo/bin:/home/runner/.config/composer/vendor/bin:/usr/local/.ghcup/bin:/home/runner/.dotnet/tools:/snap/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'PERFLOG_LOCATION_SETTING': 'RUNNER_PERFLOG', 'PIPX_BIN_DIR': '/opt/pipx_bin', 'PIPX_HOME': '/opt/pipx', 'POWERSHELL_DISTRIBUTION_CHANNEL': 'GitHub-Actions-ubuntu20', 'PWD': '/home/runner/work/RustPython/RustPython', 'RUNNER_OS': 'Linux', 'RUNNER_PERFLOG': '/home/runner/perflog', 'RUNNER_TEMP': '/home/runner/work/_temp', 'RUNNER_TOOL_CACHE': '/opt/hostedtoolcache', 'RUNNER_TRACKING_ID': 'github_85106591-33ec-46b6-9455-9cee97a969e3', 'RUNNER_USER': 'runner', 'RUNNER_WORKSPACE': '/home/runner/work/RustPython', 'RUSTPYTHONPATH': 'Lib', 'RUSTUP_HOME': '/home/runner/.rustup', 'RUSTUP_TOOLCHAIN': 'stable-x86_64-unknown-linux-gnu', 'RUST_RECURSION_COUNT': '1', 'SELENIUM_JAR_PATH': '/usr/share/java/selenium-server-standalone.jar', 'SHLVL': '2', 'SSL_CERT_DIR': '/usr/lib/ssl/certs', 'SSL_CERT_FILE': '/usr/lib/ssl/certs/ca-certificates.crt', 'SWIFT_PATH': '/usr/share/swift/usr/bin', 'USER': 'runner', 'VCPKG_INSTALLATION_ROOT': '/usr/local/share/vcpkg', 'XDG_CONFIG_HOME': '/home/runner/.config', '_': '/usr/share/rust/.cargo/bin/cargo'})) != (environ=environ({'SELENIUM_JAR_PATH': '/usr/share/java/selenium-server-standalone.jar', 'CONDA': '/usr/share/miniconda', 'GITHUB_WORKSPACE': '/home/runner/work/RustPython/RustPython', 'JAVA_HOME_11_X64': '/usr/lib/jvm/adoptopenjdk-11-hotspot-amd64', 'GITHUB_PATH': '/home/runner/work/_temp/_runner_file_commands/add_path_8bda053d-a8bc-46e1-9f30-aaf83ef3e481', 'GITHUB_ACTION': '__run', 'JAVA_HOME': '/usr/lib/jvm/adoptopenjdk-11-hotspot-amd64', 'GITHUB_RUN_NUMBER': '94', 'GRADLE_HOME': '/usr/share/gradle-7.1', 'XDG_CONFIG_HOME': '/home/runner/.config', 'DOTNET_SKIP_FIRST_TIME_EXPERIENCE': '1', 'ANT_HOME': '/usr/share/ant', 'JAVA_HOME_8_X64': '/usr/lib/jvm/adoptopenjdk-8-hotspot-amd64', 'HOMEBREW_PREFIX': '"/home/linuxbrew/.linuxbrew"', 'HOMEBREW_CLEANUP_PERIODIC_FULL_DAYS': '3650', 'BOOTSTRAP_HASKELL_NONINTERACTIVE': '1', 'PIPX_BIN_DIR': '/opt/pipx_bin', 'PWD': '/home/runner/work/RustPython/RustPython/extra_tests', 'DEPLOYMENT_BASEPATH': '/opt/runner', 'GITHUB_ACTIONS': 'true', 'ANDROID_NDK_LATEST_HOME': '/usr/local/lib/android/sdk/ndk/22.1.7171670', 'GITHUB_SHA': '9b980df95be531d99c97fac545bdbd7d6a76fb74', 'POWERSHELL_DISTRIBUTION_CHANNEL': 'GitHub-Actions-ubuntu20', 'DOTNET_MULTILEVEL_LOOKUP': '0', 'GITHUB_REF': 'refs/heads/master', 'RUNNER_OS': 'Linux', 'HOME': '/home/runner', 'GITHUB_API_URL': 'https://api.github.com', 'LANG': 'C.UTF-8', 'RUNNER_TRACKING_ID': 'github_85106591-33ec-46b6-9455-9cee97a969e3', 'RUSTPYTHONPATH': 'Lib', 'RUNNER_TEMP': '/home/runner/work/_temp', 'GITHUB_ENV': '/home/runner/work/_temp/_runner_file_commands/set_env_8bda053d-a8bc-46e1-9f30-aaf83ef3e481', 'INVOCATION_ID': 'e0ad67f148cd484185d5aa4ddf167e8c', 'GITHUB_EVENT_PATH': '/home/runner/work/_temp/_github_workflow/event.json', 'GITHUB_EVENT_NAME': 'schedule', 'GITHUB_RUN_ID': '1016816388', 'ANDROID_NDK_HOME': '/usr/local/lib/android/sdk/ndk-bundle', 'HOMEBREW_NO_AUTO_UPDATE': '1', 'GITHUB_ACTOR': 'coolreader18', 'NVM_DIR': '/home/runner/.nvm', 'ANDROID_HOME': '/usr/local/lib/android/sdk', 'GOROOT_1_14_X64': '/opt/hostedtoolcache/go/1.14.15/x64', 'GITHUB_GRAPHQL_URL': 'https://api.github.com/graphql', 'ACCEPT_EULA': 'Y', 'RUNNER_USER': 'runner', 'USER': 'runner', 'GITHUB_SERVER_URL': 'https://github.com', 'HOMEBREW_CELLAR': '"/home/linuxbrew/.linuxbrew/Cellar"', 'PIPX_HOME': '/opt/pipx', 'GECKOWEBDRIVER': '/usr/local/share/gecko_driver', 'CHROMEWEBDRIVER': '/usr/local/share/chrome_driver', 'SHLVL': '2', 'ANDROID_SDK_ROOT': '/usr/local/lib/android/sdk', 'VCPKG_INSTALLATION_ROOT': '/usr/local/share/vcpkg', 'RUNNER_TOOL_CACHE': '/opt/hostedtoolcache', 'HOMEBREW_REPOSITORY': '"/home/linuxbrew/.linuxbrew/Homebrew"', 'ImageVersion': '20210628.1', 'DOTNET_NOLOGO': '1', 'GRAALVM_11_ROOT': '/usr/local/graalvm/graalvm-ce-java11-21.1.0', 'GITHUB_JOB': 'whatsleft', 'AZURE_EXTENSION_DIR': '/opt/az/azcliextensions', 'PERFLOG_LOCATION_SETTING': 'RUNNER_PERFLOG', 'GITHUB_REPOSITORY': 'RustPython/RustPython', 'ANDROID_NDK_ROOT': '/usr/local/lib/android/sdk/ndk-bundle', 'CHROME_BIN': '/usr/bin/google-chrome', 'GITHUB_RETENTION_DAYS': '90', 'JOURNAL_STREAM': '8:22705', 'RUNNER_WORKSPACE': '/home/runner/work/RustPython', 'LEIN_HOME': '/usr/local/lib/lein', 'LEIN_JAR': '/usr/local/lib/lein/self-installs/leiningen-2.9.6-standalone.jar', 'GITHUB_ACTION_REPOSITORY': '', 'PATH': '/home/linuxbrew/.linuxbrew/bin:/home/linuxbrew/.linuxbrew/sbin:/home/runner/.local/bin:/opt/pipx_bin:/usr/share/rust/.cargo/bin:/home/runner/.config/composer/vendor/bin:/usr/local/.ghcup/bin:/home/runner/.dotnet/tools:/snap/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'RUNNER_PERFLOG': '/home/runner/perflog', 'GITHUB_BASE_REF': '', 'CI': 'true', 'SWIFT_PATH': '/usr/share/swift/usr/bin', 'ImageOS': 'ubuntu20', 'GITHUB_REPOSITORY_OWNER': 'RustPython', 'GITHUB_HEAD_REF': '', 'GITHUB_ACTION_REF': '', 'GITHUB_WORKFLOW': 'Periodic checks/tasks', 'DEBIAN_FRONTEND': 'noninteractive', 'GOROOT_1_15_X64': '/opt/hostedtoolcache/go/1.15.13/x64', 'AGENT_TOOLSDIRECTORY': '/opt/hostedtoolcache', 'OLDPWD': '/home/runner/work/RustPython/RustPython', 'GOROOT_1_16_X64': '/opt/hostedtoolcache/go/1.16.5/x64', '_': '/usr/bin/python3'}))
 codecs.Codec ValueError('no signature found') != ()
 codecs.open (filename, mode='r', encoding=None, errors='strict', buffering=1) != (filename, mode='r', encoding=None, errors='strict', buffering=-1)
 collections.Counter (*args, **kwds) != (iterable=None, /, **kwds)
@@ -2754,7 +2691,7 @@ stat.S_ISWHT (mode) != None
 stat.filemode (mode) != None
 string.Formatter ValueError('no signature found') != ()
 struct.Struct ValueError('no signature found') != (format)
-symtable.Symbol ValueError('no signature found') != (name, flags, namespaces=None)
+symtable.Symbol ValueError('no signature found') != (name, flags, namespaces=None, *, module_scope=False)
 symtable.SymbolTable ValueError('no signature found') != (raw_table, filename)
 symtable.__loader__ ValueError('no signature found') != None
 symtable.symtable None != (code, filename, compile_type)
@@ -2853,7 +2790,6 @@ typing.io ValueError('no signature found') != ()
 typing.re ValueError('no signature found') != ()
 unittest.TestProgram (module='__main__', defaultTest=None, argv=None, testRunner=None, testLoader=<TestLoader object at 0xdeadbeef>, exit=True, verbosity=1, failfast=None, catchbreak=None, buffer=None, warnings=None, *, tb_locals=False) != (module='__main__', defaultTest=None, argv=None, testRunner=None, testLoader=<unittest.loader.TestLoader object at 0xdeadbeef>, exit=True, verbosity=1, failfast=None, catchbreak=None, buffer=None, warnings=None, *, tb_locals=False)
 unittest.main (module='__main__', defaultTest=None, argv=None, testRunner=None, testLoader=<TestLoader object at 0xdeadbeef>, exit=True, verbosity=1, failfast=None, catchbreak=None, buffer=None, warnings=None, *, tb_locals=False) != (module='__main__', defaultTest=None, argv=None, testRunner=None, testLoader=<unittest.loader.TestLoader object at 0xdeadbeef>, exit=True, verbosity=1, failfast=None, catchbreak=None, buffer=None, warnings=None, *, tb_locals=False)
-uu.encode (in_file, out_file, name=None, mode=None) != (in_file, out_file, name=None, mode=None, *, backtick=False)
 uuid.UUID (hex=None, bytes=None, bytes_le=None, fields=None, int=None, version=None) != (hex=None, bytes=None, bytes_le=None, fields=None, int=None, version=None, *, is_safe=<SafeUUID.unknown: None>)
 uuid.getnode () != (*, getters=None)
 venv.EnvBuilder (system_site_packages=False, clear=False, symlinks=False, upgrade=False, with_pip=False, prompt=None, upgrade_deps=False) != (system_site_packages=False, clear=False, symlinks=False, upgrade=False, with_pip=False, prompt=None)
@@ -2868,7 +2804,6 @@ weakref.finalize (obj, func, *args, **kwargs) != (obj, func, /, *args, **kwargs)
 weakref.proxy ValueError('no signature found') != None
 webbrowser._synthesize (browser, update_tryorder=1) != (browser, *, preferred=False)
 webbrowser.register (name, klass, instance=None, update_tryorder=1) != (name, klass, instance=None, *, preferred=False)
-xdrlib.BytesIO ValueError('no signature found') != (initial_bytes=b'')
 zipimport.__loader__ None != ()
 zipimport._module_type ValueError('no signature found') != (name, doc=None)
 _json.__loader__ ValueError('no signature found') != None
@@ -2877,8 +2812,8 @@ resource.__loader__ ValueError('no signature found') != None
 resource.struct_rusage ValueError('no signature found') != (iterable=(), /)
 termios.__loader__ ValueError('no signature found') != None
 
-out of 300 modules:
-  not_implemented 103
+out of 276 modules:
+  not_implemented 91
   failed_to_import 5
   missing_items 97
-  mismatched_items 120
+  mismatched_items 119
