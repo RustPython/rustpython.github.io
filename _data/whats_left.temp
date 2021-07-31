@@ -240,11 +240,9 @@ _codecs.utf_32_encode
 _codecs.utf_32_ex_decode
 _codecs.utf_32_le_decode
 _codecs.utf_32_le_encode
-_collections.OrderedDict
 _collections._count_elements
 _collections._deque_reverse_iterator
 _collections._tuplegetter
-_collections.defaultdict
 _csv.Dialect
 _csv.__version__
 _csv._dialects
@@ -253,9 +251,7 @@ _csv.get_dialect
 _csv.list_dialects
 _csv.register_dialect
 _csv.unregister_dialect
-_functools._lru_cache_wrapper
 _functools.cmp_to_key
-_functools.partial
 _imp.check_hash_based_pycs
 _imp.create_dynamic
 _imp.exec_dynamic
@@ -263,7 +259,6 @@ _io.IncrementalNewlineDecoder
 _operator.abs
 _operator.add
 _operator.and_
-_operator.attrgetter
 _operator.concat
 _operator.contains
 _operator.countOf
@@ -290,14 +285,12 @@ _operator.irshift
 _operator.is_
 _operator.is_not
 _operator.isub
-_operator.itemgetter
 _operator.itruediv
 _operator.ixor
 _operator.le
 _operator.lshift
 _operator.lt
 _operator.matmul
-_operator.methodcaller
 _operator.mod
 _operator.mul
 _operator.ne
@@ -315,7 +308,6 @@ _operator.xor
 _signal.ITIMER_PROF
 _signal.ITIMER_REAL
 _signal.ITIMER_VIRTUAL
-_signal.ItimerError
 _signal.SIGCLD
 _signal.SIGIOT
 _signal.SIGPOLL
@@ -335,7 +327,6 @@ _signal.sigtimedwait
 _signal.sigwait
 _signal.sigwaitinfo
 _signal.strsignal
-_signal.struct_siginfo
 _signal.valid_signals
 _socket.AF_ALG
 _socket.AF_APPLETALK
@@ -622,7 +613,6 @@ _socket.VMADDR_CID_HOST
 _socket.VMADDR_PORT_ANY
 _socket.VM_SOCKETS_INVALID_VERSION
 _socket.gethostbyname_ex
-_socket.herror
 _sre.copyright
 _thread._ExceptHookArgs
 _thread._excepthook
@@ -890,7 +880,6 @@ posix.sched_yield
 posix.setpgrp
 posix.setxattr
 posix.statvfs
-posix.statvfs_result
 posix.sysconf
 posix.sysconf_names
 posix.tcgetpgrp
@@ -935,7 +924,6 @@ select.POLLRDNORM
 select.POLLWRBAND
 select.POLLWRNORM
 select.epoll
-select.error
 sys.__breakpointhook__
 sys.__unraisablehook__
 sys._clear_type_cache
@@ -1004,74 +992,16 @@ _osx_support._cache_default_sysroot
 _osx_support._default_sysroot
 _osx_support._get_system_version_tuple
 _osx_support._supports_arm64_builds
-abc._abc_init
-abc._abc_instancecheck
-abc._abc_register
-abc._abc_subclasscheck
-abc._get_dump
-abc._reset_caches
-abc._reset_registry
-ast.AugLoad
-ast.AugStore
-ast.ExtSlice
-ast.Index
-ast.Param
 ast.PyCF_ALLOW_TOP_LEVEL_AWAIT
 ast.PyCF_TYPE_COMMENTS
-ast.Suite
-ast.boolop
-ast.cmpop
-ast.excepthandler
-ast.expr
-ast.expr_context
-ast.mod
-ast.operator
-ast.slice
-ast.stmt
-ast.type_ignore
-ast.unaryop
-asyncio.BufferedProtocol
-asyncio.MultiLoopChildWatcher
-asyncio.SendfileNotAvailableError
-asyncio.ThreadedChildWatcher
-asyncio._all_tasks_compat
-asyncio._enter_task
-asyncio._leave_task
-asyncio._register_task
-asyncio._unregister_task
-asyncio.current_task
-asyncio.exceptions
-asyncio.format_helpers
-asyncio.staggered
-asyncio.trsock
-code.CommandCompiler
 code.InteractiveConsole
 code.InteractiveInterpreter
 code.__all__
-code.compile_command
 code.interact
-code.sys
-code.traceback
-codecs.utf_32_be_decode
-codecs.utf_32_be_encode
-codecs.utf_32_decode
-codecs.utf_32_encode
-codecs.utf_32_ex_decode
-codecs.utf_32_le_decode
-codecs.utf_32_le_encode
-collections._tuplegetter
 compileall._compile_file_tuple
-configparser.os
-contextlib.MethodType
 copyreg.__cached__
 copyreg.__file__
-csv._Dialect
 csv.__version__
-csv.field_size_limit
-csv.get_dialect
-csv.list_dialects
-csv.register_dialect
-csv.unregister_dialect
 datetime.datetime_CAPI
 dis.Bytecode
 dis.EXTENDED_ARG
@@ -1102,7 +1032,6 @@ dis._try_compile
 dis._unpack_opargs
 dis.cmp_op
 dis.code_info
-dis.collections
 dis.disco
 dis.distb
 dis.findlabels
@@ -1116,25 +1045,17 @@ dis.hasjrel
 dis.haslocal
 dis.hasname
 dis.hasnargs
-dis.io
 dis.opmap
 dis.opname
 dis.pretty_flags
 dis.show_code
-dis.stack_effect
-dis.sys
-dis.types
-distutils.command
 doctest._newline_convert
-email.mime
 ftplib.FTP_TLS
-ftplib.ssl
 gettext._unspecified
 gettext.dnpgettext
 gettext.dpgettext
 gettext.npgettext
 gettext.pgettext
-glob.sys
 hashlib.__all__
 hashlib.__block_openssl_constructor
 hashlib.__builtin_constructor_cache
@@ -1142,14 +1063,8 @@ hashlib.__builtins__
 hashlib.__cached__
 hashlib.__file__
 hashlib.__get_builtin_constructor
-hashlib._hashlib
 hashlib.algorithms_available
 hashlib.algorithms_guaranteed
-hashlib.pbkdf2_hmac
-hashlib.scrypt
-hashlib.shake_128
-hashlib.shake_256
-hmac._hashopenssl
 hmac._openssl_md_meths
 hmac.digest
 inspect.CO_ITERABLE_COROUTINE
@@ -1157,7 +1072,6 @@ inspect.CO_NESTED
 inspect.CO_NEWLOCALS
 inspect.CO_NOFREE
 inspect.CO_OPTIMIZED
-io.IncrementalNewlineDecoder
 keyword.__all__
 keyword.__builtins__
 keyword.__cached__
@@ -1217,30 +1131,14 @@ locale.THOUSEP
 locale.T_FMT
 locale.T_FMT_AMPM
 locale.YESEXPR
-locale.bind_textdomain_codeset
-locale.bindtextdomain
-locale.dcgettext
-locale.dgettext
-locale.gettext
-locale.nl_langinfo
-locale.textdomain
 logging._after_at_fork_child_reinit_locks
-logging._at_fork_reinit_lock_weakset
 logging._register_at_fork_reinit_lock
-logging._str_formatter
-logging.handlers
-logging.re
-multiprocessing.dummy
-multiprocessing.parent_process
-numbers.ABCMeta
 numbers.Complex
 numbers.Integral
 numbers.Number
 numbers.Rational
 numbers.Real
 numbers.__all__
-numbers.abstractmethod
-opcode.stack_effect
 os.CLD_CONTINUED
 os.CLD_DUMPED
 os.CLD_EXITED
@@ -1322,64 +1220,18 @@ os.ST_SYNCHRONOUS
 os.ST_WRITE
 os.TMP_MAX
 os.WCONTINUED
-os.WCOREDUMP
 os.WEXITED
-os.WIFCONTINUED
 os.WNOWAIT
 os.WSTOPPED
 os.WUNTRACED
 os.XATTR_CREATE
 os.XATTR_REPLACE
 os.XATTR_SIZE_MAX
-os._exit
 os._fwalk
 os._spawnvef
-os.confstr
 os.confstr_names
-os.ctermid
-os.device_encoding
-os.fchdir
-os.fchmod
-os.fdatasync
-os.fork
-os.forkpty
-os.fstatvfs
 os.fwalk
-os.getrandom
-os.getxattr
-os.killpg
-os.listxattr
-os.lockf
-os.major
-os.makedev
-os.memfd_create
-os.minor
-os.mkfifo
-os.mknod
-os.nice
 os.pathconf_names
-os.posix_fadvise
-os.posix_fallocate
-os.pread
-os.preadv
-os.pwrite
-os.pwritev
-os.readv
-os.register_at_fork
-os.removexattr
-os.sched_get_priority_max
-os.sched_get_priority_min
-os.sched_getaffinity
-os.sched_getparam
-os.sched_getscheduler
-os.sched_param
-os.sched_rr_get_interval
-os.sched_setaffinity
-os.sched_setparam
-os.sched_setscheduler
-os.sched_yield
-os.setpgrp
-os.setxattr
 os.spawnl
 os.spawnle
 os.spawnlp
@@ -1388,20 +1240,10 @@ os.spawnv
 os.spawnve
 os.spawnvp
 os.spawnvpe
-os.statvfs
 os.statvfs_result
 os.supports_effective_ids
-os.sysconf
 os.sysconf_names
-os.tcgetpgrp
-os.tcsetpgrp
-os.wait3
-os.wait4
-os.waitid
-os.waitid_result
-os.writev
 pathlib.ELOOP
-pdb.tokenize
 pickle.PickleBuffer
 platform._ironpython26_sys_version_parser
 platform._ironpython_sys_version_parser
@@ -1412,11 +1254,6 @@ platform._sys_version_parser
 pprint.pp
 pydoc._adjust_cli_sys_path
 pydoc._get_revised_path
-pydoc.sysconfig
-random._accumulate
-random._repeat
-runpy.io
-runpy.os
 selectors.EpollSelector
 selectors._PollLikeSelector
 shlex.join
@@ -1437,20 +1274,7 @@ signal.SIG_BLOCK
 signal.SIG_SETMASK
 signal.SIG_UNBLOCK
 signal.Sigmasks
-signal.getitimer
-signal.pause
-signal.pthread_kill
-signal.pthread_sigmask
-signal.raise_signal
-signal.setitimer
-signal.sigpending
-signal.sigtimedwait
-signal.sigwait
-signal.sigwaitinfo
-signal.strsignal
 signal.struct_siginfo
-signal.valid_signals
-site.io
 socket.AF_ALG
 socket.AF_APPLETALK
 socket.AF_ASH
@@ -1538,8 +1362,6 @@ socket.CAN_RAW_RECV_OWN_MSGS
 socket.CAN_RTR_FLAG
 socket.CAN_SFF_MASK
 socket.CAPI
-socket.CMSG_LEN
-socket.CMSG_SPACE
 socket.EAI_ADDRFAMILY
 socket.EAI_AGAIN
 socket.EAI_BADFLAGS
@@ -1735,7 +1557,6 @@ socket.VMADDR_CID_ANY
 socket.VMADDR_CID_HOST
 socket.VMADDR_PORT_ANY
 socket.VM_SOCKETS_INVALID_VERSION
-socket.gethostbyname_ex
 socket.herror
 socketserver.ForkingMixIn
 socketserver.ForkingTCPServer
@@ -1766,15 +1587,9 @@ symtable.__builtins__
 symtable.__cached__
 symtable.__file__
 symtable._newSymbolTable
-symtable._symtable
-symtable.weakref
 sysconfig._ALWAYS_STR
-tempfile._rmtree
 test.__builtins__
 test.__cached__
-test.libregrtest
-test.support
-threading.get_native_id
 tty.B1000000
 tty.B115200
 tty.B1152000
@@ -1929,13 +1744,7 @@ tty.VTDLY
 tty.VWERASE
 tty.XCASE
 tty.XTABS
-tty.tcdrain
-tty.tcflow
-tty.tcflush
-tty.tcsendbreak
-types.CellType
 types._cell_factory
-typing.ABCMeta
 typing.EXCLUDED_ATTRIBUTES
 typing.Final
 typing.ForwardRef
@@ -1968,14 +1777,7 @@ typing._typeddict_new
 typing.final
 typing.get_args
 typing.get_origin
-typing.operator
 typing.runtime_checkable
-unittest.IsolatedAsyncioTestCase
-unittest.addModuleCleanup
-unittest.async_case
-urllib.error
-urllib.response
-uuid.Enum
 uuid.SafeUUID
 uuid._AIX
 uuid._GETTERS
@@ -1987,18 +1789,11 @@ uuid._is_universal
 uuid._load_system_functions
 uuid._platform_system
 uuid._unix_getnode
-uuid._uuid
-uuid.platform
-uuid.sys
 warnings._defaultaction
 warnings._onceregistry
 webbrowser._lock
 webbrowser._os_preferred_browser
 webbrowser.register_standard_browsers
-webbrowser.threading
-xml.dom
-xml.etree
-xml.sax
 zipfile._dedupe
 zipfile._difference
 _json.__file__
@@ -2012,7 +1807,6 @@ resource.RUSAGE_CHILDREN
 resource.RUSAGE_SELF
 resource.RUSAGE_THREAD
 resource.__file__
-resource.error
 resource.getpagesize
 resource.prlimit
 termios.B1000000
@@ -2174,13 +1968,6 @@ termios.tcdrain
 termios.tcflow
 termios.tcflush
 termios.tcsendbreak
-_ast.__loader__ ValueError('no signature found') != ()
-_bisect.__loader__ ValueError('no signature found') != ()
-_codecs.__loader__ ValueError('no signature found') != ()
-_collections.__loader__ ValueError('no signature found') != ()
-_csv.__loader__ ValueError('no signature found') != ()
-_functools.__loader__ ValueError('no signature found') != ()
-_imp.__loader__ ValueError('no signature found') != ()
 _io.BufferedRWPair ValueError('no signature found') != (reader, writer, buffer_size=8192, /)
 _io.BufferedRandom ValueError('no signature found') != (raw, buffer_size=8192)
 _io.BufferedReader ValueError('no signature found') != (raw, buffer_size=8192)
@@ -2189,27 +1976,8 @@ _io.BytesIO ValueError('no signature found') != (initial_bytes=b'')
 _io.FileIO ValueError('no signature found') != (file, mode='r', closefd=True, opener=None)
 _io.StringIO ValueError('no signature found') != (initial_value='', newline='\n')
 _io.TextIOWrapper ValueError('no signature found') != (buffer, encoding=None, errors=None, newline=None, line_buffering=False, write_through=False)
-_io.__loader__ None != ()
-_operator.__loader__ ValueError('no signature found') != ()
-_posixsubprocess.__loader__ ValueError('no signature found') != ()
-_random.__loader__ ValueError('no signature found') != ()
-_signal.__loader__ ValueError('no signature found') != ()
-_socket.__loader__ ValueError('no signature found') != ()
-_sre.__loader__ ValueError('no signature found') != ()
-_string.__loader__ ValueError('no signature found') != ()
-_struct.Struct ValueError('no signature found') != (format)
-_struct.__loader__ ValueError('no signature found') != ()
 _thread.LockType ValueError('no signature found') != ()
-_thread.__loader__ ValueError('no signature found') != ()
-_warnings.__loader__ ValueError('no signature found') != ()
-_weakref.CallableProxyType ValueError('no signature found') != ()
-_weakref.ProxyType ValueError('no signature found') != ()
-_weakref.__loader__ ValueError('no signature found') != ()
 _weakref.proxy ValueError('no signature found') != None
-array.__loader__ ValueError('no signature found') != ()
-atexit.__loader__ ValueError('no signature found') != ()
-binascii.__loader__ ValueError('no signature found') != ()
-builtins.__loader__ ValueError('no signature found') != ()
 builtins.complex ValueError('no signature found') != (real=0, imag=0)
 builtins.enumerate ValueError('no signature found') != (iterable, start=0)
 builtins.float ValueError('no signature found') != (x=0, /)
@@ -2218,10 +1986,6 @@ builtins.memoryview ValueError('no signature found') != (object)
 builtins.property ValueError('no signature found') != (fget=None, fset=None, fdel=None, doc=None)
 builtins.reversed None != (sequence, /)
 builtins.tuple ValueError('no signature found') != (iterable=(), /)
-errno.__loader__ ValueError('no signature found') != ()
-faulthandler.__loader__ ValueError('no signature found') != ()
-fcntl.__loader__ ValueError('no signature found') != ()
-gc.__loader__ None != ()
 gc.collect (*args, **kwargs) != None
 gc.disable (*args, **kwargs) != None
 gc.enable (*args, **kwargs) != None
@@ -2236,7 +2000,6 @@ gc.is_tracked (*args, **kwargs) != None
 gc.isenabled (*args, **kwargs) != None
 gc.set_debug (*args, **kwargs) != None
 gc.set_threshold (*args, **kwargs) != None
-itertools.__loader__ ValueError('no signature found') != ()
 itertools.accumulate ValueError('no signature found') != (iterable, func=None, *, initial=None)
 itertools.combinations ValueError('no signature found') != (iterable, r)
 itertools.combinations_with_replacement ValueError('no signature found') != (iterable, r)
@@ -2250,64 +2013,12 @@ itertools.permutations ValueError('no signature found') != (iterable, r=None)
 itertools.starmap ValueError('no signature found') != (function, iterable, /)
 itertools.takewhile ValueError('no signature found') != (predicate, iterable, /)
 itertools.tee ValueError('no signature found') != None
-marshal.__loader__ None != ()
-math.__loader__ ValueError('no signature found') != ()
 posix.DirEntry ValueError('no signature found') != ()
-posix.__loader__ None != ()
-posix.stat_result ValueError('no signature found') != (iterable=(), /)
-posix.terminal_size ValueError('no signature found') != (iterable=(), /)
 posix.times_result ValueError('no signature found') != (iterable=(), /)
 posix.uname_result ValueError('no signature found') != (iterable=(), /)
-pwd.__loader__ ValueError('no signature found') != ()
 pwd.struct_passwd ValueError('no signature found') != (iterable=(), /)
-pyexpat.__loader__ ValueError('no signature found') != ()
-select.__loader__ ValueError('no signature found') != ()
-sys.__loader__ ValueError('no signature found') != ()
-sys.excepthook None != (exc_type, exc_obj, exc_tb)
-time.__loader__ ValueError('no signature found') != ()
 time.struct_time ValueError('no signature found') != (iterable=(), /)
 unicodedata.UCD ValueError('no signature found') != ()
-unicodedata.__loader__ ValueError('no signature found') != ()
-zlib.__loader__ ValueError('no signature found') != ()
-_collections_abc.AsyncGenerator ValueError('no signature found') != ()
-_collections_abc.AsyncIterable ValueError('no signature found') != ()
-_collections_abc.AsyncIterator ValueError('no signature found') != ()
-_collections_abc.Awaitable ValueError('no signature found') != ()
-_collections_abc.ByteString ValueError('no signature found') != ()
-_collections_abc.Callable ValueError('no signature found') != ()
-_collections_abc.Collection ValueError('no signature found') != ()
-_collections_abc.Container ValueError('no signature found') != ()
-_collections_abc.Coroutine ValueError('no signature found') != ()
-_collections_abc.Generator ValueError('no signature found') != ()
-_collections_abc.Hashable ValueError('no signature found') != ()
-_collections_abc.Iterable ValueError('no signature found') != ()
-_collections_abc.Iterator ValueError('no signature found') != ()
-_collections_abc.Mapping ValueError('no signature found') != ()
-_collections_abc.MutableMapping ValueError('no signature found') != ()
-_collections_abc.MutableSequence ValueError('no signature found') != ()
-_collections_abc.MutableSet ValueError('no signature found') != ()
-_collections_abc.Reversible ValueError('no signature found') != ()
-_collections_abc.Sequence ValueError('no signature found') != ()
-_collections_abc.Set ValueError('no signature found') != ()
-_collections_abc.Sized ValueError('no signature found') != ()
-_collections_abc.async_generator ValueError('no signature found') != ()
-_collections_abc.bytearray_iterator ValueError('no signature found') != ()
-_collections_abc.bytes_iterator ValueError('no signature found') != ()
-_collections_abc.coroutine ValueError('no signature found') != ()
-_collections_abc.dict_itemiterator ValueError('no signature found') != ()
-_collections_abc.dict_items ValueError('no signature found') != ()
-_collections_abc.dict_keyiterator ValueError('no signature found') != ()
-_collections_abc.dict_keys ValueError('no signature found') != ()
-_collections_abc.dict_valueiterator ValueError('no signature found') != ()
-_collections_abc.dict_values ValueError('no signature found') != ()
-_collections_abc.generator ValueError('no signature found') != ()
-_collections_abc.list_iterator ValueError('no signature found') != ()
-_collections_abc.list_reverseiterator ValueError('no signature found') != ()
-_collections_abc.longrange_iterator ValueError('no signature found') != ()
-_collections_abc.range_iterator ValueError('no signature found') != ()
-_collections_abc.set_iterator ValueError('no signature found') != ()
-_collections_abc.str_iterator ValueError('no signature found') != ()
-_collections_abc.tuple_iterator ValueError('no signature found') != ()
 _osx_support._read_output (commandstring) != (commandstring, capture_stderr=False)
 _py_abc.ABCMeta (name, bases, namespace, **kwargs) != (name, bases, namespace, /, **kwargs)
 _pyio.BufferedIOBase ValueError('no signature found') != ()
@@ -2318,27 +2029,10 @@ _pyio.TextIOBase ValueError('no signature found') != ()
 _sitebuiltins._Helper ValueError('no signature found') != ()
 abc.ABC ValueError('no signature found') != ()
 abc.abstractproperty ValueError('no signature found') != (fget=None, fset=None, fdel=None, doc=None)
-abc.get_cache_token () != None
 argparse.ArgumentParser (prog=None, usage=None, description=None, epilog=None, parents=[], formatter_class=<class 'argparse.HelpFormatter'>, prefix_chars='-', fromfile_prefix_chars=None, argument_default=None, conflict_handler='error', add_help=True, allow_abbrev=True, exit_on_error=True) != (prog=None, usage=None, description=None, epilog=None, parents=[], formatter_class=<class 'argparse.HelpFormatter'>, prefix_chars='-', fromfile_prefix_chars=None, argument_default=None, conflict_handler='error', add_help=True, allow_abbrev=True)
 argparse._AttributeHolder ValueError('no signature found') != ()
 ast.NodeTransformer ValueError('no signature found') != ()
 ast.NodeVisitor ValueError('no signature found') != ()
-asyncio.AbstractChildWatcher ValueError('no signature found') != ()
-asyncio.AbstractEventLoop ValueError('no signature found') != ()
-asyncio.AbstractEventLoopPolicy ValueError('no signature found') != ()
-asyncio.AbstractServer ValueError('no signature found') != ()
-asyncio.BaseProtocol ValueError('no signature found') != ()
-asyncio.DatagramProtocol ValueError('no signature found') != ()
-asyncio.Handle (callback, args, loop) != (callback, args, loop, context=None)
-asyncio.Protocol ValueError('no signature found') != ()
-asyncio.SubprocessProtocol ValueError('no signature found') != ()
-asyncio.Task (coro, *, loop=None) != (coro, *, loop=None, name=None)
-asyncio.TimerHandle (when, callback, args, loop) != (when, callback, args, loop, context=None)
-asyncio._get_running_loop () != None
-asyncio._set_running_loop (loop) != None
-asyncio.get_event_loop () != None
-asyncio.get_running_loop () != None
-asyncio.run (main, *, debug=False) != (main, *, debug=None)
 calendar.calendar None != (theyear, w=2, l=1, c=6, m=3)
 calendar.firstweekday None != ()
 calendar.month None != (theyear, themonth, w=0, l=0)
@@ -2354,88 +2048,45 @@ collections.Counter (*args, **kwds) != (iterable=None, /, **kwds)
 collections.OrderedDict (*args, **kwds) != ValueError('no signature found')
 collections.UserDict (*args, **kwargs) != (dict=None, /, **kwargs)
 collections._Link ValueError('no signature found') != ()
-collections._count_elements (mapping, iterable) != None
-collections._eq (a, b) != None
-collections._itemgetter (item, *items) != ValueError('no signature found')
-collections._proxy ValueError('no signature found') != None
-collections._starmap ValueError('no signature found') != (function, iterable, /)
 collections.defaultdict (*args, **kwargs) != ValueError('no signature found')
 compileall.compile_dir (dir, maxlevels=10, ddir=None, force=False, rx=None, quiet=0, legacy=False, optimize=-1, workers=1) != (dir, maxlevels=10, ddir=None, force=False, rx=None, quiet=0, legacy=False, optimize=-1, workers=1, invalidation_mode=None)
 compileall.compile_file (fullname, ddir=None, force=False, rx=None, quiet=0, legacy=False, optimize=-1) != (fullname, ddir=None, force=False, rx=None, quiet=0, legacy=False, optimize=-1, invalidation_mode=None)
 compileall.compile_path (skip_curdir=1, maxlevels=0, force=False, quiet=0, legacy=False, optimize=-1) != (skip_curdir=1, maxlevels=0, force=False, quiet=0, legacy=False, optimize=-1, invalidation_mode=None)
-compileall.partial (func, /, *args, **keywords) != ValueError('no signature found')
 configparser.BasicInterpolation ValueError('no signature found') != ()
 configparser.ConfigParser (defaults=None, dict_type=<class 'collections.OrderedDict'>, allow_no_value=False, *, delimiters=('=', ':'), comment_prefixes=('#', ';'), inline_comment_prefixes=None, strict=True, empty_lines_in_values=True, default_section='DEFAULT', interpolation=<object object at 0xdeadbeef>, converters=<object object at 0xdeadbeef>) != (defaults=None, dict_type=<class 'dict'>, allow_no_value=False, *, delimiters=('=', ':'), comment_prefixes=('#', ';'), inline_comment_prefixes=None, strict=True, empty_lines_in_values=True, default_section='DEFAULT', interpolation=<object object at 0xdeadbeef>, converters=<object object at 0xdeadbeef>)
 configparser.ExtendedInterpolation ValueError('no signature found') != ()
 configparser.Interpolation ValueError('no signature found') != ()
 configparser.LegacyInterpolation ValueError('no signature found') != ()
-configparser.MutableMapping ValueError('no signature found') != ()
 configparser.RawConfigParser (defaults=None, dict_type=<class 'collections.OrderedDict'>, allow_no_value=False, *, delimiters=('=', ':'), comment_prefixes=('#', ';'), inline_comment_prefixes=None, strict=True, empty_lines_in_values=True, default_section='DEFAULT', interpolation=<object object at 0xdeadbeef>, converters=<object object at 0xdeadbeef>) != (defaults=None, dict_type=<class 'dict'>, allow_no_value=False, *, delimiters=('=', ':'), comment_prefixes=('#', ';'), inline_comment_prefixes=None, strict=True, empty_lines_in_values=True, default_section='DEFAULT', interpolation=<object object at 0xdeadbeef>, converters=<object object at 0xdeadbeef>)
-configparser._default_dict (*args, **kwds) != ValueError('no signature found')
 contextlib.AbstractAsyncContextManager ValueError('no signature found') != ()
 contextlib.AbstractContextManager ValueError('no signature found') != ()
 contextlib.ContextDecorator ValueError('no signature found') != ()
-copyreg.__loader__ ValueError('no signature found') != None
-csv.StringIO ValueError('no signature found') != (initial_value='', newline='\n')
 datetime.date (year, month=None, day=None) != ValueError('no signature found')
 datetime.datetime (year, month=None, day=None, hour=0, minute=0, second=0, microsecond=0, tzinfo=None, *, fold=0) != ValueError('no signature found')
 datetime.time (hour=0, minute=0, second=0, microsecond=0, tzinfo=None, *, fold=0) != ValueError('no signature found')
 datetime.timedelta (days=0, seconds=0, microseconds=0, milliseconds=0, minutes=0, hours=0, weeks=0) != ValueError('no signature found')
 datetime.timezone (offset, name=<object object at 0xdeadbeef>) != ValueError('no signature found')
 difflib.IS_LINE_JUNK (line, pat=<bound method match of re.compile('\\s*(?:#\\s*)?$')>) != (line, pat=<built-in method match of re.Pattern object at 0xdeadbeef>)
-dis.__loader__ ValueError('no signature found') != None
 dis.dis None != (x=None, *, file=None, depth=None)
 dis.disassemble None != (co, lasti=-1, *, file=None)
 doctest.DocFileTest (path, module_relative=True, package=None, globs=None, parser=<DocTestParser object at 0xdeadbeef>, encoding=None, **options) != (path, module_relative=True, package=None, globs=None, parser=<doctest.DocTestParser object at 0xdeadbeef>, encoding=None, **options)
 doctest.DocTestFinder (verbose=False, parser=<DocTestParser object at 0xdeadbeef>, recurse=True, exclude_empty=True) != (verbose=False, parser=<doctest.DocTestParser object at 0xdeadbeef>, recurse=True, exclude_empty=True)
 doctest.DocTestParser ValueError('no signature found') != ()
 doctest.OutputChecker ValueError('no signature found') != ()
-doctest.StringIO ValueError('no signature found') != (initial_value='', newline='\n')
 doctest._SpoofOut ValueError('no signature found') != (initial_value='', newline='\n')
 doctest.testfile (filename, module_relative=True, name=None, package=None, globs=None, verbose=None, report=True, optionflags=0, extraglobs=None, raise_on_error=False, parser=<DocTestParser object at 0xdeadbeef>, encoding=None) != (filename, module_relative=True, name=None, package=None, globs=None, verbose=None, report=True, optionflags=0, extraglobs=None, raise_on_error=False, parser=<doctest.DocTestParser object at 0xdeadbeef>, encoding=None)
 enum.auto ValueError('no signature found') != ()
 fnmatch._compile_pattern (pat) != None
-ftplib._SSLSocket None != (*args, **kwargs)
 functools._lru_cache_wrapper (user_function, maxsize, typed, _CacheInfo) != ValueError('no signature found')
-functools.cmp_to_key (mycmp) != None
-functools.get_cache_token () != None
 functools.partial (func, /, *args, **keywords) != ValueError('no signature found')
 gettext.Catalog (domain, localedir=None, languages=None, class_=None, fallback=False, codeset=None) != (domain, localedir=None, languages=None, class_=None, fallback=False, codeset=['unspecified'])
 gettext.install (domain, localedir=None, codeset=None, names=None) != (domain, localedir=None, codeset=['unspecified'], names=None)
 gettext.translation (domain, localedir=None, languages=None, class_=None, fallback=False, codeset=None) != (domain, localedir=None, languages=None, class_=None, fallback=False, codeset=['unspecified'])
-hashlib.__loader__ ValueError('no signature found') != None
-hashlib.blake2b None != (data=b'', /, *, digest_size=64, key=b'', salt=b'', person=b'', fanout=1, depth=1, leaf_size=0, node_offset=0, node_depth=0, inner_size=0, last_node=False)
-hashlib.blake2s None != (data=b'', /, *, digest_size=32, key=b'', salt=b'', person=b'', fanout=1, depth=1, leaf_size=0, node_offset=0, node_depth=0, inner_size=0, last_node=False)
 hashlib.new None != (name, data=b'', **kwargs)
-hashlib.sha3_224 None != ValueError('no signature found')
-hashlib.sha3_256 None != ValueError('no signature found')
-hashlib.sha3_384 None != ValueError('no signature found')
-hashlib.sha3_512 None != ValueError('no signature found')
-heapq._heapify_max (x) != None
-heapq._heappop_max (heap) != None
-heapq._heapreplace_max (heap, item) != None
-heapq.heapify (x) != None
-heapq.heappop (heap) != None
-heapq.heappush (heap, item) != None
-heapq.heappushpop (heap, item) != None
-heapq.heapreplace (heap, item) != None
 hmac.HMAC (key, msg=None, digestmod=None) != (key, msg=None, digestmod='')
 hmac.new (key, msg=None, digestmod=None) != (key, msg=None, digestmod='')
-inspect.OrderedDict (*args, **kwds) != ValueError('no signature found')
-inspect._ClassMethodWrapper ValueError('no signature found') != ()
-inspect._MethodWrapper ValueError('no signature found') != ()
-inspect._WrapperDescriptor ValueError('no signature found') != ()
 inspect._empty ValueError('no signature found') != ()
 inspect._void ValueError('no signature found') != ()
-inspect.attrgetter (attr, *attrs) != ValueError('no signature found')
-io.BufferedRWPair ValueError('no signature found') != (reader, writer, buffer_size=8192, /)
-io.BufferedRandom ValueError('no signature found') != (raw, buffer_size=8192)
-io.BufferedReader ValueError('no signature found') != (raw, buffer_size=8192)
-io.BufferedWriter ValueError('no signature found') != (raw, buffer_size=8192)
-io.BytesIO ValueError('no signature found') != (initial_bytes=b'')
-io.FileIO ValueError('no signature found') != (file, mode='r', closefd=True, opener=None)
-io.StringIO ValueError('no signature found') != (initial_value='', newline='\n')
-io.TextIOWrapper ValueError('no signature found') != (buffer, encoding=None, errors=None, newline=None, line_buffering=False, write_through=False)
 ipaddress._BaseAddress ValueError('no signature found') != ()
 ipaddress._BaseNetwork ValueError('no signature found') != ()
 ipaddress._BaseV4 ValueError('no signature found') != ()
@@ -2443,155 +2094,16 @@ ipaddress._BaseV6 ValueError('no signature found') != ()
 ipaddress._IPAddressBase ValueError('no signature found') != ()
 ipaddress._IPv4Constants ValueError('no signature found') != ()
 ipaddress._IPv6Constants ValueError('no signature found') != ()
-keyword.__loader__ ValueError('no signature found') != None
-locale._localeconv () != None
-locale._setlocale (category, value=None) != None
-locale.localeconv () != ValueError('no signature found')
-locale.strcoll (a, b) != None
-locale.strxfrm (s) != None
 logging.Formatter (fmt=None, datefmt=None, style='%') != (fmt=None, datefmt=None, style='%', validate=True)
-multiprocessing.Array None != (typecode_or_type, size_or_initializer, *, lock=True)
-multiprocessing.Barrier None != (parties, action=None, timeout=None)
-multiprocessing.BoundedSemaphore None != (value=1)
-multiprocessing.Condition None != (lock=None)
-multiprocessing.Event None != ()
-multiprocessing.JoinableQueue None != (maxsize=0)
-multiprocessing.Lock None != ()
-multiprocessing.Manager None != ()
-multiprocessing.Pipe None != (duplex=True)
-multiprocessing.Pool None != (processes=None, initializer=None, initargs=(), maxtasksperchild=None)
-multiprocessing.Queue None != (maxsize=0)
-multiprocessing.RLock None != ()
-multiprocessing.RawArray None != (typecode_or_type, size_or_initializer)
-multiprocessing.RawValue None != (typecode_or_type, *args)
-multiprocessing.Semaphore None != (value=1)
-multiprocessing.SimpleQueue None != ()
-multiprocessing.Value None != (typecode_or_type, *args, lock=True)
-multiprocessing.allow_connection_pickling None != ()
-multiprocessing.cpu_count None != ()
-multiprocessing.freeze_support None != ()
-multiprocessing.get_all_start_methods None != ()
-multiprocessing.get_context None != (method=None)
-multiprocessing.get_logger None != ()
-multiprocessing.get_start_method None != (allow_none=False)
-multiprocessing.log_to_stderr None != (level=None)
-multiprocessing.set_executable None != (executable)
-multiprocessing.set_forkserver_preload None != (module_names)
-multiprocessing.set_start_method None != (method, force=False)
-operator.__abs__ (a) != None
-operator.__add__ (a, b) != None
-operator.__and__ (a, b) != None
-operator.__concat__ (a, b) != None
-operator.__contains__ (a, b) != None
-operator.__delitem__ (a, b) != None
-operator.__eq__ (a, b) != None
-operator.__floordiv__ (a, b) != None
-operator.__ge__ (a, b) != None
-operator.__getitem__ (a, b) != None
-operator.__gt__ (a, b) != None
-operator.__iadd__ (a, b) != None
-operator.__iand__ (a, b) != None
-operator.__iconcat__ (a, b) != None
-operator.__ifloordiv__ (a, b) != None
-operator.__ilshift__ (a, b) != None
-operator.__imatmul__ (a, b) != None
-operator.__imod__ (a, b) != None
-operator.__imul__ (a, b) != None
-operator.__inv__ (a) != None
-operator.__invert__ (a) != None
-operator.__ior__ (a, b) != None
-operator.__ipow__ (a, b) != None
-operator.__irshift__ (a, b) != None
-operator.__isub__ (a, b) != None
-operator.__itruediv__ (a, b) != None
-operator.__ixor__ (a, b) != None
-operator.__le__ (a, b) != None
-operator.__lshift__ (a, b) != None
-operator.__lt__ (a, b) != None
-operator.__matmul__ (a, b) != None
-operator.__mod__ (a, b) != None
-operator.__mul__ (a, b) != None
-operator.__ne__ (a, b) != None
-operator.__neg__ (a) != None
-operator.__not__ (a) != None
-operator.__or__ (a, b) != None
-operator.__pos__ (a) != None
-operator.__pow__ (a, b) != None
-operator.__rshift__ (a, b) != None
-operator.__setitem__ (a, b, c) != None
-operator.__sub__ (a, b) != None
-operator.__truediv__ (a, b) != None
-operator.__xor__ (a, b) != None
-operator.abs (a) != None
-operator.add (a, b) != None
-operator.and_ (a, b) != None
 operator.attrgetter (attr, *attrs) != ValueError('no signature found')
-operator.concat (a, b) != None
-operator.contains (a, b) != None
-operator.countOf (a, b) != None
-operator.delitem (a, b) != None
-operator.eq (a, b) != None
-operator.floordiv (a, b) != None
-operator.ge (a, b) != None
-operator.getitem (a, b) != None
-operator.gt (a, b) != None
-operator.iadd (a, b) != None
-operator.iand (a, b) != None
-operator.iconcat (a, b) != None
-operator.ifloordiv (a, b) != None
-operator.ilshift (a, b) != None
-operator.imatmul (a, b) != None
-operator.imod (a, b) != None
-operator.imul (a, b) != None
-operator.indexOf (a, b) != None
-operator.inv (a) != None
-operator.invert (a) != None
-operator.ior (a, b) != None
-operator.ipow (a, b) != None
-operator.irshift (a, b) != None
-operator.is_ (a, b) != None
-operator.is_not (a, b) != None
-operator.isub (a, b) != None
 operator.itemgetter (item, *items) != ValueError('no signature found')
-operator.itruediv (a, b) != None
-operator.ixor (a, b) != None
-operator.le (a, b) != None
-operator.lshift (a, b) != None
-operator.lt (a, b) != None
-operator.matmul (a, b) != None
 operator.methodcaller (*args, **kwargs) != ValueError('no signature found')
-operator.mod (a, b) != None
-operator.mul (a, b) != None
-operator.ne (a, b) != None
-operator.neg (a) != None
-operator.not_ (a) != None
-operator.or_ (a, b) != None
-operator.pos (a) != None
-operator.pow (a, b) != None
-operator.rshift (a, b) != None
-operator.setitem (a, b, c) != None
-operator.sub (a, b) != None
-operator.truediv (a, b) != None
-operator.truth (a) != None
-operator.xor (a, b) != None
-os.DirEntry ValueError('no signature found') != ()
-os.MutableMapping ValueError('no signature found') != ()
 os.PathLike ValueError('no signature found') != ()
 os.stat_result ValueError('no signature found') != (iterable=(), /)
 os.terminal_size ValueError('no signature found') != (iterable=(), /)
-os.times_result ValueError('no signature found') != (iterable=(), /)
-os.uname_result ValueError('no signature found') != (iterable=(), /)
 pathlib.PosixPath ValueError('no signature found') != (*args, **kwargs)
 pathlib.PurePosixPath ValueError('no signature found') != (*args)
 pathlib.PureWindowsPath ValueError('no signature found') != (*args)
-pathlib.S_ISBLK (mode) != None
-pathlib.S_ISCHR (mode) != None
-pathlib.S_ISDIR (mode) != None
-pathlib.S_ISFIFO (mode) != None
-pathlib.S_ISLNK (mode) != None
-pathlib.S_ISREG (mode) != None
-pathlib.S_ISSOCK (mode) != None
-pathlib.Sequence ValueError('no signature found') != ()
 pathlib.WindowsPath ValueError('no signature found') != (*args, **kwargs)
 pathlib._Accessor ValueError('no signature found') != ()
 pathlib._NormalAccessor ValueError('no signature found') != ()
@@ -2601,16 +2113,6 @@ pathlib._Selector (child_parts) != (child_parts, flavour)
 pathlib._TerminatingSelector ValueError('no signature found') != ()
 pathlib._WildcardSelector (pat, child_parts) != (pat, child_parts, flavour)
 pathlib._make_selector (pattern_parts) != None
-pathlib.attrgetter (attr, *attrs) != ValueError('no signature found')
-pickle.FunctionType ValueError('no signature found') != (code, globals, name=None, argdefs=None, closure=None)
-pickle.Pickler (file, protocol=None, *, fix_imports=True, buffer_callback=None) != (file, protocol=None, fix_imports=True, buffer_callback=None)
-pickle.Unpickler (file, *, fix_imports=True, encoding='ASCII', errors='strict', buffers=None) != (file, *, fix_imports=True, encoding='ASCII', errors='strict', buffers=())
-pickle.dump (obj, file, protocol=None, *, fix_imports=True, buffer_callback=None) != None
-pickle.dumps (obj, protocol=None, *, fix_imports=True, buffer_callback=None) != None
-pickle.load (file, *, fix_imports=True, encoding='ASCII', errors='strict', buffers=None) != None
-pickle.loads (s, *, fix_imports=True, encoding='ASCII', errors='strict', buffers=None) != None
-pickle.partial (func, /, *args, **keywords) != ValueError('no signature found')
-pkgutil.ModuleType ValueError('no signature found') != (name, doc=None)
 platform.architecture (executable='/home/runner/work/RustPython/RustPython/target/release/rustpython', bits='', linkage='') != (executable='/usr/bin/python3', bits='', linkage='')
 platform.python_branch None != ()
 platform.python_build None != ()
@@ -2618,10 +2120,7 @@ platform.python_compiler None != ()
 platform.python_implementation None != ()
 platform.python_revision None != ()
 platform.python_version None != ()
-plistlib.BytesIO ValueError('no signature found') != (initial_bytes=b'')
-plistlib.warn (message, category=None, stacklevel=1, source=None) != None
 pprint.PrettyPrinter (indent=1, width=80, depth=None, stream=None, *, compact=False) != (indent=1, width=80, depth=None, stream=None, *, compact=False, sort_dicts=True)
-pprint._StringIO ValueError('no signature found') != (initial_value='', newline='\n')
 pprint._safe_repr (object, context, maxlevels, level) != (object, context, maxlevels, level, sort_dicts)
 pprint.pformat (object, indent=1, width=80, depth=None, *, compact=False) != (object, indent=1, width=80, depth=None, *, compact=False, sort_dicts=True)
 pprint.pprint (object, stream=None, indent=1, width=80, depth=None, *, compact=False) != (object, stream=None, indent=1, width=80, depth=None, *, compact=False, sort_dicts=True)
@@ -2633,11 +2132,6 @@ pydoc.TextDoc ValueError('no signature found') != ()
 pydoc._PlainTextDoc ValueError('no signature found') != ()
 pydoc._start_server (urlhandler, port) != (urlhandler, hostname, port)
 pydoc.browse (port=0, *, open_browser=True) != (port=0, *, open_browser=True, hostname='localhost')
-queue.heappop (heap) != None
-queue.heappush (heap, item) != None
-random._Sequence ValueError('no signature found') != ()
-random._Set ValueError('no signature found') != ()
-random._warn (message, category=None, stacklevel=1, source=None) != None
 random.betavariate None != (alpha, beta)
 random.choice None != (seq)
 random.choices None != (population, weights=None, *, cum_weights=None, k=1)
@@ -2663,64 +2157,21 @@ re.Pattern ValueError('no signature found') != ()
 re._compile_repl (repl, pattern) != None
 reprlib.repr None != (x)
 sched.Event ValueError('no signature found') != (time, priority, action, argument, kwargs)
-secrets.choice None != (seq)
-secrets.randbits None != (k)
 selectors.BaseSelector ValueError('no signature found') != ()
-selectors.Mapping ValueError('no signature found') != ()
-shelve.BytesIO ValueError('no signature found') != (initial_bytes=b'')
-shelve.Pickler (file, protocol=None, *, fix_imports=True, buffer_callback=None) != (file, protocol=None, fix_imports=True, buffer_callback=None)
-shelve.Unpickler (file, *, fix_imports=True, encoding='ASCII', errors='strict', buffers=None) != (file, *, fix_imports=True, encoding='ASCII', errors='strict', buffers=())
 shelve._ClosedDict ValueError('no signature found') != ()
-shlex.StringIO ValueError('no signature found') != (initial_value='', newline='\n')
 shutil._copyxattr (*args, **kwargs) != (src, dst, *, follow_symlinks=True)
-signal.getsignal ValueError('no signature found') != (signalnum, /)
-signal.signal ValueError('no signature found') != (signalnum, handler, /)
 socketserver.ThreadingMixIn ValueError('no signature found') != ()
-stat.S_IFMT (mode) != None
-stat.S_IMODE (mode) != None
-stat.S_ISBLK (mode) != None
-stat.S_ISCHR (mode) != None
-stat.S_ISDIR (mode) != None
-stat.S_ISDOOR (mode) != None
-stat.S_ISFIFO (mode) != None
-stat.S_ISLNK (mode) != None
-stat.S_ISPORT (mode) != None
-stat.S_ISREG (mode) != None
-stat.S_ISSOCK (mode) != None
-stat.S_ISWHT (mode) != None
-stat.filemode (mode) != None
 string.Formatter ValueError('no signature found') != ()
-struct.Struct ValueError('no signature found') != (format)
 symtable.Symbol ValueError('no signature found') != (name, flags, namespaces=None, *, module_scope=False)
 symtable.SymbolTable ValueError('no signature found') != (raw_table, filename)
-symtable.__loader__ ValueError('no signature found') != None
 symtable.symtable None != (code, filename, compile_type)
 tarfile.open None != (name=None, mode='r', fileobj=None, bufsize=10240, **kwargs)
 tempfile._RandomNameSequence ValueError('no signature found') != ()
-threading.ExceptHookArgs (args) != (iterable=(), /)
-threading._count ValueError('no signature found') != (start=0, step=1)
-threading.excepthook (args, /) != None
 timeit.Timer (stmt='pass', setup='pass', timer=<built-in function time>, globals=None) != (stmt='pass', setup='pass', timer=<built-in function perf_counter>, globals=None)
 timeit.repeat (stmt='pass', setup='pass', timer=<built-in function time>, repeat=5, number=1000000, globals=None) != (stmt='pass', setup='pass', timer=<built-in function perf_counter>, repeat=5, number=1000000, globals=None)
 timeit.timeit (stmt='pass', setup='pass', timer=<built-in function time>, number=1000000, globals=None) != (stmt='pass', setup='pass', timer=<built-in function perf_counter>, number=1000000, globals=None)
-tokenize.TextIOWrapper ValueError('no signature found') != (buffer, encoding=None, errors=None, newline=None, line_buffering=False, write_through=False)
 tokenize.TokenInfo ValueError('no signature found') != (type, string, start, end, line)
 traceback.StackSummary ValueError('no signature found') != (iterable=(), /)
-types.AsyncGeneratorType ValueError('no signature found') != ()
-types.BuiltinFunctionType ValueError('no signature found') != ()
-types.BuiltinMethodType ValueError('no signature found') != ()
-types.ClassMethodDescriptorType ValueError('no signature found') != ()
-types.CoroutineType ValueError('no signature found') != ()
-types.FrameType ValueError('no signature found') != ()
-types.FunctionType ValueError('no signature found') != (code, globals, name=None, argdefs=None, closure=None)
-types.GeneratorType ValueError('no signature found') != ()
-types.GetSetDescriptorType ValueError('no signature found') != ()
-types.LambdaType ValueError('no signature found') != (code, globals, name=None, argdefs=None, closure=None)
-types.MemberDescriptorType ValueError('no signature found') != ()
-types.MethodDescriptorType ValueError('no signature found') != ()
-types.MethodWrapperType ValueError('no signature found') != ()
-types.ModuleType ValueError('no signature found') != (name, doc=None)
-types.WrapperDescriptorType ValueError('no signature found') != ()
 typing.AbstractSet ValueError('no signature found') != (*args, **kwargs)
 typing.AnyStr (*args, **kwds) != None
 typing.AsyncContextManager ValueError('no signature found') != (*args, **kwargs)
@@ -2754,8 +2205,6 @@ typing.List (*args, **kwds) != (*args, **kwargs)
 typing.Mapping ValueError('no signature found') != (*args, **kwargs)
 typing.MappingView (mapping) != (*args, **kwargs)
 typing.Match (*args, **kwds) != (*args, **kwargs)
-typing.MethodDescriptorType ValueError('no signature found') != ()
-typing.MethodWrapperType ValueError('no signature found') != ()
 typing.MutableMapping ValueError('no signature found') != (*args, **kwargs)
 typing.MutableSequence ValueError('no signature found') != (*args, **kwargs)
 typing.MutableSet ValueError('no signature found') != (*args, **kwargs)
@@ -2781,39 +2230,24 @@ typing.VT (*args, **kwds) != None
 typing.VT_co (*args, **kwds) != None
 typing.V_co (*args, **kwds) != None
 typing.ValuesView (mapping) != (*args, **kwargs)
-typing.WrapperDescriptorType ValueError('no signature found') != ()
 typing._ProtocolMeta (*args, **kwds) != (name, bases, namespace, **kwargs)
 typing._TypingEllipsis ValueError('no signature found') != ()
 typing._TypingEmpty ValueError('no signature found') != ()
 typing._type_check (arg, msg) != (arg, msg, is_argument=True)
 typing.io ValueError('no signature found') != ()
 typing.re ValueError('no signature found') != ()
-unittest.TestProgram (module='__main__', defaultTest=None, argv=None, testRunner=None, testLoader=<TestLoader object at 0xdeadbeef>, exit=True, verbosity=1, failfast=None, catchbreak=None, buffer=None, warnings=None, *, tb_locals=False) != (module='__main__', defaultTest=None, argv=None, testRunner=None, testLoader=<unittest.loader.TestLoader object at 0xdeadbeef>, exit=True, verbosity=1, failfast=None, catchbreak=None, buffer=None, warnings=None, *, tb_locals=False)
-unittest.main (module='__main__', defaultTest=None, argv=None, testRunner=None, testLoader=<TestLoader object at 0xdeadbeef>, exit=True, verbosity=1, failfast=None, catchbreak=None, buffer=None, warnings=None, *, tb_locals=False) != (module='__main__', defaultTest=None, argv=None, testRunner=None, testLoader=<unittest.loader.TestLoader object at 0xdeadbeef>, exit=True, verbosity=1, failfast=None, catchbreak=None, buffer=None, warnings=None, *, tb_locals=False)
 uuid.UUID (hex=None, bytes=None, bytes_le=None, fields=None, int=None, version=None) != (hex=None, bytes=None, bytes_le=None, fields=None, int=None, version=None, *, is_safe=<SafeUUID.unknown: None>)
 uuid.getnode () != (*, getters=None)
 venv.EnvBuilder (system_site_packages=False, clear=False, symlinks=False, upgrade=False, with_pip=False, prompt=None, upgrade_deps=False) != (system_site_packages=False, clear=False, symlinks=False, upgrade=False, with_pip=False, prompt=None)
 venv.create (env_dir, system_site_packages=False, clear=False, symlinks=False, with_pip=False, prompt=None, upgrade_deps=False) != (env_dir, system_site_packages=False, clear=False, symlinks=False, with_pip=False, prompt=None)
-warnings._filters_mutated () != None
-warnings.warn (message, category=None, stacklevel=1, source=None) != None
-warnings.warn_explicit (message, category, filename, lineno, module=None, registry=None, module_globals=None, source=None) != None
-weakref.CallableProxyType ValueError('no signature found') != ()
-weakref.ProxyType ValueError('no signature found') != ()
 weakref.WeakValueDictionary (*args, **kw) != (other=(), /, **kw)
 weakref.finalize (obj, func, *args, **kwargs) != (obj, func, /, *args, **kwargs)
-weakref.proxy ValueError('no signature found') != None
 webbrowser._synthesize (browser, update_tryorder=1) != (browser, *, preferred=False)
 webbrowser.register (name, klass, instance=None, update_tryorder=1) != (name, klass, instance=None, *, preferred=False)
-zipimport.__loader__ None != ()
-zipimport._module_type ValueError('no signature found') != (name, doc=None)
-_json.__loader__ ValueError('no signature found') != None
-_multiprocessing.__loader__ ValueError('no signature found') != None
-resource.__loader__ ValueError('no signature found') != None
 resource.struct_rusage ValueError('no signature found') != (iterable=(), /)
-termios.__loader__ ValueError('no signature found') != None
 
 out of 276 modules:
   not_implemented 91
   failed_to_import 5
-  missing_items 97
-  mismatched_items 119
+  missing_items 76
+  mismatched_items 64
