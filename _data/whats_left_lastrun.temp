@@ -21,7 +21,6 @@ frozenset.__reduce__ inherited
 int.__getattribute__ inherited
 int.__getnewargs__
 list.__getattribute__ inherited
-list.__init__ inherited
 map.__getattribute__ inherited
 map.__reduce__ inherited
 memoryview.__delitem__
@@ -33,7 +32,6 @@ memoryview.f_contiguous
 memoryview.suboffsets
 range.__getattribute__ inherited
 set.__getattribute__ inherited
-set.__init__ inherited
 set.__reduce__ inherited
 slice.__doc__ inherited
 slice.__getattribute__ inherited
@@ -108,9 +106,6 @@ list_iterator.__doc__ inherited
 list_iterator.__getattribute__ inherited
 range_iterator.__doc__ inherited
 range_iterator.__getattribute__ inherited
-range_iterator.__length_hint__
-range_iterator.__reduce__ inherited
-range_iterator.__setstate__
 str_iterator.__doc__ inherited
 str_iterator.__getattribute__ inherited
 str_iterator.__length_hint__
@@ -256,55 +251,8 @@ _imp.check_hash_based_pycs
 _imp.create_dynamic
 _imp.exec_dynamic
 _io.IncrementalNewlineDecoder
-_operator.abs
-_operator.add
-_operator.and_
-_operator.concat
-_operator.contains
-_operator.countOf
-_operator.delitem
-_operator.eq
-_operator.floordiv
-_operator.ge
-_operator.getitem
-_operator.gt
-_operator.iadd
-_operator.iand
-_operator.iconcat
-_operator.ifloordiv
-_operator.ilshift
-_operator.imatmul
-_operator.imod
-_operator.imul
-_operator.indexOf
 _operator.inv
-_operator.invert
-_operator.ior
-_operator.ipow
-_operator.irshift
-_operator.is_
-_operator.is_not
-_operator.isub
-_operator.itruediv
-_operator.ixor
-_operator.le
-_operator.lshift
-_operator.lt
 _operator.matmul
-_operator.mod
-_operator.mul
-_operator.ne
-_operator.neg
-_operator.not_
-_operator.or_
-_operator.pos
-_operator.pow
-_operator.rshift
-_operator.setitem
-_operator.sub
-_operator.truediv
-_operator.truth
-_operator.xor
 _signal.ITIMER_PROF
 _signal.ITIMER_REAL
 _signal.ITIMER_VIRTUAL
@@ -2066,7 +2014,7 @@ datetime.datetime (year, month=None, day=None, hour=0, minute=0, second=0, micro
 datetime.time (hour=0, minute=0, second=0, microsecond=0, tzinfo=None, *, fold=0) != ValueError('no signature found')
 datetime.timedelta (days=0, seconds=0, microseconds=0, milliseconds=0, minutes=0, hours=0, weeks=0) != ValueError('no signature found')
 datetime.timezone (offset, name=<object object at 0xdeadbeef>) != ValueError('no signature found')
-difflib.IS_LINE_JUNK (line, pat=<bound method match of re.compile('\\s*(?:#\\s*)?$')>) != (line, pat=<built-in method match of re.Pattern object at 0xdeadbeef>)
+difflib.IS_LINE_JUNK (line, pat=<bound method Pattern.match of re.compile('\\s*(?:#\\s*)?$')>) != (line, pat=<built-in method match of re.Pattern object at 0xdeadbeef>)
 dis.dis None != (x=None, *, file=None, depth=None)
 dis.disassemble None != (co, lasti=-1, *, file=None)
 doctest.DocFileTest (path, module_relative=True, package=None, globs=None, parser=<DocTestParser object at 0xdeadbeef>, encoding=None, **options) != (path, module_relative=True, package=None, globs=None, parser=<doctest.DocTestParser object at 0xdeadbeef>, encoding=None, **options)
@@ -2095,9 +2043,6 @@ ipaddress._IPAddressBase ValueError('no signature found') != ()
 ipaddress._IPv4Constants ValueError('no signature found') != ()
 ipaddress._IPv6Constants ValueError('no signature found') != ()
 logging.Formatter (fmt=None, datefmt=None, style='%') != (fmt=None, datefmt=None, style='%', validate=True)
-operator.attrgetter (attr, *attrs) != ValueError('no signature found')
-operator.itemgetter (item, *items) != ValueError('no signature found')
-operator.methodcaller (*args, **kwargs) != ValueError('no signature found')
 os.PathLike ValueError('no signature found') != ()
 os.stat_result ValueError('no signature found') != (iterable=(), /)
 os.terminal_size ValueError('no signature found') != (iterable=(), /)
@@ -2250,4 +2195,4 @@ out of 276 modules:
   not_implemented 91
   failed_to_import 5
   missing_items 76
-  mismatched_items 64
+  mismatched_items 63

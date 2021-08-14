@@ -1,6 +1,4 @@
-bytearray.__alloc__
 bytearray.__getattribute__ inherited
-bytearray.__init__ inherited
 bytearray.__str__ inherited
 bytes.__getattribute__ inherited
 bytes.__str__ inherited
@@ -689,9 +687,7 @@ gc.unfreeze
 itertools._tee
 itertools._tee_dataobject
 marshal.version
-math.comb
 math.dist
-math.perm
 math.prod
 posix.CLD_CONTINUED
 posix.CLD_DUMPED
@@ -1505,7 +1501,6 @@ socket.VMADDR_CID_ANY
 socket.VMADDR_CID_HOST
 socket.VMADDR_PORT_ANY
 socket.VM_SOCKETS_INVALID_VERSION
-socket.herror
 socketserver.ForkingMixIn
 socketserver.ForkingTCPServer
 socketserver.ForkingUDPServer
