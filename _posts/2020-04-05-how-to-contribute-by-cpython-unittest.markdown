@@ -23,7 +23,7 @@ Here's how you run a single unittest file:
 ` $ RUSTPYTHONPATH=Lib cargo run --release Lib/test/test_unicode.py`
 
 ## Add a new unittest file
-Because CPython unittest doesn't work work perfectly in RustPython, we are adding test files one by one. Here's how:
+Because CPython unittest doesn't work perfectly in RustPython, we are adding test files one by one. Here's how:
 1. Download the CPython source code with `git clone https://github.com/python/cpython.git`.
 2. Check out a specific version of CPython. We test against CPython 3.8, so the most recent release of 3.8 ([currently 3.8.7](https://www.python.org/doc/versions/)) is recommended.
 3. Copy a file from CPython's `Lib/test`
