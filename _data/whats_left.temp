@@ -92,7 +92,6 @@ dict_items.__xor__
 dict_items.isdisjoint
 set_iterator.__doc__ inherited
 set_iterator.__getattribute__ inherited
-set_iterator.__reduce__ inherited
 list_iterator.__doc__ inherited
 list_iterator.__getattribute__ inherited
 range_iterator.__doc__ inherited
@@ -561,7 +560,6 @@ _warnings._onceregistry
 _warnings.filters
 _warnings.warn_explicit
 array.ArrayType
-array._array_reconstructor
 array.typecodes
 binascii.Error
 binascii.Incomplete
@@ -734,12 +732,7 @@ posix.RWF_DSYNC
 posix.RWF_HIPRI
 posix.RWF_NOWAIT
 posix.RWF_SYNC
-posix.SCHED_BATCH
-posix.SCHED_FIFO
-posix.SCHED_IDLE
-posix.SCHED_OTHER
 posix.SCHED_RESET_ON_FORK
-posix.SCHED_RR
 posix.ST_APPEND
 posix.ST_MANDLOCK
 posix.ST_NOATIME
@@ -795,8 +788,6 @@ posix.pwritev
 posix.readv
 posix.register_at_fork
 posix.removexattr
-posix.sched_get_priority_max
-posix.sched_get_priority_min
 posix.sched_getaffinity
 posix.sched_getparam
 posix.sched_getscheduler
@@ -805,7 +796,6 @@ posix.sched_rr_get_interval
 posix.sched_setaffinity
 posix.sched_setparam
 posix.sched_setscheduler
-posix.sched_yield
 posix.setpgrp
 posix.setxattr
 posix.statvfs
@@ -1129,12 +1119,7 @@ os.RWF_DSYNC
 os.RWF_HIPRI
 os.RWF_NOWAIT
 os.RWF_SYNC
-os.SCHED_BATCH
-os.SCHED_FIFO
-os.SCHED_IDLE
-os.SCHED_OTHER
 os.SCHED_RESET_ON_FORK
-os.SCHED_RR
 os.ST_APPEND
 os.ST_MANDLOCK
 os.ST_NOATIME
@@ -1670,8 +1655,6 @@ tty.VTDLY
 tty.VWERASE
 tty.XCASE
 tty.XTABS
-typing.SupportsAbs
-typing.SupportsRound
 uuid.SafeUUID
 uuid._AIX
 uuid._GETTERS
@@ -1945,10 +1928,7 @@ datetime.tzinfo () != ValueError('no signature found')
 difflib.IS_LINE_JUNK (line, pat=<bound method Pattern.match of re.compile('\\s*(?:#\\s*)?$')>) != (line, pat=<built-in method match of re.Pattern object at 0xdeadbeef>)
 dis.dis None != (x=None, *, file=None, depth=None)
 dis.disassemble None != (co, lasti=-1, *, file=None)
-doctest.DocFileTest (path, module_relative=True, package=None, globs=None, parser=<DocTestParser object at 0xdeadbeef>, encoding=None, **options) != (path, module_relative=True, package=None, globs=None, parser=<doctest.DocTestParser object at 0xdeadbeef>, encoding=None, **options)
-doctest.DocTestFinder (verbose=False, parser=<DocTestParser object at 0xdeadbeef>, recurse=True, exclude_empty=True) != (verbose=False, parser=<doctest.DocTestParser object at 0xdeadbeef>, recurse=True, exclude_empty=True)
 doctest._SpoofOut ValueError('no signature found') != (initial_value='', newline='\n')
-doctest.testfile (filename, module_relative=True, name=None, package=None, globs=None, verbose=None, report=True, optionflags=0, extraglobs=None, raise_on_error=False, parser=<DocTestParser object at 0xdeadbeef>, encoding=None) != (filename, module_relative=True, name=None, package=None, globs=None, verbose=None, report=True, optionflags=0, extraglobs=None, raise_on_error=False, parser=<doctest.DocTestParser object at 0xdeadbeef>, encoding=None)
 fnmatch._compile_pattern (pat) != None
 functools._lru_cache_wrapper (user_function, maxsize, typed, _CacheInfo) != ValueError('no signature found')
 functools.partial (func, /, *args, **keywords) != ValueError('no signature found')
@@ -2022,5 +2002,5 @@ resource.struct_rusage ValueError('no signature found') != (iterable=(), /)
 out of 276 modules:
   not_implemented 90
   failed_to_import 5
-  missing_items 73
+  missing_items 72
   mismatched_items 47

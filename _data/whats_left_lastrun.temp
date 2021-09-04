@@ -12,11 +12,9 @@ filter.__getattribute__ inherited
 filter.__reduce__ inherited
 float.__getattribute__ inherited
 float.__getformat__
-float.__getnewargs__
 float.__set_format__
 frozenset.__getattribute__ inherited
 int.__getattribute__ inherited
-int.__getnewargs__
 list.__getattribute__ inherited
 map.__getattribute__ inherited
 map.__reduce__ inherited
@@ -51,9 +49,6 @@ staticmethod.__init__ inherited
 staticmethod.__isabstractmethod__
 property.__getattribute__ inherited
 property.__isabstractmethod__
-Exception.__doc__ inherited
-Exception.__init__ inherited
-Exception.__new__ inherited
 BaseException.__delattr__ inherited
 BaseException.__doc__ inherited
 BaseException.__getattribute__ inherited
@@ -150,7 +145,6 @@ poplib (entire module)
 profile (entire module)
 pstats (entire module)
 pyclbr (entire module)
-rlcompleter (entire module)
 sitecustomize (entire module)
 smtplib (entire module)
 sqlite3 (entire module)
@@ -681,7 +675,6 @@ gc.unfreeze
 itertools._tee
 itertools._tee_dataobject
 marshal.version
-math.dist
 posix.CLD_CONTINUED
 posix.CLD_DUMPED
 posix.CLD_EXITED
@@ -792,7 +785,6 @@ posix.memfd_create
 posix.minor
 posix.mkfifo
 posix.mknod
-posix.nice
 posix.pathconf_names
 posix.posix_fadvise
 posix.posix_fallocate
@@ -1678,40 +1670,8 @@ tty.VTDLY
 tty.VWERASE
 tty.XCASE
 tty.XTABS
-types._cell_factory
-typing.EXCLUDED_ATTRIBUTES
-typing.Final
-typing.ForwardRef
-typing.Literal
-typing.OrderedDict
-typing.Protocol
-typing.SupportsIndex
-typing.TypedDict
-typing._Final
-typing._GenericAlias
-typing._Immutable
-typing._PROTO_WHITELIST
-typing._SPECIAL_NAMES
-typing._SpecialForm
-typing._TYPING_INTERNALS
-typing._TypedDictMeta
-typing._VariadicGenericAlias
-typing._alias
-typing._allow_reckless_class_cheks
-typing._check_fails
-typing._collect_type_vars
-typing._dict_new
-typing._get_protocol_attrs
-typing._is_callable_members_only
-typing._is_dunder
-typing._no_init
-typing._normalize_alias
-typing._subs_tvars
-typing._typeddict_new
-typing.final
-typing.get_args
-typing.get_origin
-typing.runtime_checkable
+typing.SupportsAbs
+typing.SupportsRound
 uuid.SafeUUID
 uuid._AIX
 uuid._GETTERS
@@ -2049,64 +2009,6 @@ timeit.Timer (stmt='pass', setup='pass', timer=<built-in function time>, globals
 timeit.repeat (stmt='pass', setup='pass', timer=<built-in function time>, repeat=5, number=1000000, globals=None) != (stmt='pass', setup='pass', timer=<built-in function perf_counter>, repeat=5, number=1000000, globals=None)
 timeit.timeit (stmt='pass', setup='pass', timer=<built-in function time>, number=1000000, globals=None) != (stmt='pass', setup='pass', timer=<built-in function perf_counter>, number=1000000, globals=None)
 traceback.StackSummary ValueError('no signature found') != (iterable=(), /)
-typing.AbstractSet (*args, **kwds) != (*args, **kwargs)
-typing.AnyStr (*args, **kwds) != None
-typing.AsyncContextManager (*args, **kwds) != (*args, **kwargs)
-typing.AsyncGenerator (*args, **kwds) != (*args, **kwargs)
-typing.AsyncIterable (*args, **kwds) != (*args, **kwargs)
-typing.AsyncIterator (*args, **kwds) != (*args, **kwargs)
-typing.Awaitable (*args, **kwds) != (*args, **kwargs)
-typing.ByteString (*args, **kwds) != (*args, **kwargs)
-typing.CT_co (*args, **kwds) != None
-typing.Callable (*args, **kwds) != (*args, **kwargs)
-typing.ChainMap (*args, **kwds) != (*args, **kwargs)
-typing.Collection (*args, **kwds) != (*args, **kwargs)
-typing.Container (*args, **kwds) != (*args, **kwargs)
-typing.ContextManager (*args, **kwds) != (*args, **kwargs)
-typing.Coroutine (*args, **kwds) != (*args, **kwargs)
-typing.Counter (*args, **kwds) != (*args, **kwargs)
-typing.DefaultDict (*args, **kwds) != (*args, **kwargs)
-typing.Deque (*args, **kwds) != (*args, **kwargs)
-typing.Dict (*args, **kwds) != (*args, **kwargs)
-typing.FrozenSet (*args, **kwds) != (*args, **kwargs)
-typing.Generator (*args, **kwds) != (*args, **kwargs)
-typing.Hashable () != (*args, **kwargs)
-typing.ItemsView (*args, **kwds) != (*args, **kwargs)
-typing.Iterable (*args, **kwds) != (*args, **kwargs)
-typing.Iterator (*args, **kwds) != (*args, **kwargs)
-typing.KT (*args, **kwds) != None
-typing.KeysView (*args, **kwds) != (*args, **kwargs)
-typing.List (*args, **kwds) != (*args, **kwargs)
-typing.Mapping (*args, **kwds) != (*args, **kwargs)
-typing.MappingView (*args, **kwds) != (*args, **kwargs)
-typing.Match (*args, **kwds) != (*args, **kwargs)
-typing.MutableMapping (*args, **kwds) != (*args, **kwargs)
-typing.MutableSequence (*args, **kwds) != (*args, **kwargs)
-typing.MutableSet (*args, **kwds) != (*args, **kwargs)
-typing.NamedTuple (typename, fields=None, **kwargs) != (typename, fields=None, /, **kwargs)
-typing.Pattern (*args, **kwds) != (*args, **kwargs)
-typing.Reversible (*args, **kwds) != (*args, **kwargs)
-typing.Sequence (*args, **kwds) != (*args, **kwargs)
-typing.Set (*args, **kwds) != (*args, **kwargs)
-typing.Sized () != (*args, **kwargs)
-typing.SupportsAbs () != (*args, **kwds)
-typing.SupportsBytes () != (*args, **kwds)
-typing.SupportsComplex () != (*args, **kwds)
-typing.SupportsFloat () != (*args, **kwds)
-typing.SupportsInt () != (*args, **kwds)
-typing.SupportsRound () != (*args, **kwds)
-typing.T (*args, **kwds) != None
-typing.T_co (*args, **kwds) != None
-typing.T_contra (*args, **kwds) != None
-typing.Tuple (*args, **kwds) != (*args, **kwargs)
-typing.Type (*args, **kwds) != (*args, **kwargs)
-typing.TypeVar (*args, **kwds) != (name, *constraints, bound=None, covariant=False, contravariant=False)
-typing.VT (*args, **kwds) != None
-typing.VT_co (*args, **kwds) != None
-typing.V_co (*args, **kwds) != None
-typing.ValuesView (*args, **kwds) != (*args, **kwargs)
-typing._ProtocolMeta (name, bases, namespace, tvars=None, args=None, origin=None, extra=None, orig_bases=None) != (name, bases, namespace, **kwargs)
-typing._type_check (arg, msg) != (arg, msg, is_argument=True)
 uuid.UUID (hex=None, bytes=None, bytes_le=None, fields=None, int=None, version=None) != (hex=None, bytes=None, bytes_le=None, fields=None, int=None, version=None, *, is_safe=<SafeUUID.unknown: None>)
 uuid.getnode () != (*, getters=None)
 venv.EnvBuilder (system_site_packages=False, clear=False, symlinks=False, upgrade=False, with_pip=False, prompt=None, upgrade_deps=False) != (system_site_packages=False, clear=False, symlinks=False, upgrade=False, with_pip=False, prompt=None)
@@ -2118,7 +2020,7 @@ webbrowser.register (name, klass, instance=None, update_tryorder=1) != (name, kl
 resource.struct_rusage ValueError('no signature found') != (iterable=(), /)
 
 out of 276 modules:
-  not_implemented 91
+  not_implemented 90
   failed_to_import 5
-  missing_items 75
-  mismatched_items 48
+  missing_items 73
+  mismatched_items 47
