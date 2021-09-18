@@ -129,7 +129,6 @@ cProfile (entire module)
 contextvars (entire module)
 ctypes (entire module)
 curses (entire module)
-dataclasses (entire module)
 ensurepip (entire module)
 filecmp (entire module)
 fileinput (entire module)
@@ -565,10 +564,8 @@ binascii.Error
 binascii.Incomplete
 binascii.a2b_hqx
 binascii.a2b_qp
-binascii.a2b_uu
 binascii.b2a_hqx
 binascii.b2a_qp
-binascii.b2a_uu
 binascii.crc_hqx
 binascii.rlecode_hqx
 binascii.rledecode_hqx
@@ -761,7 +758,6 @@ posix.confstr
 posix.confstr_names
 posix.ctermid
 posix.device_encoding
-posix.fchdir
 posix.fchmod
 posix.fdatasync
 posix.fork
@@ -883,11 +879,7 @@ time.daylight
 time.get_clock_info
 time.monotonic_ns
 time.perf_counter_ns
-time.process_time
-time.process_time_ns
 time.pthread_getcpuclockid
-time.thread_time
-time.thread_time_ns
 time.timezone
 time.tzname
 time.tzset
@@ -1909,7 +1901,6 @@ calendar.prmonth None != (theyear, themonth, w=0, l=0)
 calendar.prweek None != (theweek, width)
 calendar.week None != (theweek, width)
 calendar.weekheader None != (width)
-codecs.open (filename, mode='r', encoding=None, errors='strict', buffering=1) != (filename, mode='r', encoding=None, errors='strict', buffering=-1)
 collections.Counter (*args, **kwds) != (iterable=None, /, **kwds)
 collections.OrderedDict (*args, **kwds) != ValueError('no signature found')
 collections.UserDict (*args, **kwargs) != (dict=None, /, **kwargs)
@@ -1985,9 +1976,6 @@ symtable.Symbol ValueError('no signature found') != (name, flags, namespaces=Non
 symtable.SymbolTable ValueError('no signature found') != (raw_table, filename)
 symtable.symtable None != (code, filename, compile_type)
 tarfile.open None != (name=None, mode='r', fileobj=None, bufsize=10240, **kwargs)
-timeit.Timer (stmt='pass', setup='pass', timer=<built-in function time>, globals=None) != (stmt='pass', setup='pass', timer=<built-in function perf_counter>, globals=None)
-timeit.repeat (stmt='pass', setup='pass', timer=<built-in function time>, repeat=5, number=1000000, globals=None) != (stmt='pass', setup='pass', timer=<built-in function perf_counter>, repeat=5, number=1000000, globals=None)
-timeit.timeit (stmt='pass', setup='pass', timer=<built-in function time>, number=1000000, globals=None) != (stmt='pass', setup='pass', timer=<built-in function perf_counter>, number=1000000, globals=None)
 traceback.StackSummary ValueError('no signature found') != (iterable=(), /)
 uuid.UUID (hex=None, bytes=None, bytes_le=None, fields=None, int=None, version=None) != (hex=None, bytes=None, bytes_le=None, fields=None, int=None, version=None, *, is_safe=<SafeUUID.unknown: None>)
 uuid.getnode () != (*, getters=None)
@@ -2000,7 +1988,7 @@ webbrowser.register (name, klass, instance=None, update_tryorder=1) != (name, kl
 resource.struct_rusage ValueError('no signature found') != (iterable=(), /)
 
 out of 276 modules:
-  not_implemented 90
+  not_implemented 89
   failed_to_import 5
   missing_items 72
-  mismatched_items 47
+  mismatched_items 45
