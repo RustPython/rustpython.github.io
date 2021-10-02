@@ -116,7 +116,6 @@ _stat (entire module)
 _statistics (entire module)
 _symtable (entire module)
 _tracemalloc (entire module)
-cmath (entire module)
 grp (entire module)
 syslog (entire module)
 xxsubtype (entire module)
@@ -560,8 +559,6 @@ _warnings.filters
 _warnings.warn_explicit
 array.ArrayType
 array.typecodes
-binascii.Error
-binascii.Incomplete
 binascii.a2b_hqx
 binascii.a2b_qp
 binascii.b2a_hqx
@@ -573,6 +570,18 @@ builtins.False
 builtins.None
 builtins.True
 builtins.breakpoint
+cmath.acos
+cmath.acosh
+cmath.asin
+cmath.asinh
+cmath.atan
+cmath.atanh
+cmath.cosh
+cmath.log
+cmath.log10
+cmath.sinh
+cmath.tan
+cmath.tanh
 errno.EADV
 errno.EBADE
 errno.EBADFD
@@ -1988,7 +1997,7 @@ webbrowser.register (name, klass, instance=None, update_tryorder=1) != (name, kl
 resource.struct_rusage ValueError('no signature found') != (iterable=(), /)
 
 out of 276 modules:
-  not_implemented 89
+  not_implemented 88
   failed_to_import 5
-  missing_items 72
+  missing_items 73
   mismatched_items 45
