@@ -5,7 +5,6 @@ bytes.__str__ inherited
 complex.__format__ inherited
 complex.__getattribute__ inherited
 dict.__getattribute__ inherited
-enumerate.__doc__ inherited
 enumerate.__getattribute__ inherited
 enumerate.__reduce__ inherited
 filter.__getattribute__ inherited
@@ -19,7 +18,6 @@ list.__getattribute__ inherited
 map.__getattribute__ inherited
 map.__reduce__ inherited
 memoryview.__delitem__
-memoryview.__doc__ inherited
 memoryview.__getattribute__ inherited
 memoryview.c_contiguous
 memoryview.contiguous
@@ -27,7 +25,6 @@ memoryview.f_contiguous
 memoryview.suboffsets
 range.__getattribute__ inherited
 set.__getattribute__ inherited
-slice.__doc__ inherited
 slice.__getattribute__ inherited
 slice.__reduce__ inherited
 str.__getattribute__ inherited
@@ -38,19 +35,16 @@ super.__self_class__
 super.__thisclass__
 tuple.__getattribute__ inherited
 object.__sizeof__
-zip.__doc__ inherited
 zip.__getattribute__ inherited
 zip.__reduce__ inherited
 classmethod.__init__ inherited
 classmethod.__isabstractmethod__
-staticmethod.__doc__ inherited
 staticmethod.__func__
 staticmethod.__init__ inherited
 staticmethod.__isabstractmethod__
 property.__getattribute__ inherited
 property.__isabstractmethod__
 BaseException.__delattr__ inherited
-BaseException.__doc__ inherited
 BaseException.__getattribute__ inherited
 BaseException.__reduce__ inherited
 BaseException.__setattr__ inherited
@@ -117,7 +111,6 @@ _statistics (entire module)
 _symtable (entire module)
 _tracemalloc (entire module)
 grp (entire module)
-syslog (entire module)
 xxsubtype (entire module)
 _bootlocale (entire module)
 _strptime (entire module)
@@ -147,10 +140,9 @@ smtplib (entire module)
 sqlite3 (entire module)
 symbol (entire module)
 tabnanny (entire module)
-trace (entire module)
 tracemalloc (entire module)
+turtle (entire module)
 wave (entire module)
-zipapp (entire module)
 _asyncio (entire module)
 _bz2 (entire module)
 _codecs_cn (entire module)
@@ -188,11 +180,6 @@ _xxtestfuzz (entire module)
 mmap (entire module)
 readline (entire module)
 xxlimited (entire module)
-_pydecimal (exists but not importable: module 'numbers' has no attribute 'Number')
-decimal (exists but not importable: module 'numbers' has no attribute 'Number')
-fractions (exists but not importable: module 'numbers' has no attribute 'Number')
-ssl (exists but not importable: No module named '_ssl')
-statistics (exists but not importable: module 'numbers' has no attribute 'Number')
 _ast.AugLoad
 _ast.AugStore
 _ast.ExtSlice
@@ -571,17 +558,7 @@ builtins.None
 builtins.True
 builtins.breakpoint
 cmath.acos
-cmath.acosh
 cmath.asin
-cmath.asinh
-cmath.atan
-cmath.atanh
-cmath.cosh
-cmath.log
-cmath.log10
-cmath.sinh
-cmath.tan
-cmath.tanh
 errno.EADV
 errno.EBADE
 errno.EBADFD
@@ -794,13 +771,8 @@ posix.readv
 posix.register_at_fork
 posix.removexattr
 posix.sched_getaffinity
-posix.sched_getparam
-posix.sched_getscheduler
-posix.sched_param
 posix.sched_rr_get_interval
 posix.sched_setaffinity
-posix.sched_setparam
-posix.sched_setscheduler
 posix.setpgrp
 posix.setxattr
 posix.statvfs
@@ -911,6 +883,97 @@ _osx_support._cache_default_sysroot
 _osx_support._default_sysroot
 _osx_support._get_system_version_tuple
 _osx_support._supports_arm64_builds
+_pydecimal.BasicContext
+_pydecimal.Clamped
+_pydecimal.Context
+_pydecimal.ConversionSyntax
+_pydecimal.Decimal
+_pydecimal.DecimalException
+_pydecimal.DecimalTuple
+_pydecimal.DefaultContext
+_pydecimal.DivisionByZero
+_pydecimal.DivisionImpossible
+_pydecimal.DivisionUndefined
+_pydecimal.ExtendedContext
+_pydecimal.FloatOperation
+_pydecimal.HAVE_CONTEXTVAR
+_pydecimal.HAVE_THREADS
+_pydecimal.Inexact
+_pydecimal.InvalidContext
+_pydecimal.InvalidOperation
+_pydecimal.MAX_EMAX
+_pydecimal.MAX_PREC
+_pydecimal.MIN_EMIN
+_pydecimal.MIN_ETINY
+_pydecimal.Overflow
+_pydecimal.ROUND_05UP
+_pydecimal.ROUND_CEILING
+_pydecimal.ROUND_DOWN
+_pydecimal.ROUND_FLOOR
+_pydecimal.ROUND_HALF_DOWN
+_pydecimal.ROUND_HALF_EVEN
+_pydecimal.ROUND_HALF_UP
+_pydecimal.ROUND_UP
+_pydecimal.Rounded
+_pydecimal.Subnormal
+_pydecimal.Underflow
+_pydecimal._ContextManager
+_pydecimal._Infinity
+_pydecimal._Log10Memoize
+_pydecimal._NaN
+_pydecimal._NegativeInfinity
+_pydecimal._NegativeOne
+_pydecimal._One
+_pydecimal._PyHASH_10INV
+_pydecimal._PyHASH_INF
+_pydecimal._PyHASH_MODULUS
+_pydecimal._PyHASH_NAN
+_pydecimal._SignedInfinity
+_pydecimal._WorkRep
+_pydecimal._Zero
+_pydecimal.__all__
+_pydecimal.__builtins__
+_pydecimal.__cached__
+_pydecimal.__file__
+_pydecimal.__libmpdec_version__
+_pydecimal.__name__
+_pydecimal.__package__
+_pydecimal.__version__
+_pydecimal.__xname__
+_pydecimal._all_zeros
+_pydecimal._condition_map
+_pydecimal._convert_for_comparison
+_pydecimal._convert_other
+_pydecimal._current_context_var
+_pydecimal._dec_from_triple
+_pydecimal._decimal_lshift_exact
+_pydecimal._dexp
+_pydecimal._div_nearest
+_pydecimal._dlog
+_pydecimal._dlog10
+_pydecimal._dpower
+_pydecimal._exact_half
+_pydecimal._format_align
+_pydecimal._format_number
+_pydecimal._format_sign
+_pydecimal._group_lengths
+_pydecimal._iexp
+_pydecimal._ilog
+_pydecimal._insert_thousands_sep
+_pydecimal._log10_digits
+_pydecimal._log10_lb
+_pydecimal._nbits
+_pydecimal._normalize
+_pydecimal._parse_format_specifier
+_pydecimal._parse_format_specifier_regex
+_pydecimal._parser
+_pydecimal._rounding_modes
+_pydecimal._rshift_nearest
+_pydecimal._signals
+_pydecimal._sqrt_nearest
+_pydecimal.getcontext
+_pydecimal.localcontext
+_pydecimal.setcontext
 ast.PyCF_ALLOW_TOP_LEVEL_AWAIT
 ast.PyCF_TYPE_COMMENTS
 code.InteractiveConsole
@@ -922,6 +985,50 @@ copyreg.__cached__
 copyreg.__file__
 csv.__version__
 datetime.datetime_CAPI
+decimal.BasicContext
+decimal.Clamped
+decimal.Context
+decimal.ConversionSyntax
+decimal.Decimal
+decimal.DecimalException
+decimal.DecimalTuple
+decimal.DefaultContext
+decimal.DivisionByZero
+decimal.DivisionImpossible
+decimal.DivisionUndefined
+decimal.ExtendedContext
+decimal.FloatOperation
+decimal.HAVE_CONTEXTVAR
+decimal.HAVE_THREADS
+decimal.Inexact
+decimal.InvalidContext
+decimal.InvalidOperation
+decimal.MAX_EMAX
+decimal.MAX_PREC
+decimal.MIN_EMIN
+decimal.MIN_ETINY
+decimal.Overflow
+decimal.ROUND_05UP
+decimal.ROUND_CEILING
+decimal.ROUND_DOWN
+decimal.ROUND_FLOOR
+decimal.ROUND_HALF_DOWN
+decimal.ROUND_HALF_EVEN
+decimal.ROUND_HALF_UP
+decimal.ROUND_UP
+decimal.Rounded
+decimal.Subnormal
+decimal.Underflow
+decimal.__builtins__
+decimal.__cached__
+decimal.__file__
+decimal.__libmpdec_version__
+decimal.__name__
+decimal.__package__
+decimal.__version__
+decimal.getcontext
+decimal.localcontext
+decimal.setcontext
 dis.Bytecode
 dis.EXTENDED_ARG
 dis.FORMAT_VALUE
@@ -969,6 +1076,18 @@ dis.opname
 dis.pretty_flags
 dis.show_code
 doctest._newline_convert
+fractions.Fraction
+fractions._PyHASH_INF
+fractions._PyHASH_MODULUS
+fractions._RATIONAL_FORMAT
+fractions.__all__
+fractions.__builtins__
+fractions.__cached__
+fractions.__file__
+fractions.__name__
+fractions.__package__
+fractions._gcd
+fractions.gcd
 ftplib.FTP_TLS
 gettext._unspecified
 gettext.dnpgettext
@@ -1475,6 +1594,173 @@ socketserver.ForkingTCPServer
 socketserver.ForkingUDPServer
 socketserver._NoThreads
 socketserver._Threads
+ssl.ALERT_DESCRIPTION_ACCESS_DENIED
+ssl.ALERT_DESCRIPTION_BAD_CERTIFICATE
+ssl.ALERT_DESCRIPTION_BAD_CERTIFICATE_HASH_VALUE
+ssl.ALERT_DESCRIPTION_BAD_CERTIFICATE_STATUS_RESPONSE
+ssl.ALERT_DESCRIPTION_BAD_RECORD_MAC
+ssl.ALERT_DESCRIPTION_CERTIFICATE_EXPIRED
+ssl.ALERT_DESCRIPTION_CERTIFICATE_REVOKED
+ssl.ALERT_DESCRIPTION_CERTIFICATE_UNKNOWN
+ssl.ALERT_DESCRIPTION_CERTIFICATE_UNOBTAINABLE
+ssl.ALERT_DESCRIPTION_CLOSE_NOTIFY
+ssl.ALERT_DESCRIPTION_DECODE_ERROR
+ssl.ALERT_DESCRIPTION_DECOMPRESSION_FAILURE
+ssl.ALERT_DESCRIPTION_DECRYPT_ERROR
+ssl.ALERT_DESCRIPTION_HANDSHAKE_FAILURE
+ssl.ALERT_DESCRIPTION_ILLEGAL_PARAMETER
+ssl.ALERT_DESCRIPTION_INSUFFICIENT_SECURITY
+ssl.ALERT_DESCRIPTION_INTERNAL_ERROR
+ssl.ALERT_DESCRIPTION_NO_RENEGOTIATION
+ssl.ALERT_DESCRIPTION_PROTOCOL_VERSION
+ssl.ALERT_DESCRIPTION_RECORD_OVERFLOW
+ssl.ALERT_DESCRIPTION_UNEXPECTED_MESSAGE
+ssl.ALERT_DESCRIPTION_UNKNOWN_CA
+ssl.ALERT_DESCRIPTION_UNKNOWN_PSK_IDENTITY
+ssl.ALERT_DESCRIPTION_UNRECOGNIZED_NAME
+ssl.ALERT_DESCRIPTION_UNSUPPORTED_CERTIFICATE
+ssl.ALERT_DESCRIPTION_UNSUPPORTED_EXTENSION
+ssl.ALERT_DESCRIPTION_USER_CANCELLED
+ssl.AlertDescription
+ssl.CERT_NONE
+ssl.CERT_OPTIONAL
+ssl.CERT_REQUIRED
+ssl.CHANNEL_BINDING_TYPES
+ssl.CertificateError
+ssl.DER_cert_to_PEM_cert
+ssl.DefaultVerifyPaths
+ssl.HAS_ALPN
+ssl.HAS_ECDH
+ssl.HAS_NEVER_CHECK_COMMON_NAME
+ssl.HAS_NPN
+ssl.HAS_SNI
+ssl.HAS_SSLv2
+ssl.HAS_SSLv3
+ssl.HAS_TLSv1
+ssl.HAS_TLSv1_1
+ssl.HAS_TLSv1_2
+ssl.HAS_TLSv1_3
+ssl.OPENSSL_VERSION
+ssl.OPENSSL_VERSION_INFO
+ssl.OPENSSL_VERSION_NUMBER
+ssl.OP_ALL
+ssl.OP_CIPHER_SERVER_PREFERENCE
+ssl.OP_ENABLE_MIDDLEBOX_COMPAT
+ssl.OP_NO_COMPRESSION
+ssl.OP_NO_RENEGOTIATION
+ssl.OP_NO_SSLv2
+ssl.OP_NO_SSLv3
+ssl.OP_NO_TICKET
+ssl.OP_NO_TLSv1
+ssl.OP_NO_TLSv1_1
+ssl.OP_NO_TLSv1_2
+ssl.OP_NO_TLSv1_3
+ssl.OP_SINGLE_DH_USE
+ssl.OP_SINGLE_ECDH_USE
+ssl.Options
+ssl.PEM_FOOTER
+ssl.PEM_HEADER
+ssl.PEM_cert_to_DER_cert
+ssl.PROTOCOL_SSLv23
+ssl.PROTOCOL_TLS
+ssl.PROTOCOL_TLS_CLIENT
+ssl.PROTOCOL_TLS_SERVER
+ssl.PROTOCOL_TLSv1
+ssl.PROTOCOL_TLSv1_1
+ssl.PROTOCOL_TLSv1_2
+ssl.Purpose
+ssl.SOL_SOCKET
+ssl.SO_TYPE
+ssl.SSLCertVerificationError
+ssl.SSLContext
+ssl.SSLEOFError
+ssl.SSLError
+ssl.SSLErrorNumber
+ssl.SSLObject
+ssl.SSLSocket
+ssl.SSLSyscallError
+ssl.SSLWantReadError
+ssl.SSLWantWriteError
+ssl.SSLZeroReturnError
+ssl.SSL_ERROR_EOF
+ssl.SSL_ERROR_INVALID_ERROR_CODE
+ssl.SSL_ERROR_SSL
+ssl.SSL_ERROR_SYSCALL
+ssl.SSL_ERROR_WANT_CONNECT
+ssl.SSL_ERROR_WANT_READ
+ssl.SSL_ERROR_WANT_WRITE
+ssl.SSL_ERROR_WANT_X509_LOOKUP
+ssl.SSL_ERROR_ZERO_RETURN
+ssl.TLSVersion
+ssl.VERIFY_CRL_CHECK_CHAIN
+ssl.VERIFY_CRL_CHECK_LEAF
+ssl.VERIFY_DEFAULT
+ssl.VERIFY_X509_STRICT
+ssl.VERIFY_X509_TRUSTED_FIRST
+ssl.VerifyFlags
+ssl.VerifyMode
+ssl._ASN1Object
+ssl._DEFAULT_CIPHERS
+ssl._OPENSSL_API_VERSION
+ssl._PROTOCOL_NAMES
+ssl._RESTRICTED_SERVER_CIPHERS
+ssl._SSLMethod
+ssl._SSLv2_IF_EXISTS
+ssl._TLSAlertType
+ssl._TLSContentType
+ssl._TLSMessageType
+ssl.__builtins__
+ssl.__cached__
+ssl.__file__
+ssl.__name__
+ssl.__package__
+ssl._create_default_https_context
+ssl._create_stdlib_context
+ssl._create_unverified_context
+ssl._dnsname_match
+ssl._inet_paton
+ssl._ipaddress_match
+ssl._sslcopydoc
+ssl.cert_time_to_seconds
+ssl.create_default_context
+ssl.get_default_verify_paths
+ssl.get_protocol_name
+ssl.get_server_certificate
+ssl.match_hostname
+ssl.wrap_socket
+statistics.NormalDist
+statistics.StatisticsError
+statistics.__all__
+statistics.__builtins__
+statistics.__cached__
+statistics.__file__
+statistics.__name__
+statistics.__package__
+statistics._coerce
+statistics._convert
+statistics._exact_ratio
+statistics._fail_neg
+statistics._find_lteq
+statistics._find_rteq
+statistics._isfinite
+statistics._ss
+statistics._sum
+statistics.fmean
+statistics.geometric_mean
+statistics.harmonic_mean
+statistics.mean
+statistics.median
+statistics.median_grouped
+statistics.median_high
+statistics.median_low
+statistics.mode
+statistics.multimode
+statistics.pstdev
+statistics.pvariance
+statistics.quantiles
+statistics.stdev
+statistics.tau
+statistics.variance
 string._sentinel_dict
 symtable.CELL
 symtable.Class
@@ -1672,8 +1958,6 @@ warnings._onceregistry
 webbrowser._lock
 webbrowser._os_preferred_browser
 webbrowser.register_standard_browsers
-zipfile._dedupe
-zipfile._difference
 _json.__file__
 _json.make_encoder
 _multiprocessing.SemLock
@@ -1854,7 +2138,10 @@ _io.BytesIO ValueError('no signature found') != (initial_bytes=b'')
 _io.FileIO ValueError('no signature found') != (file, mode='r', closefd=True, opener=None)
 _io.StringIO ValueError('no signature found') != (initial_value='', newline='\n')
 _io.TextIOWrapper ValueError('no signature found') != (buffer, encoding=None, errors=None, newline=None, line_buffering=False, write_through=False)
-_thread.LockType ValueError('no signature found') != ()
+_io._BufferedIOBase () != ValueError('no signature found')
+_io._IOBase () != ValueError('no signature found')
+_io._RawIOBase () != ValueError('no signature found')
+_io._TextIOBase () != ValueError('no signature found')
 _weakref.proxy ValueError('no signature found') != None
 builtins.complex ValueError('no signature found') != (real=0, imag=0)
 builtins.enumerate ValueError('no signature found') != (iterable, start=0)
@@ -1878,6 +2165,7 @@ gc.is_tracked (*args, **kwargs) != None
 gc.isenabled (*args, **kwargs) != None
 gc.set_debug (*args, **kwargs) != None
 gc.set_threshold (*args, **kwargs) != None
+itertools._grouper () != ValueError('no signature found')
 itertools.accumulate ValueError('no signature found') != (iterable, func=None, *, initial=None)
 itertools.combinations ValueError('no signature found') != (iterable, r)
 itertools.combinations_with_replacement ValueError('no signature found') != (iterable, r)
@@ -1891,12 +2179,12 @@ itertools.permutations ValueError('no signature found') != (iterable, r=None)
 itertools.starmap ValueError('no signature found') != (function, iterable, /)
 itertools.takewhile ValueError('no signature found') != (predicate, iterable, /)
 itertools.tee ValueError('no signature found') != None
-posix.DirEntry ValueError('no signature found') != ()
+posix.sched_param ValueError('no signature found') != (iterable=(), /)
 posix.times_result ValueError('no signature found') != (iterable=(), /)
 posix.uname_result ValueError('no signature found') != (iterable=(), /)
 pwd.struct_passwd ValueError('no signature found') != (iterable=(), /)
 time.struct_time ValueError('no signature found') != (iterable=(), /)
-unicodedata.UCD ValueError('no signature found') != ()
+_compression.BaseStream () != ValueError('no signature found')
 _osx_support._read_output (commandstring) != (commandstring, capture_stderr=False)
 _py_abc.ABCMeta (name, bases, namespace, **kwargs) != (name, bases, namespace, /, **kwargs)
 abc.abstractproperty ValueError('no signature found') != (fget=None, fset=None, fdel=None, doc=None)
@@ -1938,6 +2226,10 @@ gettext.translation (domain, localedir=None, languages=None, class_=None, fallba
 hashlib.new None != (name, data=b'', **kwargs)
 hmac.HMAC (key, msg=None, digestmod=None) != (key, msg=None, digestmod='')
 hmac.new (key, msg=None, digestmod=None) != (key, msg=None, digestmod='')
+io.BufferedIOBase () != ValueError('no signature found')
+io.IOBase () != ValueError('no signature found')
+io.RawIOBase () != ValueError('no signature found')
+io.TextIOBase () != ValueError('no signature found')
 logging.Formatter (fmt=None, datefmt=None, style='%') != (fmt=None, datefmt=None, style='%', validate=True)
 os.stat_result ValueError('no signature found') != (iterable=(), /)
 os.terminal_size ValueError('no signature found') != (iterable=(), /)
@@ -1976,13 +2268,11 @@ random.triangular None != (low=0.0, high=1.0, mode=None)
 random.uniform None != (a, b)
 random.vonmisesvariate None != (mu, kappa)
 random.weibullvariate None != (alpha, beta)
-re.Match ValueError('no signature found') != ()
-re.Pattern ValueError('no signature found') != ()
 re._compile_repl (repl, pattern) != None
 reprlib.repr None != (x)
 shutil._copyxattr (*args, **kwargs) != (src, dst, *, follow_symlinks=True)
-symtable.Symbol ValueError('no signature found') != (name, flags, namespaces=None, *, module_scope=False)
-symtable.SymbolTable ValueError('no signature found') != (raw_table, filename)
+symtable.Symbol () != (name, flags, namespaces=None, *, module_scope=False)
+symtable.SymbolTable () != (raw_table, filename)
 symtable.symtable None != (code, filename, compile_type)
 tarfile.open None != (name=None, mode='r', fileobj=None, bufsize=10240, **kwargs)
 traceback.StackSummary ValueError('no signature found') != (iterable=(), /)
@@ -1996,8 +2286,8 @@ webbrowser._synthesize (browser, update_tryorder=1) != (browser, *, preferred=Fa
 webbrowser.register (name, klass, instance=None, update_tryorder=1) != (name, klass, instance=None, *, preferred=False)
 resource.struct_rusage ValueError('no signature found') != (iterable=(), /)
 
-out of 276 modules:
-  not_implemented 88
-  failed_to_import 5
-  missing_items 73
+out of 277 modules:
+  not_implemented 86
+  failed_to_import 0
+  missing_items 77
   mismatched_items 45
