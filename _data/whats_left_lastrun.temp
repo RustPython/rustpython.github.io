@@ -36,7 +36,6 @@ super.__thisclass__
 tuple.__getattribute__ inherited
 object.__sizeof__
 zip.__getattribute__ inherited
-zip.__reduce__ inherited
 classmethod.__init__ inherited
 classmethod.__isabstractmethod__
 staticmethod.__func__
@@ -52,14 +51,8 @@ BaseException.__setstate__
 NoneType.__doc__ inherited
 bytearray_iterator.__doc__ inherited
 bytearray_iterator.__getattribute__ inherited
-bytearray_iterator.__length_hint__
-bytearray_iterator.__reduce__ inherited
-bytearray_iterator.__setstate__
 bytes_iterator.__doc__ inherited
 bytes_iterator.__getattribute__ inherited
-bytes_iterator.__length_hint__
-bytes_iterator.__reduce__ inherited
-bytes_iterator.__setstate__
 dict_keyiterator.__doc__ inherited
 dict_keyiterator.__getattribute__ inherited
 dict_keyiterator.__reduce__ inherited
@@ -71,18 +64,10 @@ dict_itemiterator.__getattribute__ inherited
 dict_itemiterator.__reduce__ inherited
 dict_values.__doc__ inherited
 dict_values.__getattribute__ inherited
-dict_items.__and__
 dict_items.__contains__
 dict_items.__doc__ inherited
 dict_items.__getattribute__ inherited
 dict_items.__hash__ inherited
-dict_items.__or__
-dict_items.__rand__
-dict_items.__ror__
-dict_items.__rsub__
-dict_items.__rxor__
-dict_items.__sub__
-dict_items.__xor__
 dict_items.isdisjoint
 set_iterator.__doc__ inherited
 set_iterator.__getattribute__ inherited
@@ -111,7 +96,6 @@ _statistics (entire module)
 _symtable (entire module)
 _tracemalloc (entire module)
 grp (entire module)
-xxsubtype (entire module)
 _bootlocale (entire module)
 _strptime (entire module)
 _sysconfigdata__linux_x86_64-linux-gnu (entire module)
@@ -170,16 +154,11 @@ _queue (entire module)
 _sqlite3 (entire module)
 _ssl (entire module)
 _testbuffer (entire module)
-_testcapi (entire module)
-_testimportmultiple (entire module)
-_testinternalcapi (entire module)
-_testmultiphase (entire module)
 _uuid (entire module)
 _xxsubinterpreters (entire module)
 _xxtestfuzz (entire module)
 mmap (entire module)
 readline (entire module)
-xxlimited (entire module)
 _ast.AugLoad
 _ast.AugStore
 _ast.ExtSlice
@@ -557,8 +536,6 @@ builtins.False
 builtins.None
 builtins.True
 builtins.breakpoint
-cmath.acos
-cmath.asin
 errno.EADV
 errno.EBADE
 errno.EBADFD
@@ -744,7 +721,6 @@ posix.confstr
 posix.confstr_names
 posix.ctermid
 posix.device_encoding
-posix.fchmod
 posix.fdatasync
 posix.fork
 posix.forkpty
@@ -883,152 +859,16 @@ _osx_support._cache_default_sysroot
 _osx_support._default_sysroot
 _osx_support._get_system_version_tuple
 _osx_support._supports_arm64_builds
-_pydecimal.BasicContext
-_pydecimal.Clamped
-_pydecimal.Context
-_pydecimal.ConversionSyntax
-_pydecimal.Decimal
-_pydecimal.DecimalException
-_pydecimal.DecimalTuple
-_pydecimal.DefaultContext
-_pydecimal.DivisionByZero
-_pydecimal.DivisionImpossible
-_pydecimal.DivisionUndefined
-_pydecimal.ExtendedContext
-_pydecimal.FloatOperation
 _pydecimal.HAVE_CONTEXTVAR
-_pydecimal.HAVE_THREADS
-_pydecimal.Inexact
-_pydecimal.InvalidContext
-_pydecimal.InvalidOperation
-_pydecimal.MAX_EMAX
-_pydecimal.MAX_PREC
-_pydecimal.MIN_EMIN
-_pydecimal.MIN_ETINY
-_pydecimal.Overflow
-_pydecimal.ROUND_05UP
-_pydecimal.ROUND_CEILING
-_pydecimal.ROUND_DOWN
-_pydecimal.ROUND_FLOOR
-_pydecimal.ROUND_HALF_DOWN
-_pydecimal.ROUND_HALF_EVEN
-_pydecimal.ROUND_HALF_UP
-_pydecimal.ROUND_UP
-_pydecimal.Rounded
-_pydecimal.Subnormal
-_pydecimal.Underflow
-_pydecimal._ContextManager
-_pydecimal._Infinity
-_pydecimal._Log10Memoize
-_pydecimal._NaN
-_pydecimal._NegativeInfinity
-_pydecimal._NegativeOne
-_pydecimal._One
-_pydecimal._PyHASH_10INV
-_pydecimal._PyHASH_INF
-_pydecimal._PyHASH_MODULUS
-_pydecimal._PyHASH_NAN
-_pydecimal._SignedInfinity
-_pydecimal._WorkRep
-_pydecimal._Zero
-_pydecimal.__all__
-_pydecimal.__builtins__
-_pydecimal.__cached__
-_pydecimal.__file__
-_pydecimal.__libmpdec_version__
-_pydecimal.__name__
-_pydecimal.__package__
-_pydecimal.__version__
-_pydecimal.__xname__
-_pydecimal._all_zeros
-_pydecimal._condition_map
-_pydecimal._convert_for_comparison
-_pydecimal._convert_other
 _pydecimal._current_context_var
-_pydecimal._dec_from_triple
-_pydecimal._decimal_lshift_exact
-_pydecimal._dexp
-_pydecimal._div_nearest
-_pydecimal._dlog
-_pydecimal._dlog10
-_pydecimal._dpower
-_pydecimal._exact_half
-_pydecimal._format_align
-_pydecimal._format_number
-_pydecimal._format_sign
-_pydecimal._group_lengths
-_pydecimal._iexp
-_pydecimal._ilog
-_pydecimal._insert_thousands_sep
-_pydecimal._log10_digits
-_pydecimal._log10_lb
-_pydecimal._nbits
-_pydecimal._normalize
-_pydecimal._parse_format_specifier
-_pydecimal._parse_format_specifier_regex
-_pydecimal._parser
-_pydecimal._rounding_modes
-_pydecimal._rshift_nearest
-_pydecimal._signals
-_pydecimal._sqrt_nearest
-_pydecimal.getcontext
-_pydecimal.localcontext
-_pydecimal.setcontext
 ast.PyCF_ALLOW_TOP_LEVEL_AWAIT
 ast.PyCF_TYPE_COMMENTS
-code.InteractiveConsole
-code.InteractiveInterpreter
-code.__all__
-code.interact
 compileall._compile_file_tuple
 copyreg.__cached__
 copyreg.__file__
 csv.__version__
 datetime.datetime_CAPI
-decimal.BasicContext
-decimal.Clamped
-decimal.Context
-decimal.ConversionSyntax
-decimal.Decimal
-decimal.DecimalException
-decimal.DecimalTuple
-decimal.DefaultContext
-decimal.DivisionByZero
-decimal.DivisionImpossible
-decimal.DivisionUndefined
-decimal.ExtendedContext
-decimal.FloatOperation
 decimal.HAVE_CONTEXTVAR
-decimal.HAVE_THREADS
-decimal.Inexact
-decimal.InvalidContext
-decimal.InvalidOperation
-decimal.MAX_EMAX
-decimal.MAX_PREC
-decimal.MIN_EMIN
-decimal.MIN_ETINY
-decimal.Overflow
-decimal.ROUND_05UP
-decimal.ROUND_CEILING
-decimal.ROUND_DOWN
-decimal.ROUND_FLOOR
-decimal.ROUND_HALF_DOWN
-decimal.ROUND_HALF_EVEN
-decimal.ROUND_HALF_UP
-decimal.ROUND_UP
-decimal.Rounded
-decimal.Subnormal
-decimal.Underflow
-decimal.__builtins__
-decimal.__cached__
-decimal.__file__
-decimal.__libmpdec_version__
-decimal.__name__
-decimal.__package__
-decimal.__version__
-decimal.getcontext
-decimal.localcontext
-decimal.setcontext
 dis.Bytecode
 dis.EXTENDED_ARG
 dis.FORMAT_VALUE
@@ -1076,18 +916,6 @@ dis.opname
 dis.pretty_flags
 dis.show_code
 doctest._newline_convert
-fractions.Fraction
-fractions._PyHASH_INF
-fractions._PyHASH_MODULUS
-fractions._RATIONAL_FORMAT
-fractions.__all__
-fractions.__builtins__
-fractions.__cached__
-fractions.__file__
-fractions.__name__
-fractions.__package__
-fractions._gcd
-fractions.gcd
 ftplib.FTP_TLS
 gettext._unspecified
 gettext.dnpgettext
@@ -1171,12 +999,6 @@ locale.T_FMT_AMPM
 locale.YESEXPR
 logging._after_at_fork_child_reinit_locks
 logging._register_at_fork_reinit_lock
-numbers.Complex
-numbers.Integral
-numbers.Number
-numbers.Rational
-numbers.Real
-numbers.__all__
 os.CLD_CONTINUED
 os.CLD_DUMPED
 os.CLD_EXITED
@@ -1728,39 +1550,6 @@ ssl.get_protocol_name
 ssl.get_server_certificate
 ssl.match_hostname
 ssl.wrap_socket
-statistics.NormalDist
-statistics.StatisticsError
-statistics.__all__
-statistics.__builtins__
-statistics.__cached__
-statistics.__file__
-statistics.__name__
-statistics.__package__
-statistics._coerce
-statistics._convert
-statistics._exact_ratio
-statistics._fail_neg
-statistics._find_lteq
-statistics._find_rteq
-statistics._isfinite
-statistics._ss
-statistics._sum
-statistics.fmean
-statistics.geometric_mean
-statistics.harmonic_mean
-statistics.mean
-statistics.median
-statistics.median_grouped
-statistics.median_high
-statistics.median_low
-statistics.mode
-statistics.multimode
-statistics.pstdev
-statistics.pvariance
-statistics.quantiles
-statistics.stdev
-statistics.tau
-statistics.variance
 string._sentinel_dict
 symtable.CELL
 symtable.Class
@@ -2142,6 +1931,7 @@ _io._BufferedIOBase () != ValueError('no signature found')
 _io._IOBase () != ValueError('no signature found')
 _io._RawIOBase () != ValueError('no signature found')
 _io._TextIOBase () != ValueError('no signature found')
+_thread.LockType ValueError('no signature found') != ()
 _weakref.proxy ValueError('no signature found') != None
 builtins.complex ValueError('no signature found') != (real=0, imag=0)
 builtins.enumerate ValueError('no signature found') != (iterable, start=0)
@@ -2187,6 +1977,9 @@ time.struct_time ValueError('no signature found') != (iterable=(), /)
 _compression.BaseStream () != ValueError('no signature found')
 _osx_support._read_output (commandstring) != (commandstring, capture_stderr=False)
 _py_abc.ABCMeta (name, bases, namespace, **kwargs) != (name, bases, namespace, /, **kwargs)
+_pydecimal._log10_digits None != (p)
+_pydecimal.getcontext (_local=<thread._local object at 0xdeadbeef>) != ()
+_pydecimal.setcontext (context, _local=<thread._local object at 0xdeadbeef>) != (context)
 abc.abstractproperty ValueError('no signature found') != (fget=None, fset=None, fdel=None, doc=None)
 argparse.ArgumentParser (prog=None, usage=None, description=None, epilog=None, parents=[], formatter_class=<class 'argparse.HelpFormatter'>, prefix_chars='-', fromfile_prefix_chars=None, argument_default=None, conflict_handler='error', add_help=True, allow_abbrev=True, exit_on_error=True) != (prog=None, usage=None, description=None, epilog=None, parents=[], formatter_class=<class 'argparse.HelpFormatter'>, prefix_chars='-', fromfile_prefix_chars=None, argument_default=None, conflict_handler='error', add_help=True, allow_abbrev=True)
 calendar.calendar None != (theyear, w=2, l=1, c=6, m=3)
@@ -2213,6 +2006,10 @@ datetime.time (hour=0, minute=0, second=0, microsecond=0, tzinfo=None, *, fold=0
 datetime.timedelta (days=0, seconds=0, microseconds=0, milliseconds=0, minutes=0, hours=0, weeks=0) != ValueError('no signature found')
 datetime.timezone (offset, name=<object object at 0xdeadbeef>) != ValueError('no signature found')
 datetime.tzinfo () != ValueError('no signature found')
+decimal.Context (prec=None, rounding=None, Emin=None, Emax=None, capitals=None, clamp=None, flags=None, traps=None, _ignored_flags=None) != (prec=None, rounding=None, Emin=None, Emax=None, capitals=None, clamp=None, flags=None, traps=None)
+decimal.getcontext (_local=<thread._local object at 0xdeadbeef>) != None
+decimal.localcontext (ctx=None) != None
+decimal.setcontext (context, _local=<thread._local object at 0xdeadbeef>) != None
 difflib.IS_LINE_JUNK (line, pat=<bound method Pattern.match of re.compile('\\s*(?:#\\s*)?$')>) != (line, pat=<built-in method match of re.Pattern object at 0xdeadbeef>)
 dis.dis None != (x=None, *, file=None, depth=None)
 dis.disassemble None != (co, lasti=-1, *, file=None)
@@ -2286,8 +2083,8 @@ webbrowser._synthesize (browser, update_tryorder=1) != (browser, *, preferred=Fa
 webbrowser.register (name, klass, instance=None, update_tryorder=1) != (name, klass, instance=None, *, preferred=False)
 resource.struct_rusage ValueError('no signature found') != (iterable=(), /)
 
-out of 277 modules:
-  not_implemented 86
+out of 271 modules:
+  not_implemented 80
   failed_to_import 0
-  missing_items 77
-  mismatched_items 45
+  missing_items 72
+  mismatched_items 48
