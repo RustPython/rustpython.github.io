@@ -103,6 +103,15 @@ code.highlighter-rouge, mark.code {
   width: 80%;
 }
 
+.column-count-is-2 {
+  column-count: 2;
+}
+
+.word-wrap-anywhere { 
+  word-wrap: anywhere;
+}
+
+
 /* colors */
 .bg-light {
   background-color: #f6f8fa;
