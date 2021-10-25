@@ -166,17 +166,7 @@ _ast.Param
 _ast.PyCF_ALLOW_TOP_LEVEL_AWAIT
 _ast.PyCF_TYPE_COMMENTS
 _ast.Suite
-_ast.boolop
-_ast.cmpop
-_ast.excepthandler
-_ast.expr
-_ast.expr_context
-_ast.mod
-_ast.operator
 _ast.slice
-_ast.stmt
-_ast.type_ignore
-_ast.unaryop
 _codecs.utf_32_be_decode
 _codecs.utf_32_be_encode
 _codecs.utf_32_decode
@@ -625,8 +615,16 @@ fcntl.LOCK_UN
 fcntl.LOCK_WRITE
 fcntl.flock
 fcntl.lockf
+gc.DEBUG_COLLECTABLE
+gc.DEBUG_LEAK
+gc.DEBUG_SAVEALL
+gc.DEBUG_STATS
+gc.DEBUG_UNCOLLECTABLE
+gc.callbacks
 gc.freeze
+gc.garbage
 gc.get_freeze_count
+gc.get_referents
 gc.unfreeze
 itertools._tee
 itertools._tee_dataobject
@@ -680,12 +678,8 @@ posix.P_ALL
 posix.P_PGID
 posix.P_PID
 posix.RTLD_DEEPBIND
-posix.RTLD_GLOBAL
-posix.RTLD_LAZY
-posix.RTLD_LOCAL
 posix.RTLD_NODELETE
 posix.RTLD_NOLOAD
-posix.RTLD_NOW
 posix.RWF_DSYNC
 posix.RWF_HIPRI
 posix.RWF_NOWAIT
@@ -817,12 +811,6 @@ sys.setdlopenflags
 sys.setswitchinterval
 sys.thread_info
 sys.unraisablehook
-time.CLOCK_BOOTTIME
-time.CLOCK_MONOTONIC
-time.CLOCK_MONOTONIC_RAW
-time.CLOCK_PROCESS_CPUTIME_ID
-time.CLOCK_REALTIME
-time.CLOCK_THREAD_CPUTIME_ID
 time._STRUCT_TM_ITEMS
 time.altzone
 time.clock_getres
@@ -850,8 +838,6 @@ unicodedata.ucnhash_CAPI
 zlib.ZLIB_RUNTIME_VERSION
 zlib.ZLIB_VERSION
 zlib.__version__
-__future__.CO_FUTURE_ANNOTATIONS
-__future__.annotations
 _osx_support._SYSTEM_VERSION_TUPLE
 _osx_support._cache_default_sysroot
 _osx_support._default_sysroot
@@ -1049,12 +1035,8 @@ os.P_PGID
 os.P_PID
 os.P_WAIT
 os.RTLD_DEEPBIND
-os.RTLD_GLOBAL
-os.RTLD_LAZY
-os.RTLD_LOCAL
 os.RTLD_NODELETE
 os.RTLD_NOLOAD
-os.RTLD_NOW
 os.RWF_DSYNC
 os.RWF_HIPRI
 os.RWF_NOWAIT
@@ -1752,9 +1734,6 @@ _multiprocessing.__file__
 _multiprocessing.flags
 _multiprocessing.sem_unlink
 resource.RLIMIT_OFILE
-resource.RUSAGE_CHILDREN
-resource.RUSAGE_SELF
-resource.RUSAGE_THREAD
 resource.__file__
 resource.getpagesize
 resource.prlimit
@@ -1939,20 +1918,6 @@ builtins.memoryview ValueError('no signature found') != (object)
 builtins.property ValueError('no signature found') != (fget=None, fset=None, fdel=None, doc=None)
 builtins.reversed None != (sequence, /)
 builtins.tuple ValueError('no signature found') != (iterable=(), /)
-gc.collect (*args, **kwargs) != None
-gc.disable (*args, **kwargs) != None
-gc.enable (*args, **kwargs) != None
-gc.get_count (*args, **kwargs) != None
-gc.get_debug (*args, **kwargs) != None
-gc.get_objects (*args, **kwargs) != None
-gc.get_referents (*args, **kwargs) != None
-gc.get_referrers (*args, **kwargs) != None
-gc.get_stats (*args, **kwargs) != None
-gc.get_threshold (*args, **kwargs) != None
-gc.is_tracked (*args, **kwargs) != None
-gc.isenabled (*args, **kwargs) != None
-gc.set_debug (*args, **kwargs) != None
-gc.set_threshold (*args, **kwargs) != None
 itertools._grouper () != ValueError('no signature found')
 itertools.accumulate ValueError('no signature found') != (iterable, func=None, *, initial=None)
 itertools.combinations ValueError('no signature found') != (iterable, r)
@@ -1980,6 +1945,8 @@ _pydecimal.getcontext (_local=<thread._local object at 0xdeadbeef>) != ()
 _pydecimal.setcontext (context, _local=<thread._local object at 0xdeadbeef>) != (context)
 abc.abstractproperty ValueError('no signature found') != (fget=None, fset=None, fdel=None, doc=None)
 argparse.ArgumentParser (prog=None, usage=None, description=None, epilog=None, parents=[], formatter_class=<class 'argparse.HelpFormatter'>, prefix_chars='-', fromfile_prefix_chars=None, argument_default=None, conflict_handler='error', add_help=True, allow_abbrev=True, exit_on_error=True) != (prog=None, usage=None, description=None, epilog=None, parents=[], formatter_class=<class 'argparse.HelpFormatter'>, prefix_chars='-', fromfile_prefix_chars=None, argument_default=None, conflict_handler='error', add_help=True, allow_abbrev=True)
+ast._ABC (*args) != ValueError("callable <class 'ast._ABC'> is not supported by signature")
+ast.dump (node, annotate_fields=True, include_attributes=False, *, indent=None) != (node, annotate_fields=True, include_attributes=False)
 calendar.calendar None != (theyear, w=2, l=1, c=6, m=3)
 calendar.firstweekday None != ()
 calendar.month None != (theyear, themonth, w=0, l=0)
@@ -2084,5 +2051,5 @@ resource.struct_rusage ValueError('no signature found') != (iterable=(), /)
 out of 271 modules:
   not_implemented 80
   failed_to_import 0
-  missing_items 72
+  missing_items 71
   mismatched_items 48

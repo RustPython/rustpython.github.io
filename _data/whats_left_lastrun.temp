@@ -64,7 +64,6 @@ dict_itemiterator.__getattribute__ inherited
 dict_itemiterator.__reduce__ inherited
 dict_values.__doc__ inherited
 dict_values.__getattribute__ inherited
-dict_items.__contains__
 dict_items.__doc__ inherited
 dict_items.__getattribute__ inherited
 dict_items.__hash__ inherited
@@ -509,7 +508,6 @@ _socket.VMADDR_CID_ANY
 _socket.VMADDR_CID_HOST
 _socket.VMADDR_PORT_ANY
 _socket.VM_SOCKETS_INVALID_VERSION
-_socket.gethostbyname_ex
 _sre.copyright
 _thread._ExceptHookArgs
 _thread._excepthook
