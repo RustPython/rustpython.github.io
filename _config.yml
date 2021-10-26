@@ -47,8 +47,10 @@ navigation:
 dashboards:
   - title: CPython test compatibility 
     url: /pages/regression-tests-results.html
-  - title: What's left to add to RustPython
+  - title: What's left
     url: /pages/whats-left
+  - title: Benchmarks
+    url: /benchmarks
 
 # Build settings
 theme: minima
