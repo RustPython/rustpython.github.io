@@ -51,6 +51,8 @@ dashboards:
     url: /pages/whats-left
   - title: Benchmarks
     url: /benchmarks
+  - title: Website Analytics
+    url: https://plausible.io/rustpython.github.io
 
 # Build settings
 theme: minima
