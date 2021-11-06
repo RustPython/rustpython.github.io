@@ -727,7 +727,6 @@ posix.makedev
 posix.memfd_create
 posix.minor
 posix.mkfifo
-posix.mknod
 posix.pathconf_names
 posix.posix_fadvise
 posix.posix_fallocate
@@ -813,15 +812,7 @@ sys.thread_info
 sys.unraisablehook
 time._STRUCT_TM_ITEMS
 time.altzone
-time.clock_getres
-time.clock_gettime
-time.clock_gettime_ns
-time.clock_settime
-time.clock_settime_ns
 time.daylight
-time.get_clock_info
-time.monotonic_ns
-time.perf_counter_ns
 time.pthread_getcpuclockid
 time.timezone
 time.tzname
