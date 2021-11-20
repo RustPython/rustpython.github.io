@@ -244,6 +244,7 @@ _socket.AF_TIPC
 _socket.AF_VSOCK
 _socket.AF_WANPIPE
 _socket.AF_X25
+_socket.AI_ALL
 _socket.AI_CANONNAME
 _socket.AI_V4MAPPED
 _socket.ALG_OP_DECRYPT
@@ -637,8 +638,6 @@ posix.F_LOCK
 posix.F_TEST
 posix.F_TLOCK
 posix.F_ULOCK
-posix.GRND_NONBLOCK
-posix.GRND_RANDOM
 posix.MFD_ALLOW_SEALING
 posix.MFD_CLOEXEC
 posix.MFD_HUGETLB
@@ -717,7 +716,6 @@ posix.fdatasync
 posix.fork
 posix.forkpty
 posix.fstatvfs
-posix.getrandom
 posix.getxattr
 posix.killpg
 posix.listxattr
@@ -982,8 +980,6 @@ os.F_LOCK
 os.F_TEST
 os.F_TLOCK
 os.F_ULOCK
-os.GRND_NONBLOCK
-os.GRND_RANDOM
 os.MFD_ALLOW_SEALING
 os.MFD_CLOEXEC
 os.MFD_HUGETLB
@@ -1130,6 +1126,7 @@ socket.AF_TIPC
 socket.AF_VSOCK
 socket.AF_WANPIPE
 socket.AF_X25
+socket.AI_ALL
 socket.AI_CANONNAME
 socket.AI_V4MAPPED
 socket.ALG_OP_DECRYPT
