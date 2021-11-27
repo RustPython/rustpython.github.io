@@ -19,10 +19,6 @@ map.__getattribute__ inherited
 map.__reduce__ inherited
 memoryview.__delitem__
 memoryview.__getattribute__ inherited
-memoryview.c_contiguous
-memoryview.contiguous
-memoryview.f_contiguous
-memoryview.suboffsets
 range.__getattribute__ inherited
 set.__getattribute__ inherited
 slice.__getattribute__ inherited
