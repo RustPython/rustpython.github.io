@@ -20,7 +20,9 @@ Let's find an incompatibility issue and fix it.
 
 Here's how you run a single unittest file:
 
-` $ RUSTPYTHONPATH=Lib cargo run --release Lib/test/test_unicode.py`
+```
+$ RUSTPYTHONPATH=Lib cargo run --release Lib/test/test_unicode.py
+```
 
 ## Add a new unittest file
 Because CPython unittest doesn't work perfectly in RustPython, we are adding test files one by one. Here's how:
