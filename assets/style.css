@@ -85,7 +85,7 @@ pre {
   word-wrap: break-word; /* Internet Explorer 5.5+ */
 }
 
-code.highlighter-rouge, mark.code {
+code.highlighter-rouge, mark.code, code {
   background-color: #F6F8FA;
   color: #000;
   letter-spacing: 2px;
