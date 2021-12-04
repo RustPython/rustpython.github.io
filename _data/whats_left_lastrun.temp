@@ -6,7 +6,6 @@ complex.__format__ inherited
 complex.__getattribute__ inherited
 dict.__getattribute__ inherited
 enumerate.__getattribute__ inherited
-enumerate.__reduce__ inherited
 filter.__getattribute__ inherited
 filter.__reduce__ inherited
 float.__getattribute__ inherited
@@ -22,7 +21,6 @@ memoryview.__getattribute__ inherited
 range.__getattribute__ inherited
 set.__getattribute__ inherited
 slice.__getattribute__ inherited
-slice.__reduce__ inherited
 str.__getattribute__ inherited
 str.__getnewargs__
 super.__init__ inherited
@@ -63,7 +61,6 @@ dict_values.__getattribute__ inherited
 dict_items.__doc__ inherited
 dict_items.__getattribute__ inherited
 dict_items.__hash__ inherited
-dict_items.isdisjoint
 set_iterator.__doc__ inherited
 set_iterator.__getattribute__ inherited
 list_iterator.__doc__ inherited
@@ -2026,8 +2023,6 @@ uuid.UUID (hex=None, bytes=None, bytes_le=None, fields=None, int=None, version=N
 uuid.getnode () != (*, getters=None)
 venv.EnvBuilder (system_site_packages=False, clear=False, symlinks=False, upgrade=False, with_pip=False, prompt=None, upgrade_deps=False) != (system_site_packages=False, clear=False, symlinks=False, upgrade=False, with_pip=False, prompt=None)
 venv.create (env_dir, system_site_packages=False, clear=False, symlinks=False, with_pip=False, prompt=None, upgrade_deps=False) != (env_dir, system_site_packages=False, clear=False, symlinks=False, with_pip=False, prompt=None)
-weakref.WeakValueDictionary (*args, **kw) != (other=(), /, **kw)
-weakref.finalize (obj, func, *args, **kwargs) != (obj, func, /, *args, **kwargs)
 webbrowser._synthesize (browser, update_tryorder=1) != (browser, *, preferred=False)
 webbrowser.register (name, klass, instance=None, update_tryorder=1) != (name, klass, instance=None, *, preferred=False)
 resource.struct_rusage ValueError('no signature found') != (iterable=(), /)
@@ -2036,4 +2031,4 @@ out of 271 modules:
   not_implemented 80
   failed_to_import 0
   missing_items 71
-  mismatched_items 48
+  mismatched_items 47

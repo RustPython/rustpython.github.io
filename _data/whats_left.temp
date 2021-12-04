@@ -49,13 +49,10 @@ bytes_iterator.__doc__ inherited
 bytes_iterator.__getattribute__ inherited
 dict_keyiterator.__doc__ inherited
 dict_keyiterator.__getattribute__ inherited
-dict_keyiterator.__reduce__ inherited
 dict_valueiterator.__doc__ inherited
 dict_valueiterator.__getattribute__ inherited
-dict_valueiterator.__reduce__ inherited
 dict_itemiterator.__doc__ inherited
 dict_itemiterator.__getattribute__ inherited
-dict_itemiterator.__reduce__ inherited
 dict_values.__doc__ inherited
 dict_values.__getattribute__ inherited
 dict_items.__doc__ inherited
@@ -514,9 +511,6 @@ binascii.b2a_qp
 binascii.crc_hqx
 binascii.rlecode_hqx
 binascii.rledecode_hqx
-builtins.False
-builtins.None
-builtins.True
 builtins.breakpoint
 errno.EADV
 errno.EBADE
@@ -847,9 +841,6 @@ dis._Instruction
 dis._OPARG_WIDTH
 dis._OPNAME_WIDTH
 dis.__all__
-dis.__builtins__
-dis.__cached__
-dis.__file__
 dis._disassemble_bytes
 dis._disassemble_recursive
 dis._disassemble_str
@@ -859,7 +850,6 @@ dis._get_const_info
 dis._get_instructions_bytes
 dis._get_name_info
 dis._have_code
-dis._test
 dis._try_compile
 dis._unpack_opargs
 dis.cmp_op
@@ -904,10 +894,6 @@ inspect.CO_NESTED
 inspect.CO_NEWLOCALS
 inspect.CO_NOFREE
 inspect.CO_OPTIMIZED
-keyword.__all__
-keyword.__builtins__
-keyword.__cached__
-keyword.__file__
 locale.ABDAY_1
 locale.ABDAY_2
 locale.ABDAY_3
@@ -1692,17 +1678,8 @@ tty.VTDLY
 tty.VWERASE
 tty.XCASE
 tty.XTABS
-uuid.SafeUUID
-uuid._AIX
-uuid._GETTERS
-uuid._LINUX
-uuid._OS_GETTERS
-uuid._generate_time_safe
-uuid._has_uuid_generate_time_safe
-uuid._is_universal
-uuid._load_system_functions
-uuid._platform_system
-uuid._unix_getnode
+uuid._find_mac
+uuid._popen
 warnings._defaultaction
 warnings._onceregistry
 webbrowser._lock
@@ -2019,7 +1996,6 @@ symtable.SymbolTable () != (raw_table, filename)
 symtable.symtable None != (code, filename, compile_type)
 tarfile.open None != (name=None, mode='r', fileobj=None, bufsize=10240, **kwargs)
 traceback.StackSummary ValueError('no signature found') != (iterable=(), /)
-uuid.UUID (hex=None, bytes=None, bytes_le=None, fields=None, int=None, version=None) != (hex=None, bytes=None, bytes_le=None, fields=None, int=None, version=None, *, is_safe=<SafeUUID.unknown: None>)
 uuid.getnode () != (*, getters=None)
 venv.EnvBuilder (system_site_packages=False, clear=False, symlinks=False, upgrade=False, with_pip=False, prompt=None, upgrade_deps=False) != (system_site_packages=False, clear=False, symlinks=False, upgrade=False, with_pip=False, prompt=None)
 venv.create (env_dir, system_site_packages=False, clear=False, symlinks=False, with_pip=False, prompt=None, upgrade_deps=False) != (env_dir, system_site_packages=False, clear=False, symlinks=False, with_pip=False, prompt=None)
@@ -2030,5 +2006,5 @@ resource.struct_rusage ValueError('no signature found') != (iterable=(), /)
 out of 271 modules:
   not_implemented 80
   failed_to_import 0
-  missing_items 71
+  missing_items 70
   mismatched_items 47
