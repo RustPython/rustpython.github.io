@@ -1056,7 +1056,6 @@ pydoc._adjust_cli_sys_path
 pydoc._get_revised_path
 selectors.EpollSelector
 selectors._PollLikeSelector
-shlex.join
 shutil._WIN_DEFAULT_PATHEXT
 shutil._is_immutable
 shutil._ntuple_diskusage
@@ -2006,5 +2005,5 @@ resource.struct_rusage ValueError('no signature found') != (iterable=(), /)
 out of 271 modules:
   not_implemented 80
   failed_to_import 0
-  missing_items 70
+  missing_items 69
   mismatched_items 47
