@@ -3,27 +3,41 @@ layout: default
 ---
 
 <div class="w-80 m-auto mt-2">
-    <div class="d-md-flex">
-      <div class="d-sm-none">
-        <img class="logo" src="{{site.baseurl}}/assets/img/rust-python-logo.svg" alt="RustPython Logo">
-      </div>
-      <div class="pl-md-2">
-        <div class="title">{{ site.title }}</div>
-        <div class="section-title">{{ page.title }} </div>
-      </div>
+  <div class="d-md-flex">
+    <div class="d-sm-none">
+      <img class="logo" src="{{site.baseurl}}/assets/img/rust-python-logo.svg" alt="RustPython Logo">
+    </div>
+    <div class="pl-md-2">
+      <div class="title">{{ site.title }}</div>
+      <div class="section-title">{{ page.title }} </div>
     </div>
   </div>
-  
+</div>
 
 <div class="w-80 m-auto mt-2">
-    {{ content }}
-    <div class="section-title">What's Left: entire modules</div>
-    <div class="column-count-is-2">
-        <ol>
-            {% for item in site.data.whats_left.modules %}
-                <li class="word-wrap-anywhere"> {{ item.module }}</li>
-            {% endfor %}
-        </ol>
-    </div>
-</div>
+  {{ content }}
+
+  <div class="section-title">What's Left: Public Modules</div>
+  <div class="column-count-is-2">
+    <ol>
+      {% for item in site.data.whats_left.modules %}
+        {% assign firstchar = item.module | slice: 0 %}
+        {% if firstchar != "_" %}
+          <li class="word-wrap-anywhere"> {{ item.module }}</li>
+        {% endif %}
+      {% endfor %}
+    </ol>
+  </div>
+
+  <div class="section-title">What's Left: Private Modules</div>
+  <div class="column-count-is-2">
+    <ol>
+      {% for item in site.data.whats_left.modules %}
+        {% assign firstchar = item.module | slice: 0 %}
+        {% if firstchar == "_" %}
+          <li class="word-wrap-anywhere"> {{ item.module }}</li>
+        {% endif %}
+      {% endfor %}
+    </ol>
+  </div>
 </div>
