@@ -31,12 +31,9 @@ tuple.__getattribute__ inherited
 object.__sizeof__
 zip.__getattribute__ inherited
 classmethod.__init__ inherited
-classmethod.__isabstractmethod__
 staticmethod.__func__
 staticmethod.__init__ inherited
-staticmethod.__isabstractmethod__
 property.__getattribute__ inherited
-property.__isabstractmethod__
 BaseException.__delattr__ inherited
 BaseException.__getattribute__ inherited
 BaseException.__reduce__ inherited
@@ -75,6 +72,7 @@ _elementtree (entire module)
 _heapq (entire module)
 _locale (entire module)
 _md5 (entire module)
+_peg_parser (entire module)
 _pickle (entire module)
 _sha1 (entire module)
 _sha256 (entire module)
@@ -85,7 +83,9 @@ _statistics (entire module)
 _symtable (entire module)
 _tracemalloc (entire module)
 grp (entire module)
+_aix_support (entire module)
 _bootlocale (entire module)
+_bootsubprocess (entire module)
 _strptime (entire module)
 _sysconfigdata__linux_x86_64-linux-gnu (entire module)
 _sysconfigdata__x86_64-linux-gnu (entire module)
@@ -94,11 +94,9 @@ cProfile (entire module)
 contextvars (entire module)
 ctypes (entire module)
 curses (entire module)
-ensurepip (entire module)
-filecmp (entire module)
 fileinput (entire module)
+graphlib (entire module)
 imaplib (entire module)
-lib2to3 (entire module)
 lzma (entire module)
 mailbox (entire module)
 mailcap (entire module)
@@ -116,6 +114,7 @@ tabnanny (entire module)
 tracemalloc (entire module)
 turtle (entire module)
 wave (entire module)
+zoneinfo (entire module)
 _asyncio (entire module)
 _bz2 (entire module)
 _codecs_cn (entire module)
@@ -132,7 +131,6 @@ _curses (entire module)
 _curses_panel (entire module)
 _dbm (entire module)
 _decimal (entire module)
-_gdbm (entire module)
 _hashlib (entire module)
 _lsprof (entire module)
 _lzma (entire module)
@@ -146,17 +144,11 @@ _testbuffer (entire module)
 _uuid (entire module)
 _xxsubinterpreters (entire module)
 _xxtestfuzz (entire module)
+_zoneinfo (entire module)
 mmap (entire module)
 readline (entire module)
-_ast.AugLoad
-_ast.AugStore
-_ast.ExtSlice
-_ast.Index
-_ast.Param
 _ast.PyCF_ALLOW_TOP_LEVEL_AWAIT
 _ast.PyCF_TYPE_COMMENTS
-_ast.Suite
-_ast.slice
 _codecs.utf_32_be_decode
 _codecs.utf_32_be_encode
 _codecs.utf_32_decode
@@ -194,6 +186,7 @@ _signal.SIG_SETMASK
 _signal.SIG_UNBLOCK
 _signal.getitimer
 _signal.pause
+_signal.pidfd_send_signal
 _signal.pthread_kill
 _signal.pthread_sigmask
 _signal.raise_signal
@@ -283,10 +276,12 @@ _socket.CAN_EFF_MASK
 _socket.CAN_ERR_FLAG
 _socket.CAN_ERR_MASK
 _socket.CAN_ISOTP
+_socket.CAN_J1939
 _socket.CAN_RAW
 _socket.CAN_RAW_ERR_FILTER
 _socket.CAN_RAW_FD_FRAMES
 _socket.CAN_RAW_FILTER
+_socket.CAN_RAW_JOIN_FILTERS
 _socket.CAN_RAW_LOOPBACK
 _socket.CAN_RAW_RECV_OWN_MSGS
 _socket.CAN_RTR_FLAG
@@ -338,6 +333,7 @@ _socket.IPPROTO_ROUTING
 _socket.IPPROTO_RSVP
 _socket.IPPROTO_SCTP
 _socket.IPPROTO_TP
+_socket.IPPROTO_UDPLITE
 _socket.IPV6_CHECKSUM
 _socket.IPV6_DONTFRAG
 _socket.IPV6_DSTOPTS
@@ -380,6 +376,21 @@ _socket.IP_RETOPTS
 _socket.IP_TOS
 _socket.IP_TRANSPARENT
 _socket.IP_TTL
+_socket.J1939_EE_INFO_NONE
+_socket.J1939_EE_INFO_TX_ABORT
+_socket.J1939_FILTER_MAX
+_socket.J1939_IDLE_ADDR
+_socket.J1939_MAX_UNICAST_ADDR
+_socket.J1939_NLA_BYTES_ACKED
+_socket.J1939_NLA_PAD
+_socket.J1939_NO_ADDR
+_socket.J1939_NO_NAME
+_socket.J1939_NO_PGN
+_socket.J1939_PGN_ADDRESS_CLAIMED
+_socket.J1939_PGN_ADDRESS_COMMANDED
+_socket.J1939_PGN_MAX
+_socket.J1939_PGN_PDU1_MAX
+_socket.J1939_PGN_REQUEST
 _socket.MSG_CMSG_CLOEXEC
 _socket.MSG_CONFIRM
 _socket.MSG_CTRUNC
@@ -413,6 +424,10 @@ _socket.PF_CAN
 _socket.PF_PACKET
 _socket.PF_RDS
 _socket.SCM_CREDENTIALS
+_socket.SCM_J1939_DEST_ADDR
+_socket.SCM_J1939_DEST_NAME
+_socket.SCM_J1939_ERRQUEUE
+_socket.SCM_J1939_PRIO
 _socket.SCM_RIGHTS
 _socket.SOCK_CLOEXEC
 _socket.SOCK_NONBLOCK
@@ -430,6 +445,10 @@ _socket.SO_BINDTODEVICE
 _socket.SO_DEBUG
 _socket.SO_DOMAIN
 _socket.SO_DONTROUTE
+_socket.SO_J1939_ERRQUEUE
+_socket.SO_J1939_FILTER
+_socket.SO_J1939_PROMISC
+_socket.SO_J1939_SEND_PRIO
 _socket.SO_KEEPALIVE
 _socket.SO_MARK
 _socket.SO_PASSCRED
@@ -485,6 +504,8 @@ _socket.TIPC_TOP_SRV
 _socket.TIPC_WAIT_FOREVER
 _socket.TIPC_WITHDRAWN
 _socket.TIPC_ZONE_SCOPE
+_socket.UDPLITE_RECV_CSCOV
+_socket.UDPLITE_SEND_CSCOV
 _socket.VMADDR_CID_ANY
 _socket.VMADDR_CID_HOST
 _socket.VMADDR_PORT_ANY
@@ -584,6 +605,9 @@ fcntl.F_GETLK64
 fcntl.F_GETSIG
 fcntl.F_GET_SEALS
 fcntl.F_NOTIFY
+fcntl.F_OFD_GETLK
+fcntl.F_OFD_SETLK
+fcntl.F_OFD_SETLKW
 fcntl.F_SEAL_GROW
 fcntl.F_SEAL_SEAL
 fcntl.F_SEAL_SHRINK
@@ -613,6 +637,7 @@ gc.freeze
 gc.garbage
 gc.get_freeze_count
 gc.get_referents
+gc.is_finalized
 gc.unfreeze
 itertools._tee
 itertools._tee_dataobject
@@ -620,6 +645,8 @@ marshal.version
 posix.CLD_CONTINUED
 posix.CLD_DUMPED
 posix.CLD_EXITED
+posix.CLD_KILLED
+posix.CLD_STOPPED
 posix.CLD_TRAPPED
 posix.F_LOCK
 posix.F_TEST
@@ -663,6 +690,7 @@ posix.POSIX_FADV_WILLNEED
 posix.P_ALL
 posix.P_PGID
 posix.P_PID
+posix.P_PIDFD
 posix.RTLD_DEEPBIND
 posix.RTLD_NODELETE
 posix.RTLD_NOLOAD
@@ -713,6 +741,7 @@ posix.memfd_create
 posix.minor
 posix.mkfifo
 posix.pathconf_names
+posix.pidfd_open
 posix.posix_fadvise
 posix.posix_fallocate
 posix.pread
@@ -780,17 +809,14 @@ sys._debugmallocstats
 sys.addaudithook
 sys.breakpointhook
 sys.call_tracing
-sys.callstats
 sys.get_asyncgen_hooks
 sys.get_coroutine_origin_tracking_depth
 sys.getallocatedblocks
-sys.getcheckinterval
 sys.getdlopenflags
 sys.getswitchinterval
 sys.is_finalizing
 sys.set_asyncgen_hooks
 sys.set_coroutine_origin_tracking_depth
-sys.setcheckinterval
 sys.setdlopenflags
 sys.setswitchinterval
 sys.thread_info
@@ -821,12 +847,13 @@ _osx_support._get_system_version_tuple
 _osx_support._supports_arm64_builds
 _pydecimal.HAVE_CONTEXTVAR
 _pydecimal._current_context_var
+_pyio._CHECK_ERRORS
 ast.PyCF_ALLOW_TOP_LEVEL_AWAIT
 ast.PyCF_TYPE_COMMENTS
-compileall._compile_file_tuple
 copyreg.__cached__
 copyreg.__file__
 csv.__version__
+datetime.__all__
 datetime.datetime_CAPI
 decimal.HAVE_CONTEXTVAR
 dis.Bytecode
@@ -872,12 +899,16 @@ dis.opname
 dis.pretty_flags
 dis.show_code
 doctest._newline_convert
+enum._is_private
+fnmatch._nextgroupnum
 ftplib.FTP_TLS
+functools.cache
 gettext._unspecified
 gettext.dnpgettext
 gettext.dpgettext
 gettext.npgettext
 gettext.pgettext
+glob._listdir
 hashlib.__all__
 hashlib.__block_openssl_constructor
 hashlib.__builtin_constructor_cache
@@ -894,6 +925,9 @@ inspect.CO_NESTED
 inspect.CO_NEWLOCALS
 inspect.CO_NOFREE
 inspect.CO_OPTIMIZED
+inspect.ClassFoundException
+inspect._ClassFinder
+ipaddress._address_fmt_re
 locale.ABDAY_1
 locale.ABDAY_2
 locale.ABDAY_3
@@ -954,6 +988,8 @@ logging._register_at_fork_reinit_lock
 os.CLD_CONTINUED
 os.CLD_DUMPED
 os.CLD_EXITED
+os.CLD_KILLED
+os.CLD_STOPPED
 os.CLD_TRAPPED
 os.F_LOCK
 os.F_TEST
@@ -999,6 +1035,7 @@ os.P_NOWAIT
 os.P_NOWAITO
 os.P_PGID
 os.P_PID
+os.P_PIDFD
 os.P_WAIT
 os.RTLD_DEEPBIND
 os.RTLD_NODELETE
@@ -1030,6 +1067,7 @@ os.XATTR_REPLACE
 os.XATTR_SIZE_MAX
 os._fwalk
 os._spawnvef
+os._walk
 os.confstr_names
 os.fwalk
 os.pathconf_names
@@ -1046,16 +1084,26 @@ os.supports_effective_ids
 os.sysconf_names
 pathlib.ELOOP
 pickle.PickleBuffer
+pkgutil._NAME_PATTERN
+pkgutil.resolve_name
+platform._Processor
+platform._get_machine_win32
 platform._ironpython26_sys_version_parser
 platform._ironpython_sys_version_parser
 platform._pypy_sys_version_parser
 platform._sys_version
 platform._sys_version_cache
 platform._sys_version_parser
+platform._unknown_as_blank
 pydoc._adjust_cli_sys_path
+pydoc._findclass
+pydoc._finddoc
 pydoc._get_revised_path
+pydoc._getdoc
+pydoc._getowndoc
 selectors.EpollSelector
 selectors._PollLikeSelector
+selectors._can_use
 shutil._WIN_DEFAULT_PATHEXT
 shutil._is_immutable
 shutil._ntuple_diskusage
@@ -1073,7 +1121,11 @@ signal.SIG_BLOCK
 signal.SIG_SETMASK
 signal.SIG_UNBLOCK
 signal.Sigmasks
+signal.pthread_sigmask
+signal.sigpending
+signal.sigwait
 signal.struct_siginfo
+signal.valid_signals
 socket.AF_ALG
 socket.AF_APPLETALK
 socket.AF_ASH
@@ -1153,10 +1205,12 @@ socket.CAN_EFF_MASK
 socket.CAN_ERR_FLAG
 socket.CAN_ERR_MASK
 socket.CAN_ISOTP
+socket.CAN_J1939
 socket.CAN_RAW
 socket.CAN_RAW_ERR_FILTER
 socket.CAN_RAW_FD_FRAMES
 socket.CAN_RAW_FILTER
+socket.CAN_RAW_JOIN_FILTERS
 socket.CAN_RAW_LOOPBACK
 socket.CAN_RAW_RECV_OWN_MSGS
 socket.CAN_RTR_FLAG
@@ -1206,6 +1260,7 @@ socket.IPPROTO_ROUTING
 socket.IPPROTO_RSVP
 socket.IPPROTO_SCTP
 socket.IPPROTO_TP
+socket.IPPROTO_UDPLITE
 socket.IPV6_CHECKSUM
 socket.IPV6_DONTFRAG
 socket.IPV6_DSTOPTS
@@ -1248,6 +1303,21 @@ socket.IP_RETOPTS
 socket.IP_TOS
 socket.IP_TRANSPARENT
 socket.IP_TTL
+socket.J1939_EE_INFO_NONE
+socket.J1939_EE_INFO_TX_ABORT
+socket.J1939_FILTER_MAX
+socket.J1939_IDLE_ADDR
+socket.J1939_MAX_UNICAST_ADDR
+socket.J1939_NLA_BYTES_ACKED
+socket.J1939_NLA_PAD
+socket.J1939_NO_ADDR
+socket.J1939_NO_NAME
+socket.J1939_NO_PGN
+socket.J1939_PGN_ADDRESS_CLAIMED
+socket.J1939_PGN_ADDRESS_COMMANDED
+socket.J1939_PGN_MAX
+socket.J1939_PGN_PDU1_MAX
+socket.J1939_PGN_REQUEST
 socket.MSG_CMSG_CLOEXEC
 socket.MSG_CONFIRM
 socket.MSG_CTRUNC
@@ -1281,6 +1351,10 @@ socket.PF_CAN
 socket.PF_PACKET
 socket.PF_RDS
 socket.SCM_CREDENTIALS
+socket.SCM_J1939_DEST_ADDR
+socket.SCM_J1939_DEST_NAME
+socket.SCM_J1939_ERRQUEUE
+socket.SCM_J1939_PRIO
 socket.SCM_RIGHTS
 socket.SOCK_CLOEXEC
 socket.SOCK_NONBLOCK
@@ -1298,6 +1372,10 @@ socket.SO_BINDTODEVICE
 socket.SO_DEBUG
 socket.SO_DOMAIN
 socket.SO_DONTROUTE
+socket.SO_J1939_ERRQUEUE
+socket.SO_J1939_FILTER
+socket.SO_J1939_PROMISC
+socket.SO_J1939_SEND_PRIO
 socket.SO_KEEPALIVE
 socket.SO_MARK
 socket.SO_PASSCRED
@@ -1353,10 +1431,14 @@ socket.TIPC_TOP_SRV
 socket.TIPC_WAIT_FOREVER
 socket.TIPC_WITHDRAWN
 socket.TIPC_ZONE_SCOPE
+socket.UDPLITE_RECV_CSCOV
+socket.UDPLITE_SEND_CSCOV
 socket.VMADDR_CID_ANY
 socket.VMADDR_CID_HOST
 socket.VMADDR_PORT_ANY
 socket.VM_SOCKETS_INVALID_VERSION
+socket.recv_fds
+socket.send_fds
 socketserver.ForkingMixIn
 socketserver.ForkingTCPServer
 socketserver.ForkingUDPServer
@@ -1414,6 +1496,7 @@ ssl.OPENSSL_VERSION_NUMBER
 ssl.OP_ALL
 ssl.OP_CIPHER_SERVER_PREFERENCE
 ssl.OP_ENABLE_MIDDLEBOX_COMPAT
+ssl.OP_IGNORE_UNEXPECTED_EOF
 ssl.OP_NO_COMPRESSION
 ssl.OP_NO_RENEGOTIATION
 ssl.OP_NO_SSLv2
@@ -1523,6 +1606,10 @@ symtable._newSymbolTable
 sysconfig._ALWAYS_STR
 test.__builtins__
 test.__cached__
+threading._SHUTTING_DOWN
+threading._maintain_shutdown_locks
+threading._register_atexit
+threading._threading_atexits
 tty.B1000000
 tty.B115200
 tty.B1152000
@@ -1677,8 +1764,27 @@ tty.VTDLY
 tty.VWERASE
 tty.XCASE
 tty.XTABS
-uuid._find_mac
-uuid._popen
+typing.Annotated
+typing._AnnotatedAlias
+typing._BaseGenericAlias
+typing._CallableGenericAlias
+typing._CallableType
+typing._LiteralGenericAlias
+typing._LiteralSpecialForm
+typing._NamedTuple
+typing._SpecialGenericAlias
+typing._TupleType
+typing._TypedDict
+typing._UnionGenericAlias
+typing._deduplicate
+typing._flatten_literal_params
+typing._namedtuple_mro_entries
+typing._no_init_or_replace_init
+typing._strip_annotations
+typing._type_convert
+typing._value_and_type_iter
+unittest.__dir__
+unittest.__getattr__
 warnings._defaultaction
 warnings._onceregistry
 webbrowser._lock
@@ -1889,6 +1995,7 @@ itertools.permutations ValueError('no signature found') != (iterable, r=None)
 itertools.starmap ValueError('no signature found') != (function, iterable, /)
 itertools.takewhile ValueError('no signature found') != (predicate, iterable, /)
 itertools.tee ValueError('no signature found') != None
+posix.DirEntry () != ValueError('no signature found')
 posix.sched_param ValueError('no signature found') != (iterable=(), /)
 posix.times_result ValueError('no signature found') != (iterable=(), /)
 posix.uname_result ValueError('no signature found') != (iterable=(), /)
@@ -1901,9 +2008,6 @@ _pydecimal._log10_digits None != (p)
 _pydecimal.getcontext (_local=<thread._local object at 0xdeadbeef>) != ()
 _pydecimal.setcontext (context, _local=<thread._local object at 0xdeadbeef>) != (context)
 abc.abstractproperty ValueError('no signature found') != (fget=None, fset=None, fdel=None, doc=None)
-argparse.ArgumentParser (prog=None, usage=None, description=None, epilog=None, parents=[], formatter_class=<class 'argparse.HelpFormatter'>, prefix_chars='-', fromfile_prefix_chars=None, argument_default=None, conflict_handler='error', add_help=True, allow_abbrev=True, exit_on_error=True) != (prog=None, usage=None, description=None, epilog=None, parents=[], formatter_class=<class 'argparse.HelpFormatter'>, prefix_chars='-', fromfile_prefix_chars=None, argument_default=None, conflict_handler='error', add_help=True, allow_abbrev=True)
-ast._ABC (*args) != ValueError("callable <class 'ast._ABC'> is not supported by signature")
-ast.dump (node, annotate_fields=True, include_attributes=False, *, indent=None) != (node, annotate_fields=True, include_attributes=False)
 calendar.calendar None != (theyear, w=2, l=1, c=6, m=3)
 calendar.firstweekday None != ()
 calendar.month None != (theyear, themonth, w=0, l=0)
@@ -1917,11 +2021,13 @@ collections.Counter (*args, **kwds) != (iterable=None, /, **kwds)
 collections.OrderedDict (*args, **kwds) != ValueError('no signature found')
 collections.UserDict (*args, **kwargs) != (dict=None, /, **kwargs)
 collections.defaultdict (*args, **kwargs) != ValueError('no signature found')
-compileall.compile_dir (dir, maxlevels=10, ddir=None, force=False, rx=None, quiet=0, legacy=False, optimize=-1, workers=1) != (dir, maxlevels=10, ddir=None, force=False, rx=None, quiet=0, legacy=False, optimize=-1, workers=1, invalidation_mode=None)
-compileall.compile_file (fullname, ddir=None, force=False, rx=None, quiet=0, legacy=False, optimize=-1) != (fullname, ddir=None, force=False, rx=None, quiet=0, legacy=False, optimize=-1, invalidation_mode=None)
+compileall._walk_dir (dir, ddir=None, maxlevels=10, quiet=0) != (dir, maxlevels, quiet=0)
+compileall.compile_dir (dir, maxlevels=10, ddir=None, force=False, rx=None, quiet=0, legacy=False, optimize=-1, workers=1) != (dir, maxlevels=None, ddir=None, force=False, rx=None, quiet=0, legacy=False, optimize=-1, workers=1, invalidation_mode=None, *, stripdir=None, prependdir=None, limit_sl_dest=None, hardlink_dupes=False)
+compileall.compile_file (fullname, ddir=None, force=False, rx=None, quiet=0, legacy=False, optimize=-1) != (fullname, ddir=None, force=False, rx=None, quiet=0, legacy=False, optimize=-1, invalidation_mode=None, *, stripdir=None, prependdir=None, limit_sl_dest=None, hardlink_dupes=False)
 compileall.compile_path (skip_curdir=1, maxlevels=0, force=False, quiet=0, legacy=False, optimize=-1) != (skip_curdir=1, maxlevels=0, force=False, quiet=0, legacy=False, optimize=-1, invalidation_mode=None)
 configparser.ConfigParser (defaults=None, dict_type=<class 'collections.OrderedDict'>, allow_no_value=False, *, delimiters=('=', ':'), comment_prefixes=('#', ';'), inline_comment_prefixes=None, strict=True, empty_lines_in_values=True, default_section='DEFAULT', interpolation=<object object at 0xdeadbeef>, converters=<object object at 0xdeadbeef>) != (defaults=None, dict_type=<class 'dict'>, allow_no_value=False, *, delimiters=('=', ':'), comment_prefixes=('#', ';'), inline_comment_prefixes=None, strict=True, empty_lines_in_values=True, default_section='DEFAULT', interpolation=<object object at 0xdeadbeef>, converters=<object object at 0xdeadbeef>)
 configparser.RawConfigParser (defaults=None, dict_type=<class 'collections.OrderedDict'>, allow_no_value=False, *, delimiters=('=', ':'), comment_prefixes=('#', ';'), inline_comment_prefixes=None, strict=True, empty_lines_in_values=True, default_section='DEFAULT', interpolation=<object object at 0xdeadbeef>, converters=<object object at 0xdeadbeef>) != (defaults=None, dict_type=<class 'dict'>, allow_no_value=False, *, delimiters=('=', ':'), comment_prefixes=('#', ';'), inline_comment_prefixes=None, strict=True, empty_lines_in_values=True, default_section='DEFAULT', interpolation=<object object at 0xdeadbeef>, converters=<object object at 0xdeadbeef>)
+dataclasses.replace (obj, /, **kwargs) != (obj, /, **changes)
 datetime.date (year, month=None, day=None) != ValueError('no signature found')
 datetime.datetime (year, month=None, day=None, hour=0, minute=0, second=0, microsecond=0, tzinfo=None, *, fold=0) != ValueError('no signature found')
 datetime.time (hour=0, minute=0, second=0, microsecond=0, tzinfo=None, *, fold=0) != ValueError('no signature found')
@@ -1936,8 +2042,11 @@ difflib.IS_LINE_JUNK (line, pat=<bound method Pattern.match of re.compile('\\s*(
 dis.dis None != (x=None, *, file=None, depth=None)
 dis.disassemble None != (co, lasti=-1, *, file=None)
 doctest._SpoofOut ValueError('no signature found') != (initial_value='', newline='\n')
+enum.EnumMeta (cls, bases, classdict) != (cls, bases, classdict, **kwds)
 fnmatch._compile_pattern (pat) != None
+ftplib.FTP (host='', user='', passwd='', acct='', timeout=<object object at 0xdeadbeef>, source_address=None) != (host='', user='', passwd='', acct='', timeout=<object object at 0xdeadbeef>, source_address=None, *, encoding='utf-8')
 functools._lru_cache_wrapper (user_function, maxsize, typed, _CacheInfo) != ValueError('no signature found')
+functools._make_key (args, kwds, typed, kwd_mark=(<object object at 0xdeadbeef>,), fasttypes={<class 'int'>, <class 'str'>}, tuple=<class 'tuple'>, type=<class 'type'>, len=<built-in function len>) != (args, kwds, typed, kwd_mark=(<object object at 0xdeadbeef>,), fasttypes={<class 'str'>, <class 'int'>}, tuple=<class 'tuple'>, type=<class 'type'>, len=<built-in function len>)
 functools.partial (func, /, *args, **keywords) != ValueError('no signature found')
 gettext.Catalog (domain, localedir=None, languages=None, class_=None, fallback=False, codeset=None) != (domain, localedir=None, languages=None, class_=None, fallback=False, codeset=['unspecified'])
 gettext.install (domain, localedir=None, codeset=None, names=None) != (domain, localedir=None, codeset=['unspecified'], names=None)
@@ -1949,7 +2058,9 @@ io.BufferedIOBase () != ValueError('no signature found')
 io.IOBase () != ValueError('no signature found')
 io.RawIOBase () != ValueError('no signature found')
 io.TextIOBase () != ValueError('no signature found')
+logging.FileHandler (filename, mode='a', encoding=None, delay=False) != (filename, mode='a', encoding=None, delay=False, errors=None)
 logging.Formatter (fmt=None, datefmt=None, style='%') != (fmt=None, datefmt=None, style='%', validate=True)
+os._Environ (data, encodekey, decodekey, encodevalue, decodevalue, putenv, unsetenv) != (data, encodekey, decodekey, encodevalue, decodevalue)
 os.stat_result ValueError('no signature found') != (iterable=(), /)
 os.terminal_size ValueError('no signature found') != (iterable=(), /)
 pathlib._PreciseSelector (name, child_parts) != (name, child_parts, flavour)
@@ -1957,13 +2068,19 @@ pathlib._RecursiveWildcardSelector (pat, child_parts) != (pat, child_parts, flav
 pathlib._Selector (child_parts) != (child_parts, flavour)
 pathlib._WildcardSelector (pat, child_parts) != (pat, child_parts, flavour)
 pathlib._make_selector (pattern_parts) != None
-platform.architecture (executable='/home/runner/work/RustPython/RustPython/target/release/rustpython', bits='', linkage='') != (executable='/usr/bin/python3', bits='', linkage='')
+pickle._loads (s, *, fix_imports=True, encoding='ASCII', errors='strict', buffers=None) != (s, /, *, fix_imports=True, encoding='ASCII', errors='strict', buffers=None)
+platform.architecture (executable='/tmp/RustPython/target/release/rustpython', bits='', linkage='') != (executable='/usr/bin/python3', bits='', linkage='')
 platform.python_branch None != ()
 platform.python_build None != ()
 platform.python_compiler None != ()
 platform.python_implementation None != ()
 platform.python_revision None != ()
 platform.python_version None != ()
+platform.uname_result (system, node, release, version, machine, processor) != (system, node, release, version, machine)
+plistlib._BinaryPlistParser (use_builtin_types, dict_type) != (dict_type)
+plistlib._PlistParser (use_builtin_types, dict_type) != (dict_type)
+plistlib.load (fp, *, fmt=None, use_builtin_types=True, dict_type=<class 'dict'>) != (fp, *, fmt=None, dict_type=<class 'dict'>)
+plistlib.loads (value, *, fmt=None, use_builtin_types=True, dict_type=<class 'dict'>) != (value, *, fmt=None, dict_type=<class 'dict'>)
 py_compile.compile (file, cfile=None, dfile=None, doraise=False, optimize=-1, invalidation_mode=None) != (file, cfile=None, dfile=None, doraise=False, optimize=-1, invalidation_mode=None, quiet=0)
 pydoc._start_server (urlhandler, port) != (urlhandler, hostname, port)
 pydoc.browse (port=0, *, open_browser=True) != (port=0, *, open_browser=True, hostname='localhost')
@@ -1977,9 +2094,10 @@ random.getstate None != ()
 random.lognormvariate None != (mu, sigma)
 random.normalvariate None != (mu, sigma)
 random.paretovariate None != (alpha)
+random.randbytes None != (n)
 random.randint None != (a, b)
-random.randrange None != (start, stop=None, step=1, _int=<class 'int'>)
-random.sample None != (population, k)
+random.randrange None != (start, stop=None, step=1)
+random.sample None != (population, k, *, counts=None)
 random.seed None != (a=None, version=2)
 random.setstate None != (state)
 random.shuffle None != (x, random=None)
@@ -1990,20 +2108,42 @@ random.weibullvariate None != (alpha, beta)
 re._compile_repl (repl, pattern) != None
 reprlib.repr None != (x)
 shutil._copyxattr (*args, **kwargs) != (src, dst, *, follow_symlinks=True)
+signal.getsignal (module, /, signalnum) != (signalnum)
+signal.signal (module, /, signalnum, handler) != (signalnum, handler)
+subprocess.Popen (args, bufsize=-1, executable=None, stdin=None, stdout=None, stderr=None, preexec_fn=None, close_fds=True, shell=False, cwd=None, env=None, universal_newlines=None, startupinfo=None, creationflags=0, restore_signals=True, start_new_session=False, pass_fds=(), *, encoding=None, errors=None, text=None) != (args, bufsize=-1, executable=None, stdin=None, stdout=None, stderr=None, preexec_fn=None, close_fds=True, shell=False, cwd=None, env=None, universal_newlines=None, startupinfo=None, creationflags=0, restore_signals=True, start_new_session=False, pass_fds=(), *, user=None, group=None, extra_groups=None, encoding=None, errors=None, text=None, umask=-1)
 symtable.Symbol () != (name, flags, namespaces=None, *, module_scope=False)
 symtable.SymbolTable () != (raw_table, filename)
 symtable.symtable None != (code, filename, compile_type)
 tarfile.open None != (name=None, mode='r', fileobj=None, bufsize=10240, **kwargs)
 traceback.StackSummary ValueError('no signature found') != (iterable=(), /)
-uuid.getnode () != (*, getters=None)
-venv.EnvBuilder (system_site_packages=False, clear=False, symlinks=False, upgrade=False, with_pip=False, prompt=None, upgrade_deps=False) != (system_site_packages=False, clear=False, symlinks=False, upgrade=False, with_pip=False, prompt=None)
-venv.create (env_dir, system_site_packages=False, clear=False, symlinks=False, with_pip=False, prompt=None, upgrade_deps=False) != (env_dir, system_site_packages=False, clear=False, symlinks=False, with_pip=False, prompt=None)
+typing.BinaryIO (*args, **kwds) != ()
+typing.ForwardRef (arg, is_argument=True) != (arg, is_argument=True, module=None, *, is_class=False)
+typing.Generic (*args, **kwds) != ()
+typing.IO (*args, **kwds) != ()
+typing.Protocol (*args, **kwds) != ()
+typing.SupportsAbs (*args, **kwds) != (*args, **kwargs)
+typing.SupportsBytes (*args, **kwds) != (*args, **kwargs)
+typing.SupportsComplex (*args, **kwds) != (*args, **kwargs)
+typing.SupportsFloat (*args, **kwds) != (*args, **kwargs)
+typing.SupportsIndex (*args, **kwds) != (*args, **kwargs)
+typing.SupportsInt (*args, **kwds) != (*args, **kwargs)
+typing.SupportsRound (*args, **kwds) != (*args, **kwargs)
+typing.TextIO (*args, **kwds) != ()
+typing._GenericAlias (origin, params, *, inst=True, special=False, name=None) != (origin, params, *, inst=True, name=None)
+typing._SpecialForm (*args, **kwds) != (getitem)
+typing._alias (origin, params, inst=True) != (origin, nparams, *, inst=True, name=None)
+typing._check_generic (cls, parameters) != (cls, parameters, elen)
+typing._eval_type (t, globalns, localns) != (t, globalns, localns, recursive_guard=frozenset())
+typing._make_nmtuple (name, types) != (name, types, module, defaults=())
+typing._tp_cache (func) != (func=None, /, *, typed=False)
+typing._type_check (arg, msg, is_argument=True) != (arg, msg, is_argument=True, module=None, *, is_class=False)
+typing.get_type_hints (obj, globalns=None, localns=None) != (obj, globalns=None, localns=None, include_extras=False)
 webbrowser._synthesize (browser, update_tryorder=1) != (browser, *, preferred=False)
 webbrowser.register (name, klass, instance=None, update_tryorder=1) != (name, klass, instance=None, *, preferred=False)
 resource.struct_rusage ValueError('no signature found') != (iterable=(), /)
 
-out of 271 modules:
-  not_implemented 80
+out of 272 modules:
+  not_implemented 82
   failed_to_import 0
-  missing_items 69
-  mismatched_items 47
+  missing_items 77
+  mismatched_items 51
