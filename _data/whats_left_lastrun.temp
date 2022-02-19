@@ -99,7 +99,6 @@ lzma (entire module)
 mailbox (entire module)
 mailcap (entire module)
 modulefinder (entire module)
-pickletools (entire module)
 poplib (entire module)
 profile (entire module)
 pstats (entire module)
@@ -694,7 +693,6 @@ posix._have_functions
 posix.confstr
 posix.confstr_names
 posix.ctermid
-posix.device_encoding
 posix.fdatasync
 posix.fork
 posix.forkpty
@@ -1673,6 +1671,15 @@ tty.VTDLY
 tty.VWERASE
 tty.XCASE
 tty.XTABS
+typing._PROTO_WHITELIST
+typing._VariadicGenericAlias
+typing._allow_reckless_class_cheks
+typing._check_fails
+typing._dict_new
+typing._no_init
+typing._normalize_alias
+typing._subs_tvars
+typing._typeddict_new
 uuid._find_mac
 uuid._popen
 warnings._defaultaction
@@ -1892,10 +1899,10 @@ pwd.struct_passwd ValueError('no signature found') != (iterable=(), /)
 time.struct_time ValueError('no signature found') != (iterable=(), /)
 _compression.BaseStream () != ValueError('no signature found')
 _osx_support._read_output (commandstring) != (commandstring, capture_stderr=False)
-_py_abc.ABCMeta (name, bases, namespace, **kwargs) != (name, bases, namespace, /, **kwargs)
 _pydecimal._log10_digits None != (p)
 _pydecimal.getcontext (_local=<thread._local object at 0xdeadbeef>) != ()
 _pydecimal.setcontext (context, _local=<thread._local object at 0xdeadbeef>) != (context)
+abc.ABCMeta (name, bases, namespace, /, **kwargs) != (name, bases, namespace, **kwargs)
 abc.abstractproperty ValueError('no signature found') != (fget=None, fset=None, fdel=None, doc=None)
 argparse.ArgumentParser (prog=None, usage=None, description=None, epilog=None, parents=[], formatter_class=<class 'argparse.HelpFormatter'>, prefix_chars='-', fromfile_prefix_chars=None, argument_default=None, conflict_handler='error', add_help=True, allow_abbrev=True, exit_on_error=True) != (prog=None, usage=None, description=None, epilog=None, parents=[], formatter_class=<class 'argparse.HelpFormatter'>, prefix_chars='-', fromfile_prefix_chars=None, argument_default=None, conflict_handler='error', add_help=True, allow_abbrev=True)
 ast._ABC (*args) != ValueError("callable <class 'ast._ABC'> is not supported by signature")
@@ -1955,6 +1962,7 @@ pathlib._RecursiveWildcardSelector (pat, child_parts) != (pat, child_parts, flav
 pathlib._Selector (child_parts) != (child_parts, flavour)
 pathlib._WildcardSelector (pat, child_parts) != (pat, child_parts, flavour)
 pathlib._make_selector (pattern_parts) != None
+pickle._loads (s, /, *, fix_imports=True, encoding='ASCII', errors='strict', buffers=None) != (s, *, fix_imports=True, encoding='ASCII', errors='strict', buffers=None)
 platform.architecture (executable='/home/runner/work/RustPython/RustPython/target/release/rustpython', bits='', linkage='') != (executable='/usr/bin/python3', bits='', linkage='')
 platform.python_branch None != ()
 platform.python_build None != ()
@@ -1993,6 +2001,30 @@ symtable.SymbolTable () != (raw_table, filename)
 symtable.symtable None != (code, filename, compile_type)
 tarfile.open None != (name=None, mode='r', fileobj=None, bufsize=10240, **kwargs)
 traceback.StackSummary ValueError('no signature found') != (iterable=(), /)
+typing.BinaryIO () != (*args, **kwds)
+typing.ForwardRef (arg, is_argument=True, module=None) != (arg, is_argument=True)
+typing.Generic () != (*args, **kwds)
+typing.IO () != (*args, **kwds)
+typing.Protocol () != (*args, **kwds)
+typing.SupportsAbs (*args, **kwargs) != (*args, **kwds)
+typing.SupportsBytes (*args, **kwargs) != (*args, **kwds)
+typing.SupportsComplex (*args, **kwargs) != (*args, **kwds)
+typing.SupportsFloat (*args, **kwargs) != (*args, **kwds)
+typing.SupportsIndex (*args, **kwargs) != (*args, **kwds)
+typing.SupportsInt (*args, **kwargs) != (*args, **kwds)
+typing.SupportsRound (*args, **kwargs) != (*args, **kwds)
+typing.TextIO () != (*args, **kwds)
+typing._GenericAlias (origin, params, *, inst=True, name=None, _typevar_types=<class 'typing.TypeVar'>, _paramspec_tvars=False) != (origin, params, *, inst=True, special=False, name=None)
+typing._ProtocolMeta (name, bases, namespace, /, **kwargs) != (name, bases, namespace, **kwargs)
+typing._SpecialForm (getitem) != (*args, **kwds)
+typing._alias (origin, nparams, *, inst=True, name=None) != (origin, params, inst=True)
+typing._check_generic (cls, parameters, elen) != (cls, parameters)
+typing._collect_type_vars (types_, typevar_types=None) != (types)
+typing._eval_type (t, globalns, localns, recursive_guard=frozenset()) != (t, globalns, localns)
+typing._make_nmtuple (name, types, module, defaults=()) != (name, types)
+typing._tp_cache (func=None, /, *, typed=False) != (func)
+typing._type_check (arg, msg, is_argument=True, module=None) != (arg, msg, is_argument=True)
+typing.get_type_hints (obj, globalns=None, localns=None, include_extras=False) != (obj, globalns=None, localns=None)
 uuid.getnode () != (*, getters=None)
 venv.EnvBuilder (system_site_packages=False, clear=False, symlinks=False, upgrade=False, with_pip=False, prompt=None, upgrade_deps=False) != (system_site_packages=False, clear=False, symlinks=False, upgrade=False, with_pip=False, prompt=None)
 venv.create (env_dir, system_site_packages=False, clear=False, symlinks=False, with_pip=False, prompt=None, upgrade_deps=False) != (env_dir, system_site_packages=False, clear=False, symlinks=False, with_pip=False, prompt=None)
@@ -2001,7 +2033,7 @@ webbrowser.register (name, klass, instance=None, update_tryorder=1) != (name, kl
 resource.struct_rusage ValueError('no signature found') != (iterable=(), /)
 
 out of 271 modules:
-  not_implemented 79
+  not_implemented 78
   failed_to_import 0
-  missing_items 69
-  mismatched_items 47
+  missing_items 70
+  mismatched_items 48
