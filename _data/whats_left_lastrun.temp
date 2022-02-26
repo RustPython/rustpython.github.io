@@ -2,8 +2,16 @@ bytearray.__getattribute__ inherited
 bytearray.__str__ inherited
 bytes.__getattribute__ inherited
 bytes.__str__ inherited
+complex.__divmod__
+complex.__float__
+complex.__floordiv__
 complex.__format__ inherited
 complex.__getattribute__ inherited
+complex.__int__
+complex.__mod__
+complex.__rdivmod__
+complex.__rfloordiv__
+complex.__rmod__
 dict.__getattribute__ inherited
 enumerate.__getattribute__ inherited
 filter.__getattribute__ inherited
@@ -78,7 +86,6 @@ _sha256 (entire module)
 _sha3 (entire module)
 _sha512 (entire module)
 _stat (entire module)
-_statistics (entire module)
 _symtable (entire module)
 _tracemalloc (entire module)
 grp (entire module)
@@ -1996,6 +2003,8 @@ random.weibullvariate None != (alpha, beta)
 re._compile_repl (repl, pattern) != None
 reprlib.repr None != (x)
 shutil._copyxattr (*args, **kwargs) != (src, dst, *, follow_symlinks=True)
+statistics._sum (data) != (data, start=0)
+statistics.harmonic_mean (data, weights=None) != (data)
 symtable.Symbol () != (name, flags, namespaces=None, *, module_scope=False)
 symtable.SymbolTable () != (raw_table, filename)
 symtable.symtable None != (code, filename, compile_type)
@@ -2033,7 +2042,7 @@ webbrowser.register (name, klass, instance=None, update_tryorder=1) != (name, kl
 resource.struct_rusage ValueError('no signature found') != (iterable=(), /)
 
 out of 271 modules:
-  not_implemented 78
+  not_implemented 77
   failed_to_import 0
   missing_items 70
-  mismatched_items 48
+  mismatched_items 49

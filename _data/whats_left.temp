@@ -514,51 +514,6 @@ binascii.crc_hqx
 binascii.rlecode_hqx
 binascii.rledecode_hqx
 builtins.breakpoint
-errno.EADV
-errno.EBADE
-errno.EBADFD
-errno.EBADR
-errno.EBADRQC
-errno.EBADSLT
-errno.EBFONT
-errno.ECHRNG
-errno.ECOMM
-errno.EDEADLK
-errno.EDEADLOCK
-errno.EDOTDOT
-errno.EISNAM
-errno.EKEYEXPIRED
-errno.EKEYREJECTED
-errno.EKEYREVOKED
-errno.EL2HLT
-errno.EL2NSYNC
-errno.EL3HLT
-errno.EL3RST
-errno.ELIBACC
-errno.ELIBBAD
-errno.ELIBEXEC
-errno.ELIBMAX
-errno.ELIBSCN
-errno.ELNRNG
-errno.EMEDIUMTYPE
-errno.ENAVAIL
-errno.ENOANO
-errno.ENOCSI
-errno.ENOKEY
-errno.ENOMEDIUM
-errno.ENONET
-errno.ENOPKG
-errno.ENOTNAM
-errno.ENOTUNIQ
-errno.EREMCHG
-errno.EREMOTEIO
-errno.ERESTART
-errno.ERFKILL
-errno.ESRMNT
-errno.ESTRPIPE
-errno.EUCLEAN
-errno.EUNATCH
-errno.EXFULL
 faulthandler._fatal_error
 faulthandler._fatal_error_c_thread
 faulthandler._read_null
@@ -2044,5 +1999,5 @@ resource.struct_rusage ValueError('no signature found') != (iterable=(), /)
 out of 271 modules:
   not_implemented 77
   failed_to_import 0
-  missing_items 70
+  missing_items 69
   mismatched_items 49
