@@ -1,125 +1,11 @@
-bytearray.__getattribute__ inherited
-bytearray.__str__ inherited
-bytes.__getattribute__ inherited
-bytes.__str__ inherited
-complex.__divmod__
-complex.__float__
-complex.__floordiv__
-complex.__format__ inherited
-complex.__getattribute__ inherited
-complex.__int__
-complex.__mod__
-complex.__rdivmod__
-complex.__rfloordiv__
-complex.__rmod__
-dict.__getattribute__ inherited
-enumerate.__getattribute__ inherited
-filter.__getattribute__ inherited
-filter.__reduce__ inherited
-float.__getattribute__ inherited
-float.__getformat__
-float.__set_format__
-frozenset.__getattribute__ inherited
-int.__getattribute__ inherited
-list.__getattribute__ inherited
-map.__getattribute__ inherited
-map.__reduce__ inherited
-memoryview.__delitem__
-memoryview.__getattribute__ inherited
-range.__getattribute__ inherited
-set.__getattribute__ inherited
-slice.__getattribute__ inherited
-str.__getattribute__ inherited
-str.__getnewargs__
-super.__init__ inherited
-super.__self__
-super.__self_class__
-super.__thisclass__
-tuple.__getattribute__ inherited
-object.__sizeof__
-zip.__getattribute__ inherited
-classmethod.__init__ inherited
-staticmethod.__func__
-staticmethod.__init__ inherited
-property.__getattribute__ inherited
-BaseException.__delattr__ inherited
-BaseException.__getattribute__ inherited
-BaseException.__reduce__ inherited
-BaseException.__setattr__ inherited
-BaseException.__setstate__
-NoneType.__doc__ inherited
-bytearray_iterator.__doc__ inherited
-bytearray_iterator.__getattribute__ inherited
-bytes_iterator.__doc__ inherited
-bytes_iterator.__getattribute__ inherited
-dict_keyiterator.__doc__ inherited
-dict_keyiterator.__getattribute__ inherited
-dict_valueiterator.__doc__ inherited
-dict_valueiterator.__getattribute__ inherited
-dict_itemiterator.__doc__ inherited
-dict_itemiterator.__getattribute__ inherited
-dict_values.__doc__ inherited
-dict_values.__getattribute__ inherited
-dict_items.__doc__ inherited
-dict_items.__getattribute__ inherited
-dict_items.__hash__ inherited
-set_iterator.__doc__ inherited
-set_iterator.__getattribute__ inherited
-list_iterator.__doc__ inherited
-list_iterator.__getattribute__ inherited
-range_iterator.__doc__ inherited
-range_iterator.__getattribute__ inherited
-str_iterator.__doc__ inherited
-str_iterator.__getattribute__ inherited
-tuple_iterator.__doc__ inherited
-tuple_iterator.__getattribute__ inherited
+# modules
 _abc (entire module)
+_asyncio (entire module)
 _blake2 (entire module)
-_datetime (entire module)
-_elementtree (entire module)
-_heapq (entire module)
-_locale (entire module)
-_md5 (entire module)
-_pickle (entire module)
-_sha1 (entire module)
-_sha256 (entire module)
-_sha3 (entire module)
-_sha512 (entire module)
-_stat (entire module)
-_symtable (entire module)
-_tracemalloc (entire module)
-grp (entire module)
 _bootlocale (entire module)
-_strptime (entire module)
-_sysconfigdata__linux_x86_64-linux-gnu (entire module)
-_sysconfigdata__x86_64-linux-gnu (entire module)
+_bz2 (entire module)
 bz2 (entire module)
 cProfile (entire module)
-contextvars (entire module)
-ctypes (entire module)
-curses (entire module)
-ensurepip (entire module)
-fileinput (entire module)
-imaplib (entire module)
-lib2to3 (entire module)
-lzma (entire module)
-mailbox (entire module)
-mailcap (entire module)
-modulefinder (entire module)
-poplib (entire module)
-profile (entire module)
-pstats (entire module)
-pyclbr (entire module)
-sitecustomize (entire module)
-smtplib (entire module)
-sqlite3 (entire module)
-symbol (entire module)
-tabnanny (entire module)
-tracemalloc (entire module)
-turtle (entire module)
-wave (entire module)
-_asyncio (entire module)
-_bz2 (entire module)
 _codecs_cn (entire module)
 _codecs_hk (entire module)
 _codecs_iso2022 (entire module)
@@ -127,29 +13,151 @@ _codecs_jp (entire module)
 _codecs_kr (entire module)
 _codecs_tw (entire module)
 _contextvars (entire module)
+contextvars (entire module)
 _crypt (entire module)
 _ctypes (entire module)
+ctypes (entire module)
 _ctypes_test (entire module)
 _curses (entire module)
+curses (entire module)
 _curses_panel (entire module)
+_datetime (entire module)
 _dbm (entire module)
 _decimal (entire module)
+_elementtree (entire module)
+ensurepip (entire module)
+fileinput (entire module)
 _gdbm (entire module)
+grp (entire module)
 _hashlib (entire module)
+_heapq (entire module)
+imaplib (entire module)
+lib2to3 (entire module)
+_locale (entire module)
 _lsprof (entire module)
 _lzma (entire module)
+lzma (entire module)
+mailbox (entire module)
+mailcap (entire module)
+_md5 (entire module)
+mmap (entire module)
+modulefinder (entire module)
 _multibytecodec (entire module)
 _opcode (entire module)
+_pickle (entire module)
+poplib (entire module)
 _posixshmem (entire module)
+profile (entire module)
+pstats (entire module)
+pyclbr (entire module)
 _queue (entire module)
+readline (entire module)
+_sha1 (entire module)
+_sha256 (entire module)
+_sha3 (entire module)
+_sha512 (entire module)
+sitecustomize (entire module)
+smtplib (entire module)
 _sqlite3 (entire module)
+sqlite3 (entire module)
 _ssl (entire module)
+_stat (entire module)
+_strptime (entire module)
+symbol (entire module)
+_symtable (entire module)
+_sysconfigdata__linux_x86_64-linux-gnu (entire module)
+_sysconfigdata__x86_64-linux-gnu (entire module)
+tabnanny (entire module)
 _testbuffer (entire module)
+_tracemalloc (entire module)
+tracemalloc (entire module)
+turtle (entire module)
 _uuid (entire module)
+wave (entire module)
 _xxsubinterpreters (entire module)
 _xxtestfuzz (entire module)
-mmap (entire module)
-readline (entire module)
+
+# builtin items
+BaseException.__delattr__ (inherited)
+BaseException.__getattribute__ (inherited)
+BaseException.__reduce__ (inherited)
+BaseException.__setattr__ (inherited)
+BaseException.__setstate__
+NoneType.__doc__ (inherited)
+bytearray.__getattribute__ (inherited)
+bytearray.__str__ (inherited)
+bytearray_iterator.__doc__ (inherited)
+bytearray_iterator.__getattribute__ (inherited)
+bytes.__getattribute__ (inherited)
+bytes.__str__ (inherited)
+bytes_iterator.__doc__ (inherited)
+bytes_iterator.__getattribute__ (inherited)
+classmethod.__init__ (inherited)
+complex.__divmod__
+complex.__float__
+complex.__floordiv__
+complex.__format__ (inherited)
+complex.__getattribute__ (inherited)
+complex.__int__
+complex.__mod__
+complex.__rdivmod__
+complex.__rfloordiv__
+complex.__rmod__
+dict.__getattribute__ (inherited)
+dict_itemiterator.__doc__ (inherited)
+dict_itemiterator.__getattribute__ (inherited)
+dict_items.__doc__ (inherited)
+dict_items.__getattribute__ (inherited)
+dict_items.__hash__ (inherited)
+dict_keyiterator.__doc__ (inherited)
+dict_keyiterator.__getattribute__ (inherited)
+dict_valueiterator.__doc__ (inherited)
+dict_valueiterator.__getattribute__ (inherited)
+dict_values.__doc__ (inherited)
+dict_values.__getattribute__ (inherited)
+enumerate.__getattribute__ (inherited)
+filter.__getattribute__ (inherited)
+filter.__reduce__ (inherited)
+float.__getattribute__ (inherited)
+float.__getformat__
+float.__set_format__
+frozenset.__getattribute__ (inherited)
+int.__getattribute__ (inherited)
+list.__getattribute__ (inherited)
+list_iterator.__doc__ (inherited)
+list_iterator.__getattribute__ (inherited)
+map.__getattribute__ (inherited)
+map.__reduce__ (inherited)
+memoryview.__delitem__
+memoryview.__getattribute__ (inherited)
+object.__sizeof__
+property.__getattribute__ (inherited)
+range.__getattribute__ (inherited)
+range_iterator.__doc__ (inherited)
+range_iterator.__getattribute__ (inherited)
+set.__getattribute__ (inherited)
+set_iterator.__doc__ (inherited)
+set_iterator.__getattribute__ (inherited)
+slice.__getattribute__ (inherited)
+staticmethod.__func__
+staticmethod.__init__ (inherited)
+str.__getattribute__ (inherited)
+str.__getnewargs__
+str_iterator.__doc__ (inherited)
+str_iterator.__getattribute__ (inherited)
+super.__init__ (inherited)
+super.__self__
+super.__self_class__
+super.__thisclass__
+tuple.__getattribute__ (inherited)
+tuple_iterator.__doc__ (inherited)
+tuple_iterator.__getattribute__ (inherited)
+zip.__getattribute__ (inherited)
+
+# stdlib items
+builtins.breakpoint
+array.ArrayType
+array.typecodes
 _ast.AugLoad
 _ast.AugStore
 _ast.ExtSlice
@@ -159,6 +167,15 @@ _ast.PyCF_ALLOW_TOP_LEVEL_AWAIT
 _ast.PyCF_TYPE_COMMENTS
 _ast.Suite
 _ast.slice
+ast.PyCF_ALLOW_TOP_LEVEL_AWAIT
+ast.PyCF_TYPE_COMMENTS
+binascii.a2b_hqx
+binascii.a2b_qp
+binascii.b2a_hqx
+binascii.b2a_qp
+binascii.crc_hqx
+binascii.rlecode_hqx
+binascii.rledecode_hqx
 _codecs.utf_32_be_decode
 _codecs.utf_32_be_encode
 _codecs.utf_32_decode
@@ -168,6 +185,9 @@ _codecs.utf_32_le_decode
 _codecs.utf_32_le_encode
 _collections._count_elements
 _collections._tuplegetter
+compileall._compile_file_tuple
+copyreg.__cached__
+copyreg.__file__
 _csv.Dialect
 _csv.__version__
 _csv._dialects
@@ -176,13 +196,476 @@ _csv.get_dialect
 _csv.list_dialects
 _csv.register_dialect
 _csv.unregister_dialect
+csv.__version__
+datetime.datetime_CAPI
+decimal.HAVE_CONTEXTVAR
+dis.Bytecode
+dis.EXTENDED_ARG
+dis.FORMAT_VALUE
+dis.FORMAT_VALUE_CONVERTERS
+dis.HAVE_ARGUMENT
+dis.Instruction
+dis.MAKE_FUNCTION
+dis.MAKE_FUNCTION_FLAGS
+dis._Instruction
+dis._OPARG_WIDTH
+dis._OPNAME_WIDTH
+dis.__all__
+dis._disassemble_bytes
+dis._disassemble_recursive
+dis._disassemble_str
+dis._format_code_info
+dis._get_code_object
+dis._get_const_info
+dis._get_instructions_bytes
+dis._get_name_info
+dis._have_code
+dis._try_compile
+dis._unpack_opargs
+dis.cmp_op
+dis.code_info
+dis.disco
+dis.distb
+dis.findlabels
+dis.findlinestarts
+dis.get_instructions
+dis.hascompare
+dis.hasconst
+dis.hasfree
+dis.hasjabs
+dis.hasjrel
+dis.haslocal
+dis.hasname
+dis.hasnargs
+dis.opmap
+dis.opname
+dis.pretty_flags
+dis.show_code
+doctest._newline_convert
+faulthandler._fatal_error
+faulthandler._fatal_error_c_thread
+faulthandler._read_null
+faulthandler._sigabrt
+faulthandler._sigfpe
+faulthandler._sigsegv
+faulthandler._stack_overflow
+faulthandler.cancel_dump_traceback_later
+faulthandler.disable
+faulthandler.dump_traceback_later
+faulthandler.is_enabled
+faulthandler.unregister
+fcntl.DN_ACCESS
+fcntl.DN_ATTRIB
+fcntl.DN_CREATE
+fcntl.DN_DELETE
+fcntl.DN_MODIFY
+fcntl.DN_MULTISHOT
+fcntl.DN_RENAME
+fcntl.FASYNC
+fcntl.F_ADD_SEALS
+fcntl.F_EXLCK
+fcntl.F_GETLEASE
+fcntl.F_GETLK64
+fcntl.F_GETSIG
+fcntl.F_GET_SEALS
+fcntl.F_NOTIFY
+fcntl.F_SEAL_GROW
+fcntl.F_SEAL_SEAL
+fcntl.F_SEAL_SHRINK
+fcntl.F_SEAL_WRITE
+fcntl.F_SETLEASE
+fcntl.F_SETLK64
+fcntl.F_SETLKW64
+fcntl.F_SETSIG
+fcntl.F_SHLCK
+fcntl.LOCK_EX
+fcntl.LOCK_MAND
+fcntl.LOCK_NB
+fcntl.LOCK_READ
+fcntl.LOCK_RW
+fcntl.LOCK_SH
+fcntl.LOCK_UN
+fcntl.LOCK_WRITE
+fcntl.flock
+fcntl.lockf
+ftplib.FTP_TLS
 _functools.cmp_to_key
+gc.DEBUG_COLLECTABLE
+gc.DEBUG_LEAK
+gc.DEBUG_SAVEALL
+gc.DEBUG_STATS
+gc.DEBUG_UNCOLLECTABLE
+gc.callbacks
+gc.freeze
+gc.garbage
+gc.get_freeze_count
+gc.get_referents
+gc.unfreeze
+gettext._unspecified
+gettext.dnpgettext
+gettext.dpgettext
+gettext.npgettext
+gettext.pgettext
+hashlib.__all__
+hashlib.__block_openssl_constructor
+hashlib.__builtin_constructor_cache
+hashlib.__builtins__
+hashlib.__cached__
+hashlib.__file__
+hashlib.__get_builtin_constructor
+hashlib.algorithms_available
+hashlib.algorithms_guaranteed
+hmac._openssl_md_meths
+hmac.digest
 _imp.check_hash_based_pycs
 _imp.create_dynamic
 _imp.exec_dynamic
+inspect.CO_ITERABLE_COROUTINE
+inspect.CO_NESTED
+inspect.CO_NEWLOCALS
+inspect.CO_NOFREE
+inspect.CO_OPTIMIZED
 _io.IncrementalNewlineDecoder
+itertools._tee
+itertools._tee_dataobject
+_json.__file__
+_json.make_encoder
+locale.ABDAY_1
+locale.ABDAY_2
+locale.ABDAY_3
+locale.ABDAY_4
+locale.ABDAY_5
+locale.ABDAY_6
+locale.ABDAY_7
+locale.ABMON_1
+locale.ABMON_10
+locale.ABMON_11
+locale.ABMON_12
+locale.ABMON_2
+locale.ABMON_3
+locale.ABMON_4
+locale.ABMON_5
+locale.ABMON_6
+locale.ABMON_7
+locale.ABMON_8
+locale.ABMON_9
+locale.ALT_DIGITS
+locale.AM_STR
+locale.CODESET
+locale.CRNCYSTR
+locale.DAY_1
+locale.DAY_2
+locale.DAY_3
+locale.DAY_4
+locale.DAY_5
+locale.DAY_6
+locale.DAY_7
+locale.D_FMT
+locale.D_T_FMT
+locale.ERA
+locale.ERA_D_FMT
+locale.ERA_D_T_FMT
+locale.ERA_T_FMT
+locale.MON_1
+locale.MON_10
+locale.MON_11
+locale.MON_12
+locale.MON_2
+locale.MON_3
+locale.MON_4
+locale.MON_5
+locale.MON_6
+locale.MON_7
+locale.MON_8
+locale.MON_9
+locale.NOEXPR
+locale.PM_STR
+locale.RADIXCHAR
+locale.THOUSEP
+locale.T_FMT
+locale.T_FMT_AMPM
+locale.YESEXPR
+logging._after_at_fork_child_reinit_locks
+logging._register_at_fork_reinit_lock
+marshal.version
+_multiprocessing.SemLock
+_multiprocessing.__file__
+_multiprocessing.flags
+_multiprocessing.sem_unlink
 _operator.inv
 _operator.matmul
+os.CLD_CONTINUED
+os.CLD_DUMPED
+os.CLD_EXITED
+os.CLD_TRAPPED
+os.F_LOCK
+os.F_TEST
+os.F_TLOCK
+os.F_ULOCK
+os.MFD_ALLOW_SEALING
+os.MFD_CLOEXEC
+os.MFD_HUGETLB
+os.MFD_HUGE_16GB
+os.MFD_HUGE_16MB
+os.MFD_HUGE_1GB
+os.MFD_HUGE_1MB
+os.MFD_HUGE_256MB
+os.MFD_HUGE_2GB
+os.MFD_HUGE_2MB
+os.MFD_HUGE_32MB
+os.MFD_HUGE_512KB
+os.MFD_HUGE_512MB
+os.MFD_HUGE_64KB
+os.MFD_HUGE_8MB
+os.MFD_HUGE_MASK
+os.MFD_HUGE_SHIFT
+os.NGROUPS_MAX
+os.O_ACCMODE
+os.O_ASYNC
+os.O_DIRECT
+os.O_DIRECTORY
+os.O_LARGEFILE
+os.O_NOATIME
+os.O_NOFOLLOW
+os.O_PATH
+os.O_RSYNC
+os.O_SYNC
+os.O_TMPFILE
+os.POSIX_FADV_DONTNEED
+os.POSIX_FADV_NOREUSE
+os.POSIX_FADV_NORMAL
+os.POSIX_FADV_RANDOM
+os.POSIX_FADV_SEQUENTIAL
+os.POSIX_FADV_WILLNEED
+os.P_ALL
+os.P_NOWAIT
+os.P_NOWAITO
+os.P_PGID
+os.P_PID
+os.P_WAIT
+os.RTLD_DEEPBIND
+os.RTLD_NODELETE
+os.RTLD_NOLOAD
+os.RWF_DSYNC
+os.RWF_HIPRI
+os.RWF_NOWAIT
+os.RWF_SYNC
+os.SCHED_RESET_ON_FORK
+os.ST_APPEND
+os.ST_MANDLOCK
+os.ST_NOATIME
+os.ST_NODEV
+os.ST_NODIRATIME
+os.ST_NOEXEC
+os.ST_NOSUID
+os.ST_RDONLY
+os.ST_RELATIME
+os.ST_SYNCHRONOUS
+os.ST_WRITE
+os.TMP_MAX
+os.WCONTINUED
+os.WEXITED
+os.WNOWAIT
+os.WSTOPPED
+os.WUNTRACED
+os.XATTR_CREATE
+os.XATTR_REPLACE
+os.XATTR_SIZE_MAX
+os._fwalk
+os._spawnvef
+os.confstr_names
+os.fwalk
+os.pathconf_names
+os.spawnl
+os.spawnle
+os.spawnlp
+os.spawnlpe
+os.spawnv
+os.spawnve
+os.spawnvp
+os.spawnvpe
+os.statvfs_result
+os.supports_effective_ids
+os.sysconf_names
+_osx_support._SYSTEM_VERSION_TUPLE
+_osx_support._cache_default_sysroot
+_osx_support._default_sysroot
+_osx_support._get_system_version_tuple
+_osx_support._supports_arm64_builds
+pathlib.ELOOP
+pickle.PickleBuffer
+platform._ironpython26_sys_version_parser
+platform._ironpython_sys_version_parser
+platform._pypy_sys_version_parser
+platform._sys_version
+platform._sys_version_cache
+platform._sys_version_parser
+posix.CLD_CONTINUED
+posix.CLD_DUMPED
+posix.CLD_EXITED
+posix.CLD_TRAPPED
+posix.F_LOCK
+posix.F_TEST
+posix.F_TLOCK
+posix.F_ULOCK
+posix.MFD_ALLOW_SEALING
+posix.MFD_CLOEXEC
+posix.MFD_HUGETLB
+posix.MFD_HUGE_16GB
+posix.MFD_HUGE_16MB
+posix.MFD_HUGE_1GB
+posix.MFD_HUGE_1MB
+posix.MFD_HUGE_256MB
+posix.MFD_HUGE_2GB
+posix.MFD_HUGE_2MB
+posix.MFD_HUGE_32MB
+posix.MFD_HUGE_512KB
+posix.MFD_HUGE_512MB
+posix.MFD_HUGE_64KB
+posix.MFD_HUGE_8MB
+posix.MFD_HUGE_MASK
+posix.MFD_HUGE_SHIFT
+posix.NGROUPS_MAX
+posix.O_ACCMODE
+posix.O_ASYNC
+posix.O_DIRECT
+posix.O_DIRECTORY
+posix.O_LARGEFILE
+posix.O_NOATIME
+posix.O_NOFOLLOW
+posix.O_PATH
+posix.O_RSYNC
+posix.O_SYNC
+posix.O_TMPFILE
+posix.POSIX_FADV_DONTNEED
+posix.POSIX_FADV_NOREUSE
+posix.POSIX_FADV_NORMAL
+posix.POSIX_FADV_RANDOM
+posix.POSIX_FADV_SEQUENTIAL
+posix.POSIX_FADV_WILLNEED
+posix.P_ALL
+posix.P_PGID
+posix.P_PID
+posix.RTLD_DEEPBIND
+posix.RTLD_NODELETE
+posix.RTLD_NOLOAD
+posix.RWF_DSYNC
+posix.RWF_HIPRI
+posix.RWF_NOWAIT
+posix.RWF_SYNC
+posix.SCHED_RESET_ON_FORK
+posix.ST_APPEND
+posix.ST_MANDLOCK
+posix.ST_NOATIME
+posix.ST_NODEV
+posix.ST_NODIRATIME
+posix.ST_NOEXEC
+posix.ST_NOSUID
+posix.ST_RDONLY
+posix.ST_RELATIME
+posix.ST_SYNCHRONOUS
+posix.ST_WRITE
+posix.TMP_MAX
+posix.WCONTINUED
+posix.WCOREDUMP
+posix.WEXITED
+posix.WIFCONTINUED
+posix.WNOWAIT
+posix.WSTOPPED
+posix.WUNTRACED
+posix.XATTR_CREATE
+posix.XATTR_REPLACE
+posix.XATTR_SIZE_MAX
+posix._exit
+posix._have_functions
+posix.confstr
+posix.confstr_names
+posix.ctermid
+posix.fdatasync
+posix.fork
+posix.forkpty
+posix.fstatvfs
+posix.getxattr
+posix.killpg
+posix.listxattr
+posix.lockf
+posix.major
+posix.makedev
+posix.memfd_create
+posix.minor
+posix.mkfifo
+posix.pathconf_names
+posix.posix_fadvise
+posix.posix_fallocate
+posix.pread
+posix.preadv
+posix.pwrite
+posix.pwritev
+posix.readv
+posix.register_at_fork
+posix.removexattr
+posix.sched_getaffinity
+posix.sched_rr_get_interval
+posix.sched_setaffinity
+posix.setpgrp
+posix.setxattr
+posix.statvfs
+posix.sysconf
+posix.sysconf_names
+posix.tcgetpgrp
+posix.tcsetpgrp
+posix.wait3
+posix.wait4
+posix.waitid
+posix.waitid_result
+posix.writev
+_pydecimal.HAVE_CONTEXTVAR
+_pydecimal._current_context_var
+pydoc._adjust_cli_sys_path
+pydoc._get_revised_path
+pyexpat.EXPAT_VERSION
+pyexpat.ErrorString
+pyexpat.XMLParserType
+pyexpat.XML_PARAM_ENTITY_PARSING_ALWAYS
+pyexpat.XML_PARAM_ENTITY_PARSING_NEVER
+pyexpat.XML_PARAM_ENTITY_PARSING_UNLESS_STANDALONE
+pyexpat.expat_CAPI
+pyexpat.features
+pyexpat.native_encoding
+pyexpat.version_info
+resource.RLIMIT_OFILE
+resource.__file__
+resource.getpagesize
+resource.prlimit
+select.EPOLLERR
+select.EPOLLET
+select.EPOLLEXCLUSIVE
+select.EPOLLHUP
+select.EPOLLIN
+select.EPOLLMSG
+select.EPOLLONESHOT
+select.EPOLLOUT
+select.EPOLLPRI
+select.EPOLLRDBAND
+select.EPOLLRDHUP
+select.EPOLLRDNORM
+select.EPOLLWRBAND
+select.EPOLLWRNORM
+select.EPOLL_CLOEXEC
+select.PIPE_BUF
+select.POLLMSG
+select.POLLRDBAND
+select.POLLRDHUP
+select.POLLRDNORM
+select.POLLWRBAND
+select.POLLWRNORM
+select.epoll
+selectors.EpollSelector
+selectors._PollLikeSelector
+shutil._WIN_DEFAULT_PATHEXT
+shutil._is_immutable
+shutil._ntuple_diskusage
+shutil.disk_usage
 _signal.ITIMER_PROF
 _signal.ITIMER_REAL
 _signal.ITIMER_VIRTUAL
@@ -206,6 +689,20 @@ _signal.sigwait
 _signal.sigwaitinfo
 _signal.strsignal
 _signal.valid_signals
+signal.ITIMER_PROF
+signal.ITIMER_REAL
+signal.ITIMER_VIRTUAL
+signal.ItimerError
+signal.SIGCLD
+signal.SIGIOT
+signal.SIGPOLL
+signal.SIGRTMAX
+signal.SIGRTMIN
+signal.SIG_BLOCK
+signal.SIG_SETMASK
+signal.SIG_UNBLOCK
+signal.Sigmasks
+signal.struct_siginfo
 _socket.AF_ALG
 _socket.AF_APPLETALK
 _socket.AF_ASH
@@ -491,545 +988,6 @@ _socket.VMADDR_CID_ANY
 _socket.VMADDR_CID_HOST
 _socket.VMADDR_PORT_ANY
 _socket.VM_SOCKETS_INVALID_VERSION
-_sre.copyright
-_thread._ExceptHookArgs
-_thread._excepthook
-_thread.allocate
-_thread.exit_thread
-_thread.get_native_id
-_thread.interrupt_main
-_thread.start_new
-_warnings._defaultaction
-_warnings._filters_mutated
-_warnings._onceregistry
-_warnings.filters
-_warnings.warn_explicit
-array.ArrayType
-array.typecodes
-binascii.a2b_hqx
-binascii.a2b_qp
-binascii.b2a_hqx
-binascii.b2a_qp
-binascii.crc_hqx
-binascii.rlecode_hqx
-binascii.rledecode_hqx
-builtins.breakpoint
-faulthandler._fatal_error
-faulthandler._fatal_error_c_thread
-faulthandler._read_null
-faulthandler._sigabrt
-faulthandler._sigfpe
-faulthandler._sigsegv
-faulthandler._stack_overflow
-faulthandler.cancel_dump_traceback_later
-faulthandler.disable
-faulthandler.dump_traceback_later
-faulthandler.is_enabled
-faulthandler.unregister
-fcntl.DN_ACCESS
-fcntl.DN_ATTRIB
-fcntl.DN_CREATE
-fcntl.DN_DELETE
-fcntl.DN_MODIFY
-fcntl.DN_MULTISHOT
-fcntl.DN_RENAME
-fcntl.FASYNC
-fcntl.F_ADD_SEALS
-fcntl.F_EXLCK
-fcntl.F_GETLEASE
-fcntl.F_GETLK64
-fcntl.F_GETSIG
-fcntl.F_GET_SEALS
-fcntl.F_NOTIFY
-fcntl.F_SEAL_GROW
-fcntl.F_SEAL_SEAL
-fcntl.F_SEAL_SHRINK
-fcntl.F_SEAL_WRITE
-fcntl.F_SETLEASE
-fcntl.F_SETLK64
-fcntl.F_SETLKW64
-fcntl.F_SETSIG
-fcntl.F_SHLCK
-fcntl.LOCK_EX
-fcntl.LOCK_MAND
-fcntl.LOCK_NB
-fcntl.LOCK_READ
-fcntl.LOCK_RW
-fcntl.LOCK_SH
-fcntl.LOCK_UN
-fcntl.LOCK_WRITE
-fcntl.flock
-fcntl.lockf
-gc.DEBUG_COLLECTABLE
-gc.DEBUG_LEAK
-gc.DEBUG_SAVEALL
-gc.DEBUG_STATS
-gc.DEBUG_UNCOLLECTABLE
-gc.callbacks
-gc.freeze
-gc.garbage
-gc.get_freeze_count
-gc.get_referents
-gc.unfreeze
-itertools._tee
-itertools._tee_dataobject
-marshal.version
-posix.CLD_CONTINUED
-posix.CLD_DUMPED
-posix.CLD_EXITED
-posix.CLD_TRAPPED
-posix.F_LOCK
-posix.F_TEST
-posix.F_TLOCK
-posix.F_ULOCK
-posix.MFD_ALLOW_SEALING
-posix.MFD_CLOEXEC
-posix.MFD_HUGETLB
-posix.MFD_HUGE_16GB
-posix.MFD_HUGE_16MB
-posix.MFD_HUGE_1GB
-posix.MFD_HUGE_1MB
-posix.MFD_HUGE_256MB
-posix.MFD_HUGE_2GB
-posix.MFD_HUGE_2MB
-posix.MFD_HUGE_32MB
-posix.MFD_HUGE_512KB
-posix.MFD_HUGE_512MB
-posix.MFD_HUGE_64KB
-posix.MFD_HUGE_8MB
-posix.MFD_HUGE_MASK
-posix.MFD_HUGE_SHIFT
-posix.NGROUPS_MAX
-posix.O_ACCMODE
-posix.O_ASYNC
-posix.O_DIRECT
-posix.O_DIRECTORY
-posix.O_LARGEFILE
-posix.O_NOATIME
-posix.O_NOFOLLOW
-posix.O_PATH
-posix.O_RSYNC
-posix.O_SYNC
-posix.O_TMPFILE
-posix.POSIX_FADV_DONTNEED
-posix.POSIX_FADV_NOREUSE
-posix.POSIX_FADV_NORMAL
-posix.POSIX_FADV_RANDOM
-posix.POSIX_FADV_SEQUENTIAL
-posix.POSIX_FADV_WILLNEED
-posix.P_ALL
-posix.P_PGID
-posix.P_PID
-posix.RTLD_DEEPBIND
-posix.RTLD_NODELETE
-posix.RTLD_NOLOAD
-posix.RWF_DSYNC
-posix.RWF_HIPRI
-posix.RWF_NOWAIT
-posix.RWF_SYNC
-posix.SCHED_RESET_ON_FORK
-posix.ST_APPEND
-posix.ST_MANDLOCK
-posix.ST_NOATIME
-posix.ST_NODEV
-posix.ST_NODIRATIME
-posix.ST_NOEXEC
-posix.ST_NOSUID
-posix.ST_RDONLY
-posix.ST_RELATIME
-posix.ST_SYNCHRONOUS
-posix.ST_WRITE
-posix.TMP_MAX
-posix.WCONTINUED
-posix.WCOREDUMP
-posix.WEXITED
-posix.WIFCONTINUED
-posix.WNOWAIT
-posix.WSTOPPED
-posix.WUNTRACED
-posix.XATTR_CREATE
-posix.XATTR_REPLACE
-posix.XATTR_SIZE_MAX
-posix._exit
-posix._have_functions
-posix.confstr
-posix.confstr_names
-posix.ctermid
-posix.fdatasync
-posix.fork
-posix.forkpty
-posix.fstatvfs
-posix.getxattr
-posix.killpg
-posix.listxattr
-posix.lockf
-posix.major
-posix.makedev
-posix.memfd_create
-posix.minor
-posix.mkfifo
-posix.pathconf_names
-posix.posix_fadvise
-posix.posix_fallocate
-posix.pread
-posix.preadv
-posix.pwrite
-posix.pwritev
-posix.readv
-posix.register_at_fork
-posix.removexattr
-posix.sched_getaffinity
-posix.sched_rr_get_interval
-posix.sched_setaffinity
-posix.setpgrp
-posix.setxattr
-posix.statvfs
-posix.sysconf
-posix.sysconf_names
-posix.tcgetpgrp
-posix.tcsetpgrp
-posix.wait3
-posix.wait4
-posix.waitid
-posix.waitid_result
-posix.writev
-pyexpat.EXPAT_VERSION
-pyexpat.ErrorString
-pyexpat.ExpatError
-pyexpat.XMLParserType
-pyexpat.XML_PARAM_ENTITY_PARSING_ALWAYS
-pyexpat.XML_PARAM_ENTITY_PARSING_NEVER
-pyexpat.XML_PARAM_ENTITY_PARSING_UNLESS_STANDALONE
-pyexpat.error
-pyexpat.expat_CAPI
-pyexpat.features
-pyexpat.native_encoding
-pyexpat.version_info
-select.EPOLLERR
-select.EPOLLET
-select.EPOLLEXCLUSIVE
-select.EPOLLHUP
-select.EPOLLIN
-select.EPOLLMSG
-select.EPOLLONESHOT
-select.EPOLLOUT
-select.EPOLLPRI
-select.EPOLLRDBAND
-select.EPOLLRDHUP
-select.EPOLLRDNORM
-select.EPOLLWRBAND
-select.EPOLLWRNORM
-select.EPOLL_CLOEXEC
-select.PIPE_BUF
-select.POLLMSG
-select.POLLRDBAND
-select.POLLRDHUP
-select.POLLRDNORM
-select.POLLWRBAND
-select.POLLWRNORM
-select.epoll
-sys.__breakpointhook__
-sys.__unraisablehook__
-sys._clear_type_cache
-sys._current_frames
-sys._debugmallocstats
-sys.addaudithook
-sys.breakpointhook
-sys.call_tracing
-sys.callstats
-sys.get_asyncgen_hooks
-sys.get_coroutine_origin_tracking_depth
-sys.getallocatedblocks
-sys.getcheckinterval
-sys.getdlopenflags
-sys.getswitchinterval
-sys.is_finalizing
-sys.set_asyncgen_hooks
-sys.set_coroutine_origin_tracking_depth
-sys.setcheckinterval
-sys.setdlopenflags
-sys.setswitchinterval
-sys.thread_info
-sys.unraisablehook
-time._STRUCT_TM_ITEMS
-time.altzone
-time.daylight
-time.pthread_getcpuclockid
-time.timezone
-time.tzname
-time.tzset
-unicodedata.combining
-unicodedata.decimal
-unicodedata.decomposition
-unicodedata.digit
-unicodedata.east_asian_width
-unicodedata.is_normalized
-unicodedata.mirrored
-unicodedata.numeric
-unicodedata.ucnhash_CAPI
-zlib.ZLIB_RUNTIME_VERSION
-zlib.ZLIB_VERSION
-zlib.__version__
-_osx_support._SYSTEM_VERSION_TUPLE
-_osx_support._cache_default_sysroot
-_osx_support._default_sysroot
-_osx_support._get_system_version_tuple
-_osx_support._supports_arm64_builds
-_pydecimal.HAVE_CONTEXTVAR
-_pydecimal._current_context_var
-ast.PyCF_ALLOW_TOP_LEVEL_AWAIT
-ast.PyCF_TYPE_COMMENTS
-compileall._compile_file_tuple
-copyreg.__cached__
-copyreg.__file__
-csv.__version__
-datetime.datetime_CAPI
-decimal.HAVE_CONTEXTVAR
-dis.Bytecode
-dis.EXTENDED_ARG
-dis.FORMAT_VALUE
-dis.FORMAT_VALUE_CONVERTERS
-dis.HAVE_ARGUMENT
-dis.Instruction
-dis.MAKE_FUNCTION
-dis.MAKE_FUNCTION_FLAGS
-dis._Instruction
-dis._OPARG_WIDTH
-dis._OPNAME_WIDTH
-dis.__all__
-dis._disassemble_bytes
-dis._disassemble_recursive
-dis._disassemble_str
-dis._format_code_info
-dis._get_code_object
-dis._get_const_info
-dis._get_instructions_bytes
-dis._get_name_info
-dis._have_code
-dis._try_compile
-dis._unpack_opargs
-dis.cmp_op
-dis.code_info
-dis.disco
-dis.distb
-dis.findlabels
-dis.findlinestarts
-dis.get_instructions
-dis.hascompare
-dis.hasconst
-dis.hasfree
-dis.hasjabs
-dis.hasjrel
-dis.haslocal
-dis.hasname
-dis.hasnargs
-dis.opmap
-dis.opname
-dis.pretty_flags
-dis.show_code
-doctest._newline_convert
-ftplib.FTP_TLS
-gettext._unspecified
-gettext.dnpgettext
-gettext.dpgettext
-gettext.npgettext
-gettext.pgettext
-hashlib.__all__
-hashlib.__block_openssl_constructor
-hashlib.__builtin_constructor_cache
-hashlib.__builtins__
-hashlib.__cached__
-hashlib.__file__
-hashlib.__get_builtin_constructor
-hashlib.algorithms_available
-hashlib.algorithms_guaranteed
-hmac._openssl_md_meths
-hmac.digest
-inspect.CO_ITERABLE_COROUTINE
-inspect.CO_NESTED
-inspect.CO_NEWLOCALS
-inspect.CO_NOFREE
-inspect.CO_OPTIMIZED
-locale.ABDAY_1
-locale.ABDAY_2
-locale.ABDAY_3
-locale.ABDAY_4
-locale.ABDAY_5
-locale.ABDAY_6
-locale.ABDAY_7
-locale.ABMON_1
-locale.ABMON_10
-locale.ABMON_11
-locale.ABMON_12
-locale.ABMON_2
-locale.ABMON_3
-locale.ABMON_4
-locale.ABMON_5
-locale.ABMON_6
-locale.ABMON_7
-locale.ABMON_8
-locale.ABMON_9
-locale.ALT_DIGITS
-locale.AM_STR
-locale.CODESET
-locale.CRNCYSTR
-locale.DAY_1
-locale.DAY_2
-locale.DAY_3
-locale.DAY_4
-locale.DAY_5
-locale.DAY_6
-locale.DAY_7
-locale.D_FMT
-locale.D_T_FMT
-locale.ERA
-locale.ERA_D_FMT
-locale.ERA_D_T_FMT
-locale.ERA_T_FMT
-locale.MON_1
-locale.MON_10
-locale.MON_11
-locale.MON_12
-locale.MON_2
-locale.MON_3
-locale.MON_4
-locale.MON_5
-locale.MON_6
-locale.MON_7
-locale.MON_8
-locale.MON_9
-locale.NOEXPR
-locale.PM_STR
-locale.RADIXCHAR
-locale.THOUSEP
-locale.T_FMT
-locale.T_FMT_AMPM
-locale.YESEXPR
-logging._after_at_fork_child_reinit_locks
-logging._register_at_fork_reinit_lock
-os.CLD_CONTINUED
-os.CLD_DUMPED
-os.CLD_EXITED
-os.CLD_TRAPPED
-os.F_LOCK
-os.F_TEST
-os.F_TLOCK
-os.F_ULOCK
-os.MFD_ALLOW_SEALING
-os.MFD_CLOEXEC
-os.MFD_HUGETLB
-os.MFD_HUGE_16GB
-os.MFD_HUGE_16MB
-os.MFD_HUGE_1GB
-os.MFD_HUGE_1MB
-os.MFD_HUGE_256MB
-os.MFD_HUGE_2GB
-os.MFD_HUGE_2MB
-os.MFD_HUGE_32MB
-os.MFD_HUGE_512KB
-os.MFD_HUGE_512MB
-os.MFD_HUGE_64KB
-os.MFD_HUGE_8MB
-os.MFD_HUGE_MASK
-os.MFD_HUGE_SHIFT
-os.NGROUPS_MAX
-os.O_ACCMODE
-os.O_ASYNC
-os.O_DIRECT
-os.O_DIRECTORY
-os.O_LARGEFILE
-os.O_NOATIME
-os.O_NOFOLLOW
-os.O_PATH
-os.O_RSYNC
-os.O_SYNC
-os.O_TMPFILE
-os.POSIX_FADV_DONTNEED
-os.POSIX_FADV_NOREUSE
-os.POSIX_FADV_NORMAL
-os.POSIX_FADV_RANDOM
-os.POSIX_FADV_SEQUENTIAL
-os.POSIX_FADV_WILLNEED
-os.P_ALL
-os.P_NOWAIT
-os.P_NOWAITO
-os.P_PGID
-os.P_PID
-os.P_WAIT
-os.RTLD_DEEPBIND
-os.RTLD_NODELETE
-os.RTLD_NOLOAD
-os.RWF_DSYNC
-os.RWF_HIPRI
-os.RWF_NOWAIT
-os.RWF_SYNC
-os.SCHED_RESET_ON_FORK
-os.ST_APPEND
-os.ST_MANDLOCK
-os.ST_NOATIME
-os.ST_NODEV
-os.ST_NODIRATIME
-os.ST_NOEXEC
-os.ST_NOSUID
-os.ST_RDONLY
-os.ST_RELATIME
-os.ST_SYNCHRONOUS
-os.ST_WRITE
-os.TMP_MAX
-os.WCONTINUED
-os.WEXITED
-os.WNOWAIT
-os.WSTOPPED
-os.WUNTRACED
-os.XATTR_CREATE
-os.XATTR_REPLACE
-os.XATTR_SIZE_MAX
-os._fwalk
-os._spawnvef
-os.confstr_names
-os.fwalk
-os.pathconf_names
-os.spawnl
-os.spawnle
-os.spawnlp
-os.spawnlpe
-os.spawnv
-os.spawnve
-os.spawnvp
-os.spawnvpe
-os.statvfs_result
-os.supports_effective_ids
-os.sysconf_names
-pathlib.ELOOP
-pickle.PickleBuffer
-platform._ironpython26_sys_version_parser
-platform._ironpython_sys_version_parser
-platform._pypy_sys_version_parser
-platform._sys_version
-platform._sys_version_cache
-platform._sys_version_parser
-pydoc._adjust_cli_sys_path
-pydoc._get_revised_path
-selectors.EpollSelector
-selectors._PollLikeSelector
-shutil._WIN_DEFAULT_PATHEXT
-shutil._is_immutable
-shutil._ntuple_diskusage
-shutil.disk_usage
-signal.ITIMER_PROF
-signal.ITIMER_REAL
-signal.ITIMER_VIRTUAL
-signal.ItimerError
-signal.SIGCLD
-signal.SIGIOT
-signal.SIGPOLL
-signal.SIGRTMAX
-signal.SIGRTMIN
-signal.SIG_BLOCK
-signal.SIG_SETMASK
-signal.SIG_UNBLOCK
-signal.Sigmasks
-signal.struct_siginfo
 socket.AF_ALG
 socket.AF_APPLETALK
 socket.AF_ASH
@@ -1318,6 +1276,7 @@ socketserver.ForkingTCPServer
 socketserver.ForkingUDPServer
 socketserver._NoThreads
 socketserver._Threads
+_sre.copyright
 ssl.ALERT_DESCRIPTION_ACCESS_DENIED
 ssl.ALERT_DESCRIPTION_BAD_CERTIFICATE
 ssl.ALERT_DESCRIPTION_BAD_CERTIFICATE_HASH_VALUE
@@ -1476,9 +1435,205 @@ symtable.__builtins__
 symtable.__cached__
 symtable.__file__
 symtable._newSymbolTable
+sys.__breakpointhook__
+sys.__unraisablehook__
+sys._clear_type_cache
+sys._current_frames
+sys._debugmallocstats
+sys.addaudithook
+sys.breakpointhook
+sys.call_tracing
+sys.callstats
+sys.get_asyncgen_hooks
+sys.get_coroutine_origin_tracking_depth
+sys.getallocatedblocks
+sys.getcheckinterval
+sys.getdlopenflags
+sys.getswitchinterval
+sys.is_finalizing
+sys.set_asyncgen_hooks
+sys.set_coroutine_origin_tracking_depth
+sys.setcheckinterval
+sys.setdlopenflags
+sys.setswitchinterval
+sys.thread_info
+sys.unraisablehook
 sysconfig._ALWAYS_STR
+termios.B1000000
+termios.B115200
+termios.B1152000
+termios.B1500000
+termios.B2000000
+termios.B230400
+termios.B2500000
+termios.B3000000
+termios.B3500000
+termios.B4000000
+termios.B460800
+termios.B500000
+termios.B57600
+termios.B576000
+termios.B921600
+termios.BS0
+termios.BS1
+termios.BSDLY
+termios.CBAUD
+termios.CBAUDEX
+termios.CDSUSP
+termios.CEOF
+termios.CEOL
+termios.CEOT
+termios.CERASE
+termios.CFLUSH
+termios.CIBAUD
+termios.CINTR
+termios.CKILL
+termios.CLNEXT
+termios.CQUIT
+termios.CR0
+termios.CR1
+termios.CR2
+termios.CR3
+termios.CRDLY
+termios.CRPRNT
+termios.CRTSCTS
+termios.CSTART
+termios.CSTOP
+termios.CSUSP
+termios.CWERASE
+termios.ECHOCTL
+termios.ECHOKE
+termios.ECHOPRT
+termios.EXTA
+termios.EXTB
+termios.FF0
+termios.FF1
+termios.FFDLY
+termios.FIOASYNC
+termios.FIOCLEX
+termios.FIONBIO
+termios.FIONCLEX
+termios.FIONREAD
+termios.FLUSHO
+termios.IMAXBEL
+termios.IOCSIZE_MASK
+termios.IOCSIZE_SHIFT
+termios.IUCLC
+termios.NCC
+termios.NL0
+termios.NL1
+termios.NLDLY
+termios.N_MOUSE
+termios.N_PPP
+termios.N_SLIP
+termios.N_STRIP
+termios.N_TTY
+termios.OFDEL
+termios.OFILL
+termios.OLCUC
+termios.PENDIN
+termios.TAB0
+termios.TAB1
+termios.TAB2
+termios.TAB3
+termios.TABDLY
+termios.TCFLSH
+termios.TCGETA
+termios.TCGETS
+termios.TCSBRK
+termios.TCSBRKP
+termios.TCSETA
+termios.TCSETAF
+termios.TCSETAW
+termios.TCSETS
+termios.TCSETSF
+termios.TCSETSW
+termios.TCXONC
+termios.TIOCCONS
+termios.TIOCEXCL
+termios.TIOCGETD
+termios.TIOCGICOUNT
+termios.TIOCGLCKTRMIOS
+termios.TIOCGPGRP
+termios.TIOCGSERIAL
+termios.TIOCGSOFTCAR
+termios.TIOCINQ
+termios.TIOCLINUX
+termios.TIOCMBIC
+termios.TIOCMBIS
+termios.TIOCMGET
+termios.TIOCMIWAIT
+termios.TIOCMSET
+termios.TIOCM_CAR
+termios.TIOCM_CD
+termios.TIOCM_CTS
+termios.TIOCM_DSR
+termios.TIOCM_DTR
+termios.TIOCM_LE
+termios.TIOCM_RI
+termios.TIOCM_RNG
+termios.TIOCM_RTS
+termios.TIOCM_SR
+termios.TIOCM_ST
+termios.TIOCNOTTY
+termios.TIOCNXCL
+termios.TIOCOUTQ
+termios.TIOCPKT
+termios.TIOCPKT_DATA
+termios.TIOCPKT_DOSTOP
+termios.TIOCPKT_FLUSHREAD
+termios.TIOCPKT_FLUSHWRITE
+termios.TIOCPKT_NOSTOP
+termios.TIOCPKT_START
+termios.TIOCPKT_STOP
+termios.TIOCSCTTY
+termios.TIOCSERCONFIG
+termios.TIOCSERGETLSR
+termios.TIOCSERGETMULTI
+termios.TIOCSERGSTRUCT
+termios.TIOCSERGWILD
+termios.TIOCSERSETMULTI
+termios.TIOCSERSWILD
+termios.TIOCSER_TEMT
+termios.TIOCSETD
+termios.TIOCSLCKTRMIOS
+termios.TIOCSPGRP
+termios.TIOCSSERIAL
+termios.TIOCSSOFTCAR
+termios.TIOCSTI
+termios.VDISCARD
+termios.VEOL2
+termios.VLNEXT
+termios.VREPRINT
+termios.VSWTC
+termios.VSWTCH
+termios.VT0
+termios.VT1
+termios.VTDLY
+termios.VWERASE
+termios.XCASE
+termios.XTABS
+termios.__file__
+termios.tcdrain
+termios.tcflow
+termios.tcflush
+termios.tcsendbreak
 test.__builtins__
 test.__cached__
+_thread._ExceptHookArgs
+_thread._excepthook
+_thread.allocate
+_thread.exit_thread
+_thread.get_native_id
+_thread.interrupt_main
+_thread.start_new
+time._STRUCT_TM_ITEMS
+time.altzone
+time.daylight
+time.pthread_getcpuclockid
+time.timezone
+time.tzname
+time.tzset
 tty.B1000000
 tty.B115200
 tty.B1152000
@@ -1642,196 +1797,32 @@ typing._no_init
 typing._normalize_alias
 typing._subs_tvars
 typing._typeddict_new
+unicodedata.combining
+unicodedata.decimal
+unicodedata.decomposition
+unicodedata.digit
+unicodedata.east_asian_width
+unicodedata.is_normalized
+unicodedata.mirrored
+unicodedata.numeric
+unicodedata.ucnhash_CAPI
 uuid._find_mac
 uuid._popen
+_warnings._defaultaction
+_warnings._filters_mutated
+_warnings._onceregistry
+_warnings.filters
+_warnings.warn_explicit
 warnings._defaultaction
 warnings._onceregistry
 webbrowser._lock
 webbrowser._os_preferred_browser
 webbrowser.register_standard_browsers
-_json.__file__
-_json.make_encoder
-_multiprocessing.SemLock
-_multiprocessing.__file__
-_multiprocessing.flags
-_multiprocessing.sem_unlink
-resource.RLIMIT_OFILE
-resource.__file__
-resource.getpagesize
-resource.prlimit
-termios.B1000000
-termios.B115200
-termios.B1152000
-termios.B1500000
-termios.B2000000
-termios.B230400
-termios.B2500000
-termios.B3000000
-termios.B3500000
-termios.B4000000
-termios.B460800
-termios.B500000
-termios.B57600
-termios.B576000
-termios.B921600
-termios.BS0
-termios.BS1
-termios.BSDLY
-termios.CBAUD
-termios.CBAUDEX
-termios.CDSUSP
-termios.CEOF
-termios.CEOL
-termios.CEOT
-termios.CERASE
-termios.CFLUSH
-termios.CIBAUD
-termios.CINTR
-termios.CKILL
-termios.CLNEXT
-termios.CQUIT
-termios.CR0
-termios.CR1
-termios.CR2
-termios.CR3
-termios.CRDLY
-termios.CRPRNT
-termios.CRTSCTS
-termios.CSTART
-termios.CSTOP
-termios.CSUSP
-termios.CWERASE
-termios.ECHOCTL
-termios.ECHOKE
-termios.ECHOPRT
-termios.EXTA
-termios.EXTB
-termios.FF0
-termios.FF1
-termios.FFDLY
-termios.FIOASYNC
-termios.FIOCLEX
-termios.FIONBIO
-termios.FIONCLEX
-termios.FIONREAD
-termios.FLUSHO
-termios.IMAXBEL
-termios.IOCSIZE_MASK
-termios.IOCSIZE_SHIFT
-termios.IUCLC
-termios.NCC
-termios.NL0
-termios.NL1
-termios.NLDLY
-termios.N_MOUSE
-termios.N_PPP
-termios.N_SLIP
-termios.N_STRIP
-termios.N_TTY
-termios.OFDEL
-termios.OFILL
-termios.OLCUC
-termios.PENDIN
-termios.TAB0
-termios.TAB1
-termios.TAB2
-termios.TAB3
-termios.TABDLY
-termios.TCFLSH
-termios.TCGETA
-termios.TCGETS
-termios.TCSBRK
-termios.TCSBRKP
-termios.TCSETA
-termios.TCSETAF
-termios.TCSETAW
-termios.TCSETS
-termios.TCSETSF
-termios.TCSETSW
-termios.TCXONC
-termios.TIOCCONS
-termios.TIOCEXCL
-termios.TIOCGETD
-termios.TIOCGICOUNT
-termios.TIOCGLCKTRMIOS
-termios.TIOCGPGRP
-termios.TIOCGSERIAL
-termios.TIOCGSOFTCAR
-termios.TIOCINQ
-termios.TIOCLINUX
-termios.TIOCMBIC
-termios.TIOCMBIS
-termios.TIOCMGET
-termios.TIOCMIWAIT
-termios.TIOCMSET
-termios.TIOCM_CAR
-termios.TIOCM_CD
-termios.TIOCM_CTS
-termios.TIOCM_DSR
-termios.TIOCM_DTR
-termios.TIOCM_LE
-termios.TIOCM_RI
-termios.TIOCM_RNG
-termios.TIOCM_RTS
-termios.TIOCM_SR
-termios.TIOCM_ST
-termios.TIOCNOTTY
-termios.TIOCNXCL
-termios.TIOCOUTQ
-termios.TIOCPKT
-termios.TIOCPKT_DATA
-termios.TIOCPKT_DOSTOP
-termios.TIOCPKT_FLUSHREAD
-termios.TIOCPKT_FLUSHWRITE
-termios.TIOCPKT_NOSTOP
-termios.TIOCPKT_START
-termios.TIOCPKT_STOP
-termios.TIOCSCTTY
-termios.TIOCSERCONFIG
-termios.TIOCSERGETLSR
-termios.TIOCSERGETMULTI
-termios.TIOCSERGSTRUCT
-termios.TIOCSERGWILD
-termios.TIOCSERSETMULTI
-termios.TIOCSERSWILD
-termios.TIOCSER_TEMT
-termios.TIOCSETD
-termios.TIOCSLCKTRMIOS
-termios.TIOCSPGRP
-termios.TIOCSSERIAL
-termios.TIOCSSOFTCAR
-termios.TIOCSTI
-termios.VDISCARD
-termios.VEOL2
-termios.VLNEXT
-termios.VREPRINT
-termios.VSWTC
-termios.VSWTCH
-termios.VT0
-termios.VT1
-termios.VTDLY
-termios.VWERASE
-termios.XCASE
-termios.XTABS
-termios.__file__
-termios.tcdrain
-termios.tcflow
-termios.tcflush
-termios.tcsendbreak
-_io.BufferedRWPair ValueError('no signature found') != (reader, writer, buffer_size=8192, /)
-_io.BufferedRandom ValueError('no signature found') != (raw, buffer_size=8192)
-_io.BufferedReader ValueError('no signature found') != (raw, buffer_size=8192)
-_io.BufferedWriter ValueError('no signature found') != (raw, buffer_size=8192)
-_io.BytesIO ValueError('no signature found') != (initial_bytes=b'')
-_io.FileIO ValueError('no signature found') != (file, mode='r', closefd=True, opener=None)
-_io.StringIO ValueError('no signature found') != (initial_value='', newline='\n')
-_io.TextIOWrapper ValueError('no signature found') != (buffer, encoding=None, errors=None, newline=None, line_buffering=False, write_through=False)
-_io._BufferedIOBase () != ValueError('no signature found')
-_io._IOBase () != ValueError('no signature found')
-_io._RawIOBase () != ValueError('no signature found')
-_io._TextIOBase () != ValueError('no signature found')
-_thread.LockType ValueError('no signature found') != ()
-_weakref.proxy ValueError('no signature found') != None
+zlib.ZLIB_RUNTIME_VERSION
+zlib.ZLIB_VERSION
+zlib.__version__
+
+# mismatching signatures (warnings)
 builtins.complex ValueError('no signature found') != (real=0, imag=0)
 builtins.enumerate ValueError('no signature found') != (iterable, start=0)
 builtins.float ValueError('no signature found') != (x=0, /)
@@ -1840,30 +1831,6 @@ builtins.memoryview ValueError('no signature found') != (object)
 builtins.property ValueError('no signature found') != (fget=None, fset=None, fdel=None, doc=None)
 builtins.reversed None != (sequence, /)
 builtins.tuple ValueError('no signature found') != (iterable=(), /)
-itertools._grouper () != ValueError('no signature found')
-itertools.accumulate ValueError('no signature found') != (iterable, func=None, *, initial=None)
-itertools.combinations ValueError('no signature found') != (iterable, r)
-itertools.combinations_with_replacement ValueError('no signature found') != (iterable, r)
-itertools.compress ValueError('no signature found') != (data, selectors)
-itertools.count ValueError('no signature found') != (start=0, step=1)
-itertools.cycle ValueError('no signature found') != (iterable, /)
-itertools.dropwhile ValueError('no signature found') != (predicate, iterable, /)
-itertools.filterfalse ValueError('no signature found') != (function, iterable, /)
-itertools.groupby ValueError('no signature found') != (iterable, key=None)
-itertools.permutations ValueError('no signature found') != (iterable, r=None)
-itertools.starmap ValueError('no signature found') != (function, iterable, /)
-itertools.takewhile ValueError('no signature found') != (predicate, iterable, /)
-itertools.tee ValueError('no signature found') != None
-posix.sched_param ValueError('no signature found') != (iterable=(), /)
-posix.times_result ValueError('no signature found') != (iterable=(), /)
-posix.uname_result ValueError('no signature found') != (iterable=(), /)
-pwd.struct_passwd ValueError('no signature found') != (iterable=(), /)
-time.struct_time ValueError('no signature found') != (iterable=(), /)
-_compression.BaseStream () != ValueError('no signature found')
-_osx_support._read_output (commandstring) != (commandstring, capture_stderr=False)
-_pydecimal._log10_digits None != (p)
-_pydecimal.getcontext (_local=<thread._local object at 0xdeadbeef>) != ()
-_pydecimal.setcontext (context, _local=<thread._local object at 0xdeadbeef>) != (context)
 abc.ABCMeta (name, bases, namespace, /, **kwargs) != (name, bases, namespace, **kwargs)
 abc.abstractproperty ValueError('no signature found') != (fget=None, fset=None, fdel=None, doc=None)
 argparse.ArgumentParser (prog=None, usage=None, description=None, epilog=None, parents=[], formatter_class=<class 'argparse.HelpFormatter'>, prefix_chars='-', fromfile_prefix_chars=None, argument_default=None, conflict_handler='error', add_help=True, allow_abbrev=True, exit_on_error=True) != (prog=None, usage=None, description=None, epilog=None, parents=[], formatter_class=<class 'argparse.HelpFormatter'>, prefix_chars='-', fromfile_prefix_chars=None, argument_default=None, conflict_handler='error', add_help=True, allow_abbrev=True)
@@ -1879,20 +1846,12 @@ calendar.prweek None != (theweek, width)
 calendar.week None != (theweek, width)
 calendar.weekheader None != (width)
 collections.Counter (*args, **kwds) != (iterable=None, /, **kwds)
-collections.OrderedDict (*args, **kwds) != ValueError('no signature found')
 collections.UserDict (*args, **kwargs) != (dict=None, /, **kwargs)
-collections.defaultdict (*args, **kwargs) != ValueError('no signature found')
 compileall.compile_dir (dir, maxlevels=10, ddir=None, force=False, rx=None, quiet=0, legacy=False, optimize=-1, workers=1) != (dir, maxlevels=10, ddir=None, force=False, rx=None, quiet=0, legacy=False, optimize=-1, workers=1, invalidation_mode=None)
 compileall.compile_file (fullname, ddir=None, force=False, rx=None, quiet=0, legacy=False, optimize=-1) != (fullname, ddir=None, force=False, rx=None, quiet=0, legacy=False, optimize=-1, invalidation_mode=None)
 compileall.compile_path (skip_curdir=1, maxlevels=0, force=False, quiet=0, legacy=False, optimize=-1) != (skip_curdir=1, maxlevels=0, force=False, quiet=0, legacy=False, optimize=-1, invalidation_mode=None)
 configparser.ConfigParser (defaults=None, dict_type=<class 'collections.OrderedDict'>, allow_no_value=False, *, delimiters=('=', ':'), comment_prefixes=('#', ';'), inline_comment_prefixes=None, strict=True, empty_lines_in_values=True, default_section='DEFAULT', interpolation=<object object at 0xdeadbeef>, converters=<object object at 0xdeadbeef>) != (defaults=None, dict_type=<class 'dict'>, allow_no_value=False, *, delimiters=('=', ':'), comment_prefixes=('#', ';'), inline_comment_prefixes=None, strict=True, empty_lines_in_values=True, default_section='DEFAULT', interpolation=<object object at 0xdeadbeef>, converters=<object object at 0xdeadbeef>)
 configparser.RawConfigParser (defaults=None, dict_type=<class 'collections.OrderedDict'>, allow_no_value=False, *, delimiters=('=', ':'), comment_prefixes=('#', ';'), inline_comment_prefixes=None, strict=True, empty_lines_in_values=True, default_section='DEFAULT', interpolation=<object object at 0xdeadbeef>, converters=<object object at 0xdeadbeef>) != (defaults=None, dict_type=<class 'dict'>, allow_no_value=False, *, delimiters=('=', ':'), comment_prefixes=('#', ';'), inline_comment_prefixes=None, strict=True, empty_lines_in_values=True, default_section='DEFAULT', interpolation=<object object at 0xdeadbeef>, converters=<object object at 0xdeadbeef>)
-datetime.date (year, month=None, day=None) != ValueError('no signature found')
-datetime.datetime (year, month=None, day=None, hour=0, minute=0, second=0, microsecond=0, tzinfo=None, *, fold=0) != ValueError('no signature found')
-datetime.time (hour=0, minute=0, second=0, microsecond=0, tzinfo=None, *, fold=0) != ValueError('no signature found')
-datetime.timedelta (days=0, seconds=0, microseconds=0, milliseconds=0, minutes=0, hours=0, weeks=0) != ValueError('no signature found')
-datetime.timezone (offset, name=<object object at 0xdeadbeef>) != ValueError('no signature found')
-datetime.tzinfo () != ValueError('no signature found')
 decimal.Context (prec=None, rounding=None, Emin=None, Emax=None, capitals=None, clamp=None, flags=None, traps=None, _ignored_flags=None) != (prec=None, rounding=None, Emin=None, Emax=None, capitals=None, clamp=None, flags=None, traps=None)
 decimal.getcontext (_local=<thread._local object at 0xdeadbeef>) != None
 decimal.localcontext (ctx=None) != None
@@ -1902,23 +1861,39 @@ dis.dis None != (x=None, *, file=None, depth=None)
 dis.disassemble None != (co, lasti=-1, *, file=None)
 doctest._SpoofOut ValueError('no signature found') != (initial_value='', newline='\n')
 fnmatch._compile_pattern (pat) != None
-functools._lru_cache_wrapper (user_function, maxsize, typed, _CacheInfo) != ValueError('no signature found')
-functools.partial (func, /, *args, **keywords) != ValueError('no signature found')
 gettext.Catalog (domain, localedir=None, languages=None, class_=None, fallback=False, codeset=None) != (domain, localedir=None, languages=None, class_=None, fallback=False, codeset=['unspecified'])
 gettext.install (domain, localedir=None, codeset=None, names=None) != (domain, localedir=None, codeset=['unspecified'], names=None)
 gettext.translation (domain, localedir=None, languages=None, class_=None, fallback=False, codeset=None) != (domain, localedir=None, languages=None, class_=None, fallback=False, codeset=['unspecified'])
 hashlib.new None != (name, data=b'', **kwargs)
 hmac.HMAC (key, msg=None, digestmod=None) != (key, msg=None, digestmod='')
 hmac.new (key, msg=None, digestmod=None) != (key, msg=None, digestmod='')
-io.BufferedIOBase () != ValueError('no signature found')
-io.IOBase () != ValueError('no signature found')
-io.RawIOBase () != ValueError('no signature found')
-io.TextIOBase () != ValueError('no signature found')
+_io.BufferedRWPair ValueError('no signature found') != (reader, writer, buffer_size=8192, /)
+_io.BufferedRandom ValueError('no signature found') != (raw, buffer_size=8192)
+_io.BufferedReader ValueError('no signature found') != (raw, buffer_size=8192)
+_io.BufferedWriter ValueError('no signature found') != (raw, buffer_size=8192)
+_io.BytesIO ValueError('no signature found') != (initial_bytes=b'')
+_io.FileIO ValueError('no signature found') != (file, mode='r', closefd=True, opener=None)
+_io.StringIO ValueError('no signature found') != (initial_value='', newline='\n')
+_io.TextIOWrapper ValueError('no signature found') != (buffer, encoding=None, errors=None, newline=None, line_buffering=False, write_through=False)
+itertools.accumulate ValueError('no signature found') != (iterable, func=None, *, initial=None)
+itertools.combinations ValueError('no signature found') != (iterable, r)
+itertools.combinations_with_replacement ValueError('no signature found') != (iterable, r)
+itertools.compress ValueError('no signature found') != (data, selectors)
+itertools.count ValueError('no signature found') != (start=0, step=1)
+itertools.cycle ValueError('no signature found') != (iterable, /)
+itertools.dropwhile ValueError('no signature found') != (predicate, iterable, /)
+itertools.filterfalse ValueError('no signature found') != (function, iterable, /)
+itertools.groupby ValueError('no signature found') != (iterable, key=None)
+itertools.permutations ValueError('no signature found') != (iterable, r=None)
+itertools.starmap ValueError('no signature found') != (function, iterable, /)
+itertools.takewhile ValueError('no signature found') != (predicate, iterable, /)
+itertools.tee ValueError('no signature found') != None
 logging.Formatter (fmt=None, datefmt=None, style='%') != (fmt=None, datefmt=None, style='%', validate=True)
 os._Environ (data, encodekey, decodekey, encodevalue, decodevalue) != (data, encodekey, decodekey, encodevalue, decodevalue, putenv, unsetenv)
 os.fdopen (fd, mode='r', buffering=-1, encoding=None, *args, **kwargs) != (fd, *args, **kwargs)
 os.stat_result ValueError('no signature found') != (iterable=(), /)
 os.terminal_size ValueError('no signature found') != (iterable=(), /)
+_osx_support._read_output (commandstring) != (commandstring, capture_stderr=False)
 pathlib._PreciseSelector (name, child_parts) != (name, child_parts, flavour)
 pathlib._RecursiveWildcardSelector (pat, child_parts) != (pat, child_parts, flavour)
 pathlib._Selector (child_parts) != (child_parts, flavour)
@@ -1932,6 +1907,10 @@ platform.python_compiler None != ()
 platform.python_implementation None != ()
 platform.python_revision None != ()
 platform.python_version None != ()
+posix.sched_param ValueError('no signature found') != (iterable=(), /)
+posix.times_result ValueError('no signature found') != (iterable=(), /)
+posix.uname_result ValueError('no signature found') != (iterable=(), /)
+pwd.struct_passwd ValueError('no signature found') != (iterable=(), /)
 py_compile.compile (file, cfile=None, dfile=None, doraise=False, optimize=-1, invalidation_mode=None) != (file, cfile=None, dfile=None, doraise=False, optimize=-1, invalidation_mode=None, quiet=0)
 pydoc._start_server (urlhandler, port) != (urlhandler, hostname, port)
 pydoc.browse (port=0, *, open_browser=True) != (port=0, *, open_browser=True, hostname='localhost')
@@ -1957,6 +1936,7 @@ random.vonmisesvariate None != (mu, kappa)
 random.weibullvariate None != (alpha, beta)
 re._compile_repl (repl, pattern) != None
 reprlib.repr None != (x)
+resource.struct_rusage ValueError('no signature found') != (iterable=(), /)
 shutil._copyxattr (*args, **kwargs) != (src, dst, *, follow_symlinks=True)
 statistics._sum (data) != (data, start=0)
 statistics.harmonic_mean (data, weights=None) != (data)
@@ -1964,6 +1944,8 @@ symtable.Symbol () != (name, flags, namespaces=None, *, module_scope=False)
 symtable.SymbolTable () != (raw_table, filename)
 symtable.symtable None != (code, filename, compile_type)
 tarfile.open None != (name=None, mode='r', fileobj=None, bufsize=10240, **kwargs)
+_thread.LockType ValueError('no signature found') != ()
+time.struct_time ValueError('no signature found') != (iterable=(), /)
 traceback.StackSummary ValueError('no signature found') != (iterable=(), /)
 typing.BinaryIO () != (*args, **kwds)
 typing.ForwardRef (arg, is_argument=True, module=None) != (arg, is_argument=True)
@@ -1992,12 +1974,12 @@ typing.get_type_hints (obj, globalns=None, localns=None, include_extras=False) !
 uuid.getnode () != (*, getters=None)
 venv.EnvBuilder (system_site_packages=False, clear=False, symlinks=False, upgrade=False, with_pip=False, prompt=None, upgrade_deps=False) != (system_site_packages=False, clear=False, symlinks=False, upgrade=False, with_pip=False, prompt=None)
 venv.create (env_dir, system_site_packages=False, clear=False, symlinks=False, with_pip=False, prompt=None, upgrade_deps=False) != (env_dir, system_site_packages=False, clear=False, symlinks=False, with_pip=False, prompt=None)
+_weakref.proxy ValueError('no signature found') != None
 webbrowser._synthesize (browser, update_tryorder=1) != (browser, *, preferred=False)
 webbrowser.register (name, klass, instance=None, update_tryorder=1) != (name, klass, instance=None, *, preferred=False)
-resource.struct_rusage ValueError('no signature found') != (iterable=(), /)
 
-out of 271 modules:
-  not_implemented 77
-  failed_to_import 0
-  missing_items 69
-  mismatched_items 49
+# out of 271 modules:
+#  not_implemented 77
+#  failed_to_import 0
+#  missing_items 69
+#  mismatched_items 48
