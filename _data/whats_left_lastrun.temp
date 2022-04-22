@@ -148,7 +148,6 @@ str_iterator.__getattribute__ (inherited)
 super.__init__ (inherited)
 super.__self__
 super.__self_class__
-super.__thisclass__
 tuple.__getattribute__ (inherited)
 tuple_iterator.__doc__ (inherited)
 tuple_iterator.__getattribute__ (inherited)
@@ -704,7 +703,6 @@ signal.SIG_UNBLOCK
 signal.Sigmasks
 signal.struct_siginfo
 _socket.AF_ALG
-_socket.AF_APPLETALK
 _socket.AF_ASH
 _socket.AF_ATMPVC
 _socket.AF_ATMSVC
@@ -712,9 +710,7 @@ _socket.AF_AX25
 _socket.AF_BLUETOOTH
 _socket.AF_BRIDGE
 _socket.AF_CAN
-_socket.AF_DECnet
 _socket.AF_ECONET
-_socket.AF_IPX
 _socket.AF_IRDA
 _socket.AF_KEY
 _socket.AF_LLC
@@ -809,31 +805,13 @@ _socket.HCI_DATA_DIR
 _socket.HCI_FILTER
 _socket.HCI_TIME_STAMP
 _socket.INADDR_ALLHOSTS_GROUP
-_socket.INADDR_ANY
 _socket.INADDR_BROADCAST
-_socket.INADDR_LOOPBACK
 _socket.INADDR_MAX_LOCAL_GROUP
-_socket.INADDR_NONE
 _socket.INADDR_UNSPEC_GROUP
 _socket.IOCTL_VM_SOCKETS_GET_LOCAL_CID
 _socket.IPPORT_RESERVED
 _socket.IPPORT_USERRESERVED
-_socket.IPPROTO_AH
-_socket.IPPROTO_DSTOPTS
-_socket.IPPROTO_EGP
-_socket.IPPROTO_ESP
-_socket.IPPROTO_FRAGMENT
 _socket.IPPROTO_GRE
-_socket.IPPROTO_HOPOPTS
-_socket.IPPROTO_ICMP
-_socket.IPPROTO_ICMPV6
-_socket.IPPROTO_IDP
-_socket.IPPROTO_IGMP
-_socket.IPPROTO_NONE
-_socket.IPPROTO_PIM
-_socket.IPPROTO_PUP
-_socket.IPPROTO_RAW
-_socket.IPPROTO_ROUTING
 _socket.IPPROTO_RSVP
 _socket.IPPROTO_SCTP
 _socket.IPPROTO_TP
@@ -881,15 +859,12 @@ _socket.IP_TRANSPARENT
 _socket.IP_TTL
 _socket.MSG_CMSG_CLOEXEC
 _socket.MSG_CONFIRM
-_socket.MSG_CTRUNC
-_socket.MSG_DONTROUTE
 _socket.MSG_DONTWAIT
 _socket.MSG_EOR
 _socket.MSG_ERRQUEUE
 _socket.MSG_FASTOPEN
 _socket.MSG_MORE
 _socket.MSG_NOSIGNAL
-_socket.MSG_TRUNC
 _socket.NETLINK_CRYPTO
 _socket.NETLINK_DNRTMSG
 _socket.NETLINK_FIREWALL
@@ -898,8 +873,6 @@ _socket.NETLINK_NFLOG
 _socket.NETLINK_ROUTE
 _socket.NETLINK_USERSOCK
 _socket.NETLINK_XFRM
-_socket.NI_DGRAM
-_socket.NI_MAXHOST
 _socket.NI_MAXSERV
 _socket.PACKET_BROADCAST
 _socket.PACKET_FASTROUTE
@@ -989,7 +962,6 @@ _socket.VMADDR_CID_HOST
 _socket.VMADDR_PORT_ANY
 _socket.VM_SOCKETS_INVALID_VERSION
 socket.AF_ALG
-socket.AF_APPLETALK
 socket.AF_ASH
 socket.AF_ATMPVC
 socket.AF_ATMSVC
@@ -997,9 +969,7 @@ socket.AF_AX25
 socket.AF_BLUETOOTH
 socket.AF_BRIDGE
 socket.AF_CAN
-socket.AF_DECnet
 socket.AF_ECONET
-socket.AF_IPX
 socket.AF_IRDA
 socket.AF_KEY
 socket.AF_LLC
@@ -1092,31 +1062,13 @@ socket.HCI_DATA_DIR
 socket.HCI_FILTER
 socket.HCI_TIME_STAMP
 socket.INADDR_ALLHOSTS_GROUP
-socket.INADDR_ANY
 socket.INADDR_BROADCAST
-socket.INADDR_LOOPBACK
 socket.INADDR_MAX_LOCAL_GROUP
-socket.INADDR_NONE
 socket.INADDR_UNSPEC_GROUP
 socket.IOCTL_VM_SOCKETS_GET_LOCAL_CID
 socket.IPPORT_RESERVED
 socket.IPPORT_USERRESERVED
-socket.IPPROTO_AH
-socket.IPPROTO_DSTOPTS
-socket.IPPROTO_EGP
-socket.IPPROTO_ESP
-socket.IPPROTO_FRAGMENT
 socket.IPPROTO_GRE
-socket.IPPROTO_HOPOPTS
-socket.IPPROTO_ICMP
-socket.IPPROTO_ICMPV6
-socket.IPPROTO_IDP
-socket.IPPROTO_IGMP
-socket.IPPROTO_NONE
-socket.IPPROTO_PIM
-socket.IPPROTO_PUP
-socket.IPPROTO_RAW
-socket.IPPROTO_ROUTING
 socket.IPPROTO_RSVP
 socket.IPPROTO_SCTP
 socket.IPPROTO_TP
@@ -1164,15 +1116,12 @@ socket.IP_TRANSPARENT
 socket.IP_TTL
 socket.MSG_CMSG_CLOEXEC
 socket.MSG_CONFIRM
-socket.MSG_CTRUNC
-socket.MSG_DONTROUTE
 socket.MSG_DONTWAIT
 socket.MSG_EOR
 socket.MSG_ERRQUEUE
 socket.MSG_FASTOPEN
 socket.MSG_MORE
 socket.MSG_NOSIGNAL
-socket.MSG_TRUNC
 socket.NETLINK_CRYPTO
 socket.NETLINK_DNRTMSG
 socket.NETLINK_FIREWALL
@@ -1181,8 +1130,6 @@ socket.NETLINK_NFLOG
 socket.NETLINK_ROUTE
 socket.NETLINK_USERSOCK
 socket.NETLINK_XFRM
-socket.NI_DGRAM
-socket.NI_MAXHOST
 socket.NI_MAXSERV
 socket.PACKET_BROADCAST
 socket.PACKET_FASTROUTE
@@ -1411,7 +1358,6 @@ ssl.get_protocol_name
 ssl.get_server_certificate
 ssl.match_hostname
 ssl.wrap_socket
-string._sentinel_dict
 symtable.CELL
 symtable.Class
 symtable.DEF_ANNOT
@@ -1981,5 +1927,5 @@ webbrowser.register (name, klass, instance=None, update_tryorder=1) != (name, kl
 # out of 271 modules:
 #  not_implemented 77
 #  failed_to_import 0
-#  missing_items 69
+#  missing_items 68
 #  mismatched_items 48

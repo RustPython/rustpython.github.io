@@ -12,8 +12,6 @@ _codecs_iso2022 (entire module)
 _codecs_jp (entire module)
 _codecs_kr (entire module)
 _codecs_tw (entire module)
-_contextvars (entire module)
-contextvars (entire module)
 _crypt (entire module)
 _ctypes (entire module)
 ctypes (entire module)
@@ -185,6 +183,7 @@ _codecs.utf_32_le_encode
 _collections._count_elements
 _collections._tuplegetter
 compileall._compile_file_tuple
+_contextvars.__file__
 copyreg.__cached__
 copyreg.__file__
 _csv.Dialect
@@ -1925,7 +1924,7 @@ webbrowser._synthesize (browser, update_tryorder=1) != (browser, *, preferred=Fa
 webbrowser.register (name, klass, instance=None, update_tryorder=1) != (name, klass, instance=None, *, preferred=False)
 
 # out of 271 modules:
-#  not_implemented 77
+#  not_implemented 75
 #  failed_to_import 0
-#  missing_items 68
+#  missing_items 69
 #  mismatched_items 48
