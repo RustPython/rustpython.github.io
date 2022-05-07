@@ -78,7 +78,6 @@ _xxtestfuzz (entire module)
 # builtin items
 BaseException.__delattr__ (inherited)
 BaseException.__getattribute__ (inherited)
-BaseException.__reduce__ (inherited)
 BaseException.__setattr__ (inherited)
 BaseException.__setstate__
 NoneType.__doc__ (inherited)
@@ -324,6 +323,7 @@ inspect.CO_NEWLOCALS
 inspect.CO_NOFREE
 inspect.CO_OPTIMIZED
 _io.IncrementalNewlineDecoder
+io.OpenWrapper
 itertools._tee
 itertools._tee_dataobject
 _json.__file__
@@ -631,6 +631,8 @@ pyexpat.expat_CAPI
 pyexpat.features
 pyexpat.native_encoding
 pyexpat.version_info
+_pyio.DocDescriptor
+_pyio.OpenWrapper
 resource.RLIMIT_OFILE
 resource.__file__
 resource.getpagesize
@@ -1381,7 +1383,6 @@ symtable.__cached__
 symtable.__file__
 symtable._newSymbolTable
 sys.__breakpointhook__
-sys.__unraisablehook__
 sys._clear_type_cache
 sys._current_frames
 sys._debugmallocstats
@@ -1402,7 +1403,6 @@ sys.setcheckinterval
 sys.setdlopenflags
 sys.setswitchinterval
 sys.thread_info
-sys.unraisablehook
 sysconfig._ALWAYS_STR
 termios.B1000000
 termios.B115200
@@ -1859,6 +1859,7 @@ pwd.struct_passwd ValueError('no signature found') != (iterable=(), /)
 py_compile.compile (file, cfile=None, dfile=None, doraise=False, optimize=-1, invalidation_mode=None) != (file, cfile=None, dfile=None, doraise=False, optimize=-1, invalidation_mode=None, quiet=0)
 pydoc._start_server (urlhandler, port) != (urlhandler, hostname, port)
 pydoc.browse (port=0, *, open_browser=True) != (port=0, *, open_browser=True, hostname='localhost')
+_pyio.open None != (file, mode='r', buffering=-1, encoding=None, errors=None, newline=None, closefd=True, opener=None)
 random.betavariate None != (alpha, beta)
 random.choice None != (seq)
 random.choices None != (population, weights=None, *, cum_weights=None, k=1)
@@ -1926,5 +1927,5 @@ webbrowser.register (name, klass, instance=None, update_tryorder=1) != (name, kl
 # out of 271 modules:
 #  not_implemented 75
 #  failed_to_import 0
-#  missing_items 69
-#  mismatched_items 48
+#  missing_items 71
+#  mismatched_items 49
