@@ -143,8 +143,6 @@ str.__getnewargs__
 str_iterator.__doc__ (inherited)
 str_iterator.__getattribute__ (inherited)
 super.__init__ (inherited)
-super.__self__
-super.__self_class__
 tuple.__getattribute__ (inherited)
 tuple_iterator.__doc__ (inherited)
 tuple_iterator.__getattribute__ (inherited)
