@@ -114,7 +114,6 @@ dict_values.__doc__ (inherited)
 dict_values.__getattribute__ (inherited)
 enumerate.__getattribute__ (inherited)
 filter.__getattribute__ (inherited)
-filter.__reduce__ (inherited)
 float.__getattribute__ (inherited)
 float.__getformat__
 float.__set_format__
@@ -124,10 +123,7 @@ list.__getattribute__ (inherited)
 list_iterator.__doc__ (inherited)
 list_iterator.__getattribute__ (inherited)
 map.__getattribute__ (inherited)
-map.__reduce__ (inherited)
-memoryview.__delitem__
 memoryview.__getattribute__ (inherited)
-object.__sizeof__
 property.__getattribute__ (inherited)
 range.__getattribute__ (inherited)
 range_iterator.__doc__ (inherited)
@@ -150,7 +146,6 @@ zip.__getattribute__ (inherited)
 
 # stdlib items
 builtins.breakpoint
-array.ArrayType
 array.typecodes
 _ast.AugLoad
 _ast.AugStore
