@@ -19,7 +19,7 @@
 # in the templates via {{ site.myvariable }}.
 
 title: "RustPython"
-description: "An open source Python 3 (CPython >= 3.9.0) interpreter written in Rust 🐍 😱 🤘"
+description: "An open source Python 3 (CPython >= 3.10.0) interpreter written in Rust 🐍 😱 🤘"
 # baseurl: "/" # the subpath of your site, e.g. /blog
 url: "https://rustpython.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 github_username:  RustPython
