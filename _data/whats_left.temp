@@ -23,7 +23,6 @@ _datetime (entire module)
 _dbm (entire module)
 _decimal (entire module)
 _elementtree (entire module)
-ensurepip (entire module)
 fileinput (entire module)
 _gdbm (entire module)
 grp (entire module)
@@ -129,7 +128,6 @@ set.__getattribute__ (inherited)
 set_iterator.__doc__ (inherited)
 set_iterator.__getattribute__ (inherited)
 slice.__getattribute__ (inherited)
-staticmethod.__func__
 staticmethod.__init__ (inherited)
 str.__getattribute__ (inherited)
 str_iterator.__doc__ (inherited)
@@ -167,6 +165,7 @@ _codecs.utf_32_le_decode
 _codecs.utf_32_le_encode
 _collections._count_elements
 _collections._tuplegetter
+collections.__getattr__
 compileall._compile_file_tuple
 _contextvars.__file__
 copyreg.__cached__
@@ -224,7 +223,7 @@ dis.opmap
 dis.opname
 dis.pretty_flags
 dis.show_code
-doctest._newline_convert
+ensurepip._ensurepip_is_disabled_in_debian_for_system
 faulthandler._fatal_error
 faulthandler._fatal_error_c_thread
 faulthandler._read_null
@@ -457,11 +456,6 @@ os.spawnvpe
 os.statvfs_result
 os.supports_effective_ids
 os.sysconf_names
-_osx_support._SYSTEM_VERSION_TUPLE
-_osx_support._cache_default_sysroot
-_osx_support._default_sysroot
-_osx_support._get_system_version_tuple
-_osx_support._supports_arm64_builds
 pathlib.ELOOP
 pickle.PickleBuffer
 platform._ironpython26_sys_version_parser
@@ -633,7 +627,6 @@ select.POLLWRBAND
 select.POLLWRNORM
 select.epoll
 selectors.EpollSelector
-selectors._PollLikeSelector
 shutil._WIN_DEFAULT_PATHEXT
 shutil._is_immutable
 shutil._ntuple_diskusage
@@ -1126,7 +1119,9 @@ builtins.property ValueError('no signature found') != (fget=None, fset=None, fde
 builtins.reversed None != (sequence, /)
 builtins.tuple ValueError('no signature found') != (iterable=(), /)
 abc.ABCMeta (name, bases, namespace, /, **kwargs) != (name, bases, namespace, **kwargs)
+abc.abstractclassmethod ValueError('callable <getset_descriptor object at 0x5652af21a720> is not supported by signature') != (callable)
 abc.abstractproperty ValueError('no signature found') != (fget=None, fset=None, fdel=None, doc=None)
+abc.abstractstaticmethod ValueError('callable <getset_descriptor object at 0x5652af219720> is not supported by signature') != (callable)
 argparse.ArgumentParser (prog=None, usage=None, description=None, epilog=None, parents=[], formatter_class=<class 'argparse.HelpFormatter'>, prefix_chars='-', fromfile_prefix_chars=None, argument_default=None, conflict_handler='error', add_help=True, allow_abbrev=True, exit_on_error=True) != (prog=None, usage=None, description=None, epilog=None, parents=[], formatter_class=<class 'argparse.HelpFormatter'>, prefix_chars='-', fromfile_prefix_chars=None, argument_default=None, conflict_handler='error', add_help=True, allow_abbrev=True)
 ast._ABC (*args) != ValueError("callable <class 'ast._ABC'> is not supported by signature")
 ast.dump (node, annotate_fields=True, include_attributes=False, *, indent=None) != (node, annotate_fields=True, include_attributes=False)
@@ -1139,8 +1134,6 @@ calendar.prmonth None != (theyear, themonth, w=0, l=0)
 calendar.prweek None != (theweek, width)
 calendar.week None != (theweek, width)
 calendar.weekheader None != (width)
-collections.Counter (*args, **kwds) != (iterable=None, /, **kwds)
-collections.UserDict (*args, **kwargs) != (dict=None, /, **kwargs)
 compileall.compile_dir (dir, maxlevels=10, ddir=None, force=False, rx=None, quiet=0, legacy=False, optimize=-1, workers=1) != (dir, maxlevels=10, ddir=None, force=False, rx=None, quiet=0, legacy=False, optimize=-1, workers=1, invalidation_mode=None)
 compileall.compile_file (fullname, ddir=None, force=False, rx=None, quiet=0, legacy=False, optimize=-1) != (fullname, ddir=None, force=False, rx=None, quiet=0, legacy=False, optimize=-1, invalidation_mode=None)
 compileall.compile_path (skip_curdir=1, maxlevels=0, force=False, quiet=0, legacy=False, optimize=-1) != (skip_curdir=1, maxlevels=0, force=False, quiet=0, legacy=False, optimize=-1, invalidation_mode=None)
@@ -1187,7 +1180,6 @@ os._Environ (data, encodekey, decodekey, encodevalue, decodevalue) != (data, enc
 os.fdopen (fd, mode='r', buffering=-1, encoding=None, *args, **kwargs) != (fd, *args, **kwargs)
 os.stat_result ValueError('no signature found') != (iterable=(), /)
 os.terminal_size ValueError('no signature found') != (iterable=(), /)
-_osx_support._read_output (commandstring) != (commandstring, capture_stderr=False)
 pathlib._PreciseSelector (name, child_parts) != (name, child_parts, flavour)
 pathlib._RecursiveWildcardSelector (pat, child_parts) != (pat, child_parts, flavour)
 pathlib._Selector (child_parts) != (child_parts, flavour)
@@ -1278,7 +1270,7 @@ webbrowser._synthesize (browser, update_tryorder=1) != (browser, *, preferred=Fa
 webbrowser.register (name, klass, instance=None, update_tryorder=1) != (name, klass, instance=None, *, preferred=False)
 
 # out of 271 modules:
-#  not_implemented 73
+#  not_implemented 72
 #  failed_to_import 0
 #  missing_items 72
-#  mismatched_items 49
+#  mismatched_items 48
