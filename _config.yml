@@ -26,7 +26,7 @@ github_username:  RustPython
 disclaimer: "RustPython is in a development phase and should not be used in production or a fault intolerant setting. Our current build supports only about half of the Python standard library."
 github: https://github.com/RustPython/RustPython/
 docs: https://github.com/RustPython/docs/
-gitter: https://gitter.im/rustpython/Lobby
+discord: https://discord.com/invite/vru8NypEhv
 show_excerpts: true
 contributor_excerpt: "" # TODO: write something here, goes right under "Contributors" heading
 blog-intro: Create an issue if you see something wrong. Edit posts or create new ones via PR on <a target="_blank" href="https://github.com/RustPython/rustpython.github.io">github.com/RustPython/rustpython.github.io</a>
@@ -41,8 +41,8 @@ navigation:
     url: /docs
   - title: GitHub
     url: https://github.com/RustPython/RustPython/
-  - title: Gitter
-    url: https://gitter.im/rustpython/Lobby
+  - title: Discord
+    url: https://discord.com/invite/vru8NypEhv
 
 dashboards:
   - title: CPython test compatibility 
