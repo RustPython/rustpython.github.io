@@ -53,8 +53,6 @@ _sha3 (entire module)
 _sha512 (entire module)
 sitecustomize (entire module)
 smtplib (entire module)
-_sqlite3 (entire module)
-sqlite3 (entire module)
 _stat (entire module)
 _strptime (entire module)
 _symtable (entire module)
@@ -886,6 +884,11 @@ socket.send_fds
 socketserver.ForkingMixIn
 socketserver.ForkingTCPServer
 socketserver.ForkingUDPServer
+_sqlite3.__file__
+_sqlite3.enable_shared_cache
+_sqlite3.version
+sqlite3.version
+sqlite3.version_info
 _sre.copyright
 _ssl.ALERT_DESCRIPTION_ACCESS_DENIED
 _ssl.ALERT_DESCRIPTION_BAD_CERTIFICATE
@@ -1170,9 +1173,9 @@ zlib.__version__
 # summary
 #  cpython_modules 274
 #  implemented 100
-#  not_implemented 71
+#  not_implemented 69
 #  failed_to_import 0
-#  missing_items 79
-#  mismatched_items 48
-#  mismatched_doc_items 41
+#  missing_items 81
+#  mismatched_items 49
+#  mismatched_doc_items 42
 #  not_implementeds 36
