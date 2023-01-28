@@ -14,7 +14,6 @@ _codecs_kr (entire module)
 _codecs_tw (entire module)
 _crypt (entire module)
 _ctypes (entire module)
-ctypes (entire module)
 _ctypes_test (entire module)
 _curses (entire module)
 curses (entire module)
@@ -190,6 +189,83 @@ _csv.list_dialects
 _csv.register_dialect
 _csv.unregister_dialect
 csv.__version__
+ctypes.ARRAY
+ctypes.ArgumentError
+ctypes.CDLL
+ctypes.CFUNCTYPE
+ctypes.DEFAULT_MODE
+ctypes.LibraryLoader
+ctypes.PYFUNCTYPE
+ctypes.PyDLL
+ctypes.RTLD_GLOBAL
+ctypes.RTLD_LOCAL
+ctypes.SetPointerType
+ctypes._FUNCFLAG_CDECL
+ctypes._FUNCFLAG_PYTHONAPI
+ctypes._FUNCFLAG_USE_ERRNO
+ctypes._FUNCFLAG_USE_LASTERROR
+ctypes.__builtins__
+ctypes.__cached__
+ctypes.__file__
+ctypes.__name__
+ctypes.__package__
+ctypes.__path__
+ctypes.__version__
+ctypes._c_functype_cache
+ctypes._cast
+ctypes._cast_addr
+ctypes._check_size
+ctypes._ctypes_version
+ctypes._memmove_addr
+ctypes._memset_addr
+ctypes._pointer_type_cache
+ctypes._reset_cache
+ctypes._string_at
+ctypes._string_at_addr
+ctypes._wstring_at
+ctypes._wstring_at_addr
+ctypes.c_bool
+ctypes.c_buffer
+ctypes.c_byte
+ctypes.c_char
+ctypes.c_char_p
+ctypes.c_double
+ctypes.c_float
+ctypes.c_int
+ctypes.c_int16
+ctypes.c_int32
+ctypes.c_int64
+ctypes.c_int8
+ctypes.c_long
+ctypes.c_longdouble
+ctypes.c_longlong
+ctypes.c_short
+ctypes.c_size_t
+ctypes.c_ssize_t
+ctypes.c_ubyte
+ctypes.c_uint
+ctypes.c_uint16
+ctypes.c_uint32
+ctypes.c_uint64
+ctypes.c_uint8
+ctypes.c_ulong
+ctypes.c_ulonglong
+ctypes.c_ushort
+ctypes.c_void_p
+ctypes.c_voidp
+ctypes.c_wchar
+ctypes.c_wchar_p
+ctypes.cast
+ctypes.cdll
+ctypes.create_string_buffer
+ctypes.create_unicode_buffer
+ctypes.memmove
+ctypes.memset
+ctypes.py_object
+ctypes.pydll
+ctypes.pythonapi
+ctypes.string_at
+ctypes.wstring_at
 datetime.datetime_CAPI
 decimal.HAVE_CONTEXTVAR
 dis.Bytecode
@@ -1173,9 +1249,9 @@ zlib.__version__
 # summary
 #  cpython_modules 274
 #  implemented 100
-#  not_implemented 69
+#  not_implemented 68
 #  failed_to_import 0
-#  missing_items 81
+#  missing_items 82
 #  mismatched_items 49
 #  mismatched_doc_items 42
 #  not_implementeds 36
