@@ -24,7 +24,6 @@ _decimal (entire module)
 _distutils_system_mod (entire module)
 _elementtree (entire module)
 _gdbm (entire module)
-graphlib (entire module)
 _hashlib (entire module)
 _heapq (entire module)
 imaplib (entire module)
@@ -111,7 +110,6 @@ memory_iterator.__doc__ (inherited)
 memory_iterator.__getattribute__ (inherited)
 memoryview.__getattribute__ (inherited)
 property.__getattribute__ (inherited)
-property.__set_name__
 range.__getattribute__ (inherited)
 range_iterator.__doc__ (inherited)
 range_iterator.__getattribute__ (inherited)
@@ -371,7 +369,6 @@ hashlib.__file__
 hashlib.__get_builtin_constructor
 hashlib.algorithms_available
 hashlib.algorithms_guaranteed
-hmac.digest
 _imp.create_dynamic
 _imp.exec_dynamic
 inspect.CO_ITERABLE_COROUTINE
@@ -442,8 +439,8 @@ locale.THOUSEP
 locale.T_FMT
 locale.T_FMT_AMPM
 locale.YESEXPR
-locale._localize
-locale.localize
+locale.k
+locale.v
 logging._after_at_fork_child_reinit_locks
 mimetypes._mimetypes_read_windows_registry
 mmap.PROT_EXEC
@@ -546,7 +543,6 @@ os._fwalk
 os._spawnvef
 os.confstr_names
 os.fwalk
-os.pathconf_names
 os.spawnl
 os.spawnle
 os.spawnlp
@@ -668,7 +664,6 @@ posix.makedev
 posix.memfd_create
 posix.minor
 posix.mkfifo
-posix.pathconf_names
 posix.pidfd_open
 posix.posix_fadvise
 posix.posix_fallocate
@@ -1230,7 +1225,6 @@ unicodedata.combining
 unicodedata.decimal
 unicodedata.decomposition
 unicodedata.digit
-unicodedata.east_asian_width
 unicodedata.is_normalized
 unicodedata.mirrored
 unicodedata.numeric
@@ -1248,10 +1242,10 @@ zlib.__version__
 
 # summary
 #  cpython_modules 274
-#  implemented 100
-#  not_implemented 68
+#  implemented 102
+#  not_implemented 67
 #  failed_to_import 0
-#  missing_items 82
-#  mismatched_items 49
-#  mismatched_doc_items 42
+#  missing_items 81
+#  mismatched_items 48
+#  mismatched_doc_items 41
 #  not_implementeds 36
