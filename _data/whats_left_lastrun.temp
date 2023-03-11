@@ -28,7 +28,6 @@ _hashlib (entire module)
 _heapq (entire module)
 imaplib (entire module)
 lib2to3 (entire module)
-_locale (entire module)
 _lsprof (entire module)
 _lzma (entire module)
 lzma (entire module)
@@ -384,61 +383,15 @@ itertools._tee
 itertools._tee_dataobject
 _json.__file__
 _json.make_encoder
-locale.ABDAY_1
-locale.ABDAY_2
-locale.ABDAY_3
-locale.ABDAY_4
-locale.ABDAY_5
-locale.ABDAY_6
-locale.ABDAY_7
-locale.ABMON_1
-locale.ABMON_10
-locale.ABMON_11
-locale.ABMON_12
-locale.ABMON_2
-locale.ABMON_3
-locale.ABMON_4
-locale.ABMON_5
-locale.ABMON_6
-locale.ABMON_7
-locale.ABMON_8
-locale.ABMON_9
-locale.ALT_DIGITS
-locale.AM_STR
-locale.CODESET
-locale.CRNCYSTR
-locale.DAY_1
-locale.DAY_2
-locale.DAY_3
-locale.DAY_4
-locale.DAY_5
-locale.DAY_6
-locale.DAY_7
-locale.D_FMT
-locale.D_T_FMT
-locale.ERA
-locale.ERA_D_FMT
-locale.ERA_D_T_FMT
-locale.ERA_T_FMT
-locale.MON_1
-locale.MON_10
-locale.MON_11
-locale.MON_12
-locale.MON_2
-locale.MON_3
-locale.MON_4
-locale.MON_5
-locale.MON_6
-locale.MON_7
-locale.MON_8
-locale.MON_9
-locale.NOEXPR
-locale.PM_STR
-locale.RADIXCHAR
-locale.THOUSEP
-locale.T_FMT
-locale.T_FMT_AMPM
-locale.YESEXPR
+_locale._DATE_FMT
+_locale._get_locale_encoding
+_locale.bind_textdomain_codeset
+_locale.bindtextdomain
+_locale.dcgettext
+_locale.dgettext
+_locale.gettext
+_locale.nl_langinfo
+_locale.textdomain
 locale.k
 locale.v
 logging._after_at_fork_child_reinit_locks
@@ -1095,15 +1048,7 @@ sys.set_coroutine_origin_tracking_depth
 sys.setdlopenflags
 sys.setswitchinterval
 sys.stdlib_module_names
-sysconfig._ALWAYS_STR
-sysconfig._HAS_USER_BASE
-sysconfig._findvar1_rx
-sysconfig._findvar2_rx
-sysconfig._get_preferred_schemes
-sysconfig._variable_rx
-sysconfig.expand_makefile_vars
-sysconfig.get_default_scheme
-sysconfig.get_preferred_scheme
+sysconfig._is_python_source_dir
 termios.CDSUSP
 termios.CEOF
 termios.CEOL
@@ -1154,8 +1099,6 @@ termios.TIOCSETD
 termios.TIOCSLCKTRMIOS
 termios.TIOCSSERIAL
 termios.__file__
-test.__builtins__
-test.__cached__
 _thread._ExceptHookArgs
 _thread._excepthook
 _thread.allocate
@@ -1243,9 +1186,9 @@ zlib.__version__
 # summary
 #  cpython_modules 274
 #  implemented 102
-#  not_implemented 67
+#  not_implemented 66
 #  failed_to_import 0
 #  missing_items 81
-#  mismatched_items 48
-#  mismatched_doc_items 41
+#  mismatched_items 49
+#  mismatched_doc_items 40
 #  not_implementeds 36
