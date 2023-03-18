@@ -169,8 +169,6 @@ codeop.PyCF_ALLOW_INCOMPLETE_INPUT
 codeop._is_syntax_error
 _collections._count_elements
 _collections._tuplegetter
-contextlib.AsyncContextDecorator
-contextlib.aclosing
 _contextvars.__file__
 copyreg.__cached__
 copyreg.__file__
@@ -1185,10 +1183,10 @@ zlib.__version__
 
 # summary
 #  cpython_modules 274
-#  implemented 102
+#  implemented 104
 #  not_implemented 66
 #  failed_to_import 0
-#  missing_items 81
-#  mismatched_items 49
-#  mismatched_doc_items 40
+#  missing_items 80
+#  mismatched_items 48
+#  mismatched_doc_items 39
 #  not_implementeds 36
