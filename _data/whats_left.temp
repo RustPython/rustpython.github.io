@@ -1183,10 +1183,10 @@ zlib.__version__
 
 # summary
 #  cpython_modules 274
-#  implemented 104
+#  implemented 101
 #  not_implemented 66
 #  failed_to_import 0
 #  missing_items 80
-#  mismatched_items 48
+#  mismatched_items 51
 #  mismatched_doc_items 39
 #  not_implementeds 36
