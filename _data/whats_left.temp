@@ -132,14 +132,6 @@ _ast.PyCF_ALLOW_TOP_LEVEL_AWAIT
 _ast.PyCF_TYPE_COMMENTS
 ast.PyCF_ALLOW_TOP_LEVEL_AWAIT
 ast.PyCF_TYPE_COMMENTS
-base64._B32_DECODE_DOCSTRING
-base64._B32_DECODE_MAP01_DOCSTRING
-base64._B32_ENCODE_DOCSTRING
-base64._b32decode
-base64._b32encode
-base64._b32hexalphabet
-base64.b32hexdecode
-base64.b32hexencode
 binascii.a2b_hqx
 binascii.b2a_hqx
 bz2.BZ2File
@@ -736,7 +728,6 @@ signal.sigpending
 signal.sigwait
 signal.struct_siginfo
 signal.valid_signals
-site._trace
 _socket.AF_QIPCRTR
 _socket.AF_ROSE
 _socket.ALG_OP_SIGN
@@ -1183,10 +1174,10 @@ zlib.__version__
 
 # summary
 #  cpython_modules 274
-#  implemented 101
+#  implemented 102
 #  not_implemented 66
 #  failed_to_import 0
-#  missing_items 80
-#  mismatched_items 51
+#  missing_items 78
+#  mismatched_items 52
 #  mismatched_doc_items 39
 #  not_implementeds 36
