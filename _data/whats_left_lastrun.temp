@@ -1,8 +1,8 @@
+test_sqlite3: testing with version '2.6.0', sqlite_version '3.37.2'
 # modules
 _abc (entire module)
 _aix_support (entire module)
 _asyncio (entire module)
-_blake2 (entire module)
 _bootsubprocess (entire module)
 _bz2 (entire module)
 cProfile (entire module)
@@ -21,18 +21,16 @@ _curses_panel (entire module)
 _datetime (entire module)
 _dbm (entire module)
 _decimal (entire module)
-_distutils_system_mod (entire module)
 _elementtree (entire module)
 _gdbm (entire module)
-_hashlib (entire module)
 _heapq (entire module)
+idlelib (entire module)
 imaplib (entire module)
 lib2to3 (entire module)
 _lsprof (entire module)
 _lzma (entire module)
 lzma (entire module)
 mailcap (entire module)
-_md5 (entire module)
 modulefinder (entire module)
 _multibytecodec (entire module)
 _opcode (entire module)
@@ -44,21 +42,22 @@ pstats (entire module)
 pyclbr (entire module)
 _queue (entire module)
 readline (entire module)
-_sha1 (entire module)
-_sha256 (entire module)
-_sha3 (entire module)
 _sha512 (entire module)
-sitecustomize (entire module)
 smtplib (entire module)
 _stat (entire module)
 _strptime (entire module)
 _symtable (entire module)
 _sysconfigdata__linux_x86_64-linux-gnu (entire module)
-_sysconfigdata__x86_64-linux-gnu (entire module)
 _testbuffer (entire module)
+_testclinic (entire module)
+_tkinter (entire module)
+tkinter (entire module)
+_tokenize (entire module)
 _tracemalloc (entire module)
 tracemalloc (entire module)
 turtle (entire module)
+turtledemo (entire module)
+_typing (entire module)
 wave (entire module)
 xxlimited_35 (entire module)
 _xxsubinterpreters (entire module)
@@ -71,6 +70,7 @@ BaseException.__delattr__ (inherited)
 BaseException.__getattribute__ (inherited)
 BaseException.__setattr__ (inherited)
 BaseException.__setstate__
+BaseException.add_note
 NoneType.__doc__ (inherited)
 bytearray.__getattribute__ (inherited)
 bytearray.__str__ (inherited)
@@ -98,7 +98,6 @@ dict_values.__getattribute__ (inherited)
 enumerate.__getattribute__ (inherited)
 filter.__getattribute__ (inherited)
 float.__getattribute__ (inherited)
-float.__setformat__
 frozenset.__getattribute__ (inherited)
 int.__getattribute__ (inherited)
 list.__getattribute__ (inherited)
@@ -108,6 +107,7 @@ map.__getattribute__ (inherited)
 memory_iterator.__doc__ (inherited)
 memory_iterator.__getattribute__ (inherited)
 memoryview.__getattribute__ (inherited)
+object.__getstate__
 property.__getattribute__ (inherited)
 range.__getattribute__ (inherited)
 range_iterator.__doc__ (inherited)
@@ -117,23 +117,35 @@ set_iterator.__doc__ (inherited)
 set_iterator.__getattribute__ (inherited)
 slice.__getattribute__ (inherited)
 str.__getattribute__ (inherited)
-str_iterator.__doc__ (inherited)
-str_iterator.__getattribute__ (inherited)
-super.__init__ (inherited)
+str_ascii_iterator.__doc__ (inherited)
+str_ascii_iterator.__getattribute__ (inherited)
 tuple.__getattribute__ (inherited)
 tuple_iterator.__doc__ (inherited)
 tuple_iterator.__getattribute__ (inherited)
 zip.__getattribute__ (inherited)
 
 # stdlib items
+builtins.ExceptionGroup
 builtins.anext
+__hello__.__file__
+__phello__.__file__
+array.__file__
 array.typecodes
 _ast.PyCF_ALLOW_TOP_LEVEL_AWAIT
 _ast.PyCF_TYPE_COMMENTS
 ast.PyCF_ALLOW_TOP_LEVEL_AWAIT
 ast.PyCF_TYPE_COMMENTS
-binascii.a2b_hqx
-binascii.b2a_hqx
+binascii.__file__
+_bisect.__file__
+_blake2.BLAKE2B_MAX_DIGEST_SIZE
+_blake2.BLAKE2B_MAX_KEY_SIZE
+_blake2.BLAKE2B_PERSON_SIZE
+_blake2.BLAKE2B_SALT_SIZE
+_blake2.BLAKE2S_MAX_DIGEST_SIZE
+_blake2.BLAKE2S_MAX_KEY_SIZE
+_blake2.BLAKE2S_PERSON_SIZE
+_blake2.BLAKE2S_SALT_SIZE
+_blake2.__file__
 bz2.BZ2File
 bz2._MODE_CLOSED
 bz2._MODE_READ
@@ -148,6 +160,7 @@ bz2.__package__
 bz2.compress
 bz2.decompress
 bz2.open
+cmath.__file__
 _codecs.utf_32_be_decode
 _codecs.utf_32_be_encode
 _codecs.utf_32_decode
@@ -155,10 +168,7 @@ _codecs.utf_32_encode
 _codecs.utf_32_ex_decode
 _codecs.utf_32_le_decode
 _codecs.utf_32_le_encode
-codecs.__cached__
 codecs.__file__
-codeop.PyCF_ALLOW_INCOMPLETE_INPUT
-codeop._is_syntax_error
 _collections._count_elements
 _collections._tuplegetter
 _contextvars.__file__
@@ -168,6 +178,7 @@ copyreg.pickle_union
 _csv.Dialect
 _csv.Reader
 _csv.Writer
+_csv.__file__
 _csv.__version__
 _csv._dialects
 _csv.field_size_limit
@@ -253,33 +264,62 @@ ctypes.pydll
 ctypes.pythonapi
 ctypes.string_at
 ctypes.wstring_at
+dataclasses._get_slots
 datetime.datetime_CAPI
 decimal.HAVE_CONTEXTVAR
+dis.BINARY_OP
 dis.Bytecode
+dis.CACHE
 dis.EXTENDED_ARG
 dis.FORMAT_VALUE
 dis.FORMAT_VALUE_CONVERTERS
 dis.HAVE_ARGUMENT
 dis.Instruction
+dis.JUMP_BACKWARD
+dis.LOAD_CONST
+dis.LOAD_GLOBAL
 dis.MAKE_FUNCTION
 dis.MAKE_FUNCTION_FLAGS
+dis.Positions
+dis.UNKNOWN
+dis._ExceptionTableEntry
+dis._INT_BITS
+dis._INT_OVERFLOW
 dis._Instruction
 dis._OPARG_WIDTH
 dis._OPNAME_WIDTH
+dis._Unknown
 dis.__all__
+dis._all_opmap
+dis._all_opname
+dis._cache_format
+dis._deoptop
 dis._disassemble_bytes
 dis._disassemble_recursive
 dis._disassemble_str
+dis._empty_slot
+dis._find_imports
+dis._find_store_names
 dis._format_code_info
+dis._get_code_array
 dis._get_code_object
 dis._get_const_info
+dis._get_const_value
 dis._get_instructions_bytes
 dis._get_name_info
 dis._have_code
+dis._inline_cache_entries
+dis._is_backward_jump
+dis._nb_ops
+dis._parse_exception_table
+dis._parse_varint
+dis._specializations
+dis._specialized_instructions
 dis._try_compile
 dis._unpack_opargs
 dis.cmp_op
 dis.code_info
+dis.deoptmap
 dis.disco
 dis.distb
 dis.findlabels
@@ -297,9 +337,42 @@ dis.opmap
 dis.opname
 dis.pretty_flags
 dis.show_code
+dis.spec_op
+dis.specialized
 distutils._DEPRECATION_MESSAGE
-ensurepip._ensurepip_is_disabled_in_debian_for_system
+enum.CONFORM
+enum.CONTINUOUS
+enum.EJECT
+enum.EnumCheck
+enum.EnumType
+enum.FlagBoundary
+enum.KEEP
+enum.NAMED_FLAGS
+enum.ReprEnum
+enum.STRICT
+enum.StrEnum
+enum.UNIQUE
+enum._dedent
+enum._is_internal_class
 enum._is_private
+enum._is_single_bit
+enum._iter_bits_lsb
+enum._old_convert_
+enum._proto_member
+enum._reduce_ex_by_global_name
+enum._simple_enum
+enum._stdlib_enums
+enum._test_simple_enum
+enum.bin
+enum.global_enum
+enum.global_enum_repr
+enum.global_flag_repr
+enum.global_str
+enum.member
+enum.nonmember
+enum.property
+enum.show_flag_values
+enum.verify
 faulthandler._fatal_error_c_thread
 faulthandler._read_null
 faulthandler._sigabrt
@@ -330,6 +403,7 @@ fcntl.LOCK_MAND
 fcntl.LOCK_READ
 fcntl.LOCK_RW
 fcntl.LOCK_WRITE
+fcntl.__file__
 _functools.cmp_to_key
 functools.cache
 gc.DEBUG_COLLECTABLE
@@ -344,20 +418,22 @@ gc.get_freeze_count
 gc.get_referents
 gc.is_finalized
 gc.unfreeze
-gettext._unspecified
 gettext.dnpgettext
 gettext.dpgettext
 gettext.npgettext
 gettext.pgettext
-hashlib.__all__
-hashlib.__block_openssl_constructor
-hashlib.__builtin_constructor_cache
-hashlib.__builtins__
-hashlib.__cached__
-hashlib.__file__
-hashlib.__get_builtin_constructor
-hashlib.algorithms_available
-hashlib.algorithms_guaranteed
+grp.__file__
+_hashlib.HMAC
+_hashlib.UnsupportedDigestmodError
+_hashlib.__file__
+_hashlib._constructors
+_hashlib.get_fips_mode
+_hashlib.hmac_digest
+_hashlib.openssl_md_meth_names
+_hashlib.pbkdf2_hmac
+_hashlib.scrypt
+http.HTTPMethod
+_imp._frozen_module_names
 _imp.create_dynamic
 _imp.exec_dynamic
 inspect.CO_ITERABLE_COROUTINE
@@ -367,25 +443,37 @@ inspect.CO_NOFREE
 inspect.CO_OPTIMIZED
 inspect.ClassFoundException
 inspect._ClassFinder
+inspect._FrameInfo
+inspect._Traceback
+inspect.__all__
+inspect._get_code_position
+inspect._get_code_position_from_tb
+inspect._getmembers
 inspect.get_annotations
+inspect.getmembers_static
+inspect.iskeyword
+inspect.ismethodwrapper
 _io.IncrementalNewlineDecoder
 itertools._tee
 itertools._tee_dataobject
 _json.__file__
 _json.make_encoder
 _locale._DATE_FMT
-_locale._get_locale_encoding
 _locale.bind_textdomain_codeset
 _locale.bindtextdomain
 _locale.dcgettext
 _locale.dgettext
+_locale.getencoding
 _locale.gettext
 _locale.nl_langinfo
 _locale.textdomain
-locale.k
-locale.v
-logging._after_at_fork_child_reinit_locks
+logging._is_internal_frame
+logging.getLevelNamesMapping
+math.__file__
+_md5.MD5Type
+_md5.__file__
 mimetypes._mimetypes_read_windows_registry
+mmap.MAP_STACK
 mmap.PROT_EXEC
 mmap.__file__
 _multiprocessing.SemLock
@@ -393,6 +481,7 @@ _multiprocessing.__file__
 _multiprocessing.flags
 _multiprocessing.sem_unlink
 opcode.hasnargs
+_operator.call
 _operator.inv
 os.CLD_CONTINUED
 os.CLD_DUMPED
@@ -444,12 +533,9 @@ os.POSIX_FADV_RANDOM
 os.POSIX_FADV_SEQUENTIAL
 os.POSIX_FADV_WILLNEED
 os.P_ALL
-os.P_NOWAIT
-os.P_NOWAITO
 os.P_PGID
 os.P_PID
 os.P_PIDFD
-os.P_WAIT
 os.RTLD_DEEPBIND
 os.RTLD_NODELETE
 os.RTLD_NOLOAD
@@ -483,20 +569,14 @@ os.XATTR_CREATE
 os.XATTR_REPLACE
 os.XATTR_SIZE_MAX
 os._fwalk
-os._spawnvef
 os.confstr_names
 os.fwalk
-os.spawnl
-os.spawnle
-os.spawnlp
-os.spawnlpe
-os.spawnv
-os.spawnve
-os.spawnvp
-os.spawnvpe
 os.statvfs_result
 os.supports_effective_ids
 os.sysconf_names
+pathlib._IGNORED_ERRNOS
+pdb._ModuleTarget
+pdb._ScriptTarget
 pickle.PickleBuffer
 pkgutil.__warningregistry__
 posix.CLD_CONTINUED
@@ -586,8 +666,8 @@ posix.WUNTRACED
 posix.XATTR_CREATE
 posix.XATTR_REPLACE
 posix.XATTR_SIZE_MAX
-posix._exit
 posix._have_functions
+posix._path_normpath
 posix.confstr
 posix.confstr_names
 posix.ctermid
@@ -595,13 +675,13 @@ posix.eventfd
 posix.eventfd_read
 posix.eventfd_write
 posix.fdatasync
-posix.fork
 posix.forkpty
 posix.fstatvfs
 posix.getxattr
 posix.killpg
 posix.listxattr
 posix.lockf
+posix.login_tty
 posix.major
 posix.makedev
 posix.memfd_create
@@ -615,7 +695,6 @@ posix.preadv
 posix.pwrite
 posix.pwritev
 posix.readv
-posix.register_at_fork
 posix.removexattr
 posix.sched_getaffinity
 posix.sched_rr_get_interval
@@ -633,26 +712,31 @@ posix.wait4
 posix.waitid
 posix.waitid_result
 posix.writev
-pprint._perfcheck
+_posixsubprocess.__file__
 _pydecimal.HAVE_CONTEXTVAR
+_pydecimal._context_attributes
 _pydecimal._current_context_var
 pydoc._adjust_cli_sys_path
 pydoc._findclass
 pydoc._finddoc
+pydoc._future_feature_names
 pydoc._get_revised_path
 pydoc._getdoc
 pydoc._getowndoc
-pydoc._isclass
 pyexpat.EXPAT_VERSION
 pyexpat.ErrorString
 pyexpat.XMLParserType
 pyexpat.XML_PARAM_ENTITY_PARSING_ALWAYS
 pyexpat.XML_PARAM_ENTITY_PARSING_NEVER
 pyexpat.XML_PARAM_ENTITY_PARSING_UNLESS_STANDALONE
+pyexpat.__file__
 pyexpat.expat_CAPI
 pyexpat.features
 pyexpat.native_encoding
 pyexpat.version_info
+_random.__file__
+re.NOFLAG
+re.__path__
 resource.RLIMIT_OFILE
 resource.__file__
 resource.getpagesize
@@ -679,8 +763,17 @@ select.POLLRDHUP
 select.POLLRDNORM
 select.POLLWRBAND
 select.POLLWRNORM
+select.__file__
 select.epoll
 selectors.EpollSelector
+_sha1.SHA1Type
+_sha1.__file__
+_sha256.SHA224Type
+_sha256.SHA256Type
+_sha256.__file__
+_sha3.__file__
+_sha3.implementation
+_sha3.keccakopt
 shelve.DEFAULT_PROTOCOL
 shutil._WIN_DEFAULT_PATHEXT
 shutil._is_immutable
@@ -733,10 +826,6 @@ _socket.AF_ROSE
 _socket.ALG_OP_SIGN
 _socket.ALG_OP_VERIFY
 _socket.ALG_SET_PUBKEY
-_socket.BTPROTO_HCI
-_socket.BTPROTO_L2CAP
-_socket.BTPROTO_RFCOMM
-_socket.BTPROTO_SCO
 _socket.CAN_BCM_CAN_FD_FRAME
 _socket.CAN_BCM_RX_ANNOUNCE_RESUME
 _socket.CAN_BCM_RX_CHANGED
@@ -765,13 +854,11 @@ _socket.CAPI
 _socket.CMSG_LEN
 _socket.CMSG_SPACE
 _socket.EAI_ADDRFAMILY
-_socket.HCI_DATA_DIR
-_socket.HCI_FILTER
-_socket.HCI_TIME_STAMP
 _socket.IOCTL_VM_SOCKETS_GET_LOCAL_CID
 _socket.IPV6_JOIN_GROUP
 _socket.IPV6_LEAVE_GROUP
 _socket.IPV6_RTHDR_TYPE_0
+_socket.IP_BIND_ADDRESS_NO_PORT
 _socket.IP_DEFAULT_MULTICAST_TTL
 _socket.IP_MAX_MEMBERSHIPS
 _socket.IP_RECVRETOPTS
@@ -786,7 +873,7 @@ _socket.PACKET_LOOPBACK
 _socket.PACKET_MULTICAST
 _socket.PACKET_OTHERHOST
 _socket.PACKET_OUTGOING
-_socket.SOL_HCI
+_socket.SO_INCOMING_CPU
 _socket.TCP_NOTSENT_LOWAT
 _socket.TIPC_ADDR_ID
 _socket.TIPC_ADDR_NAME
@@ -811,15 +898,12 @@ _socket.TIPC_TOP_SRV
 _socket.TIPC_WAIT_FOREVER
 _socket.TIPC_WITHDRAWN
 _socket.TIPC_ZONE_SCOPE
+_socket.__file__
 socket.AF_QIPCRTR
 socket.AF_ROSE
 socket.ALG_OP_SIGN
 socket.ALG_OP_VERIFY
 socket.ALG_SET_PUBKEY
-socket.BTPROTO_HCI
-socket.BTPROTO_L2CAP
-socket.BTPROTO_RFCOMM
-socket.BTPROTO_SCO
 socket.CAN_BCM_CAN_FD_FRAME
 socket.CAN_BCM_RX_ANNOUNCE_RESUME
 socket.CAN_BCM_RX_CHANGED
@@ -846,13 +930,11 @@ socket.CAN_BCM_TX_SETUP
 socket.CAN_BCM_TX_STATUS
 socket.CAPI
 socket.EAI_ADDRFAMILY
-socket.HCI_DATA_DIR
-socket.HCI_FILTER
-socket.HCI_TIME_STAMP
 socket.IOCTL_VM_SOCKETS_GET_LOCAL_CID
 socket.IPV6_JOIN_GROUP
 socket.IPV6_LEAVE_GROUP
 socket.IPV6_RTHDR_TYPE_0
+socket.IP_BIND_ADDRESS_NO_PORT
 socket.IP_DEFAULT_MULTICAST_TTL
 socket.IP_MAX_MEMBERSHIPS
 socket.IP_RECVRETOPTS
@@ -867,7 +949,7 @@ socket.PACKET_LOOPBACK
 socket.PACKET_MULTICAST
 socket.PACKET_OTHERHOST
 socket.PACKET_OUTGOING
-socket.SOL_HCI
+socket.SO_INCOMING_CPU
 socket.TCP_NOTSENT_LOWAT
 socket.TIPC_ADDR_ID
 socket.TIPC_ADDR_NAME
@@ -894,15 +976,13 @@ socket.TIPC_WITHDRAWN
 socket.TIPC_ZONE_SCOPE
 socket.recv_fds
 socket.send_fds
-socketserver.ForkingMixIn
-socketserver.ForkingTCPServer
-socketserver.ForkingUDPServer
 _sqlite3.__file__
 _sqlite3.enable_shared_cache
 _sqlite3.version
 sqlite3.version
 sqlite3.version_info
 _sre.copyright
+sre_compile._EXTRA_CASES
 _ssl.ALERT_DESCRIPTION_ACCESS_DENIED
 _ssl.ALERT_DESCRIPTION_BAD_CERTIFICATE
 _ssl.ALERT_DESCRIPTION_BAD_CERTIFICATE_HASH_VALUE
@@ -997,6 +1077,15 @@ ssl.VERIFY_X509_PARTIAL_CHAIN
 ssl.VERIFY_X509_STRICT
 ssl.VERIFY_X509_TRUSTED_FIRST
 ssl._GLOBAL_DEFAULT_TIMEOUT
+_statistics.__file__
+statistics._SQRT2
+statistics.__annotations__
+statistics._decimal_sqrt_of_frac
+statistics._float_sqrt_of_frac
+statistics._integer_sqrt_of_frac_rto
+statistics._mean_stdev
+statistics._sqrt_bit_width
+_struct.__file__
 symtable.CELL
 symtable.Class
 symtable.DEF_ANNOT
@@ -1023,21 +1112,37 @@ symtable._newSymbolTable
 sys._clear_type_cache
 sys._current_exceptions
 sys._current_frames
-sys._deactivate_opcache
 sys._debugmallocstats
+sys._getquickenedcount
+sys._stdlib_dir
 sys.addaudithook
 sys.call_tracing
+sys.exception
 sys.get_asyncgen_hooks
 sys.get_coroutine_origin_tracking_depth
+sys.get_int_max_str_digits
 sys.getallocatedblocks
 sys.getdlopenflags
 sys.getswitchinterval
 sys.set_asyncgen_hooks
 sys.set_coroutine_origin_tracking_depth
+sys.set_int_max_str_digits
 sys.setdlopenflags
 sys.setswitchinterval
 sys.stdlib_module_names
-sysconfig._is_python_source_dir
+syslog.__file__
+tarfile.AbsoluteLinkError
+tarfile.AbsolutePathError
+tarfile.FilterError
+tarfile.LinkOutsideDestinationError
+tarfile.OutsideDestinationError
+tarfile.SpecialFileError
+tarfile._KEEP
+tarfile._NAMED_FILTERS
+tarfile._get_filtered_attrs
+tarfile.data_filter
+tarfile.fully_trusted_filter
+tarfile.tar_filter
 termios.CDSUSP
 termios.CEOF
 termios.CEOL
@@ -1088,6 +1193,8 @@ termios.TIOCSETD
 termios.TIOCSLCKTRMIOS
 termios.TIOCSSERIAL
 termios.__file__
+termios.tcgetwinsize
+termios.tcsetwinsize
 _thread._ExceptHookArgs
 _thread._excepthook
 _thread.allocate
@@ -1103,6 +1210,14 @@ time.tzname
 time.tzset
 token.SOFT_KEYWORD
 tokenize.SOFT_KEYWORD
+tokenize._generate_tokens_from_c_tokenizer
+traceback._Anchors
+traceback._ExceptionPrintContext
+traceback._byte_offset_to_character_offset
+traceback._extract_caret_anchors_from_line_segment
+traceback._get_code_position
+traceback._safe_string
+traceback._walk_tb_with_full_positions
 tty.CDSUSP
 tty.CEOF
 tty.CEOL
@@ -1152,6 +1267,33 @@ tty.TIOCSER_TEMT
 tty.TIOCSETD
 tty.TIOCSLCKTRMIOS
 tty.TIOCSSERIAL
+typing.LiteralString
+typing.Never
+typing.NotRequired
+typing.Required
+typing.Self
+typing.TypeVarTuple
+typing.Unpack
+typing._ASSERT_NEVER_REPR_MAX_LENGTH
+typing._AnyMeta
+typing._BoundVarianceMixin
+typing._DeprecatedType
+typing._NotIterable
+typing._PickleUsingNameMixin
+typing._UnpackGenericAlias
+typing._collect_parameters
+typing._is_typevar_like
+typing._is_unpacked_typevartuple
+typing._overload_registry
+typing._should_unflatten_callable_args
+typing._unpack_args
+typing.assert_never
+typing.assert_type
+typing.clear_overloads
+typing.dataclass_transform
+typing.get_overloads
+typing.reveal_type
+unicodedata.__file__
 unicodedata._ucnhash_CAPI
 unicodedata.combining
 unicodedata.decimal
@@ -1168,16 +1310,24 @@ _warnings.filters
 _warnings.warn_explicit
 warnings._defaultaction
 warnings._onceregistry
+zipfile._MASK_COMPRESSED_PATCH
+zipfile._MASK_COMPRESS_OPTION_1
+zipfile._MASK_ENCRYPTED
+zipfile._MASK_STRONG_ENCRYPTION
+zipfile._MASK_USE_DATA_DESCRIPTOR
+zipfile._MASK_UTF_FILENAME
+zipfile._extract_text_encoding
 zlib.ZLIB_RUNTIME_VERSION
 zlib.ZLIB_VERSION
+zlib.__file__
 zlib.__version__
 
 # summary
-#  cpython_modules 274
-#  implemented 102
-#  not_implemented 66
+#  cpython_modules 281
+#  implemented 98
+#  not_implemented 64
 #  failed_to_import 0
-#  missing_items 78
-#  mismatched_items 52
-#  mismatched_doc_items 39
+#  missing_items 99
+#  mismatched_items 57
+#  mismatched_doc_items 48
 #  not_implementeds 36
