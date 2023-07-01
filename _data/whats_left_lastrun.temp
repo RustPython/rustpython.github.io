@@ -1120,13 +1120,11 @@ sys.call_tracing
 sys.exception
 sys.get_asyncgen_hooks
 sys.get_coroutine_origin_tracking_depth
-sys.get_int_max_str_digits
 sys.getallocatedblocks
 sys.getdlopenflags
 sys.getswitchinterval
 sys.set_asyncgen_hooks
 sys.set_coroutine_origin_tracking_depth
-sys.set_int_max_str_digits
 sys.setdlopenflags
 sys.setswitchinterval
 sys.stdlib_module_names
