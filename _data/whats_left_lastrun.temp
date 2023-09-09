@@ -433,7 +433,6 @@ _hashlib.openssl_md_meth_names
 _hashlib.pbkdf2_hmac
 _hashlib.scrypt
 http.HTTPMethod
-_imp._frozen_module_names
 _imp.create_dynamic
 _imp.exec_dynamic
 inspect.CO_ITERABLE_COROUTINE
@@ -1327,5 +1326,5 @@ zlib.__version__
 #  failed_to_import 0
 #  missing_items 99
 #  mismatched_items 57
-#  mismatched_doc_items 48
+#  mismatched_doc_items 47
 #  not_implementeds 36

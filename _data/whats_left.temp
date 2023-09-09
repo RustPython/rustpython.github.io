@@ -1326,5 +1326,5 @@ zlib.__version__
 #  failed_to_import 0
 #  missing_items 99
 #  mismatched_items 57
-#  mismatched_doc_items 47
+#  mismatched_doc_items 46
 #  not_implementeds 36
