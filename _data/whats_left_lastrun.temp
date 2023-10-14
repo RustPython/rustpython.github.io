@@ -340,39 +340,6 @@ dis.show_code
 dis.spec_op
 dis.specialized
 distutils._DEPRECATION_MESSAGE
-enum.CONFORM
-enum.CONTINUOUS
-enum.EJECT
-enum.EnumCheck
-enum.EnumType
-enum.FlagBoundary
-enum.KEEP
-enum.NAMED_FLAGS
-enum.ReprEnum
-enum.STRICT
-enum.StrEnum
-enum.UNIQUE
-enum._dedent
-enum._is_internal_class
-enum._is_private
-enum._is_single_bit
-enum._iter_bits_lsb
-enum._old_convert_
-enum._proto_member
-enum._reduce_ex_by_global_name
-enum._simple_enum
-enum._stdlib_enums
-enum._test_simple_enum
-enum.bin
-enum.global_enum
-enum.global_enum_repr
-enum.global_flag_repr
-enum.global_str
-enum.member
-enum.nonmember
-enum.property
-enum.show_flag_values
-enum.verify
 faulthandler._fatal_error_c_thread
 faulthandler._read_null
 faulthandler._sigabrt
@@ -1321,10 +1288,10 @@ zlib.__version__
 
 # summary
 #  cpython_modules 281
-#  implemented 98
+#  implemented 104
 #  not_implemented 64
 #  failed_to_import 0
-#  missing_items 99
-#  mismatched_items 57
-#  mismatched_doc_items 46
+#  missing_items 98
+#  mismatched_items 48
+#  mismatched_doc_items 40
 #  not_implementeds 36
