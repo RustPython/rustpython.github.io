@@ -148,15 +148,6 @@ _ast.PyCF_ALLOW_TOP_LEVEL_AWAIT
 _ast.PyCF_TYPE_COMMENTS
 ast.PyCF_ALLOW_TOP_LEVEL_AWAIT
 ast.PyCF_TYPE_COMMENTS
-ast._DEPRECATED_CLASS_MESSAGE
-ast._DEPRECATED_VALUE_ALIAS_MESSAGE
-ast.__getattr__
-ast._ast_Ellipsis
-ast._deprecated_globals
-ast._n_getter
-ast._n_setter
-ast._s_getter
-ast._s_setter
 binascii.__file__
 _bisect.__file__
 _blake2.BLAKE2B_MAX_DIGEST_SIZE
