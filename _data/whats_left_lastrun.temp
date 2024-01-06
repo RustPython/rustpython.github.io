@@ -141,7 +141,6 @@ builtins.ExceptionGroup
 builtins.anext
 __hello__.__file__
 __phello__.__file__
-argparse._deprecated_default
 array.__file__
 array.typecodes
 _ast.PyCF_ALLOW_TOP_LEVEL_AWAIT
@@ -1557,10 +1556,10 @@ zlib.__version__
 
 # summary
 #  cpython_modules 282
-#  implemented 82
+#  implemented 83
 #  not_implemented 67
 #  failed_to_import 0
-#  missing_items 113
-#  mismatched_items 63
-#  mismatched_doc_items 50
+#  missing_items 112
+#  mismatched_items 62
+#  mismatched_doc_items 49
 #  not_implementeds 37
