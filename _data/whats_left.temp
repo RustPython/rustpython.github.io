@@ -172,21 +172,6 @@ bz2.__package__
 bz2.compress
 bz2.decompress
 bz2.open
-calendar.APRIL
-calendar.AUGUST
-calendar.DECEMBER
-calendar.Day
-calendar.FEBRUARY
-calendar.JANUARY
-calendar.JULY
-calendar.JUNE
-calendar.MARCH
-calendar.MAY
-calendar.Month
-calendar.NOVEMBER
-calendar.OCTOBER
-calendar.SEPTEMBER
-calendar.__getattr__
 cmath.__file__
 _codecs.utf_32_be_decode
 _codecs.utf_32_be_encode
@@ -1556,10 +1541,10 @@ zlib.__version__
 
 # summary
 #  cpython_modules 282
-#  implemented 83
+#  implemented 84
 #  not_implemented 67
 #  failed_to_import 0
-#  missing_items 112
+#  missing_items 111
 #  mismatched_items 62
 #  mismatched_doc_items 49
 #  not_implementeds 37
