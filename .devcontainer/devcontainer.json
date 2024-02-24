@@ -1,0 +1,27 @@
+{
+  "name": "Jekyll",
+  "image": "mcr.microsoft.com/devcontainers/base:debian",
+  "containerEnv": {
+    "ENV LANG": "en_US.UTF-8",
+    "LANGUAGE": "en_US:en",
+    "TZ": "Etc/UTC",
+    "LANG": "en_US.UTF-8"
+  },
+  "features": {
+    "ghcr.io/devcontainers-contrib/features/ruby-asdf:0": {
+      // Cf Ruby version in https://pages.github.com/versions/
+      "version": "2.7.4"
+    }
+  },
+  "postCreateCommand": [
+    ".devcontainer/post-create.sh"
+  ],
+  "forwardPorts": [
+    // Jekyll server
+    4000,
+    // Live reload server
+    35729
+  ],
+  // Set `remoteUser` to `root` to connect as root instead. More info: https://aka.ms/vscode-remote/containers/non-root.
+  "remoteUser": "vscode"
+}
