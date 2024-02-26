@@ -6,6 +6,14 @@
 
 This site uses Jekyll. You can find instructions for how to install and configure Jekyll on [https://jekyllrb.com/docs/](https://jekyllrb.com/docs/).
 
+You may also use a tool or service supporting [Development Containers](https://containers.dev/), such as Visual Studio Code or GitHub Codespaces. In that case, your development environment is already set up and includes Jekyll with the right version.
+
+Run Jekyll with:
+
+```bash
+bundle exec jekyll serve --livereload
+```
+
 ## How to Contribute
 You can contribute by:
 - writing an article,
