@@ -25,12 +25,16 @@ layout: default
     {% assign folders = "" | split: ", " %}
     {% for folder in site.static_files %}
         {% if folder.path contains 'criterion/' %}
+        {% unless folder.path contains 'criterion/data/' %}
             {% assign temp = folder.path | split: 'criterion/' %}
-            {% assign pathName = temp[1] | split: '/' | first %}
-            {% assign pathName = pathName | split: ", " %}
-            {% assign folders = folders | concat: pathName %}
+            {% assign directoryName = temp[1] | split: '/' | first %}
+            {% assign pathName = 'criterion/' | append: directoryName %}
+            {% assign pathNameArray = pathName | split: ", " %}
+            {% assign folders = folders | concat: pathNameArray %}
+        {% endunless %}
         {% endif %}
-    {% endfor%}
+    {% endfor %}
+    {% comment %}folders = ['criterion/execution', 'criterion/microbenchmarks', ...]{% endcomment %}
     {% assign folders = folders | uniq %}
 
     {% if folders.size == 0 %}
@@ -41,7 +45,7 @@ layout: default
     <ul class="tab" data-tab="benchmarks">
         {% for folder in folders %}
         <li {% if forloop.index==1 %} class="active" {% endif %} style="font-weight: bold;">
-            <a href="">{{ folder }}</a>
+            <a href="">{{ folder | split: '/' | last }}</a>
         </li>
         {% endfor%}
     </ul>
