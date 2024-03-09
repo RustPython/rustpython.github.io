@@ -182,7 +182,6 @@ _codecs.utf_32_le_decode
 _codecs.utf_32_le_encode
 codecs.__file__
 _collections._count_elements
-collections._deque_iterator
 _contextvars.__file__
 copyreg.__cached__
 copyreg.__file__
@@ -1544,7 +1543,7 @@ zlib.__version__
 #  implemented 84
 #  not_implemented 67
 #  failed_to_import 0
-#  missing_items 111
+#  missing_items 110
 #  mismatched_items 62
 #  mismatched_doc_items 49
 #  not_implementeds 37

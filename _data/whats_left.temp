@@ -186,22 +186,10 @@ _contextvars.__file__
 copyreg.__cached__
 copyreg.__file__
 copyreg.pickle_union
-_csv.Dialect
-_csv.QUOTE_NOTNULL
-_csv.QUOTE_STRINGS
 _csv.Reader
 _csv.Writer
 _csv.__file__
-_csv.__version__
 _csv._dialects
-_csv.field_size_limit
-_csv.get_dialect
-_csv.list_dialects
-_csv.register_dialect
-_csv.unregister_dialect
-csv.QUOTE_NOTNULL
-csv.QUOTE_STRINGS
-csv.__version__
 ctypes.ARRAY
 ctypes.ArgumentError
 ctypes.CDLL
@@ -1540,10 +1528,10 @@ zlib.__version__
 
 # summary
 #  cpython_modules 282
-#  implemented 84
+#  implemented 85
 #  not_implemented 67
 #  failed_to_import 0
-#  missing_items 110
+#  missing_items 109
 #  mismatched_items 62
-#  mismatched_doc_items 49
+#  mismatched_doc_items 50
 #  not_implementeds 37
