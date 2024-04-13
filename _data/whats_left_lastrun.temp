@@ -794,11 +794,9 @@ pyexpat.native_encoding
 pyexpat.version_info
 _random.__file__
 random.binomialvariate
-re.NOFLAG
-re._MAXCACHE2
-re.__path__
-re._cache2
-re._compile_template
+re.T
+re.TEMPLATE
+re.template
 resource.RLIMIT_OFILE
 resource.__file__
 resource.getpagesize
@@ -1134,8 +1132,6 @@ sqlite3.SQLITE_DBCONFIG_TRIGGER_EQP
 sqlite3.SQLITE_DBCONFIG_TRUSTED_SCHEMA
 sqlite3.SQLITE_DBCONFIG_WRITABLE_SCHEMA
 _sre.copyright
-_sre.template
-sre_compile._EXTRA_CASES
 _ssl.ALERT_DESCRIPTION_ACCESS_DENIED
 _ssl.ALERT_DESCRIPTION_BAD_CERTIFICATE
 _ssl.ALERT_DESCRIPTION_BAD_CERTIFICATE_HASH_VALUE
@@ -1528,10 +1524,10 @@ zlib.__version__
 
 # summary
 #  cpython_modules 282
-#  implemented 86
+#  implemented 87
 #  not_implemented 67
 #  failed_to_import 0
-#  missing_items 109
+#  missing_items 108
 #  mismatched_items 61
 #  mismatched_doc_items 50
 #  not_implementeds 37
