@@ -460,7 +460,6 @@ _io.IncrementalNewlineDecoder
 _io._BytesIOBuffer
 itertools._tee
 itertools._tee_dataobject
-itertools.batched
 _json.__file__
 _json.make_encoder
 _locale._DATE_FMT

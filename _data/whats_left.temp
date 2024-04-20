@@ -830,11 +830,7 @@ _sha1.__file__
 _sha3.__file__
 _sha3.implementation
 shelve.DEFAULT_PROTOCOL
-shutil._WIN_DEFAULT_PATHEXT
-shutil._is_immutable
 shutil._ntuple_diskusage
-shutil._win_path_needs_curdir
-shutil._winapi
 shutil.disk_usage
 _signal.ITIMER_PROF
 _signal.ITIMER_REAL
