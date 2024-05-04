@@ -137,7 +137,6 @@ tuple_iterator.__getattribute__ (inherited)
 zip.__getattribute__ (inherited)
 
 # stdlib items
-builtins.ExceptionGroup
 builtins.anext
 __hello__.__file__
 __phello__.__file__
@@ -405,7 +404,6 @@ gc.get_freeze_count
 gc.get_referents
 gc.is_finalized
 gc.unfreeze
-genericpath.islink
 gettext.dnpgettext
 gettext.dpgettext
 gettext.npgettext
@@ -489,9 +487,6 @@ _multiprocessing.SemLock
 _multiprocessing.__file__
 _multiprocessing.flags
 _multiprocessing.sem_unlink
-ntpath.isdevdrive
-ntpath.isjunction
-ntpath.splitroot
 opcode.ENABLE_SPECIALIZATION
 opcode.MIN_INSTRUMENTED_OPCODE
 opcode._intrinsic_1_descs
@@ -767,8 +762,6 @@ posix.wait4
 posix.waitid
 posix.waitid_result
 posix.writev
-posixpath.isjunction
-posixpath.splitroot
 _posixsubprocess.__file__
 _pydecimal.HAVE_CONTEXTVAR
 _pydecimal._context_attributes
@@ -904,8 +897,6 @@ _socket.CAN_BCM_TX_SEND
 _socket.CAN_BCM_TX_SETUP
 _socket.CAN_BCM_TX_STATUS
 _socket.CAPI
-_socket.CMSG_LEN
-_socket.CMSG_SPACE
 _socket.EAI_ADDRFAMILY
 _socket.ETHERTYPE_ARP
 _socket.ETHERTYPE_IP
@@ -1088,7 +1079,6 @@ socket.TIPC_WAIT_FOREVER
 socket.TIPC_WITHDRAWN
 socket.TIPC_ZONE_SCOPE
 socket.recv_fds
-socket.send_fds
 socketserver.ForkingUnixDatagramServer
 socketserver.ForkingUnixStreamServer
 _sqlite3.LEGACY_TRANSACTION_CONTROL
@@ -1519,10 +1509,10 @@ zlib.__version__
 
 # summary
 #  cpython_modules 282
-#  implemented 87
+#  implemented 90
 #  not_implemented 67
 #  failed_to_import 0
-#  missing_items 108
+#  missing_items 105
 #  mismatched_items 61
-#  mismatched_doc_items 50
+#  mismatched_doc_items 49
 #  not_implementeds 37
