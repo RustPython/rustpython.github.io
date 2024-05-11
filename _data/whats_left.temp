@@ -59,7 +59,6 @@ _tracemalloc (entire module)
 tracemalloc (entire module)
 turtle (entire module)
 turtledemo (entire module)
-_typing (entire module)
 wave (entire module)
 _xxinterpchannels (entire module)
 xxlimited_35 (entire module)
@@ -404,10 +403,6 @@ gc.get_freeze_count
 gc.get_referents
 gc.is_finalized
 gc.unfreeze
-gettext.dnpgettext
-gettext.dpgettext
-gettext.npgettext
-gettext.pgettext
 grp.__file__
 gzip.READ_BUFFER_SIZE
 gzip._WRITE_BUFFER_SIZE
@@ -596,18 +591,6 @@ os.confstr_names
 os.fwalk
 os.statvfs_result
 os.supports_effective_ids
-os.sysconf_names
-pathlib._DoubleRecursiveWildcardSelector
-pathlib._FNMATCH_PREFIX
-pathlib._FNMATCH_SLICE
-pathlib._FNMATCH_SUFFIX
-pathlib._IGNORED_ERRNOS
-pathlib._ParentSelector
-pathlib._SWAP_SEP_AND_NEWLINE
-pathlib._WIN_RESERVED_NAMES
-pathlib._compile_pattern
-pathlib._compile_pattern_lines
-pathlib._is_case_sensitive
 pdb._ModuleTarget
 pdb._ScriptTarget
 pickle.PickleBuffer
@@ -752,8 +735,6 @@ posix.setpgrp
 posix.setxattr
 posix.splice
 posix.statvfs
-posix.sysconf
-posix.sysconf_names
 posix.tcgetpgrp
 posix.tcsetpgrp
 posix.unshare
@@ -1505,10 +1486,10 @@ zlib.__version__
 
 # summary
 #  cpython_modules 282
-#  implemented 90
-#  not_implemented 67
+#  implemented 92
+#  not_implemented 66
 #  failed_to_import 0
-#  missing_items 105
-#  mismatched_items 61
-#  mismatched_doc_items 49
+#  missing_items 103
+#  mismatched_items 60
+#  mismatched_doc_items 50
 #  not_implementeds 37

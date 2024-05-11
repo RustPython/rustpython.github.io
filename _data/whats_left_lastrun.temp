@@ -1258,15 +1258,11 @@ sys.addaudithook
 sys.call_tracing
 sys.deactivate_stack_trampoline
 sys.exception
-sys.get_asyncgen_hooks
-sys.get_coroutine_origin_tracking_depth
 sys.getallocatedblocks
 sys.getdlopenflags
 sys.getswitchinterval
 sys.getunicodeinternedsize
 sys.is_stack_trampoline_active
-sys.set_asyncgen_hooks
-sys.set_coroutine_origin_tracking_depth
 sys.setdlopenflags
 sys.setswitchinterval
 sys.stdlib_module_names
