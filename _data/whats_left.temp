@@ -1326,10 +1326,7 @@ threading.setprofile_all_threads
 threading.settrace_all_threads
 time._STRUCT_TM_ITEMS
 time.altzone
-time.daylight
 time.pthread_getcpuclockid
-time.timezone
-time.tzname
 time.tzset
 token.EXCLAMATION
 token.FSTRING_END
