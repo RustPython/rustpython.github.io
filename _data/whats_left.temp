@@ -39,14 +39,12 @@ _posixshmem (entire module)
 profile (entire module)
 pstats (entire module)
 pyclbr (entire module)
-_pydatetime (entire module)
 _pylong (entire module)
 _queue (entire module)
 readline (entire module)
 _sha2 (entire module)
 smtplib (entire module)
 _stat (entire module)
-_strptime (entire module)
 _symtable (entire module)
 _sysconfigdata__linux_x86_64-linux-gnu (entire module)
 _testbuffer (entire module)
@@ -118,7 +116,6 @@ memoryview.__buffer__
 memoryview.__getattribute__ (inherited)
 memoryview.__release_buffer__
 memoryview._from_flags
-object.__getstate__
 property.__getattribute__ (inherited)
 range.__getattribute__ (inherited)
 range_iterator.__doc__ (inherited)
@@ -183,7 +180,6 @@ _collections._count_elements
 _contextvars.__file__
 copyreg.__cached__
 copyreg.__file__
-copyreg.pickle_union
 _csv.Reader
 _csv.Writer
 _csv.__file__
@@ -1483,10 +1479,10 @@ zlib.__version__
 
 # summary
 #  cpython_modules 282
-#  implemented 92
-#  not_implemented 66
+#  implemented 94
+#  not_implemented 64
 #  failed_to_import 0
 #  missing_items 103
 #  mismatched_items 60
 #  mismatched_doc_items 50
-#  not_implementeds 37
+#  not_implementeds 36
