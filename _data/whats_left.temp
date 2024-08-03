@@ -382,10 +382,6 @@ fcntl.LOCK_READ
 fcntl.LOCK_RW
 fcntl.LOCK_WRITE
 fcntl.__file__
-fractions._FLOAT_FORMAT_SPECIFICATION_MATCHER
-fractions._hash_algorithm
-fractions._round_to_exponent
-fractions._round_to_figures
 _functools.cmp_to_key
 gc.DEBUG_COLLECTABLE
 gc.DEBUG_LEAK
@@ -1234,7 +1230,6 @@ sys.activate_stack_trampoline
 sys.addaudithook
 sys.call_tracing
 sys.deactivate_stack_trampoline
-sys.exception
 sys.getallocatedblocks
 sys.getdlopenflags
 sys.getswitchinterval
@@ -1482,7 +1477,7 @@ zlib.__version__
 #  implemented 94
 #  not_implemented 64
 #  failed_to_import 0
-#  missing_items 103
+#  missing_items 102
 #  mismatched_items 60
-#  mismatched_doc_items 50
+#  mismatched_doc_items 49
 #  not_implementeds 36
