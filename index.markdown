@@ -20,7 +20,7 @@ demo:
    label: 'Notebook'
 
 installation:
-  - command: "cargo install --git https://github.com/RustPython/RustPython"
+  - command: "cargo install --git https://github.com/RustPython/RustPython rustpython"
   - command: "wapm install rustpython"
   - command: "conda install rustpython -c conda-forge"
 
