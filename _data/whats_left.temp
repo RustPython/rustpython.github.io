@@ -441,7 +441,6 @@ inspect.getmembers_static
 inspect.iskeyword
 inspect.ismethodwrapper
 inspect.markcoroutinefunction
-_io.IncrementalNewlineDecoder
 _io._BytesIOBuffer
 itertools._tee
 itertools._tee_dataobject

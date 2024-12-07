@@ -758,7 +758,6 @@ pyexpat.features
 pyexpat.native_encoding
 pyexpat.version_info
 _random.__file__
-random.binomialvariate
 re.T
 re.TEMPLATE
 re.template
@@ -1626,10 +1625,10 @@ zoneinfo.TZPATH
 
 # summary
 #  cpython_modules 282
-#  implemented 95
+#  implemented 96
 #  not_implemented 64
 #  failed_to_import 0
-#  missing_items 101
-#  mismatched_items 60
+#  missing_items 100
+#  mismatched_items 59
 #  mismatched_doc_items 49
 #  not_implementeds 36
