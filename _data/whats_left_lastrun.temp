@@ -1,4 +1,4 @@
-test_sqlite3: testing with SQLite version 3.37.2
+test_sqlite3: testing with SQLite version 3.45.1
 # modules
 _abc (entire module)
 _aix_support (entire module)
@@ -43,7 +43,6 @@ _pylong (entire module)
 _queue (entire module)
 readline (entire module)
 _sha2 (entire module)
-smtplib (entire module)
 _sqlite3 (entire module)
 _stat (entire module)
 _symtable (entire module)
@@ -456,11 +455,6 @@ _locale.gettext
 _locale.nl_langinfo
 _locale.textdomain
 locale._getdefaultlocale
-logging._is_internal_frame
-logging.getHandlerByName
-logging.getHandlerNames
-logging.getLevelNamesMapping
-logging.logAsyncioTasks
 math.__file__
 math.sumprod
 _md5.MD5Type
@@ -492,6 +486,7 @@ os.CLONE_NEWIPC
 os.CLONE_NEWNET
 os.CLONE_NEWNS
 os.CLONE_NEWPID
+os.CLONE_NEWTIME
 os.CLONE_NEWUSER
 os.CLONE_NEWUTS
 os.CLONE_SIGHAND
@@ -601,6 +596,7 @@ posix.CLONE_NEWIPC
 posix.CLONE_NEWNET
 posix.CLONE_NEWNS
 posix.CLONE_NEWPID
+posix.CLONE_NEWTIME
 posix.CLONE_NEWUSER
 posix.CLONE_NEWUTS
 posix.CLONE_SIGHAND
@@ -1617,17 +1613,16 @@ zipfile.__path__
 zipfile._sanitize_filename
 zlib.ZLIB_RUNTIME_VERSION
 zlib.ZLIB_VERSION
-zlib._ZlibDecompressor
 zlib.__file__
 zlib.__version__
 zoneinfo.TZPATH
 
 # summary
 #  cpython_modules 282
-#  implemented 96
-#  not_implemented 64
+#  implemented 98
+#  not_implemented 63
 #  failed_to_import 0
-#  missing_items 100
-#  mismatched_items 59
+#  missing_items 99
+#  mismatched_items 60
 #  mismatched_doc_items 49
 #  not_implementeds 36
