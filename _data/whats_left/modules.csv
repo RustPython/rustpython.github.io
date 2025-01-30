@@ -73,7 +73,6 @@ pstats
 pyclbr
 readline
 sitecustomize
-smtplib
 sqlite3
 symbol
 tabnanny
