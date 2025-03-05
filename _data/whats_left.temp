@@ -205,14 +205,12 @@ _ctypes._memset_addr
 _ctypes._string_at_addr
 _ctypes._unpickle
 _ctypes._wstring_at_addr
-_ctypes.addressof
 _ctypes.alignment
 _ctypes.buffer_info
 _ctypes.byref
 _ctypes.call_cdeclfunction
 _ctypes.call_function
 _ctypes.dlclose
-_ctypes.dlopen
 _ctypes.dlsym
 _ctypes.pointer
 _ctypes.resize
@@ -481,9 +479,6 @@ glob._no_recurse_symlinks
 glob._special_parts
 glob.translate
 grp.__file__
-gzip.READ_BUFFER_SIZE
-gzip._WRITE_BUFFER_SIZE
-gzip._WriteBufferStream
 _hashlib.HMAC
 _hashlib.UnsupportedDigestmodError
 _hashlib.__file__
@@ -1838,8 +1833,6 @@ zipimport.MAX_UINT32
 zipimport.STRING_END_LOCATOR_64
 zipimport.STRING_END_ZIP_64
 zipimport.ZIP64_EXTRA_TAG
-zlib.ZLIB_RUNTIME_VERSION
-zlib.ZLIB_VERSION
 zlib.__file__
 zlib.__version__
 zoneinfo.TZPATH
@@ -1849,7 +1842,7 @@ zoneinfo.TZPATH
 #  implemented 75
 #  not_implemented 69
 #  failed_to_import 0
-#  missing_items 128
-#  mismatched_items 69
-#  mismatched_doc_items 65
+#  missing_items 127
+#  mismatched_items 70
+#  mismatched_doc_items 66
 #  not_implementeds 33
