@@ -1,7 +1,6 @@
-modules
+module
 _abc
 _aix_support
-_android_support
 _asyncio
 _bz2
 _codecs_cn
@@ -22,7 +21,6 @@ _heapq
 _interpchannels
 _interpqueues
 _interpreters
-_ios_support
 _lsprof
 _lzma
 _multibytecodec

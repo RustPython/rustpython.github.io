@@ -2,7 +2,6 @@ test_sqlite3: testing with SQLite version 3.45.1
 # modules
 _abc (entire module)
 _aix_support (entire module)
-_android_support (entire module)
 _asyncio (entire module)
 _bz2 (entire module)
 cProfile (entire module)
@@ -27,7 +26,6 @@ imaplib (entire module)
 _interpchannels (entire module)
 _interpqueues (entire module)
 _interpreters (entire module)
-_ios_support (entire module)
 _lsprof (entire module)
 _lzma (entire module)
 lzma (entire module)
@@ -522,6 +520,7 @@ inspect.iskeyword
 inspect.ismethodwrapper
 inspect.markcoroutinefunction
 _io._BytesIOBuffer
+_ios_support.lib
 itertools._tee
 itertools._tee_dataobject
 _json.__file__
@@ -1839,10 +1838,10 @@ zoneinfo.TZPATH
 
 # summary
 #  cpython_modules 290
-#  implemented 75
-#  not_implemented 69
+#  implemented 76
+#  not_implemented 67
 #  failed_to_import 0
-#  missing_items 127
+#  missing_items 128
 #  mismatched_items 70
 #  mismatched_doc_items 66
 #  not_implementeds 33
