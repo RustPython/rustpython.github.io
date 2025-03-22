@@ -1,6 +1,5 @@
 module
 _abc
-_aix_support
 _asyncio
 _bz2
 _codecs_cn
@@ -28,7 +27,6 @@ _opcode
 _opcode_metadata
 _pickle
 _posixshmem
-_pylong
 _pyrepl
 _queue
 _sha2
@@ -38,16 +36,13 @@ _suggestions
 _symtable
 _sysconfig
 _sysconfigdata__linux_x86_64-linux-gnu
-_testbuffer
 _testclinic
 _testclinic_limited
 _testexternalinspection
-_testlimitedcapi
 _testsinglephase
 _tkinter
 _tokenize
 _tracemalloc
-_xxtestfuzz
 _zoneinfo
 cProfile
 curses
