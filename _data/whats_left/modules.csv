@@ -55,7 +55,6 @@ profile
 pstats
 pyclbr
 readline
-tkinter
 tracemalloc
 turtle
 turtledemo

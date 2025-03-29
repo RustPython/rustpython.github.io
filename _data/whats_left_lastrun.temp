@@ -1,7 +1,6 @@
 test_sqlite3: testing with SQLite version 3.45.1
 # modules
 _abc (entire module)
-_aix_support (entire module)
 _asyncio (entire module)
 _bz2 (entire module)
 cProfile (entire module)
@@ -39,7 +38,6 @@ _posixshmem (entire module)
 profile (entire module)
 pstats (entire module)
 pyclbr (entire module)
-_pylong (entire module)
 _pyrepl (entire module)
 _queue (entire module)
 readline (entire module)
@@ -50,11 +48,9 @@ _suggestions (entire module)
 _symtable (entire module)
 _sysconfig (entire module)
 _sysconfigdata__linux_x86_64-linux-gnu (entire module)
-_testbuffer (entire module)
 _testclinic (entire module)
 _testclinic_limited (entire module)
 _testexternalinspection (entire module)
-_testlimitedcapi (entire module)
 _testsinglephase (entire module)
 _tkinter (entire module)
 tkinter (entire module)
@@ -65,7 +61,6 @@ turtle (entire module)
 turtledemo (entire module)
 wave (entire module)
 xxlimited_35 (entire module)
-_xxtestfuzz (entire module)
 _zoneinfo (entire module)
 
 # builtin items
@@ -1837,9 +1832,9 @@ zlib.__version__
 zoneinfo.TZPATH
 
 # summary
-#  cpython_modules 290
-#  implemented 76
-#  not_implemented 67
+#  cpython_modules 287
+#  implemented 78
+#  not_implemented 62
 #  failed_to_import 0
 #  missing_items 128
 #  mismatched_items 70

@@ -53,7 +53,6 @@ _testclinic_limited (entire module)
 _testexternalinspection (entire module)
 _testsinglephase (entire module)
 _tkinter (entire module)
-tkinter (entire module)
 _tokenize (entire module)
 _tracemalloc (entire module)
 tracemalloc (entire module)
@@ -192,21 +191,13 @@ _ctypes.PyObj_FromPtr
 _ctypes.Py_DECREF
 _ctypes.Py_INCREF
 _ctypes.__file__
-_ctypes._cast_addr
-_ctypes._memmove_addr
-_ctypes._memset_addr
-_ctypes._string_at_addr
 _ctypes._unpickle
 _ctypes._wstring_at_addr
-_ctypes.alignment
 _ctypes.buffer_info
-_ctypes.byref
 _ctypes.call_cdeclfunction
 _ctypes.call_function
 _ctypes.dlclose
 _ctypes.dlsym
-_ctypes.pointer
-_ctypes.resize
 ctypes.ARRAY
 ctypes.ArgumentError
 ctypes.CDLL
@@ -1650,6 +1641,161 @@ time._STRUCT_TM_ITEMS
 time.altzone
 time.pthread_getcpuclockid
 time.tzset
+tkinter.ACTIVE
+tkinter.ALL
+tkinter.ANCHOR
+tkinter.ARC
+tkinter.BASELINE
+tkinter.BEVEL
+tkinter.BOTH
+tkinter.BOTTOM
+tkinter.BROWSE
+tkinter.BUTT
+tkinter.BaseWidget
+tkinter.BitmapImage
+tkinter.BooleanVar
+tkinter.Button
+tkinter.CASCADE
+tkinter.CENTER
+tkinter.CHAR
+tkinter.CHECKBUTTON
+tkinter.CHORD
+tkinter.COMMAND
+tkinter.CURRENT
+tkinter.CallWrapper
+tkinter.Canvas
+tkinter.Checkbutton
+tkinter.DISABLED
+tkinter.DOTBOX
+tkinter.DoubleVar
+tkinter.E
+tkinter.END
+tkinter.EW
+tkinter.EXCEPTION
+tkinter.EXTENDED
+tkinter.Entry
+tkinter.Event
+tkinter.EventType
+tkinter.FALSE
+tkinter.FIRST
+tkinter.FLAT
+tkinter.Frame
+tkinter.GROOVE
+tkinter.Grid
+tkinter.HIDDEN
+tkinter.HORIZONTAL
+tkinter.INSERT
+tkinter.INSIDE
+tkinter.Image
+tkinter.IntVar
+tkinter.LAST
+tkinter.LEFT
+tkinter.Label
+tkinter.LabelFrame
+tkinter.Listbox
+tkinter.MITER
+tkinter.MOVETO
+tkinter.MULTIPLE
+tkinter.Menu
+tkinter.Menubutton
+tkinter.Message
+tkinter.Misc
+tkinter.N
+tkinter.NE
+tkinter.NO
+tkinter.NONE
+tkinter.NORMAL
+tkinter.NS
+tkinter.NSEW
+tkinter.NUMERIC
+tkinter.NW
+tkinter.NoDefaultRoot
+tkinter.OFF
+tkinter.ON
+tkinter.OUTSIDE
+tkinter.OptionMenu
+tkinter.PAGES
+tkinter.PIESLICE
+tkinter.PROJECTING
+tkinter.Pack
+tkinter.PanedWindow
+tkinter.PhotoImage
+tkinter.Place
+tkinter.RADIOBUTTON
+tkinter.RAISED
+tkinter.READABLE
+tkinter.RIDGE
+tkinter.RIGHT
+tkinter.ROUND
+tkinter.Radiobutton
+tkinter.S
+tkinter.SCROLL
+tkinter.SE
+tkinter.SEL
+tkinter.SEL_FIRST
+tkinter.SEL_LAST
+tkinter.SEPARATOR
+tkinter.SINGLE
+tkinter.SOLID
+tkinter.SUNKEN
+tkinter.SW
+tkinter.Scale
+tkinter.Scrollbar
+tkinter.Spinbox
+tkinter.StringVar
+tkinter.TOP
+tkinter.TRUE
+tkinter.Tcl
+tkinter.TclVersion
+tkinter.Text
+tkinter.Tk
+tkinter.TkVersion
+tkinter.Toplevel
+tkinter.UNDERLINE
+tkinter.UNITS
+tkinter.VERTICAL
+tkinter.Variable
+tkinter.W
+tkinter.WORD
+tkinter.WRITABLE
+tkinter.Widget
+tkinter.Wm
+tkinter.X
+tkinter.XView
+tkinter.Y
+tkinter.YES
+tkinter.YView
+tkinter._VersionInfoType
+tkinter.__all__
+tkinter.__builtins__
+tkinter.__cached__
+tkinter.__file__
+tkinter.__name__
+tkinter.__package__
+tkinter.__path__
+tkinter._checkbutton_count
+tkinter._cnfmerge
+tkinter._debug
+tkinter._default_root
+tkinter._destroy_temp_root
+tkinter._exit
+tkinter._get_default_root
+tkinter._get_temp_root
+tkinter._join
+tkinter._parse_version
+tkinter._print_command
+tkinter._setit
+tkinter._splitdict
+tkinter._stringify
+tkinter._support_default_root
+tkinter._test
+tkinter._tkerror
+tkinter._varnum
+tkinter.getboolean
+tkinter.image_names
+tkinter.image_types
+tkinter.mainloop
+tkinter.wantobjects
 token.EXCLAMATION
 token.FSTRING_END
 token.FSTRING_MIDDLE
@@ -1834,9 +1980,9 @@ zoneinfo.TZPATH
 # summary
 #  cpython_modules 287
 #  implemented 78
-#  not_implemented 62
+#  not_implemented 61
 #  failed_to_import 0
-#  missing_items 128
+#  missing_items 129
 #  mismatched_items 70
 #  mismatched_doc_items 66
 #  not_implementeds 33
