@@ -1637,7 +1637,6 @@ _thread.start_new
 threading._DeleteDummyThreadOnDel
 threading.setprofile_all_threads
 threading.settrace_all_threads
-time._STRUCT_TM_ITEMS
 time.altzone
 time.pthread_getcpuclockid
 time.tzset
@@ -1984,5 +1983,5 @@ zoneinfo.TZPATH
 #  failed_to_import 0
 #  missing_items 129
 #  mismatched_items 70
-#  mismatched_doc_items 66
+#  mismatched_doc_items 65
 #  not_implementeds 33
