@@ -27,7 +27,6 @@ _opcode
 _opcode_metadata
 _pickle
 _posixshmem
-_pyrepl
 _queue
 _sha2
 _sqlite3
