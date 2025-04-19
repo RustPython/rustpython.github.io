@@ -43,7 +43,6 @@ readline (entire module)
 _sha2 (entire module)
 _sqlite3 (entire module)
 _stat (entire module)
-_suggestions (entire module)
 _symtable (entire module)
 _sysconfig (entire module)
 _sysconfigdata__linux_x86_64-linux-gnu (entire module)
@@ -160,7 +159,6 @@ bz2.__package__
 bz2.compress
 bz2.decompress
 bz2.open
-calendar._validate_month
 cmath.__file__
 code.Quitter
 _codecs.utf_32_be_decode
@@ -1974,10 +1972,10 @@ zoneinfo.TZPATH
 
 # summary
 #  cpython_modules 287
-#  implemented 79
-#  not_implemented 60
+#  implemented 80
+#  not_implemented 59
 #  failed_to_import 0
-#  missing_items 129
+#  missing_items 128
 #  mismatched_items 70
-#  mismatched_doc_items 65
+#  mismatched_doc_items 64
 #  not_implementeds 33

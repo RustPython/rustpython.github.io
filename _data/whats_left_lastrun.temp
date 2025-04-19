@@ -38,7 +38,6 @@ _posixshmem (entire module)
 profile (entire module)
 pstats (entire module)
 pyclbr (entire module)
-_pyrepl (entire module)
 _queue (entire module)
 readline (entire module)
 _sha2 (entire module)
@@ -525,7 +524,6 @@ locale._getdefaultlocale
 logging._afterFork
 logging._prepareFork
 math.__file__
-math.fma
 _md5.MD5Type
 _md5.__file__
 mimetypes._mimetypes_read_windows_registry
@@ -938,7 +936,6 @@ signal.sigwait
 signal.struct_siginfo
 signal.valid_signals
 site._get_implementation
-site.gethistoryfile
 site.register_readline
 _socket.AF_QIPCRTR
 _socket.AF_ROSE
@@ -1518,7 +1515,6 @@ symtable._newSymbolTable
 symtable._scopes_names
 symtable._scopes_value_to_name
 symtable.main
-sys._baserepl
 sys._clear_internal_caches
 sys._clear_type_cache
 sys._current_exceptions
@@ -1978,8 +1974,8 @@ zoneinfo.TZPATH
 
 # summary
 #  cpython_modules 287
-#  implemented 78
-#  not_implemented 61
+#  implemented 79
+#  not_implemented 60
 #  failed_to_import 0
 #  missing_items 129
 #  mismatched_items 70
