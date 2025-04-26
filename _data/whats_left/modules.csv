@@ -1,7 +1,6 @@
 module
 _abc
 _asyncio
-_bz2
 _codecs_cn
 _codecs_hk
 _codecs_iso2022
@@ -56,5 +55,4 @@ readline
 tracemalloc
 turtle
 turtledemo
-wave
 xxlimited_35
