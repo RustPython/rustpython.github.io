@@ -2,7 +2,6 @@ test_sqlite3: testing with SQLite version 3.45.1
 # modules
 _abc (entire module)
 _asyncio (entire module)
-_bz2 (entire module)
 cProfile (entire module)
 _codecs_cn (entire module)
 _codecs_hk (entire module)
@@ -56,7 +55,6 @@ _tracemalloc (entire module)
 tracemalloc (entire module)
 turtle (entire module)
 turtledemo (entire module)
-wave (entire module)
 xxlimited_35 (entire module)
 _zoneinfo (entire module)
 
@@ -146,19 +144,7 @@ _blake2.BLAKE2S_MAX_KEY_SIZE
 _blake2.BLAKE2S_PERSON_SIZE
 _blake2.BLAKE2S_SALT_SIZE
 _blake2.__file__
-bz2.BZ2File
-bz2._MODE_READ
-bz2._MODE_WRITE
-bz2.__all__
-bz2.__author__
-bz2.__builtins__
-bz2.__cached__
-bz2.__file__
-bz2.__name__
-bz2.__package__
-bz2.compress
-bz2.decompress
-bz2.open
+_bz2.__file__
 cmath.__file__
 code.Quitter
 _codecs.utf_32_be_decode
@@ -508,7 +494,6 @@ itertools._tee
 itertools._tee_dataobject
 _json.__file__
 _json.make_encoder
-linecache._register_code
 _locale._DATE_FMT
 _locale.bind_textdomain_codeset
 _locale.bindtextdomain
@@ -865,7 +850,6 @@ pyexpat.expat_CAPI
 pyexpat.features
 pyexpat.native_encoding
 pyexpat.version_info
-queue.ShutDown
 _random.__file__
 random._parse_args
 random.main
@@ -1545,18 +1529,6 @@ sysconfig._init_config_vars
 syslog.LOG_FTP
 syslog.__file__
 tabnanny._process_tokens
-tarfile.AbsoluteLinkError
-tarfile.AbsolutePathError
-tarfile.FilterError
-tarfile.LinkOutsideDestinationError
-tarfile.OutsideDestinationError
-tarfile.SpecialFileError
-tarfile._KEEP
-tarfile._NAMED_FILTERS
-tarfile._get_filtered_attrs
-tarfile.data_filter
-tarfile.fully_trusted_filter
-tarfile.tar_filter
 tempfile._dont_follow_symlinks
 tempfile._resetperms
 termios.CDSUSP
@@ -1948,9 +1920,6 @@ warnings._is_filename_to_skip
 warnings._is_internal_filename
 warnings._onceregistry
 warnings.deprecated
-webbrowser.Edge
-webbrowser.Epiphany
-webbrowser.parse_args
 zipfile._Extra
 zipfile._MASK_COMPRESSED_PATCH
 zipfile._MASK_COMPRESS_OPTION_1
@@ -1972,10 +1941,10 @@ zoneinfo.TZPATH
 
 # summary
 #  cpython_modules 287
-#  implemented 80
-#  not_implemented 59
+#  implemented 85
+#  not_implemented 57
 #  failed_to_import 0
-#  missing_items 128
+#  missing_items 124
 #  mismatched_items 70
-#  mismatched_doc_items 64
+#  mismatched_doc_items 62
 #  not_implementeds 33
