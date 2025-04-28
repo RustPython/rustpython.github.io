@@ -40,7 +40,6 @@ pyclbr (entire module)
 _queue (entire module)
 readline (entire module)
 _sha2 (entire module)
-_ssl (entire module)
 _stat (entire module)
 _symtable (entire module)
 _sysconfig (entire module)
@@ -420,7 +419,6 @@ fcntl.__file__
 fnmatch._join_translated_parts
 fnmatch._translate
 fractions._GENERAL_FORMAT_SPECIFICATION_MATCHER
-ftplib.FTP_TLS
 _functools.cmp_to_key
 functools._unwrap_partialmethod
 gc.DEBUG_COLLECTABLE
@@ -920,7 +918,6 @@ signal.struct_siginfo
 signal.valid_signals
 site._get_implementation
 site.register_readline
-smtplib.SMTP_SSL
 _socket.AF_QIPCRTR
 _socket.AF_ROSE
 _socket.ALG_OP_SIGN
@@ -1176,6 +1173,60 @@ sqlite3.SQLITE_DBCONFIG_TRIGGER_EQP
 sqlite3.SQLITE_DBCONFIG_TRUSTED_SCHEMA
 sqlite3.SQLITE_DBCONFIG_WRITABLE_SCHEMA
 _sre.copyright
+_ssl.ALERT_DESCRIPTION_ACCESS_DENIED
+_ssl.ALERT_DESCRIPTION_BAD_CERTIFICATE
+_ssl.ALERT_DESCRIPTION_BAD_CERTIFICATE_HASH_VALUE
+_ssl.ALERT_DESCRIPTION_BAD_CERTIFICATE_STATUS_RESPONSE
+_ssl.ALERT_DESCRIPTION_BAD_RECORD_MAC
+_ssl.ALERT_DESCRIPTION_CERTIFICATE_EXPIRED
+_ssl.ALERT_DESCRIPTION_CERTIFICATE_REVOKED
+_ssl.ALERT_DESCRIPTION_CERTIFICATE_UNKNOWN
+_ssl.ALERT_DESCRIPTION_CERTIFICATE_UNOBTAINABLE
+_ssl.ALERT_DESCRIPTION_CLOSE_NOTIFY
+_ssl.ALERT_DESCRIPTION_DECOMPRESSION_FAILURE
+_ssl.ALERT_DESCRIPTION_DECRYPT_ERROR
+_ssl.ALERT_DESCRIPTION_HANDSHAKE_FAILURE
+_ssl.ALERT_DESCRIPTION_INSUFFICIENT_SECURITY
+_ssl.ALERT_DESCRIPTION_INTERNAL_ERROR
+_ssl.ALERT_DESCRIPTION_NO_RENEGOTIATION
+_ssl.ALERT_DESCRIPTION_PROTOCOL_VERSION
+_ssl.ALERT_DESCRIPTION_RECORD_OVERFLOW
+_ssl.ALERT_DESCRIPTION_UNEXPECTED_MESSAGE
+_ssl.ALERT_DESCRIPTION_UNKNOWN_CA
+_ssl.ALERT_DESCRIPTION_UNKNOWN_PSK_IDENTITY
+_ssl.ALERT_DESCRIPTION_UNSUPPORTED_CERTIFICATE
+_ssl.ALERT_DESCRIPTION_UNSUPPORTED_EXTENSION
+_ssl.ALERT_DESCRIPTION_USER_CANCELLED
+_ssl.Certificate
+_ssl.ENCODING_DER
+_ssl.ENCODING_PEM
+_ssl.HAS_PSK
+_ssl.HOSTFLAG_ALWAYS_CHECK_SUBJECT
+_ssl.HOSTFLAG_MULTI_LABEL_WILDCARDS
+_ssl.HOSTFLAG_NEVER_CHECK_SUBJECT
+_ssl.HOSTFLAG_NO_PARTIAL_WILDCARDS
+_ssl.HOSTFLAG_NO_WILDCARDS
+_ssl.HOSTFLAG_SINGLE_LABEL_SUBDOMAINS
+_ssl.MemoryBIO
+_ssl.OP_ENABLE_KTLS
+_ssl.OP_ENABLE_MIDDLEBOX_COMPAT
+_ssl.OP_IGNORE_UNEXPECTED_EOF
+_ssl.OP_LEGACY_SERVER_CONNECT
+_ssl.OP_NO_RENEGOTIATION
+_ssl.OP_NO_TLSv1_3
+_ssl.OP_SINGLE_ECDH_USE
+_ssl.PROTOCOL_TLSv1_1
+_ssl.PROTOCOL_TLSv1_2
+_ssl.SSLSession
+_ssl.SSL_ERROR_INVALID_ERROR_CODE
+_ssl.SSL_ERROR_WANT_X509_LOOKUP
+_ssl.VERIFY_ALLOW_PROXY_CERTS
+_ssl.VERIFY_CRL_CHECK_CHAIN
+_ssl.VERIFY_CRL_CHECK_LEAF
+_ssl.VERIFY_X509_PARTIAL_CHAIN
+_ssl.VERIFY_X509_STRICT
+_ssl.VERIFY_X509_TRUSTED_FIRST
+_ssl.__file__
 ssl.ALERT_DESCRIPTION_ACCESS_DENIED
 ssl.ALERT_DESCRIPTION_BAD_CERTIFICATE
 ssl.ALERT_DESCRIPTION_BAD_CERTIFICATE_HASH_VALUE
@@ -1186,11 +1237,9 @@ ssl.ALERT_DESCRIPTION_CERTIFICATE_REVOKED
 ssl.ALERT_DESCRIPTION_CERTIFICATE_UNKNOWN
 ssl.ALERT_DESCRIPTION_CERTIFICATE_UNOBTAINABLE
 ssl.ALERT_DESCRIPTION_CLOSE_NOTIFY
-ssl.ALERT_DESCRIPTION_DECODE_ERROR
 ssl.ALERT_DESCRIPTION_DECOMPRESSION_FAILURE
 ssl.ALERT_DESCRIPTION_DECRYPT_ERROR
 ssl.ALERT_DESCRIPTION_HANDSHAKE_FAILURE
-ssl.ALERT_DESCRIPTION_ILLEGAL_PARAMETER
 ssl.ALERT_DESCRIPTION_INSUFFICIENT_SECURITY
 ssl.ALERT_DESCRIPTION_INTERNAL_ERROR
 ssl.ALERT_DESCRIPTION_NO_RENEGOTIATION
@@ -1199,122 +1248,28 @@ ssl.ALERT_DESCRIPTION_RECORD_OVERFLOW
 ssl.ALERT_DESCRIPTION_UNEXPECTED_MESSAGE
 ssl.ALERT_DESCRIPTION_UNKNOWN_CA
 ssl.ALERT_DESCRIPTION_UNKNOWN_PSK_IDENTITY
-ssl.ALERT_DESCRIPTION_UNRECOGNIZED_NAME
 ssl.ALERT_DESCRIPTION_UNSUPPORTED_CERTIFICATE
 ssl.ALERT_DESCRIPTION_UNSUPPORTED_EXTENSION
 ssl.ALERT_DESCRIPTION_USER_CANCELLED
-ssl.AlertDescription
-ssl.CERT_NONE
-ssl.CERT_OPTIONAL
-ssl.CERT_REQUIRED
-ssl.CHANNEL_BINDING_TYPES
-ssl.CertificateError
-ssl.DER_cert_to_PEM_cert
-ssl.DefaultVerifyPaths
-ssl.HAS_ALPN
-ssl.HAS_ECDH
-ssl.HAS_NEVER_CHECK_COMMON_NAME
-ssl.HAS_NPN
 ssl.HAS_PSK
-ssl.HAS_SNI
-ssl.HAS_SSLv2
-ssl.HAS_SSLv3
-ssl.HAS_TLSv1
-ssl.HAS_TLSv1_1
-ssl.HAS_TLSv1_2
-ssl.HAS_TLSv1_3
-ssl.OPENSSL_VERSION
-ssl.OPENSSL_VERSION_INFO
-ssl.OPENSSL_VERSION_NUMBER
-ssl.OP_ALL
-ssl.OP_CIPHER_SERVER_PREFERENCE
 ssl.OP_ENABLE_KTLS
 ssl.OP_ENABLE_MIDDLEBOX_COMPAT
 ssl.OP_IGNORE_UNEXPECTED_EOF
 ssl.OP_LEGACY_SERVER_CONNECT
-ssl.OP_NO_COMPRESSION
 ssl.OP_NO_RENEGOTIATION
-ssl.OP_NO_SSLv2
-ssl.OP_NO_SSLv3
-ssl.OP_NO_TICKET
-ssl.OP_NO_TLSv1
-ssl.OP_NO_TLSv1_1
-ssl.OP_NO_TLSv1_2
 ssl.OP_NO_TLSv1_3
-ssl.OP_SINGLE_DH_USE
 ssl.OP_SINGLE_ECDH_USE
-ssl.Options
-ssl.PEM_FOOTER
-ssl.PEM_HEADER
-ssl.PEM_cert_to_DER_cert
-ssl.PROTOCOL_SSLv23
-ssl.PROTOCOL_TLS
-ssl.PROTOCOL_TLS_CLIENT
-ssl.PROTOCOL_TLS_SERVER
-ssl.PROTOCOL_TLSv1
 ssl.PROTOCOL_TLSv1_1
 ssl.PROTOCOL_TLSv1_2
-ssl.Purpose
-ssl.SOL_SOCKET
-ssl.SO_TYPE
-ssl.SSLCertVerificationError
-ssl.SSLContext
-ssl.SSLEOFError
-ssl.SSLError
-ssl.SSLErrorNumber
-ssl.SSLObject
-ssl.SSLSocket
-ssl.SSLSyscallError
-ssl.SSLWantReadError
-ssl.SSLWantWriteError
-ssl.SSLZeroReturnError
-ssl.SSL_ERROR_EOF
 ssl.SSL_ERROR_INVALID_ERROR_CODE
-ssl.SSL_ERROR_SSL
-ssl.SSL_ERROR_SYSCALL
-ssl.SSL_ERROR_WANT_CONNECT
-ssl.SSL_ERROR_WANT_READ
-ssl.SSL_ERROR_WANT_WRITE
 ssl.SSL_ERROR_WANT_X509_LOOKUP
-ssl.SSL_ERROR_ZERO_RETURN
-ssl.TLSVersion
 ssl.VERIFY_ALLOW_PROXY_CERTS
 ssl.VERIFY_CRL_CHECK_CHAIN
 ssl.VERIFY_CRL_CHECK_LEAF
-ssl.VERIFY_DEFAULT
 ssl.VERIFY_X509_PARTIAL_CHAIN
 ssl.VERIFY_X509_STRICT
 ssl.VERIFY_X509_TRUSTED_FIRST
-ssl.VerifyFlags
-ssl.VerifyMode
-ssl._ASN1Object
-ssl._DEFAULT_CIPHERS
 ssl._GLOBAL_DEFAULT_TIMEOUT
-ssl._OPENSSL_API_VERSION
-ssl._PROTOCOL_NAMES
-ssl._RESTRICTED_SERVER_CIPHERS
-ssl._SSLMethod
-ssl._SSLv2_IF_EXISTS
-ssl._TLSAlertType
-ssl._TLSContentType
-ssl._TLSMessageType
-ssl.__builtins__
-ssl.__cached__
-ssl.__file__
-ssl.__name__
-ssl.__package__
-ssl._create_default_https_context
-ssl._create_stdlib_context
-ssl._create_unverified_context
-ssl._dnsname_match
-ssl._inet_paton
-ssl._ipaddress_match
-ssl._sslcopydoc
-ssl.cert_time_to_seconds
-ssl.create_default_context
-ssl.get_default_verify_paths
-ssl.get_protocol_name
-ssl.get_server_certificate
 stat.SF_DATALESS
 stat.SF_FIRMLINK
 stat.SF_RESTRICTED
@@ -1722,59 +1677,9 @@ tty.cfmakecbreak
 tty.cfmakeraw
 types.__getattr__
 types.get_original_bases
-_typing.NoDefault
-typing.LiteralString
-typing.Never
-typing.NoDefault
-typing.NotRequired
-typing.ReadOnly
-typing.Required
-typing.Self
-typing.TypeAliasType
-typing.TypeIs
-typing.TypeVarTuple
-typing.Unpack
-typing._ASSERT_NEVER_REPR_MAX_LENGTH
-typing._AnyMeta
-typing._DeprecatedGenericAlias
+typing.Match
 typing._Func
-typing._IdentityCallable
-typing._NotIterable
-typing._Sentinel
-typing._TypedCacheSpecialForm
-typing._UnpackGenericAlias
-typing.__getattr__
-typing._caches
-typing._check_generic_specialization
-typing._collect_type_parameters
-typing._compare_args_orderless
-typing._deduplicate_unhashable
-typing._deprecation_warning_for_no_type_params_passed
-typing._generic_class_getitem
-typing._generic_init_subclass
-typing._get_typeddict_qualifiers
-typing._is_typevar_like
-typing._is_unpacked_typevartuple
-typing._lazy_load_getattr_static
-typing._make_union
-typing._paramspec_prepare_subst
-typing._paramspec_subst
-typing._proto_hook
-typing._sentinel
-typing._should_unflatten_callable_args
-typing._type_check_issubclass_arg_1
-typing._typevar_subst
-typing._typevartuple_prepare_subst
-typing._unpack_args
-typing.assert_never
-typing.assert_type
-typing.clear_overloads
-typing.dataclass_transform
-typing.get_overloads
-typing.get_protocol_members
-typing.is_protocol
 typing.override
-typing.reveal_type
 unicodedata.__file__
 unicodedata._ucnhash_CAPI
 unicodedata.combining
@@ -1817,10 +1722,10 @@ zoneinfo.TZPATH
 
 # summary
 #  cpython_modules 287
-#  implemented 83
-#  not_implemented 57
+#  implemented 85
+#  not_implemented 56
 #  failed_to_import 0
-#  missing_items 126
-#  mismatched_items 70
-#  mismatched_doc_items 62
+#  missing_items 124
+#  mismatched_items 72
+#  mismatched_doc_items 64
 #  not_implementeds 33

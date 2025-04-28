@@ -28,7 +28,6 @@ _pickle
 _posixshmem
 _queue
 _sha2
-_ssl
 _stat
 _symtable
 _sysconfig
