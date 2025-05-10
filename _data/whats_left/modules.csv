@@ -20,7 +20,6 @@ _interpchannels
 _interpqueues
 _interpreters
 _lsprof
-_lzma
 _multibytecodec
 _opcode
 _opcode_metadata
@@ -44,7 +43,6 @@ cProfile
 curses
 idlelib
 imaplib
-lzma
 modulefinder
 poplib
 profile
