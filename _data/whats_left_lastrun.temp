@@ -25,8 +25,6 @@ _interpchannels (entire module)
 _interpqueues (entire module)
 _interpreters (entire module)
 _lsprof (entire module)
-_lzma (entire module)
-lzma (entire module)
 modulefinder (entire module)
 _multibytecodec (entire module)
 _opcode (entire module)
@@ -505,6 +503,9 @@ _locale.textdomain
 locale._getdefaultlocale
 logging._afterFork
 logging._prepareFork
+_lzma.CHECK_ID_MAX
+_lzma.__file__
+lzma.CHECK_ID_MAX
 math.__file__
 _md5.MD5Type
 _md5.__file__
@@ -1717,15 +1718,14 @@ zipimport.STRING_END_LOCATOR_64
 zipimport.STRING_END_ZIP_64
 zipimport.ZIP64_EXTRA_TAG
 zlib.__file__
-zlib.__version__
 zoneinfo.TZPATH
 
 # summary
 #  cpython_modules 287
 #  implemented 86
-#  not_implemented 56
+#  not_implemented 54
 #  failed_to_import 0
-#  missing_items 124
-#  mismatched_items 71
-#  mismatched_doc_items 64
+#  missing_items 126
+#  mismatched_items 72
+#  mismatched_doc_items 65
 #  not_implementeds 33
