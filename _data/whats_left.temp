@@ -112,7 +112,6 @@ zip.__getattribute__ (inherited)
 
 # stdlib items
 builtins.PythonFinalizationError
-builtins._IncompleteInputError
 builtins.anext
 __hello__.__file__
 __phello__.__file__
