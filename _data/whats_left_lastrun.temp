@@ -38,7 +38,6 @@ pyclbr (entire module)
 _queue (entire module)
 readline (entire module)
 _sha2 (entire module)
-_stat (entire module)
 _symtable (entire module)
 _sysconfig (entire module)
 _sysconfigdata__linux_x86_64-linux-gnu (entire module)
@@ -57,9 +56,7 @@ _zoneinfo (entire module)
 
 # builtin items
 BaseException.__getattribute__ (inherited)
-BaseException.__setstate__
 BaseException.add_note
-NoneType.__doc__ (inherited)
 NoneType.__eq__ (inherited)
 NoneType.__ge__ (inherited)
 NoneType.__gt__ (inherited)
@@ -72,42 +69,29 @@ bytearray.__buffer__
 bytearray.__getattribute__ (inherited)
 bytearray.__release_buffer__
 bytearray.__str__ (inherited)
-bytearray_iterator.__doc__ (inherited)
 bytes.__buffer__
 bytes.__getattribute__ (inherited)
 bytes.__str__ (inherited)
-bytes_iterator.__doc__ (inherited)
 classmethod.__init__ (inherited)
 complex.__format__ (inherited)
 complex.__getattribute__ (inherited)
 dict.__getattribute__ (inherited)
-dict_itemiterator.__doc__ (inherited)
-dict_items.__doc__ (inherited)
 dict_items.__hash__ (inherited)
-dict_keyiterator.__doc__ (inherited)
-dict_valueiterator.__doc__ (inherited)
-dict_values.__doc__ (inherited)
 enumerate.__getattribute__ (inherited)
 filter.__getattribute__ (inherited)
 int.__getattribute__ (inherited)
 int.is_integer
 list.__getattribute__ (inherited)
-list_iterator.__doc__ (inherited)
 map.__getattribute__ (inherited)
-memory_iterator.__doc__ (inherited)
 memoryview.__buffer__
 memoryview.__getattribute__ (inherited)
 memoryview.__release_buffer__
 memoryview._from_flags
 property.__getattribute__ (inherited)
 range.__getattribute__ (inherited)
-range_iterator.__doc__ (inherited)
 set.__getattribute__ (inherited)
-set_iterator.__doc__ (inherited)
 slice.__getattribute__ (inherited)
-str_ascii_iterator.__doc__ (inherited)
 tuple.__getattribute__ (inherited)
-tuple_iterator.__doc__ (inherited)
 zip.__getattribute__ (inherited)
 
 # stdlib items
@@ -427,7 +411,6 @@ gc.callbacks
 gc.freeze
 gc.garbage
 gc.get_freeze_count
-gc.get_referents
 gc.is_finalized
 gc.unfreeze
 genericpath.isdevdrive
@@ -1270,10 +1253,10 @@ ssl.VERIFY_X509_PARTIAL_CHAIN
 ssl.VERIFY_X509_STRICT
 ssl.VERIFY_X509_TRUSTED_FIRST
 ssl._GLOBAL_DEFAULT_TIMEOUT
-stat.SF_DATALESS
-stat.SF_FIRMLINK
+_stat.UF_DATAVAULT
+_stat.UF_SETTABLE
+_stat.UF_TRACKED
 stat.SF_RESTRICTED
-stat.SF_SETTABLE
 stat.UF_DATAVAULT
 stat.UF_SETTABLE
 stat.UF_TRACKED
@@ -1346,11 +1329,9 @@ sys.call_tracing
 sys.deactivate_stack_trampoline
 sys.getallocatedblocks
 sys.getdlopenflags
-sys.getswitchinterval
 sys.getunicodeinternedsize
 sys.is_stack_trampoline_active
 sys.setdlopenflags
-sys.setswitchinterval
 sys.stdlib_module_names
 sysconfig._CONFIG_VARS_INITIALIZED
 sysconfig.__path__
@@ -1687,7 +1668,6 @@ unicodedata.decimal
 unicodedata.decomposition
 unicodedata.digit
 unicodedata.is_normalized
-unicodedata.mirrored
 unicodedata.numeric
 _uuid.__file__
 uuid.main
@@ -1721,10 +1701,10 @@ zoneinfo.TZPATH
 
 # summary
 #  cpython_modules 287
-#  implemented 86
-#  not_implemented 54
+#  implemented 87
+#  not_implemented 53
 #  failed_to_import 0
-#  missing_items 126
-#  mismatched_items 72
-#  mismatched_doc_items 65
-#  not_implementeds 33
+#  missing_items 127
+#  mismatched_items 71
+#  mismatched_doc_items 66
+#  not_implementeds 21
