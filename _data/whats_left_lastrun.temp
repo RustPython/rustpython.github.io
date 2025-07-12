@@ -73,7 +73,6 @@ bytes.__buffer__
 bytes.__getattribute__ (inherited)
 bytes.__str__ (inherited)
 classmethod.__init__ (inherited)
-complex.__format__ (inherited)
 complex.__getattribute__ (inherited)
 dict.__getattribute__ (inherited)
 dict_items.__hash__ (inherited)
@@ -107,12 +106,6 @@ _ast.PyCF_TYPE_COMMENTS
 ast.PyCF_ALLOW_TOP_LEVEL_AWAIT
 ast.PyCF_OPTIMIZED_AST
 ast.PyCF_TYPE_COMMENTS
-base64._z85_b85_decode_diff
-base64._z85_decode_translation
-base64._z85_encode_translation
-base64._z85alphabet
-base64.z85decode
-base64.z85encode
 binascii.__file__
 _bisect.__file__
 _blake2.BLAKE2B_MAX_DIGEST_SIZE
@@ -1317,7 +1310,6 @@ sys._current_exceptions
 sys._current_frames
 sys._debugmallocstats
 sys._get_cpu_count_config
-sys._getframemodulename
 sys._is_gil_enabled
 sys._is_interned
 sys._setprofileallthreads
@@ -1659,8 +1651,6 @@ tty.cfmakeraw
 types.__getattr__
 types.get_original_bases
 typing.Match
-typing._Func
-typing.override
 unicodedata.__file__
 unicodedata._ucnhash_CAPI
 unicodedata.combining
@@ -1670,7 +1660,6 @@ unicodedata.digit
 unicodedata.is_normalized
 unicodedata.numeric
 _uuid.__file__
-uuid.main
 _warnings._defaultaction
 _warnings._filters_mutated
 _warnings._onceregistry
@@ -1701,10 +1690,10 @@ zoneinfo.TZPATH
 
 # summary
 #  cpython_modules 287
-#  implemented 87
+#  implemented 89
 #  not_implemented 53
 #  failed_to_import 0
-#  missing_items 127
-#  mismatched_items 71
-#  mismatched_doc_items 66
+#  missing_items 125
+#  mismatched_items 70
+#  mismatched_doc_items 64
 #  not_implementeds 21
