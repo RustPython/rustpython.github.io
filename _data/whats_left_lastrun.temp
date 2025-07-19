@@ -136,7 +136,6 @@ configparser._Line
 configparser._ReadState
 configparser._UnnamedSection
 _contextvars.__file__
-copy.replace
 copyreg.__cached__
 copyreg.__file__
 _csv.Reader
@@ -1648,8 +1647,6 @@ tty.TIOCSLCKTRMIOS
 tty.TIOCSSERIAL
 tty.cfmakecbreak
 tty.cfmakeraw
-types.__getattr__
-types.get_original_bases
 typing.Match
 unicodedata.__file__
 unicodedata._ucnhash_CAPI
@@ -1690,10 +1687,10 @@ zoneinfo.TZPATH
 
 # summary
 #  cpython_modules 287
-#  implemented 89
+#  implemented 91
 #  not_implemented 53
 #  failed_to_import 0
-#  missing_items 125
-#  mismatched_items 70
-#  mismatched_doc_items 64
+#  missing_items 123
+#  mismatched_items 69
+#  mismatched_doc_items 63
 #  not_implementeds 21
