@@ -34,7 +34,6 @@ poplib (entire module)
 _posixshmem (entire module)
 profile (entire module)
 pstats (entire module)
-pyclbr (entire module)
 _queue (entire module)
 readline (entire module)
 _sha2 (entire module)
@@ -101,11 +100,7 @@ __phello__.__file__
 array.__file__
 array.typecodes
 _ast.PyCF_ALLOW_TOP_LEVEL_AWAIT
-_ast.PyCF_OPTIMIZED_AST
-_ast.PyCF_TYPE_COMMENTS
 ast.PyCF_ALLOW_TOP_LEVEL_AWAIT
-ast.PyCF_OPTIMIZED_AST
-ast.PyCF_TYPE_COMMENTS
 binascii.__file__
 _bisect.__file__
 _blake2.BLAKE2B_MAX_DIGEST_SIZE
@@ -128,7 +123,6 @@ _codecs.utf_32_ex_decode
 _codecs.utf_32_le_decode
 _codecs.utf_32_le_encode
 codecs.__file__
-codeop.PyCF_ONLY_AST
 _collections._count_elements
 configparser.MultilineContinuationError
 configparser.UNNAMED_SECTION
@@ -237,7 +231,6 @@ dataclasses._FuncBuilder
 dataclasses._get_slots
 dataclasses._replace
 datetime.datetime_CAPI
-decimal.HAVE_CONTEXTVAR
 dis.ArgResolver
 dis.BINARY_OP
 dis.Bytecode
@@ -475,8 +468,6 @@ _locale.gettext
 _locale.nl_langinfo
 _locale.textdomain
 locale._getdefaultlocale
-logging._afterFork
-logging._prepareFork
 _lzma.CHECK_ID_MAX
 _lzma.__file__
 lzma.CHECK_ID_MAX
@@ -801,9 +792,6 @@ posix.waitid
 posix.waitid_result
 posix.writev
 _posixsubprocess.__file__
-_pydecimal.HAVE_CONTEXTVAR
-_pydecimal._context_attributes
-_pydecimal._current_context_var
 pydoc._adjust_cli_sys_path
 pydoc._findclass
 pydoc._finddoc
@@ -840,8 +828,6 @@ select.POLLRDNORM
 select.POLLWRBAND
 select.POLLWRNORM
 select.__file__
-selectors._NOT_EPOLLIN
-selectors._NOT_EPOLLOUT
 _sha1.SHA1Type
 _sha1.__file__
 _sha3.__file__
@@ -1248,29 +1234,7 @@ ssl._GLOBAL_DEFAULT_TIMEOUT
 _stat.UF_DATAVAULT
 _stat.UF_SETTABLE
 _stat.UF_TRACKED
-stat.SF_RESTRICTED
-stat.UF_DATAVAULT
-stat.UF_SETTABLE
-stat.UF_TRACKED
 _statistics.__file__
-statistics._SQRT2
-statistics.__annotations__
-statistics._decimal_sqrt_of_frac
-statistics._float_sqrt_of_frac
-statistics._integer_sqrt_of_frac_rto
-statistics._kernel_invcdfs
-statistics._mean_stdev
-statistics._newton_raphson
-statistics._quartic_invcdf
-statistics._quartic_invcdf_estimate
-statistics._rank
-statistics._sqrt_bit_width
-statistics._sqrtprod
-statistics._triweight_invcdf
-statistics._triweight_invcdf_estimate
-statistics.kde
-statistics.kde_random
-statistics.pi
 _strptime._findall
 _struct.__file__
 subprocess._HAVE_POSIX_SPAWN_CLOSEFROM
@@ -1331,7 +1295,6 @@ sysconfig._get_python_version_abi
 sysconfig._init_config_vars
 syslog.LOG_FTP
 syslog.__file__
-tabnanny._process_tokens
 tempfile._dont_follow_symlinks
 tempfile._resetperms
 termios.CDSUSP
@@ -1663,10 +1626,7 @@ _warnings._onceregistry
 _warnings.filters
 _warnings.warn_explicit
 warnings._defaultaction
-warnings._is_filename_to_skip
-warnings._is_internal_filename
 warnings._onceregistry
-warnings.deprecated
 zipfile._Extra
 zipfile._MASK_COMPRESSED_PATCH
 zipfile._MASK_COMPRESS_OPTION_1
@@ -1687,10 +1647,10 @@ zoneinfo.TZPATH
 
 # summary
 #  cpython_modules 287
-#  implemented 91
-#  not_implemented 53
+#  implemented 98
+#  not_implemented 52
 #  failed_to_import 0
-#  missing_items 123
-#  mismatched_items 69
-#  mismatched_doc_items 63
+#  missing_items 115
+#  mismatched_items 68
+#  mismatched_doc_items 61
 #  not_implementeds 21
