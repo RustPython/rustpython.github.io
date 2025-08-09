@@ -123,11 +123,6 @@ _codecs.utf_32_le_decode
 _codecs.utf_32_le_encode
 codecs.__file__
 _collections._count_elements
-configparser.MultilineContinuationError
-configparser.UNNAMED_SECTION
-configparser._Line
-configparser._ReadState
-configparser._UnnamedSection
 _contextvars.__file__
 copyreg.__cached__
 copyreg.__file__
@@ -397,10 +392,6 @@ gc.garbage
 gc.get_freeze_count
 gc.is_finalized
 gc.unfreeze
-genericpath.isdevdrive
-genericpath.isjunction
-genericpath.lexists
-gettext._as_int2
 glob._Globber
 glob._StringGlobber
 glob._compile_pattern
@@ -484,10 +475,6 @@ _multiprocessing.SemLock
 _multiprocessing.__file__
 _multiprocessing.flags
 _multiprocessing.sem_unlink
-ntpath._isreservedname
-ntpath._reserved_chars
-ntpath._reserved_names
-ntpath.isreserved
 opcode.MIN_INSTRUMENTED_OPCODE
 opcode._intrinsic_1_descs
 opcode._intrinsic_2_descs
@@ -603,10 +590,8 @@ os._fwalk
 os._fwalk_close
 os._fwalk_walk
 os._fwalk_yield
-os._walk_symlinks_as_files
 os.confstr_names
 os.fwalk
-os.process_cpu_count
 os.statvfs_result
 os.supports_effective_ids
 pathlib.__path__
@@ -618,7 +603,6 @@ pdb._ZipTarget
 pdb._post_mortem
 pdb.find_first_executable_line
 pickle.PickleBuffer
-pickle._NoValue
 platform.AndroidVer
 platform.IOSVersionInfo
 platform._win32_ver
@@ -723,9 +707,7 @@ posix.TFD_TIMER_ABSTIME
 posix.TFD_TIMER_CANCEL_ON_SET
 posix.TMP_MAX
 posix.WCONTINUED
-posix.WCOREDUMP
 posix.WEXITED
-posix.WIFCONTINUED
 posix.WNOWAIT
 posix.WSTOPPED
 posix.WUNTRACED
@@ -1618,10 +1600,10 @@ zoneinfo.TZPATH
 
 # summary
 #  cpython_modules 287
-#  implemented 99
+#  implemented 103
 #  not_implemented 51
 #  failed_to_import 0
-#  missing_items 114
-#  mismatched_items 68
+#  missing_items 110
+#  mismatched_items 67
 #  mismatched_doc_items 60
 #  not_implementeds 21

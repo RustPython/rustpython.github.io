@@ -37,7 +37,6 @@ pstats (entire module)
 _queue (entire module)
 readline (entire module)
 _sha2 (entire module)
-_symtable (entire module)
 _sysconfig (entire module)
 _sysconfigdata__linux_x86_64-linux-gnu (entire module)
 _testclinic (entire module)
@@ -1239,34 +1238,6 @@ _strptime._findall
 _struct.__file__
 subprocess._HAVE_POSIX_SPAWN_CLOSEFROM
 subprocess._del_safe
-symtable.CELL
-symtable.Class
-symtable.DEF_ANNOT
-symtable.DEF_BOUND
-symtable.DEF_GLOBAL
-symtable.DEF_IMPORT
-symtable.DEF_LOCAL
-symtable.DEF_NONLOCAL
-symtable.DEF_PARAM
-symtable.FREE
-symtable.Function
-symtable.GLOBAL_EXPLICIT
-symtable.GLOBAL_IMPLICIT
-symtable.LOCAL
-symtable.SCOPE_MASK
-symtable.SCOPE_OFF
-symtable.SymbolTableFactory
-symtable.SymbolTableType
-symtable.USE
-symtable.__all__
-symtable.__builtins__
-symtable.__cached__
-symtable.__file__
-symtable._flags
-symtable._newSymbolTable
-symtable._scopes_names
-symtable._scopes_value_to_name
-symtable.main
 sys._clear_internal_caches
 sys._clear_type_cache
 sys._current_exceptions
@@ -1647,10 +1618,10 @@ zoneinfo.TZPATH
 
 # summary
 #  cpython_modules 287
-#  implemented 98
-#  not_implemented 52
+#  implemented 99
+#  not_implemented 51
 #  failed_to_import 0
-#  missing_items 115
+#  missing_items 114
 #  mismatched_items 68
-#  mismatched_doc_items 61
+#  mismatched_doc_items 60
 #  not_implementeds 21
