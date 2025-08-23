@@ -457,7 +457,6 @@ _locale.getencoding
 _locale.gettext
 _locale.nl_langinfo
 _locale.textdomain
-locale._getdefaultlocale
 _lzma.CHECK_ID_MAX
 _lzma.__file__
 lzma.CHECK_ID_MAX
@@ -792,7 +791,6 @@ pyexpat.__file__
 pyexpat.expat_CAPI
 pyexpat.features
 pyexpat.native_encoding
-pyexpat.version_info
 _random.__file__
 random._parse_args
 random.main
@@ -1600,10 +1598,10 @@ zoneinfo.TZPATH
 
 # summary
 #  cpython_modules 287
-#  implemented 103
+#  implemented 104
 #  not_implemented 51
 #  failed_to_import 0
-#  missing_items 110
+#  missing_items 109
 #  mismatched_items 67
-#  mismatched_doc_items 60
+#  mismatched_doc_items 59
 #  not_implementeds 21
