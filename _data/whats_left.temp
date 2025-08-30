@@ -77,7 +77,6 @@ dict_items.__hash__ (inherited)
 enumerate.__getattribute__ (inherited)
 filter.__getattribute__ (inherited)
 int.__getattribute__ (inherited)
-int.is_integer
 list.__getattribute__ (inherited)
 map.__getattribute__ (inherited)
 memoryview.__buffer__
