@@ -27,7 +27,6 @@ _pickle
 _posixshmem
 _queue
 _sha2
-_sysconfig
 _sysconfigdata__linux_x86_64-linux-gnu
 _testclinic
 _testclinic_limited
