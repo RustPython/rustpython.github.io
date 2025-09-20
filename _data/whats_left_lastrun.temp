@@ -374,8 +374,6 @@ fcntl.RWH_WRITE_LIFE_NONE
 fcntl.RWH_WRITE_LIFE_NOT_SET
 fcntl.RWH_WRITE_LIFE_SHORT
 fcntl.__file__
-fnmatch._join_translated_parts
-fnmatch._translate
 fractions._GENERAL_FORMAT_SPECIFICATION_MATCHER
 _functools.cmp_to_key
 functools._unwrap_partialmethod
@@ -390,13 +388,6 @@ gc.garbage
 gc.get_freeze_count
 gc.is_finalized
 gc.unfreeze
-glob._Globber
-glob._StringGlobber
-glob._compile_pattern
-glob._deprecated_function_message
-glob._no_recurse_symlinks
-glob._special_parts
-glob.translate
 grp.__file__
 _hashlib.HMAC
 _hashlib.UnsupportedDigestmodError
@@ -1461,7 +1452,7 @@ zoneinfo.TZPATH
 #  implemented 109
 #  not_implemented 50
 #  failed_to_import 0
-#  missing_items 106
-#  mismatched_items 66
-#  mismatched_doc_items 57
+#  missing_items 104
+#  mismatched_items 67
+#  mismatched_doc_items 58
 #  not_implementeds 21
