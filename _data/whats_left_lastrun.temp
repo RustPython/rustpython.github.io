@@ -37,7 +37,6 @@ pstats (entire module)
 _queue (entire module)
 readline (entire module)
 _sha2 (entire module)
-_sysconfig (entire module)
 _sysconfigdata__linux_x86_64-linux-gnu (entire module)
 _testclinic (entire module)
 _testclinic_limited (entire module)
@@ -725,8 +724,6 @@ signal.sigpending
 signal.sigwait
 signal.struct_siginfo
 signal.valid_signals
-site._get_implementation
-site.register_readline
 _socket.AF_QIPCRTR
 _socket.AF_ROSE
 _socket.ALG_OP_SIGN
@@ -1083,7 +1080,6 @@ _stat.UF_DATAVAULT
 _stat.UF_SETTABLE
 _stat.UF_TRACKED
 _statistics.__file__
-_strptime._findall
 _struct.__file__
 subprocess._HAVE_POSIX_SPAWN_CLOSEFROM
 subprocess._del_safe
@@ -1108,11 +1104,6 @@ sys.getunicodeinternedsize
 sys.is_stack_trampoline_active
 sys.setdlopenflags
 sys.stdlib_module_names
-sysconfig._CONFIG_VARS_INITIALIZED
-sysconfig.__path__
-sysconfig._get_implementation
-sysconfig._get_python_version_abi
-sysconfig._init_config_vars
 syslog.LOG_FTP
 syslog.__file__
 tempfile._dont_follow_symlinks
@@ -1467,10 +1458,10 @@ zoneinfo.TZPATH
 
 # summary
 #  cpython_modules 287
-#  implemented 104
-#  not_implemented 51
+#  implemented 109
+#  not_implemented 50
 #  failed_to_import 0
-#  missing_items 109
-#  mismatched_items 67
-#  mismatched_doc_items 59
+#  missing_items 106
+#  mismatched_items 66
+#  mismatched_doc_items 57
 #  not_implementeds 21
