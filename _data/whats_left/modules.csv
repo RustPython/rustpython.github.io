@@ -21,8 +21,6 @@ _interpqueues
 _interpreters
 _lsprof
 _multibytecodec
-_opcode
-_opcode_metadata
 _pickle
 _posixshmem
 _queue
