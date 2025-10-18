@@ -27,8 +27,6 @@ _interpreters (entire module)
 _lsprof (entire module)
 modulefinder (entire module)
 _multibytecodec (entire module)
-_opcode (entire module)
-_opcode_metadata (entire module)
 _pickle (entire module)
 poplib (entire module)
 _posixshmem (entire module)
@@ -463,11 +461,7 @@ _multiprocessing.SemLock
 _multiprocessing.__file__
 _multiprocessing.flags
 _multiprocessing.sem_unlink
-opcode.MIN_INSTRUMENTED_OPCODE
-opcode._intrinsic_1_descs
-opcode._intrinsic_2_descs
-opcode._specialized_opmap
-opcode.hasjump
+_opcode.__file__
 _operator.call
 _operator.inv
 os.CLONE_NEWTIME
@@ -1449,8 +1443,8 @@ zoneinfo.TZPATH
 
 # summary
 #  cpython_modules 287
-#  implemented 109
-#  not_implemented 50
+#  implemented 111
+#  not_implemented 48
 #  failed_to_import 0
 #  missing_items 104
 #  mismatched_items 67
