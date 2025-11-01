@@ -317,10 +317,6 @@ dis.pretty_flags
 dis.print_instructions
 dis.show_code
 doctest._n_items
-ensurepip._find_wheel_pkg_dir_pip
-ensurepip._get_pip_version
-ensurepip._get_pip_whl_path_ctx
-ensurepip._pkg_dir
 enum.EnumDict
 enum._not_given
 faulthandler._fatal_error_c_thread
@@ -1438,10 +1434,10 @@ zoneinfo.TZPATH
 
 # summary
 #  cpython_modules 287
-#  implemented 110
+#  implemented 111
 #  not_implemented 48
 #  failed_to_import 0
-#  missing_items 103
+#  missing_items 102
 #  mismatched_items 68
 #  mismatched_doc_items 58
 #  not_implementeds 21
