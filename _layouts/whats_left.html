@@ -42,18 +42,15 @@ layout: default
   </div>
 
   <div class="section-title">What's left: Built-in Items</div>
-  {% assign previous_builtin = "" %}
-  {% comment %}<div><ol><!-- this makes prettier not crash -->{% endcomment %}
-  {% for item in site.data.whats_left.builtin_items %}
-    {% if item.builtin != previous_builtin %}
-      {% if previous_builtin != "" %}
-        </ol></div>
-      {% endif %}
-      <h4>{{ item.builtin }}</h4>
-      <div class="column-count-is-2"><ol>
-    {% endif %}
-    <li class="word-wrap-anywhere"><code>{{ item.name }}</code> {% if item.is_inherited %}{{ item.is_inherited }}{% endif %}</li>
-    {% assign previous_builtin = item.builtin %}
+  {% assign items_by_builtin = site.data.whats_left.builtin_items | group_by: "builtin" %}
+  {% for group in items_by_builtin %}
+    <h4>{{ group.name }}</h4>
+    <div class="column-count-is-2">
+      <ol>
+        {% for item in group.items %}
+          <li class="word-wrap-anywhere"><code>{{ item.name }}</code> {% if item.is_inherited %}{{ item.is_inherited }}{% endif %}</li>
+        {% endfor %}
+      </ol>
+    </div>
   {% endfor %}
-  </ol></div>
 </div>
