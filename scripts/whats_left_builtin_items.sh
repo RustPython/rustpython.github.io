@@ -6,6 +6,7 @@ mkdir -p ../_data/whats_left
 
 # exit violently if the temp file does not exist
 if [ ! -f ../_data/whats_left.temp ]; then
+    echo "error: input file ../_data/whats_left.temp not found" >&2
     exit 1
 fi
 
