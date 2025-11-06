@@ -1,17 +1,26 @@
 #!/bin/bash
 set -euo pipefail
 
+# paths where the script is located
+SCRIPT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )"
+PROJECT_ROOT="$(cd "$SCRIPT_DIR/.." && pwd)"
+
+DATA_DIR="$PROJECT_ROOT/_data"
+TEMP_FILE="$DATA_DIR/whats_left.temp"
+OUTPUT_DIR="$DATA_DIR/whats_left"
+OUTPUT_FILE="$OUTPUT_DIR/builtin_items.csv"
+
 # create directory if it doesn't exist
-mkdir -p ../_data/whats_left
+mkdir -p "$OUTPUT_DIR"
 
 # exit violently if the temp file does not exist
-if [ ! -f ../_data/whats_left.temp ]; then
-    echo "error: input file ../_data/whats_left.temp not found" >&2
+if [ ! -f "$TEMP_FILE" ]; then
+    echo "error: input file $TEMP_FILE not found" >&2
     exit 1
 fi
 
 # generate the CSV file for builtin items from the temp file
-awk -f - ../_data/whats_left.temp > ../_data/whats_left/builtin_items.csv <<'EOF'
+awk -f - "$TEMP_FILE" > "$OUTPUT_FILE" <<'EOF'
 BEGIN {
     OFS=","
     print "builtin,name,is_inherited"
