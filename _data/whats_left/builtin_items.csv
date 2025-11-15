@@ -1,6 +1,5 @@
 builtin,name,is_inherited
 BaseException,BaseException.__getattribute__,(inherited)
-BaseException,BaseException.add_note,
 NoneType,NoneType.__eq__,(inherited)
 NoneType,NoneType.__ge__,(inherited)
 NoneType,NoneType.__gt__,(inherited)
