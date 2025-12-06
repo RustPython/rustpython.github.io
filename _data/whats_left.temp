@@ -129,7 +129,6 @@ _ctypes.Py_DECREF
 _ctypes.Py_INCREF
 _ctypes.__file__
 _ctypes._unpickle
-_ctypes._wstring_at_addr
 _ctypes.buffer_info
 _ctypes.call_cdeclfunction
 _ctypes.call_function
@@ -1352,6 +1351,6 @@ zoneinfo.TZPATH
 #  not_implemented 48
 #  failed_to_import 0
 #  missing_items 102
-#  mismatched_items 69
-#  mismatched_doc_items 54
+#  mismatched_items 68
+#  mismatched_doc_items 59
 #  not_implementeds 21
