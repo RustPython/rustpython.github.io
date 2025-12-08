@@ -446,8 +446,6 @@ mimetypes._mimetypes_read_windows_registry
 mimetypes.guess_file_type
 mmap.MAP_32BIT
 mmap.MAP_NORESERVE
-mmap.MAP_STACK
-mmap.PROT_EXEC
 mmap.__file__
 _multiprocessing.SemLock
 _multiprocessing.__file__
