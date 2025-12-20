@@ -124,14 +124,7 @@ _csv.Reader
 _csv.Writer
 _csv.__file__
 _csv._dialects
-_ctypes.PyObj_FromPtr
-_ctypes.Py_DECREF
-_ctypes.Py_INCREF
 _ctypes.__file__
-_ctypes._unpickle
-_ctypes.buffer_info
-_ctypes.call_cdeclfunction
-_ctypes.call_function
 _ctypes.dlclose
 _ctypes.dlsym
 ctypes.ARRAY
@@ -1214,5 +1207,5 @@ zoneinfo.TZPATH
 #  failed_to_import 0
 #  missing_items 101
 #  mismatched_items 57
-#  mismatched_doc_items 52
+#  mismatched_doc_items 49
 #  not_implementeds 21

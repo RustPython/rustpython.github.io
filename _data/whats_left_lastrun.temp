@@ -213,120 +213,12 @@ ctypes.pydll
 ctypes.pythonapi
 ctypes.string_at
 ctypes.wstring_at
-dataclasses._ATOMIC_TYPES
-dataclasses._FuncBuilder
-dataclasses._get_slots
-dataclasses._replace
 datetime.datetime_CAPI
-dis.ArgResolver
-dis.BINARY_OP
-dis.Bytecode
-dis.CACHE
-dis.CALL_INTRINSIC_1
-dis.CALL_INTRINSIC_2
-dis.CONVERT_VALUE
-dis.ENTER_EXECUTOR
-dis.EXTENDED_ARG
-dis.FOR_ITER
-dis.FUNCTION_ATTR_FLAGS
-dis.Formatter
-dis.HAVE_ARGUMENT
-dis.Instruction
-dis.JUMP_BACKWARD
-dis.LOAD_ATTR
-dis.LOAD_CONST
-dis.LOAD_FAST_LOAD_FAST
-dis.LOAD_GLOBAL
-dis.LOAD_SUPER_ATTR
-dis.Positions
-dis.RETURN_CONST
-dis.SEND
-dis.SET_FUNCTION_ATTRIBUTE
-dis.STORE_FAST_LOAD_FAST
-dis.STORE_FAST_STORE_FAST
-dis.UNKNOWN
-dis._ExceptionTableEntry
-dis._ExceptionTableEntryBase
-dis._INT_BITS
-dis._INT_OVERFLOW
-dis._Instruction
-dis._NO_LINENO
-dis._OPARG_WIDTH
-dis._OPNAME_WIDTH
-dis._Unknown
-dis.__all__
-dis._all_opmap
-dis._all_opname
-dis._cache_format
-dis._deoptop
-dis._disassemble_bytes
-dis._disassemble_recursive
-dis._disassemble_str
-dis._find_imports
-dis._find_store_names
-dis._format_code_info
-dis._get_cache_size
-dis._get_code_array
-dis._get_code_object
-dis._get_const_info
-dis._get_const_value
-dis._get_instructions_bytes
-dis._get_jump_target
-dis._get_lineno_width
-dis._get_name_info
-dis._have_code
-dis._inline_cache_entries
-dis._intrinsic_1_descs
-dis._intrinsic_2_descs
-dis._is_backward_jump
-dis._make_labels_map
-dis._nb_ops
-dis._parse_exception_table
-dis._parse_varint
-dis._specializations
-dis._specialized_opmap
-dis._try_compile
-dis._unpack_opargs
-dis.cmp_op
-dis.code_info
-dis.deoptmap
-dis.disco
-dis.distb
-dis.findlabels
-dis.findlinestarts
-dis.get_instructions
-dis.hasarg
-dis.hascompare
-dis.hasconst
-dis.hasexc
-dis.hasfree
-dis.hasjabs
-dis.hasjrel
-dis.hasjump
-dis.haslocal
-dis.hasname
 dis.main
-dis.name
-dis.op
-dis.opmap
-dis.opname
-dis.pretty_flags
-dis.print_instructions
-dis.show_code
 doctest._n_items
 enum.EnumDict
 enum._not_given
-faulthandler._fatal_error_c_thread
-faulthandler._read_null
-faulthandler._sigabrt
-faulthandler._sigfpe
-faulthandler._sigsegv
 faulthandler._stack_overflow
-faulthandler.cancel_dump_traceback_later
-faulthandler.disable
-faulthandler.dump_traceback_later
-faulthandler.is_enabled
-faulthandler.unregister
 fcntl.DN_ACCESS
 fcntl.DN_ATTRIB
 fcntl.DN_CREATE
@@ -392,35 +284,11 @@ http.HTTPMethod
 _imp._override_multi_interp_extensions_check
 _imp.create_dynamic
 _imp.exec_dynamic
-inspect.AGEN_CLOSED
-inspect.AGEN_CREATED
-inspect.AGEN_RUNNING
-inspect.AGEN_SUSPENDED
-inspect.BufferFlags
 inspect.CO_ITERABLE_COROUTINE
 inspect.CO_NESTED
 inspect.CO_NEWLOCALS
 inspect.CO_NOFREE
 inspect.CO_OPTIMIZED
-inspect.ClassFoundException
-inspect._FrameInfo
-inspect._Traceback
-inspect.__all__
-inspect._descriptor_get
-inspect._get_code_position
-inspect._get_code_position_from_tb
-inspect._get_dunder_dict_of_class
-inspect._getmembers
-inspect._has_coroutine_mark
-inspect._is_coroutine_mark
-inspect._shadowed_dict_from_weakref_mro_tuple
-inspect.get_annotations
-inspect.getasyncgenlocals
-inspect.getasyncgenstate
-inspect.getmembers_static
-inspect.iskeyword
-inspect.ismethodwrapper
-inspect.markcoroutinefunction
 _io._BytesIOBuffer
 _ios_support.lib
 itertools._tee
@@ -673,14 +541,11 @@ _signal.pause
 _signal.pidfd_send_signal
 _signal.pthread_kill
 _signal.pthread_sigmask
-_signal.raise_signal
 _signal.setitimer
 _signal.sigpending
 _signal.sigtimedwait
 _signal.sigwait
 _signal.sigwaitinfo
-_signal.strsignal
-_signal.valid_signals
 signal.ITIMER_PROF
 signal.ITIMER_REAL
 signal.ITIMER_VIRTUAL
@@ -698,7 +563,6 @@ signal.pthread_sigmask
 signal.sigpending
 signal.sigwait
 signal.struct_siginfo
-signal.valid_signals
 _socket.AF_QIPCRTR
 _socket.AF_ROSE
 _socket.ALG_OP_SIGN
@@ -1345,10 +1209,10 @@ zoneinfo.TZPATH
 
 # summary
 #  cpython_modules 287
-#  implemented 111
+#  implemented 116
 #  not_implemented 48
 #  failed_to_import 0
-#  missing_items 102
-#  mismatched_items 68
-#  mismatched_doc_items 59
+#  missing_items 101
+#  mismatched_items 57
+#  mismatched_doc_items 52
 #  not_implementeds 21
