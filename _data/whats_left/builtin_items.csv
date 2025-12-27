@@ -15,7 +15,6 @@ bytearray,bytearray.__str__,(inherited)
 bytes,bytes.__buffer__,
 bytes,bytes.__getattribute__,(inherited)
 bytes,bytes.__str__,(inherited)
-classmethod,classmethod.__init__,(inherited)
 complex,complex.__getattribute__,(inherited)
 dict,dict.__getattribute__,(inherited)
 dict_items,dict_items.__hash__,(inherited)

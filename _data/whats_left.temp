@@ -29,13 +29,11 @@ modulefinder (entire module)
 _multibytecodec (entire module)
 _pickle (entire module)
 poplib (entire module)
-_posixshmem (entire module)
 profile (entire module)
 pstats (entire module)
 _queue (entire module)
 readline (entire module)
 _sha2 (entire module)
-_sysconfigdata__linux_x86_64-linux-gnu (entire module)
 _testclinic (entire module)
 _testclinic_limited (entire module)
 _testexternalinspection (entire module)
@@ -66,7 +64,6 @@ bytearray.__str__ (inherited)
 bytes.__buffer__
 bytes.__getattribute__ (inherited)
 bytes.__str__ (inherited)
-classmethod.__init__ (inherited)
 complex.__getattribute__ (inherited)
 dict.__getattribute__ (inherited)
 dict_items.__hash__ (inherited)
@@ -125,87 +122,6 @@ _csv.Writer
 _csv.__file__
 _csv._dialects
 _ctypes.__file__
-_ctypes.dlclose
-_ctypes.dlsym
-ctypes.ARRAY
-ctypes.ArgumentError
-ctypes.CDLL
-ctypes.CFUNCTYPE
-ctypes.DEFAULT_MODE
-ctypes.LibraryLoader
-ctypes.PYFUNCTYPE
-ctypes.PyDLL
-ctypes.RTLD_GLOBAL
-ctypes.RTLD_LOCAL
-ctypes.SIZEOF_TIME_T
-ctypes.SetPointerType
-ctypes._FUNCFLAG_CDECL
-ctypes._FUNCFLAG_PYTHONAPI
-ctypes._FUNCFLAG_USE_ERRNO
-ctypes._FUNCFLAG_USE_LASTERROR
-ctypes.__builtins__
-ctypes.__cached__
-ctypes.__file__
-ctypes.__name__
-ctypes.__package__
-ctypes.__path__
-ctypes.__version__
-ctypes._c_functype_cache
-ctypes._cast
-ctypes._cast_addr
-ctypes._check_size
-ctypes._ctypes_version
-ctypes._memmove_addr
-ctypes._memset_addr
-ctypes._pointer_type_cache
-ctypes._reset_cache
-ctypes._string_at
-ctypes._string_at_addr
-ctypes._wstring_at
-ctypes._wstring_at_addr
-ctypes.c_bool
-ctypes.c_buffer
-ctypes.c_byte
-ctypes.c_char
-ctypes.c_char_p
-ctypes.c_double
-ctypes.c_float
-ctypes.c_int
-ctypes.c_int16
-ctypes.c_int32
-ctypes.c_int64
-ctypes.c_int8
-ctypes.c_long
-ctypes.c_longdouble
-ctypes.c_longlong
-ctypes.c_short
-ctypes.c_size_t
-ctypes.c_ssize_t
-ctypes.c_time_t
-ctypes.c_ubyte
-ctypes.c_uint
-ctypes.c_uint16
-ctypes.c_uint32
-ctypes.c_uint64
-ctypes.c_uint8
-ctypes.c_ulong
-ctypes.c_ulonglong
-ctypes.c_ushort
-ctypes.c_void_p
-ctypes.c_voidp
-ctypes.c_wchar
-ctypes.c_wchar_p
-ctypes.cast
-ctypes.cdll
-ctypes.create_string_buffer
-ctypes.create_unicode_buffer
-ctypes.memmove
-ctypes.memset
-ctypes.py_object
-ctypes.pydll
-ctypes.pythonapi
-ctypes.string_at
-ctypes.wstring_at
 datetime.datetime_CAPI
 dis.main
 doctest._n_items
@@ -283,7 +199,6 @@ inspect.CO_NEWLOCALS
 inspect.CO_NOFREE
 inspect.CO_OPTIMIZED
 _io._BytesIOBuffer
-_ios_support.lib
 itertools._tee
 itertools._tee_dataobject
 _json.__file__
@@ -457,12 +372,9 @@ posix.sched_getaffinity
 posix.sched_rr_get_interval
 posix.sched_setaffinity
 posix.setns
-posix.setpgrp
 posix.setxattr
 posix.splice
 posix.statvfs
-posix.tcgetpgrp
-posix.tcsetpgrp
 posix.timerfd_create
 posix.timerfd_gettime
 posix.timerfd_gettime_ns
@@ -475,6 +387,7 @@ posix.wait4
 posix.waitid
 posix.waitid_result
 posix.writev
+_posixshmem.__file__
 _posixsubprocess.__file__
 pydoc._adjust_cli_sys_path
 pydoc._findclass
@@ -526,14 +439,10 @@ _signal.SIGIOT
 _signal.SIGPOLL
 _signal.SIGRTMAX
 _signal.SIGRTMIN
-_signal.SIG_BLOCK
-_signal.SIG_SETMASK
-_signal.SIG_UNBLOCK
 _signal.getitimer
 _signal.pause
 _signal.pidfd_send_signal
 _signal.pthread_kill
-_signal.pthread_sigmask
 _signal.setitimer
 _signal.sigpending
 _signal.sigtimedwait
@@ -548,11 +457,6 @@ signal.SIGIOT
 signal.SIGPOLL
 signal.SIGRTMAX
 signal.SIGRTMIN
-signal.SIG_BLOCK
-signal.SIG_SETMASK
-signal.SIG_UNBLOCK
-signal.Sigmasks
-signal.pthread_sigmask
 signal.sigpending
 signal.sigwait
 signal.struct_siginfo
@@ -848,6 +752,9 @@ sys.getunicodeinternedsize
 sys.is_stack_trampoline_active
 sys.setdlopenflags
 sys.stdlib_module_names
+_sysconfigdata__linux_x86_64-linux-gnu.__builtins__
+_sysconfigdata__linux_x86_64-linux-gnu.__cached__
+_sysconfigdata__linux_x86_64-linux-gnu.__file__
 syslog.LOG_FTP
 syslog.__file__
 tempfile._dont_follow_symlinks
@@ -1202,10 +1109,10 @@ zoneinfo.TZPATH
 
 # summary
 #  cpython_modules 287
-#  implemented 116
-#  not_implemented 48
+#  implemented 118
+#  not_implemented 46
 #  failed_to_import 0
 #  missing_items 101
 #  mismatched_items 57
-#  mismatched_doc_items 49
-#  not_implementeds 21
+#  mismatched_doc_items 48
+#  not_implementeds 20
