@@ -7,7 +7,6 @@ NoneType,NoneType.__hash__,(inherited)
 NoneType,NoneType.__le__,(inherited)
 NoneType,NoneType.__lt__,(inherited)
 NoneType,NoneType.__ne__,(inherited)
-bool,bool.__invert__,(inherited)
 bytearray,bytearray.__buffer__,
 bytearray,bytearray.__getattribute__,(inherited)
 bytearray,bytearray.__release_buffer__,

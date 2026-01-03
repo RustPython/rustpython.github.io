@@ -34,6 +34,7 @@ pstats (entire module)
 _queue (entire module)
 readline (entire module)
 _sha2 (entire module)
+_sysconfigdata__linux_x86_64-linux-gnu (entire module)
 _testclinic (entire module)
 _testclinic_limited (entire module)
 _testexternalinspection (entire module)
@@ -56,7 +57,6 @@ NoneType.__hash__ (inherited)
 NoneType.__le__ (inherited)
 NoneType.__lt__ (inherited)
 NoneType.__ne__ (inherited)
-bool.__invert__ (inherited)
 bytearray.__buffer__
 bytearray.__getattribute__ (inherited)
 bytearray.__release_buffer__
@@ -104,7 +104,6 @@ _blake2.BLAKE2S_SALT_SIZE
 _blake2.__file__
 _bz2.__file__
 cmath.__file__
-code.Quitter
 _codecs.utf_32_be_decode
 _codecs.utf_32_be_encode
 _codecs.utf_32_decode
@@ -123,10 +122,6 @@ _csv.__file__
 _csv._dialects
 _ctypes.__file__
 datetime.datetime_CAPI
-dis.main
-doctest._n_items
-enum.EnumDict
-enum._not_given
 faulthandler._stack_overflow
 fcntl.DN_ACCESS
 fcntl.DN_ATTRIB
@@ -166,7 +161,6 @@ fcntl.RWH_WRITE_LIFE_NONE
 fcntl.RWH_WRITE_LIFE_NOT_SET
 fcntl.RWH_WRITE_LIFE_SHORT
 fcntl.__file__
-fractions._GENERAL_FORMAT_SPECIFICATION_MATCHER
 _functools.cmp_to_key
 gc.DEBUG_COLLECTABLE
 gc.DEBUG_LEAK
@@ -181,7 +175,6 @@ gc.is_finalized
 gc.unfreeze
 grp.__file__
 _hashlib.HMAC
-_hashlib.UnsupportedDigestmodError
 _hashlib.__file__
 _hashlib._constructors
 _hashlib.get_fips_mode
@@ -223,10 +216,7 @@ mimetypes.guess_file_type
 mmap.MAP_32BIT
 mmap.MAP_NORESERVE
 mmap.__file__
-_multiprocessing.SemLock
 _multiprocessing.__file__
-_multiprocessing.flags
-_multiprocessing.sem_unlink
 _opcode.__file__
 _operator.call
 _operator.inv
@@ -262,8 +252,6 @@ os.ST_NOATIME
 os.ST_NODEV
 os.ST_NODIRATIME
 os.ST_NOEXEC
-os.ST_NOSUID
-os.ST_RDONLY
 os.ST_RELATIME
 os.ST_SYNCHRONOUS
 os.ST_WRITE
@@ -275,9 +263,7 @@ os._fwalk_walk
 os._fwalk_yield
 os.confstr_names
 os.fwalk
-os.statvfs_result
 os.supports_effective_ids
-pathlib.__path__
 pdb._ExecutableTarget
 pdb._ModuleTarget
 pdb._PdbInteractiveConsole
@@ -325,8 +311,6 @@ posix.ST_NOATIME
 posix.ST_NODEV
 posix.ST_NODIRATIME
 posix.ST_NOEXEC
-posix.ST_NOSUID
-posix.ST_RDONLY
 posix.ST_RELATIME
 posix.ST_SYNCHRONOUS
 posix.ST_WRITE
@@ -345,7 +329,6 @@ posix.eventfd_read
 posix.eventfd_write
 posix.fdatasync
 posix.forkpty
-posix.fstatvfs
 posix.getxattr
 posix.grantpt
 posix.killpg
@@ -374,7 +357,6 @@ posix.sched_setaffinity
 posix.setns
 posix.setxattr
 posix.splice
-posix.statvfs
 posix.timerfd_create
 posix.timerfd_gettime
 posix.timerfd_gettime_ns
@@ -428,30 +410,17 @@ _sha1.SHA1Type
 _sha1.__file__
 _sha3.__file__
 _sha3.implementation
-shelve.DEFAULT_PROTOCOL
-shutil._ntuple_diskusage
-shutil.disk_usage
-_signal.ITIMER_PROF
-_signal.ITIMER_REAL
-_signal.ITIMER_VIRTUAL
 _signal.SIGCLD
 _signal.SIGIOT
 _signal.SIGPOLL
 _signal.SIGRTMAX
 _signal.SIGRTMIN
-_signal.getitimer
-_signal.pause
 _signal.pidfd_send_signal
 _signal.pthread_kill
-_signal.setitimer
 _signal.sigpending
 _signal.sigtimedwait
 _signal.sigwait
 _signal.sigwaitinfo
-signal.ITIMER_PROF
-signal.ITIMER_REAL
-signal.ITIMER_VIRTUAL
-signal.ItimerError
 signal.SIGCLD
 signal.SIGIOT
 signal.SIGPOLL
@@ -465,30 +434,6 @@ _socket.AF_ROSE
 _socket.ALG_OP_SIGN
 _socket.ALG_OP_VERIFY
 _socket.ALG_SET_PUBKEY
-_socket.CAN_BCM_CAN_FD_FRAME
-_socket.CAN_BCM_RX_ANNOUNCE_RESUME
-_socket.CAN_BCM_RX_CHANGED
-_socket.CAN_BCM_RX_CHECK_DLC
-_socket.CAN_BCM_RX_DELETE
-_socket.CAN_BCM_RX_FILTER_ID
-_socket.CAN_BCM_RX_NO_AUTOTIMER
-_socket.CAN_BCM_RX_READ
-_socket.CAN_BCM_RX_RTR_FRAME
-_socket.CAN_BCM_RX_SETUP
-_socket.CAN_BCM_RX_STATUS
-_socket.CAN_BCM_RX_TIMEOUT
-_socket.CAN_BCM_SETTIMER
-_socket.CAN_BCM_STARTTIMER
-_socket.CAN_BCM_TX_ANNOUNCE
-_socket.CAN_BCM_TX_COUNTEVT
-_socket.CAN_BCM_TX_CP_CAN_ID
-_socket.CAN_BCM_TX_DELETE
-_socket.CAN_BCM_TX_EXPIRED
-_socket.CAN_BCM_TX_READ
-_socket.CAN_BCM_TX_RESET_MULTI_IDX
-_socket.CAN_BCM_TX_SEND
-_socket.CAN_BCM_TX_SETUP
-_socket.CAN_BCM_TX_STATUS
 _socket.CAPI
 _socket.EAI_ADDRFAMILY
 _socket.ETHERTYPE_ARP
@@ -573,30 +518,6 @@ socket.AF_ROSE
 socket.ALG_OP_SIGN
 socket.ALG_OP_VERIFY
 socket.ALG_SET_PUBKEY
-socket.CAN_BCM_CAN_FD_FRAME
-socket.CAN_BCM_RX_ANNOUNCE_RESUME
-socket.CAN_BCM_RX_CHANGED
-socket.CAN_BCM_RX_CHECK_DLC
-socket.CAN_BCM_RX_DELETE
-socket.CAN_BCM_RX_FILTER_ID
-socket.CAN_BCM_RX_NO_AUTOTIMER
-socket.CAN_BCM_RX_READ
-socket.CAN_BCM_RX_RTR_FRAME
-socket.CAN_BCM_RX_SETUP
-socket.CAN_BCM_RX_STATUS
-socket.CAN_BCM_RX_TIMEOUT
-socket.CAN_BCM_SETTIMER
-socket.CAN_BCM_STARTTIMER
-socket.CAN_BCM_TX_ANNOUNCE
-socket.CAN_BCM_TX_COUNTEVT
-socket.CAN_BCM_TX_CP_CAN_ID
-socket.CAN_BCM_TX_DELETE
-socket.CAN_BCM_TX_EXPIRED
-socket.CAN_BCM_TX_READ
-socket.CAN_BCM_TX_RESET_MULTI_IDX
-socket.CAN_BCM_TX_SEND
-socket.CAN_BCM_TX_SETUP
-socket.CAN_BCM_TX_STATUS
 socket.CAPI
 socket.EAI_ADDRFAMILY
 socket.ETHERTYPE_ARP
@@ -675,11 +596,8 @@ socket.TIPC_TOP_SRV
 socket.TIPC_WAIT_FOREVER
 socket.TIPC_WITHDRAWN
 socket.TIPC_ZONE_SCOPE
-socket._fallback_socketpair
-socket.recv_fds
 socketserver.ForkingUnixDatagramServer
 socketserver.ForkingUnixStreamServer
-_sqlite3.LEGACY_TRANSACTION_CONTROL
 _sqlite3.SQLITE_DBCONFIG_DEFENSIVE
 _sqlite3.SQLITE_DBCONFIG_DQS_DDL
 _sqlite3.SQLITE_DBCONFIG_DQS_DML
@@ -697,7 +615,6 @@ _sqlite3.SQLITE_DBCONFIG_TRIGGER_EQP
 _sqlite3.SQLITE_DBCONFIG_TRUSTED_SCHEMA
 _sqlite3.SQLITE_DBCONFIG_WRITABLE_SCHEMA
 _sqlite3.__file__
-sqlite3.LEGACY_TRANSACTION_CONTROL
 sqlite3.SQLITE_DBCONFIG_DEFENSIVE
 sqlite3.SQLITE_DBCONFIG_DQS_DDL
 sqlite3.SQLITE_DBCONFIG_DQS_DML
@@ -729,15 +646,12 @@ _stat.UF_SETTABLE
 _stat.UF_TRACKED
 _statistics.__file__
 _struct.__file__
-subprocess._HAVE_POSIX_SPAWN_CLOSEFROM
-subprocess._del_safe
 sys._clear_internal_caches
 sys._clear_type_cache
 sys._current_exceptions
 sys._current_frames
 sys._debugmallocstats
 sys._get_cpu_count_config
-sys._is_gil_enabled
 sys._is_interned
 sys._setprofileallthreads
 sys._settraceallthreads
@@ -751,10 +665,6 @@ sys.getdlopenflags
 sys.getunicodeinternedsize
 sys.is_stack_trampoline_active
 sys.setdlopenflags
-sys.stdlib_module_names
-_sysconfigdata__linux_x86_64-linux-gnu.__builtins__
-_sysconfigdata__linux_x86_64-linux-gnu.__cached__
-_sysconfigdata__linux_x86_64-linux-gnu.__file__
 syslog.LOG_FTP
 syslog.__file__
 tempfile._dont_follow_symlinks
@@ -814,9 +724,7 @@ termios._POSIX_VDISABLE
 termios.__file__
 termios.tcgetwinsize
 termios.tcsetwinsize
-_thread._ExceptHookArgs
 _thread._ThreadHandle
-_thread._excepthook
 _thread._get_main_thread_ident
 _thread._is_main_interpreter
 _thread._make_thread_handle
@@ -1001,24 +909,6 @@ tokenize.FSTRING_START
 tokenize.SOFT_KEYWORD
 tokenize._generate_tokens_from_c_tokenizer
 tokenize._transform_msg
-traceback.BUILTIN_EXCEPTION_LIMIT
-traceback._Anchors
-traceback._CASE_COST
-traceback._ExceptionPrintContext
-traceback._MAX_CANDIDATE_ITEMS
-traceback._MAX_STRING_SIZE
-traceback._MOVE_COST
-traceback._WIDE_CHAR_SPECIFIERS
-traceback._byte_offset_to_character_offset
-traceback._compute_suggestion_error
-traceback._display_width
-traceback._extract_caret_anchors_from_line_segment
-traceback._get_code_position
-traceback._levenshtein_distance
-traceback._print_exception_bltin
-traceback._safe_string
-traceback._substitution_cost
-traceback._walk_tb_with_full_positions
 tty.CDSUSP
 tty.CEOF
 tty.CEOL
@@ -1089,15 +979,6 @@ _warnings.filters
 _warnings.warn_explicit
 warnings._defaultaction
 warnings._onceregistry
-zipfile._Extra
-zipfile._MASK_COMPRESSED_PATCH
-zipfile._MASK_COMPRESS_OPTION_1
-zipfile._MASK_ENCRYPTED
-zipfile._MASK_STRONG_ENCRYPTION
-zipfile._MASK_USE_DATA_DESCRIPTOR
-zipfile._MASK_UTF_FILENAME
-zipfile.__path__
-zipfile._sanitize_filename
 zipimport.END_CENTRAL_DIR_LOCATOR_SIZE_64
 zipimport.END_CENTRAL_DIR_SIZE_64
 zipimport.MAX_UINT32
@@ -1109,10 +990,10 @@ zoneinfo.TZPATH
 
 # summary
 #  cpython_modules 287
-#  implemented 118
-#  not_implemented 46
+#  implemented 123
+#  not_implemented 47
 #  failed_to_import 0
-#  missing_items 101
-#  mismatched_items 57
-#  mismatched_doc_items 48
-#  not_implementeds 20
+#  missing_items 89
+#  mismatched_items 56
+#  mismatched_doc_items 45
+#  not_implementeds 19
