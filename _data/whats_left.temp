@@ -122,6 +122,8 @@ _csv.__file__
 _csv._dialects
 _ctypes.__file__
 datetime.datetime_CAPI
+dis.name
+dis.op
 faulthandler._stack_overflow
 fcntl.DN_ACCESS
 fcntl.DN_ATTRIB
@@ -201,7 +203,6 @@ _locale.bind_textdomain_codeset
 _locale.bindtextdomain
 _locale.dcgettext
 _locale.dgettext
-_locale.getencoding
 _locale.gettext
 _locale.nl_langinfo
 _locale.textdomain
@@ -272,13 +273,6 @@ pdb._ZipTarget
 pdb._post_mortem
 pdb.find_first_executable_line
 pickle.PickleBuffer
-platform.AndroidVer
-platform.IOSVersionInfo
-platform._win32_ver
-platform._wmi
-platform._wmi_query
-platform.android_ver
-platform.ios_ver
 posix.CLONE_NEWTIME
 posix.MFD_HUGE_16GB
 posix.MFD_HUGE_16MB
@@ -596,8 +590,6 @@ socket.TIPC_TOP_SRV
 socket.TIPC_WAIT_FOREVER
 socket.TIPC_WITHDRAWN
 socket.TIPC_ZONE_SCOPE
-socketserver.ForkingUnixDatagramServer
-socketserver.ForkingUnixStreamServer
 _sqlite3.SQLITE_DBCONFIG_DEFENSIVE
 _sqlite3.SQLITE_DBCONFIG_DQS_DDL
 _sqlite3.SQLITE_DBCONFIG_DQS_DML
@@ -667,8 +659,6 @@ sys.is_stack_trampoline_active
 sys.setdlopenflags
 syslog.LOG_FTP
 syslog.__file__
-tempfile._dont_follow_symlinks
-tempfile._resetperms
 termios.CDSUSP
 termios.CEOF
 termios.CEOL
@@ -897,16 +887,6 @@ tkinter.image_names
 tkinter.image_types
 tkinter.mainloop
 tkinter.wantobjects
-token.EXCLAMATION
-token.FSTRING_END
-token.FSTRING_MIDDLE
-token.FSTRING_START
-token.SOFT_KEYWORD
-tokenize.EXCLAMATION
-tokenize.FSTRING_END
-tokenize.FSTRING_MIDDLE
-tokenize.FSTRING_START
-tokenize.SOFT_KEYWORD
 tokenize._generate_tokens_from_c_tokenizer
 tokenize._transform_msg
 tty.CDSUSP
@@ -990,10 +970,10 @@ zoneinfo.TZPATH
 
 # summary
 #  cpython_modules 287
-#  implemented 123
+#  implemented 125
 #  not_implemented 47
 #  failed_to_import 0
-#  missing_items 89
-#  mismatched_items 56
-#  mismatched_doc_items 45
+#  missing_items 86
+#  mismatched_items 55
+#  mismatched_doc_items 43
 #  not_implementeds 19
