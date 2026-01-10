@@ -334,7 +334,6 @@ posix.makedev
 posix.memfd_create
 posix.minor
 posix.mkfifo
-posix.pidfd_open
 posix.posix_fadvise
 posix.posix_fallocate
 posix.posix_openpt
@@ -387,7 +386,6 @@ pyexpat.native_encoding
 _random.__file__
 random._parse_args
 random.main
-re.PatternError
 resource.RLIMIT_OFILE
 resource.__file__
 resource.getpagesize
@@ -409,7 +407,6 @@ _signal.SIGIOT
 _signal.SIGPOLL
 _signal.SIGRTMAX
 _signal.SIGRTMIN
-_signal.pidfd_send_signal
 _signal.pthread_kill
 _signal.sigpending
 _signal.sigtimedwait
@@ -728,7 +725,6 @@ _thread.start_joinable_thread
 _thread.start_new
 threading._DeleteDummyThreadOnDel
 threading.setprofile_all_threads
-threading.settrace_all_threads
 time.altzone
 time.pthread_getcpuclockid
 time.tzset
@@ -940,8 +936,6 @@ tty.TIOCSER_TEMT
 tty.TIOCSETD
 tty.TIOCSLCKTRMIOS
 tty.TIOCSSERIAL
-tty.cfmakecbreak
-tty.cfmakeraw
 typing.Match
 unicodedata.__file__
 unicodedata._ucnhash_CAPI
@@ -959,21 +953,15 @@ _warnings.filters
 _warnings.warn_explicit
 warnings._defaultaction
 warnings._onceregistry
-zipimport.END_CENTRAL_DIR_LOCATOR_SIZE_64
-zipimport.END_CENTRAL_DIR_SIZE_64
-zipimport.MAX_UINT32
-zipimport.STRING_END_LOCATOR_64
-zipimport.STRING_END_ZIP_64
-zipimport.ZIP64_EXTRA_TAG
 zlib.__file__
 zoneinfo.TZPATH
 
 # summary
 #  cpython_modules 287
-#  implemented 125
+#  implemented 126
 #  not_implemented 47
 #  failed_to_import 0
-#  missing_items 86
+#  missing_items 84
 #  mismatched_items 55
-#  mismatched_doc_items 43
+#  mismatched_doc_items 42
 #  not_implementeds 19
