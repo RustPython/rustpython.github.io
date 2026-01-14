@@ -188,11 +188,6 @@ http.HTTPMethod
 _imp._override_multi_interp_extensions_check
 _imp.create_dynamic
 _imp.exec_dynamic
-inspect.CO_ITERABLE_COROUTINE
-inspect.CO_NESTED
-inspect.CO_NEWLOCALS
-inspect.CO_NOFREE
-inspect.CO_OPTIMIZED
 _io._BytesIOBuffer
 itertools._tee
 itertools._tee_dataobject
@@ -638,12 +633,9 @@ _struct.__file__
 sys._clear_internal_caches
 sys._clear_type_cache
 sys._current_exceptions
-sys._current_frames
 sys._debugmallocstats
 sys._get_cpu_count_config
 sys._is_interned
-sys._setprofileallthreads
-sys._settraceallthreads
 sys._stdlib_dir
 sys.activate_stack_trampoline
 sys.addaudithook
@@ -711,20 +703,10 @@ termios._POSIX_VDISABLE
 termios.__file__
 termios.tcgetwinsize
 termios.tcsetwinsize
-_thread._ThreadHandle
-_thread._get_main_thread_ident
-_thread._is_main_interpreter
-_thread._make_thread_handle
-_thread._shutdown
 _thread.allocate
-_thread.daemon_threads_allowed
 _thread.exit_thread
 _thread.get_native_id
-_thread.lock
-_thread.start_joinable_thread
 _thread.start_new
-threading._DeleteDummyThreadOnDel
-threading.setprofile_all_threads
 time.altzone
 time.pthread_getcpuclockid
 time.tzset
@@ -958,10 +940,10 @@ zoneinfo.TZPATH
 
 # summary
 #  cpython_modules 287
-#  implemented 126
+#  implemented 127
 #  not_implemented 47
 #  failed_to_import 0
-#  missing_items 84
+#  missing_items 82
 #  mismatched_items 55
-#  mismatched_doc_items 42
+#  mismatched_doc_items 41
 #  not_implementeds 19
