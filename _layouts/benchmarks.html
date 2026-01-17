@@ -22,6 +22,14 @@ layout: default
         {{ content }}
     </div>
 
+    {% assign metadata = site.data["criterion-metadata"] %}
+    <div class="text-muted mt-2">
+        <small>
+            Generated: {{ metadata.generated_at | date: "%Y-%m-%d %H:%M" }} UTC
+            | RustPython commit: <a href="https://github.com/RustPython/RustPython/commit/{{ metadata.rustpython_commit }}">{{ metadata.rustpython_commit | truncate: 7, "" }}</a>
+        </small>
+    </div>
+
     {% assign folders = "" | split: ", " %}
     {% for folder in site.static_files %}
         {% if folder.path contains 'criterion/' %}
