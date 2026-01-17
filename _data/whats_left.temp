@@ -184,7 +184,6 @@ _hashlib.hmac_digest
 _hashlib.openssl_md_meth_names
 _hashlib.pbkdf2_hmac
 _hashlib.scrypt
-http.HTTPMethod
 _imp._override_multi_interp_extensions_check
 _imp.create_dynamic
 _imp.exec_dynamic
@@ -940,10 +939,10 @@ zoneinfo.TZPATH
 
 # summary
 #  cpython_modules 287
-#  implemented 127
+#  implemented 128
 #  not_implemented 47
 #  failed_to_import 0
-#  missing_items 82
+#  missing_items 81
 #  mismatched_items 55
-#  mismatched_doc_items 41
+#  mismatched_doc_items 40
 #  not_implementeds 19
