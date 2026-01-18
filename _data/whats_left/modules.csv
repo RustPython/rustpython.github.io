@@ -24,7 +24,6 @@ _interpreters
 _lsprof
 _multibytecodec
 _pickle
-_py_warnings
 _queue
 _remote_debugging
 _sha2
