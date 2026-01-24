@@ -33,7 +33,6 @@ _pickle (entire module)
 poplib (entire module)
 profile (entire module)
 pstats (entire module)
-_py_warnings (entire module)
 _queue (entire module)
 readline (entire module)
 _remote_debugging (entire module)
@@ -115,7 +114,6 @@ _codecs.utf_32_le_encode
 codecs.__file__
 _collections._count_elements
 collections.heapq
-_colorize.__annotate__
 configparser.InvalidWriteError
 configparser.UnnamedSectionDisabledError
 configparser._CommentSpec
@@ -1254,9 +1252,6 @@ _warnings._warnings_context
 _warnings.filters
 _warnings.warn_explicit
 warnings._Lock
-warnings._lock
-warnings._use_context
-warnings._warnings_context
 zipfile.ZIP_ZSTANDARD
 zipfile.ZSTANDARD_VERSION
 zipfile._handle_prepended_data
@@ -1265,10 +1260,10 @@ zoneinfo.TZPATH
 
 # summary
 #  cpython_modules 294
-#  implemented 100
-#  not_implemented 53
+#  implemented 101
+#  not_implemented 52
 #  failed_to_import 0
-#  missing_items 120
+#  missing_items 119
 #  mismatched_items 67
 #  mismatched_doc_items 49
 #  not_implementeds 8

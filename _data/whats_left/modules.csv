@@ -1,5 +1,4 @@
 module
-_abc
 _ast_unparse
 _asyncio
 _codecs_cn
@@ -38,7 +37,6 @@ _types
 _zoneinfo
 _zstd
 cProfile
-compression
 curses
 idlelib
 imaplib
