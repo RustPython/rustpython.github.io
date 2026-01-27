@@ -1,5 +1,4 @@
 # modules
-_abc (entire module)
 _ast_unparse (entire module)
 _asyncio (entire module)
 cProfile (entire module)
@@ -9,7 +8,6 @@ _codecs_iso2022 (entire module)
 _codecs_jp (entire module)
 _codecs_kr (entire module)
 _codecs_tw (entire module)
-compression (entire module)
 _ctypes_test (entire module)
 _curses (entire module)
 curses (entire module)
@@ -79,8 +77,6 @@ memoryview.index
 
 # stdlib items
 builtins.PythonFinalizationError
-__hello__.__file__
-__phello__.__file__
 array.__file__
 array.typecodes
 _ast.PyCF_ALLOW_TOP_LEVEL_AWAIT
@@ -113,7 +109,6 @@ _codecs.utf_32_le_decode
 _codecs.utf_32_le_encode
 codecs.__file__
 _collections._count_elements
-collections.heapq
 configparser.InvalidWriteError
 configparser.UnnamedSectionDisabledError
 configparser._CommentSpec
@@ -121,8 +116,6 @@ copy._atomic_types
 copy._copy_atomic_types
 copy._copy_builtin_containers
 copyreg.__cached__
-copyreg.__file__
-copyreg.pickle_super
 _csv.Reader
 _csv.Writer
 _csv.__file__
@@ -201,12 +194,6 @@ fcntl.__file__
 fnmatch._re_setops_sub
 fnmatch.filterfalse
 _functools.cmp_to_key
-functools.Placeholder
-functools._PlaceholderType
-functools._partial_new
-functools._partial_prepare_merger
-functools._partial_repr
-functools._singledispatchmethod_get
 gc.DEBUG_COLLECTABLE
 gc.DEBUG_LEAK
 gc.DEBUG_SAVEALL
@@ -239,7 +226,6 @@ _imp.create_dynamic
 _imp.exec_dynamic
 inspect.CO_HAS_DOCSTRING
 inspect.CO_METHOD
-inspect.ispackage
 _io._BytesIOBuffer
 io.Reader
 io.Writer
@@ -247,7 +233,6 @@ itertools._tee
 itertools._tee_dataobject
 _json.__file__
 _json.make_encoder
-linecache._source_unavailable
 _locale._DATE_FMT
 _locale.bind_textdomain_codeset
 _locale.bindtextdomain
@@ -263,9 +248,6 @@ math.__file__
 _md5.MD5Type
 _md5._GIL_MINSIZE
 _md5.__file__
-mimetypes._mimetypes_read_windows_registry
-mimetypes._parse_args
-mimetypes.guess_file_type
 mmap.MAP_32BIT
 mmap.MAP_NORESERVE
 mmap.__file__
@@ -874,10 +856,6 @@ sqlite3.SQLITE_DBCONFIG_TRIGGER_EQP
 sqlite3.SQLITE_DBCONFIG_TRUSTED_SCHEMA
 sqlite3.SQLITE_DBCONFIG_WRITABLE_SCHEMA
 _sre.copyright
-sre_compile.CH_NEGATE
-sre_compile._CHARSET_ALL
-sre_constants.CH_NEGATE
-sre_parse.CH_NEGATE
 _ssl.HAS_PHA
 _ssl.HOSTFLAG_ALWAYS_CHECK_SUBJECT
 _ssl.HOSTFLAG_MULTI_LABEL_WILDCARDS
@@ -906,14 +884,12 @@ symtable.DEF_TYPE_PARAM
 symtable._get_scope
 sys._clear_internal_caches
 sys._clear_type_cache
-sys._clear_type_descriptors
 sys._current_exceptions
 sys._debugmallocstats
 sys._dump_tracelets
 sys._get_cpu_count_config
 sys._is_immortal
 sys._is_interned
-sys._stdlib_dir
 sys.activate_stack_trampoline
 sys.addaudithook
 sys.call_tracing
@@ -921,7 +897,6 @@ sys.deactivate_stack_trampoline
 sys.getallocatedblocks
 sys.getdlopenflags
 sys.getunicodeinternedsize
-sys.is_remote_debug_enabled
 sys.is_stack_trampoline_active
 sys.remote_exec
 sys.setdlopenflags
@@ -1150,12 +1125,6 @@ tkinter.image_names
 tkinter.image_types
 tkinter.mainloop
 tkinter.wantobjects
-token.TSTRING_END
-token.TSTRING_MIDDLE
-token.TSTRING_START
-tokenize.TSTRING_END
-tokenize.TSTRING_MIDDLE
-tokenize.TSTRING_START
 tokenize._generate_tokens_from_c_tokenizer
 tokenize._main
 tokenize._transform_msg
@@ -1211,11 +1180,6 @@ tty.TIOCSETD
 tty.TIOCSLCKTRMIOS
 tty.TIOCSSERIAL
 typing.Match
-typing._UnionGenericAliasMeta
-typing._add_type_params_to_scope
-typing._make_eager_annotate
-typing._make_forward_ref
-typing.evaluate_forward_ref
 unicodedata.__file__
 unicodedata._ucnhash_CAPI
 unicodedata.combining
@@ -1260,10 +1224,10 @@ zoneinfo.TZPATH
 
 # summary
 #  cpython_modules 294
-#  implemented 101
-#  not_implemented 52
+#  implemented 106
+#  not_implemented 50
 #  failed_to_import 0
-#  missing_items 119
-#  mismatched_items 67
-#  mismatched_doc_items 49
+#  missing_items 109
+#  mismatched_items 75
+#  mismatched_doc_items 48
 #  not_implementeds 8
