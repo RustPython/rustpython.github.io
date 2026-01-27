@@ -137,16 +137,6 @@ dataclasses._make_annotate_function
 dataclasses._update_func_cell_for__class__
 datetime.datetime_CAPI
 decimal.IEEE_CONTEXT_MAX_BITS
-dis.CONTAINS_OP
-dis.END_ASYNC_FOR
-dis.IS_OP
-dis.LOAD_COMMON_CONSTANT
-dis.LOAD_FAST_BORROW_LOAD_FAST_BORROW
-dis.LOAD_SMALL_INT
-dis.LOAD_SPECIAL
-dis._common_constants
-dis._get_positions_width
-dis._special_method_names
 dis.name
 dis.op
 doctest.__unittest
@@ -224,8 +214,6 @@ hmac._get_digest_constructor
 _imp._override_multi_interp_extensions_check
 _imp.create_dynamic
 _imp.exec_dynamic
-inspect.CO_HAS_DOCSTRING
-inspect.CO_METHOD
 _io._BytesIOBuffer
 io.Reader
 io.Writer
@@ -252,14 +240,6 @@ mmap.MAP_32BIT
 mmap.MAP_NORESERVE
 mmap.__file__
 _multiprocessing.__file__
-ntpath._varpattern
-ntpath._varsub
-ntpath._varsubb
-_opcode.ENABLE_SPECIALIZATION_FT
-_opcode.get_special_method_names
-opcode._common_constants
-opcode._special_method_names
-opcode.m
 _operator.call
 _operator.inv
 _operator.is_none
@@ -1224,10 +1204,10 @@ zoneinfo.TZPATH
 
 # summary
 #  cpython_modules 294
-#  implemented 106
+#  implemented 109
 #  not_implemented 50
 #  failed_to_import 0
-#  missing_items 109
-#  mismatched_items 75
+#  missing_items 105
+#  mismatched_items 74
 #  mismatched_doc_items 48
 #  not_implementeds 8
