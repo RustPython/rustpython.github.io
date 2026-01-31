@@ -208,8 +208,6 @@ _hashlib.hmac_digest
 _hashlib.openssl_md_meth_names
 _hashlib.pbkdf2_hmac
 _hashlib.scrypt
-hmac._compute_digest_fallback
-hmac._get_digest_constructor
 _imp._override_multi_interp_extensions_check
 _imp.create_dynamic
 _imp.exec_dynamic
@@ -1197,10 +1195,10 @@ zoneinfo.TZPATH
 
 # summary
 #  cpython_modules 294
-#  implemented 110
+#  implemented 111
 #  not_implemented 49
 #  failed_to_import 0
-#  missing_items 103
+#  missing_items 102
 #  mismatched_items 75
 #  mismatched_doc_items 49
 #  not_implementeds 8

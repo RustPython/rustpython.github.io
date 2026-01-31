@@ -1,6 +1,5 @@
 # modules
 _ast_unparse (entire module)
-_asyncio (entire module)
 cProfile (entire module)
 _codecs_cn (entire module)
 _codecs_hk (entire module)
@@ -82,6 +81,7 @@ array.typecodes
 _ast.PyCF_ALLOW_TOP_LEVEL_AWAIT
 ast.PyCF_ALLOW_TOP_LEVEL_AWAIT
 ast.compare
+_asyncio.__file__
 asyncio.__getattr__
 bdb.E
 bdb._MonitoringTracer
@@ -136,7 +136,6 @@ dataclasses._create_slots
 dataclasses._make_annotate_function
 dataclasses._update_func_cell_for__class__
 datetime.datetime_CAPI
-decimal.IEEE_CONTEXT_MAX_BITS
 dis.name
 dis.op
 doctest.__unittest
@@ -551,7 +550,6 @@ posixpath._varsubb
 _posixshmem.__file__
 _posixsubprocess.__file__
 _pydatetime._normalize_century
-_pydecimal.IEEE_CONTEXT_MAX_BITS
 pydoc._adjust_cli_sys_path
 pydoc._findclass
 pydoc._finddoc
@@ -857,11 +855,6 @@ _strptime._strptime_datetime_date
 _strptime._strptime_datetime_datetime
 _strptime._strptime_datetime_time
 _struct.__file__
-symtable.DEF_COMP_CELL
-symtable.DEF_COMP_ITER
-symtable.DEF_FREE_CLASS
-symtable.DEF_TYPE_PARAM
-symtable._get_scope
 sys._clear_internal_caches
 sys._clear_type_cache
 sys._current_exceptions
@@ -1204,10 +1197,10 @@ zoneinfo.TZPATH
 
 # summary
 #  cpython_modules 294
-#  implemented 109
-#  not_implemented 50
+#  implemented 110
+#  not_implemented 49
 #  failed_to_import 0
-#  missing_items 105
-#  mismatched_items 74
-#  mismatched_doc_items 48
+#  missing_items 103
+#  mismatched_items 75
+#  mismatched_doc_items 49
 #  not_implementeds 8
