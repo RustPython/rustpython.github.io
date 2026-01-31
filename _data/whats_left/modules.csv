@@ -1,6 +1,5 @@
 module
 _ast_unparse
-_asyncio
 _codecs_cn
 _codecs_hk
 _codecs_iso2022
