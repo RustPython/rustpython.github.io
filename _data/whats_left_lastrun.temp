@@ -1,5 +1,4 @@
 # modules
-_ast_unparse (entire module)
 cProfile (entire module)
 _codecs_cn (entire module)
 _codecs_hk (entire module)
@@ -19,7 +18,6 @@ _gdbm (entire module)
 _heapq (entire module)
 _hmac (entire module)
 idlelib (entire module)
-imaplib (entire module)
 _interpchannels (entire module)
 _interpqueues (entire module)
 _interpreters (entire module)
@@ -32,7 +30,6 @@ profile (entire module)
 pstats (entire module)
 _queue (entire module)
 readline (entire module)
-_remote_debugging (entire module)
 _sha2 (entire module)
 _sysconfigdata__linux_x86_64-linux-gnu (entire module)
 _testclinic (entire module)
@@ -78,11 +75,7 @@ memoryview.index
 builtins.PythonFinalizationError
 array.__file__
 array.typecodes
-_ast.PyCF_ALLOW_TOP_LEVEL_AWAIT
-ast.PyCF_ALLOW_TOP_LEVEL_AWAIT
-ast.compare
 _asyncio.__file__
-asyncio.__getattr__
 bdb.E
 bdb._MonitoringTracer
 binascii.__file__
@@ -100,13 +93,7 @@ _blake2.__file__
 _bz2.__file__
 cmath.__file__
 _codecs._unregister_error
-_codecs.utf_32_be_decode
-_codecs.utf_32_be_encode
-_codecs.utf_32_decode
-_codecs.utf_32_encode
 _codecs.utf_32_ex_decode
-_codecs.utf_32_le_decode
-_codecs.utf_32_le_encode
 codecs.__file__
 _collections._count_elements
 configparser.InvalidWriteError
@@ -183,17 +170,6 @@ fcntl.__file__
 fnmatch._re_setops_sub
 fnmatch.filterfalse
 _functools.cmp_to_key
-gc.DEBUG_COLLECTABLE
-gc.DEBUG_LEAK
-gc.DEBUG_SAVEALL
-gc.DEBUG_STATS
-gc.DEBUG_UNCOLLECTABLE
-gc.callbacks
-gc.freeze
-gc.garbage
-gc.get_freeze_count
-gc.is_finalized
-gc.unfreeze
 getpass._check_echo_char
 getpass._readline_with_echo_char
 glob._GlobberBase
@@ -218,6 +194,7 @@ itertools._tee
 itertools._tee_dataobject
 _json.__file__
 _json.make_encoder
+linecache._make_lazycache_entry
 _locale._DATE_FMT
 _locale.bind_textdomain_codeset
 _locale.bindtextdomain
@@ -267,8 +244,6 @@ os.RWF_DSYNC
 os.RWF_HIPRI
 os.RWF_NOWAIT
 os.RWF_SYNC
-os.SCHED_DEADLINE
-os.SCHED_NORMAL
 os.ST_APPEND
 os.ST_MANDLOCK
 os.ST_NOATIME
@@ -286,7 +261,6 @@ os._fwalk_walk
 os._fwalk_yield
 os.confstr_names
 os.fwalk
-os.reload_environ
 os.supports_effective_ids
 pathlib.E2BIG
 pathlib.EACCES
@@ -444,8 +418,6 @@ pdb.parse_args
 pdb.set_default_backend
 pdb.set_trace_async
 pickle.PickleBuffer
-pickle._T
-pickle._main
 platform._main
 platform._parse_args
 platform.invalidate_caches
@@ -475,8 +447,6 @@ posix.RWF_DSYNC
 posix.RWF_HIPRI
 posix.RWF_NOWAIT
 posix.RWF_SYNC
-posix.SCHED_DEADLINE
-posix.SCHED_NORMAL
 posix.ST_APPEND
 posix.ST_MANDLOCK
 posix.ST_NOATIME
@@ -488,7 +458,6 @@ posix.ST_SYNCHRONOUS
 posix.ST_WRITE
 posix.TMP_MAX
 posix.XATTR_SIZE_MAX
-posix._create_environ
 posix._have_functions
 posix._inputhook
 posix._is_inputhook_installed
@@ -521,7 +490,6 @@ posix.preadv
 posix.ptsname
 posix.pwrite
 posix.pwritev
-posix.readinto
 posix.readv
 posix.removexattr
 posix.sched_getaffinity
@@ -574,6 +542,8 @@ _pylong._dec_str_to_int_inner
 _random.__file__
 random._parse_args
 random.main
+_remote_debugging.PROCESS_VM_READV_SUPPORTED
+_remote_debugging.__file__
 resource.RLIMIT_OFILE
 resource.__file__
 resource.getpagesize
@@ -1160,24 +1130,6 @@ unicodedata.digit
 unicodedata.is_normalized
 unicodedata.numeric
 _uuid.__file__
-uuid.MAX
-uuid.NIL
-uuid._RFC_4122_CLEARFLAGS_MASK
-uuid._RFC_4122_VERSION_1_FLAGS
-uuid._RFC_4122_VERSION_3_FLAGS
-uuid._RFC_4122_VERSION_4_FLAGS
-uuid._RFC_4122_VERSION_5_FLAGS
-uuid._RFC_4122_VERSION_6_FLAGS
-uuid._RFC_4122_VERSION_7_FLAGS
-uuid._RFC_4122_VERSION_8_FLAGS
-uuid._UINT_128_MAX
-uuid._last_counter_v7
-uuid._last_timestamp_v6
-uuid._last_timestamp_v7
-uuid._uuid7_get_counter_and_tail
-uuid.uuid6
-uuid.uuid7
-uuid.uuid8
 _warnings._acquire_lock
 _warnings._defaultaction
 _warnings._filters_mutated_lock_held
@@ -1195,10 +1147,10 @@ zoneinfo.TZPATH
 
 # summary
 #  cpython_modules 294
-#  implemented 111
-#  not_implemented 49
+#  implemented 124
+#  not_implemented 46
 #  failed_to_import 0
-#  missing_items 102
-#  mismatched_items 75
-#  mismatched_doc_items 49
+#  missing_items 99
+#  mismatched_items 63
+#  mismatched_doc_items 48
 #  not_implementeds 8
