@@ -93,7 +93,6 @@ _blake2.__file__
 _bz2.__file__
 cmath.__file__
 _codecs._unregister_error
-_codecs.utf_32_ex_decode
 codecs.__file__
 _collections._count_elements
 configparser.InvalidWriteError
@@ -1130,15 +1129,6 @@ unicodedata.digit
 unicodedata.is_normalized
 unicodedata.numeric
 _uuid.__file__
-_warnings._acquire_lock
-_warnings._defaultaction
-_warnings._filters_mutated_lock_held
-_warnings._onceregistry
-_warnings._release_lock
-_warnings._warnings_context
-_warnings.filters
-_warnings.warn_explicit
-warnings._Lock
 zipfile.ZIP_ZSTANDARD
 zipfile.ZSTANDARD_VERSION
 zipfile._handle_prepended_data
@@ -1147,10 +1137,10 @@ zoneinfo.TZPATH
 
 # summary
 #  cpython_modules 294
-#  implemented 124
+#  implemented 126
 #  not_implemented 46
 #  failed_to_import 0
-#  missing_items 99
+#  missing_items 97
 #  mismatched_items 63
 #  mismatched_doc_items 48
 #  not_implementeds 8
