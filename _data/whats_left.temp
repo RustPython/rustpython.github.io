@@ -30,6 +30,7 @@ profile (entire module)
 pstats (entire module)
 _queue (entire module)
 readline (entire module)
+_sha2 (entire module)
 _sysconfigdata__linux_x86_64-linux-gnu (entire module)
 _testclinic (entire module)
 _testclinic_limited (entire module)
@@ -91,7 +92,6 @@ _blake2._GIL_MINSIZE
 _blake2.__file__
 _bz2.__file__
 cmath.__file__
-_codecs._unregister_error
 codecs.__file__
 _collections._count_elements
 configparser.InvalidWriteError
@@ -179,6 +179,7 @@ _hashlib.__file__
 _hashlib._constructors
 _hashlib.get_fips_mode
 _hashlib.hmac_digest
+_hashlib.openssl_md_meth_names
 _hashlib.pbkdf2_hmac
 _hashlib.scrypt
 _imp._override_multi_interp_extensions_check
@@ -556,12 +557,6 @@ select.__file__
 _sha1.SHA1Type
 _sha1._GIL_MINSIZE
 _sha1.__file__
-_sha2.SHA224Type
-_sha2.SHA256Type
-_sha2.SHA384Type
-_sha2.SHA512Type
-_sha2._GIL_MINSIZE
-_sha2.__file__
 _sha3._GIL_MINSIZE
 _sha3.__file__
 _sha3.implementation
@@ -1142,9 +1137,9 @@ zoneinfo.TZPATH
 # summary
 #  cpython_modules 294
 #  implemented 127
-#  not_implemented 45
+#  not_implemented 46
 #  failed_to_import 0
-#  missing_items 98
-#  mismatched_items 62
+#  missing_items 96
+#  mismatched_items 63
 #  mismatched_doc_items 47
 #  not_implementeds 8

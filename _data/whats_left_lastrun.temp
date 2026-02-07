@@ -30,7 +30,6 @@ profile (entire module)
 pstats (entire module)
 _queue (entire module)
 readline (entire module)
-_sha2 (entire module)
 _sysconfigdata__linux_x86_64-linux-gnu (entire module)
 _testclinic (entire module)
 _testclinic_limited (entire module)
@@ -180,7 +179,6 @@ _hashlib.__file__
 _hashlib._constructors
 _hashlib.get_fips_mode
 _hashlib.hmac_digest
-_hashlib.openssl_md_meth_names
 _hashlib.pbkdf2_hmac
 _hashlib.scrypt
 _imp._override_multi_interp_extensions_check
@@ -558,6 +556,12 @@ select.__file__
 _sha1.SHA1Type
 _sha1._GIL_MINSIZE
 _sha1.__file__
+_sha2.SHA224Type
+_sha2.SHA256Type
+_sha2.SHA384Type
+_sha2.SHA512Type
+_sha2._GIL_MINSIZE
+_sha2.__file__
 _sha3._GIL_MINSIZE
 _sha3.__file__
 _sha3.implementation
@@ -1137,10 +1141,10 @@ zoneinfo.TZPATH
 
 # summary
 #  cpython_modules 294
-#  implemented 126
-#  not_implemented 46
+#  implemented 127
+#  not_implemented 45
 #  failed_to_import 0
-#  missing_items 97
-#  mismatched_items 63
-#  mismatched_doc_items 48
+#  missing_items 98
+#  mismatched_items 62
+#  mismatched_doc_items 47
 #  not_implementeds 8
