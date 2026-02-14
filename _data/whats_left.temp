@@ -41,7 +41,6 @@ _tracemalloc (entire module)
 tracemalloc (entire module)
 turtle (entire module)
 turtledemo (entire module)
-_types (entire module)
 xxlimited_35 (entire module)
 _zoneinfo (entire module)
 _zstd (entire module)
@@ -57,19 +56,14 @@ NoneType.__ne__ (inherited)
 bytearray.__buffer__
 bytearray.__release_buffer__
 bytearray.__str__ (inherited)
-bytearray.resize
 bytes.__buffer__
 bytes.__str__ (inherited)
 complex.from_number
 dict_items.__hash__ (inherited)
-float.from_number
 map.__setstate__
 memoryview.__buffer__
-memoryview.__class_getitem__
 memoryview.__release_buffer__
 memoryview._from_flags
-memoryview.count
-memoryview.index
 
 # stdlib items
 builtins.PythonFinalizationError
@@ -92,14 +86,7 @@ _blake2._GIL_MINSIZE
 _blake2.__file__
 _bz2.__file__
 cmath.__file__
-codecs.__file__
 _collections._count_elements
-configparser.InvalidWriteError
-configparser.UnnamedSectionDisabledError
-configparser._CommentSpec
-copy._atomic_types
-copy._copy_atomic_types
-copy._copy_builtin_containers
 copyreg.__cached__
 _csv.Reader
 _csv.Writer
@@ -116,14 +103,9 @@ ctypes.c_double_complex
 ctypes.c_float_complex
 ctypes.c_longdouble_complex
 ctypes.memoryview_at
-dataclasses._ANY_MARKER
-dataclasses._create_slots
-dataclasses._make_annotate_function
-dataclasses._update_func_cell_for__class__
 datetime.datetime_CAPI
 dis.name
 dis.op
-doctest.__unittest
 errno.EHWPOISON
 faulthandler._stack_overflow
 faulthandler.dump_c_stack
@@ -165,13 +147,7 @@ fcntl.RWH_WRITE_LIFE_NONE
 fcntl.RWH_WRITE_LIFE_NOT_SET
 fcntl.RWH_WRITE_LIFE_SHORT
 fcntl.__file__
-fnmatch._re_setops_sub
-fnmatch.filterfalse
 _functools.cmp_to_key
-getpass._check_echo_char
-getpass._readline_with_echo_char
-glob._GlobberBase
-glob._PathGlobber
 grp.__file__
 _hashlib.HMAC
 _hashlib._GIL_MINSIZE
@@ -186,13 +162,10 @@ _imp._override_multi_interp_extensions_check
 _imp.create_dynamic
 _imp.exec_dynamic
 _io._BytesIOBuffer
-io.Reader
-io.Writer
 itertools._tee
 itertools._tee_dataobject
 _json.__file__
 _json.make_encoder
-linecache._make_lazycache_entry
 _locale._DATE_FMT
 _locale.bind_textdomain_codeset
 _locale.bindtextdomain
@@ -260,144 +233,7 @@ os._fwalk_yield
 os.confstr_names
 os.fwalk
 os.supports_effective_ids
-pathlib.E2BIG
-pathlib.EACCES
-pathlib.EADDRINUSE
-pathlib.EADDRNOTAVAIL
-pathlib.EADV
-pathlib.EAFNOSUPPORT
-pathlib.EAGAIN
-pathlib.EALREADY
-pathlib.EBADE
-pathlib.EBADF
-pathlib.EBADFD
-pathlib.EBADMSG
-pathlib.EBADR
-pathlib.EBADRQC
-pathlib.EBADSLT
-pathlib.EBFONT
-pathlib.EBUSY
-pathlib.ECANCELED
-pathlib.ECHILD
-pathlib.ECHRNG
-pathlib.ECOMM
-pathlib.ECONNABORTED
-pathlib.ECONNREFUSED
-pathlib.ECONNRESET
-pathlib.EDEADLK
-pathlib.EDEADLOCK
-pathlib.EDESTADDRREQ
-pathlib.EDOM
-pathlib.EDOTDOT
-pathlib.EDQUOT
-pathlib.EEXIST
-pathlib.EFAULT
-pathlib.EFBIG
-pathlib.EHOSTDOWN
-pathlib.EHOSTUNREACH
 pathlib.EHWPOISON
-pathlib.EIDRM
-pathlib.EILSEQ
-pathlib.EINPROGRESS
-pathlib.EINTR
-pathlib.EINVAL
-pathlib.EIO
-pathlib.EISCONN
-pathlib.EISDIR
-pathlib.EISNAM
-pathlib.EKEYEXPIRED
-pathlib.EKEYREJECTED
-pathlib.EKEYREVOKED
-pathlib.EL2HLT
-pathlib.EL2NSYNC
-pathlib.EL3HLT
-pathlib.EL3RST
-pathlib.ELIBACC
-pathlib.ELIBBAD
-pathlib.ELIBEXEC
-pathlib.ELIBMAX
-pathlib.ELIBSCN
-pathlib.ELNRNG
-pathlib.ELOOP
-pathlib.EMEDIUMTYPE
-pathlib.EMFILE
-pathlib.EMLINK
-pathlib.EMSGSIZE
-pathlib.EMULTIHOP
-pathlib.ENAMETOOLONG
-pathlib.ENAVAIL
-pathlib.ENETDOWN
-pathlib.ENETRESET
-pathlib.ENETUNREACH
-pathlib.ENFILE
-pathlib.ENOANO
-pathlib.ENOBUFS
-pathlib.ENOCSI
-pathlib.ENODATA
-pathlib.ENODEV
-pathlib.ENOENT
-pathlib.ENOEXEC
-pathlib.ENOKEY
-pathlib.ENOLCK
-pathlib.ENOLINK
-pathlib.ENOMEDIUM
-pathlib.ENOMEM
-pathlib.ENOMSG
-pathlib.ENONET
-pathlib.ENOPKG
-pathlib.ENOPROTOOPT
-pathlib.ENOSPC
-pathlib.ENOSR
-pathlib.ENOSTR
-pathlib.ENOSYS
-pathlib.ENOTBLK
-pathlib.ENOTCONN
-pathlib.ENOTDIR
-pathlib.ENOTEMPTY
-pathlib.ENOTNAM
-pathlib.ENOTRECOVERABLE
-pathlib.ENOTSOCK
-pathlib.ENOTSUP
-pathlib.ENOTTY
-pathlib.ENOTUNIQ
-pathlib.ENXIO
-pathlib.EOPNOTSUPP
-pathlib.EOVERFLOW
-pathlib.EOWNERDEAD
-pathlib.EPERM
-pathlib.EPFNOSUPPORT
-pathlib.EPIPE
-pathlib.EPROTO
-pathlib.EPROTONOSUPPORT
-pathlib.EPROTOTYPE
-pathlib.ERANGE
-pathlib.EREMCHG
-pathlib.EREMOTE
-pathlib.EREMOTEIO
-pathlib.ERESTART
-pathlib.ERFKILL
-pathlib.EROFS
-pathlib.ESHUTDOWN
-pathlib.ESOCKTNOSUPPORT
-pathlib.ESPIPE
-pathlib.ESRCH
-pathlib.ESRMNT
-pathlib.ESTALE
-pathlib.ESTRPIPE
-pathlib.ETIME
-pathlib.ETIMEDOUT
-pathlib.ETOOMANYREFS
-pathlib.ETXTBSY
-pathlib.EUCLEAN
-pathlib.EUNATCH
-pathlib.EUSERS
-pathlib.EWOULDBLOCK
-pathlib.EXDEV
-pathlib.EXFULL
-pathlib._PathParents
-pathlib._no_recurse_symlinks
-pathlib.copyfile2
-pathlib.errorcode
 pdb._ExecutableTarget
 pdb._ModuleTarget
 pdb._PdbClient
@@ -508,22 +344,9 @@ posix.wait4
 posix.waitid
 posix.waitid_result
 posix.writev
-posixpath._varpattern
-posixpath._varsub
-posixpath._varsubb
 _posixshmem.__file__
 _posixsubprocess.__file__
 _pydatetime._normalize_century
-pydoc._adjust_cli_sys_path
-pydoc._findclass
-pydoc._finddoc
-pydoc._future_feature_names
-pydoc._get_revised_path
-pydoc._getargspec
-pydoc._getdoc
-pydoc._getowndoc
-pydoc._introdoc
-pydoc.parentname
 pyexpat.EXPAT_VERSION
 pyexpat.ErrorString
 pyexpat.XMLParserType
@@ -534,9 +357,6 @@ pyexpat.__file__
 pyexpat.expat_CAPI
 pyexpat.features
 pyexpat.native_encoding
-_pyio._new_buffersize
-_pylong._LOG_10_BASE_256
-_pylong._dec_str_to_int_inner
 _random.__file__
 random._parse_args
 random.main
@@ -815,7 +635,6 @@ _stat.UF_DATAVAULT
 _stat.UF_SETTABLE
 _stat.UF_TRACKED
 _statistics.__file__
-statistics._kernel_specs
 _strptime._parse_tz
 _strptime._strptime_datetime_date
 _strptime._strptime_datetime_datetime
@@ -1136,10 +955,10 @@ zoneinfo.TZPATH
 
 # summary
 #  cpython_modules 294
-#  implemented 127
-#  not_implemented 46
+#  implemented 147
+#  not_implemented 45
 #  failed_to_import 0
-#  missing_items 96
-#  mismatched_items 63
-#  mismatched_doc_items 47
-#  not_implementeds 8
+#  missing_items 81
+#  mismatched_items 50
+#  mismatched_doc_items 39
+#  not_implementeds 7

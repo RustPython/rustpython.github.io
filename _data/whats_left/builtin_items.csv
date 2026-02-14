@@ -9,16 +9,11 @@ NoneType,NoneType.__ne__,(inherited)
 bytearray,bytearray.__buffer__,
 bytearray,bytearray.__release_buffer__,
 bytearray,bytearray.__str__,(inherited)
-bytearray,bytearray.resize,
 bytes,bytes.__buffer__,
 bytes,bytes.__str__,(inherited)
 complex,complex.from_number,
 dict_items,dict_items.__hash__,(inherited)
-float,float.from_number,
 map,map.__setstate__,
 memoryview,memoryview.__buffer__,
-memoryview,memoryview.__class_getitem__,
 memoryview,memoryview.__release_buffer__,
 memoryview,memoryview._from_flags,
-memoryview,memoryview.count,
-memoryview,memoryview.index,

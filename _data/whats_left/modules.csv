@@ -30,7 +30,6 @@ _testsinglephase
 _tkinter
 _tokenize
 _tracemalloc
-_types
 _zoneinfo
 _zstd
 cProfile
