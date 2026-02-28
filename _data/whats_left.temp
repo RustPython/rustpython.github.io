@@ -70,8 +70,6 @@ builtins.PythonFinalizationError
 array.__file__
 array.typecodes
 _asyncio.__file__
-bdb.E
-bdb._MonitoringTracer
 binascii.__file__
 _bisect.__file__
 _blake2.BLAKE2B_MAX_DIGEST_SIZE
@@ -336,8 +334,6 @@ pyexpat.expat_CAPI
 pyexpat.features
 pyexpat.native_encoding
 _random.__file__
-random._parse_args
-random.main
 _remote_debugging.PROCESS_VM_READV_SUPPORTED
 _remote_debugging.__file__
 resource.RLIMIT_OFILE
@@ -909,10 +905,10 @@ zoneinfo.TZPATH
 
 # summary
 #  cpython_modules 294
-#  implemented 154
+#  implemented 156
 #  not_implemented 45
 #  failed_to_import 0
-#  missing_items 75
-#  mismatched_items 47
-#  mismatched_doc_items 36
+#  missing_items 73
+#  mismatched_items 46
+#  mismatched_doc_items 35
 #  not_implementeds 7
