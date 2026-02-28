@@ -93,16 +93,9 @@ _csv.Writer
 _csv.__file__
 _csv._dialects
 _ctypes.__file__
-_ctypes._memoryview_at_addr
-ctypes.CField
-ctypes._PointerTypeCache
-ctypes._memoryview_at
-ctypes._memoryview_at_addr
-ctypes._pointer_type_cache_fallback
 ctypes.c_double_complex
 ctypes.c_float_complex
 ctypes.c_longdouble_complex
-ctypes.memoryview_at
 datetime.datetime_CAPI
 dis.name
 dis.op
@@ -149,14 +142,7 @@ fcntl.RWH_WRITE_LIFE_SHORT
 fcntl.__file__
 _functools.cmp_to_key
 grp.__file__
-_hashlib.HMAC
-_hashlib._GIL_MINSIZE
 _hashlib.__file__
-_hashlib._constructors
-_hashlib.get_fips_mode
-_hashlib.hmac_digest
-_hashlib.openssl_md_meth_names
-_hashlib.pbkdf2_hmac
 _hashlib.scrypt
 _imp._override_multi_interp_extensions_check
 _imp.create_dynamic
@@ -174,9 +160,7 @@ _locale.dgettext
 _locale.gettext
 _locale.nl_langinfo
 _locale.textdomain
-_lzma.CHECK_ID_MAX
 _lzma.__file__
-lzma.CHECK_ID_MAX
 math.__file__
 _md5.MD5Type
 _md5._GIL_MINSIZE
@@ -380,13 +364,6 @@ _sha1.__file__
 _sha3._GIL_MINSIZE
 _sha3.__file__
 _sha3.implementation
-shutil._USE_CP_COPY_FILE_RANGE
-shutil._ZSTD_SUPPORTED
-shutil.__getattr__
-shutil._determine_linux_fastcopy_blocksize
-shutil._fastcopy_copy_file_range
-shutil._rmtree_impl
-shutil._rmtree_safe_fd_step
 _signal.SIGCLD
 _signal.SIGIOT
 _signal.SIGPOLL
@@ -940,12 +917,6 @@ tty.TIOCSSERIAL
 typing.Match
 unicodedata.__file__
 unicodedata._ucnhash_CAPI
-unicodedata.combining
-unicodedata.decimal
-unicodedata.decomposition
-unicodedata.digit
-unicodedata.is_normalized
-unicodedata.numeric
 _uuid.__file__
 zipfile.ZIP_ZSTANDARD
 zipfile.ZSTANDARD_VERSION
@@ -955,10 +926,10 @@ zoneinfo.TZPATH
 
 # summary
 #  cpython_modules 294
-#  implemented 147
+#  implemented 150
 #  not_implemented 45
 #  failed_to_import 0
-#  missing_items 81
-#  mismatched_items 50
-#  mismatched_doc_items 39
+#  missing_items 79
+#  mismatched_items 48
+#  mismatched_doc_items 38
 #  not_implementeds 7
