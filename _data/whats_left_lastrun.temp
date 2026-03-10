@@ -184,8 +184,6 @@ os.MFD_HUGE_512KB
 os.MFD_HUGE_512MB
 os.MFD_HUGE_64KB
 os.MFD_HUGE_8MB
-os.MFD_HUGE_MASK
-os.MFD_HUGE_SHIFT
 os.NGROUPS_MAX
 os.O_ACCMODE
 os.O_FSYNC
@@ -245,8 +243,6 @@ posix.MFD_HUGE_512KB
 posix.MFD_HUGE_512MB
 posix.MFD_HUGE_64KB
 posix.MFD_HUGE_8MB
-posix.MFD_HUGE_MASK
-posix.MFD_HUGE_SHIFT
 posix.NGROUPS_MAX
 posix.O_ACCMODE
 posix.O_FSYNC
@@ -587,7 +583,6 @@ sqlite3.SQLITE_DBCONFIG_TRIGGER_EQP
 sqlite3.SQLITE_DBCONFIG_TRUSTED_SCHEMA
 sqlite3.SQLITE_DBCONFIG_WRITABLE_SCHEMA
 _sre.copyright
-_ssl.HAS_PHA
 _ssl.HOSTFLAG_ALWAYS_CHECK_SUBJECT
 _ssl.HOSTFLAG_MULTI_LABEL_WILDCARDS
 _ssl.HOSTFLAG_NEVER_CHECK_SUBJECT
@@ -596,7 +591,6 @@ _ssl.HOSTFLAG_NO_WILDCARDS
 _ssl.HOSTFLAG_SINGLE_LABEL_SUBDOMAINS
 _ssl.OP_ENABLE_KTLS
 _ssl.__file__
-ssl.HAS_PHA
 ssl.OP_ENABLE_KTLS
 _stat.UF_DATAVAULT
 _stat.UF_SETTABLE
@@ -619,9 +613,6 @@ sys.getunicodeinternedsize
 sys.is_stack_trampoline_active
 sys.remote_exec
 sys.setdlopenflags
-sysconfig._get_sysconfigdata
-sysconfig._import_from_directory
-sysconfig._installation_is_relocated
 syslog.LOG_FTP
 syslog.__file__
 termios.CDSUSP
@@ -905,10 +896,10 @@ zoneinfo.TZPATH
 
 # summary
 #  cpython_modules 294
-#  implemented 156
+#  implemented 158
 #  not_implemented 45
 #  failed_to_import 0
-#  missing_items 73
-#  mismatched_items 46
+#  missing_items 72
+#  mismatched_items 45
 #  mismatched_doc_items 35
 #  not_implementeds 7

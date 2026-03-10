@@ -36,7 +36,6 @@ _testclinic (entire module)
 _testclinic_limited (entire module)
 _testsinglephase (entire module)
 _tkinter (entire module)
-_tokenize (entire module)
 _tracemalloc (entire module)
 tracemalloc (entire module)
 turtle (entire module)
@@ -833,9 +832,6 @@ tkinter.image_names
 tkinter.image_types
 tkinter.mainloop
 tkinter.wantobjects
-tokenize._generate_tokens_from_c_tokenizer
-tokenize._main
-tokenize._transform_msg
 tty.CDSUSP
 tty.CEOF
 tty.CEOL
@@ -896,10 +892,10 @@ zoneinfo.TZPATH
 
 # summary
 #  cpython_modules 294
-#  implemented 158
-#  not_implemented 45
+#  implemented 159
+#  not_implemented 44
 #  failed_to_import 0
-#  missing_items 72
+#  missing_items 71
 #  mismatched_items 45
-#  mismatched_doc_items 35
+#  mismatched_doc_items 34
 #  not_implementeds 7
