@@ -34,8 +34,6 @@ _zstd
 cProfile
 curses
 idlelib
-modulefinder
-poplib
 profile
 pstats
 readline

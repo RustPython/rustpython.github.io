@@ -13,7 +13,6 @@ bytes,bytes.__buffer__,
 bytes,bytes.__str__,(inherited)
 complex,complex.from_number,
 dict_items,dict_items.__hash__,(inherited)
-map,map.__setstate__,
 memoryview,memoryview.__buffer__,
 memoryview,memoryview.__release_buffer__,
 memoryview,memoryview._from_flags,

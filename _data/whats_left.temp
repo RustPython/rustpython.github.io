@@ -22,10 +22,8 @@ _interpchannels (entire module)
 _interpqueues (entire module)
 _interpreters (entire module)
 _lsprof (entire module)
-modulefinder (entire module)
 _multibytecodec (entire module)
 _pickle (entire module)
-poplib (entire module)
 profile (entire module)
 pstats (entire module)
 _queue (entire module)
@@ -59,7 +57,6 @@ bytes.__buffer__
 bytes.__str__ (inherited)
 complex.from_number
 dict_items.__hash__ (inherited)
-map.__setstate__
 memoryview.__buffer__
 memoryview.__release_buffer__
 memoryview._from_flags
@@ -892,10 +889,10 @@ zoneinfo.TZPATH
 
 # summary
 #  cpython_modules 294
-#  implemented 159
-#  not_implemented 44
+#  implemented 161
+#  not_implemented 42
 #  failed_to_import 0
 #  missing_items 71
 #  mismatched_items 45
 #  mismatched_doc_items 34
-#  not_implementeds 7
+#  not_implementeds 6
