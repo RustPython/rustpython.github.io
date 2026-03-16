@@ -1,11 +1,4 @@
 builtin,name,is_inherited
-NoneType,NoneType.__eq__,(inherited)
-NoneType,NoneType.__ge__,(inherited)
-NoneType,NoneType.__gt__,(inherited)
-NoneType,NoneType.__hash__,(inherited)
-NoneType,NoneType.__le__,(inherited)
-NoneType,NoneType.__lt__,(inherited)
-NoneType,NoneType.__ne__,(inherited)
 bytearray,bytearray.__buffer__,
 bytearray,bytearray.__release_buffer__,
 bytearray,bytearray.__str__,(inherited)

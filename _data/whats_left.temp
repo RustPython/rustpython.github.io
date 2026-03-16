@@ -43,13 +43,6 @@ _zoneinfo (entire module)
 _zstd (entire module)
 
 # builtin items
-NoneType.__eq__ (inherited)
-NoneType.__ge__ (inherited)
-NoneType.__gt__ (inherited)
-NoneType.__hash__ (inherited)
-NoneType.__le__ (inherited)
-NoneType.__lt__ (inherited)
-NoneType.__ne__ (inherited)
 bytearray.__buffer__
 bytearray.__release_buffer__
 bytearray.__str__ (inherited)
@@ -895,4 +888,4 @@ zoneinfo.TZPATH
 #  missing_items 71
 #  mismatched_items 45
 #  mismatched_doc_items 34
-#  not_implementeds 6
+#  not_implementeds 5
