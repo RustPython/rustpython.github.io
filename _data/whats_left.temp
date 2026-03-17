@@ -48,7 +48,6 @@ bytearray.__release_buffer__
 bytearray.__str__ (inherited)
 bytes.__buffer__
 bytes.__str__ (inherited)
-complex.from_number
 dict_items.__hash__ (inherited)
 memoryview.__buffer__
 memoryview.__release_buffer__
@@ -888,4 +887,4 @@ zoneinfo.TZPATH
 #  missing_items 71
 #  mismatched_items 45
 #  mismatched_doc_items 34
-#  not_implementeds 5
+#  not_implementeds 4

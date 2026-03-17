@@ -4,7 +4,6 @@ bytearray,bytearray.__release_buffer__,
 bytearray,bytearray.__str__,(inherited)
 bytes,bytes.__buffer__,
 bytes,bytes.__str__,(inherited)
-complex,complex.from_number,
 dict_items,dict_items.__hash__,(inherited)
 memoryview,memoryview.__buffer__,
 memoryview,memoryview.__release_buffer__,
