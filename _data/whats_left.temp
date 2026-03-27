@@ -45,9 +45,7 @@ _zstd (entire module)
 # builtin items
 bytearray.__buffer__
 bytearray.__release_buffer__
-bytearray.__str__ (inherited)
 bytes.__buffer__
-bytes.__str__ (inherited)
 dict_items.__hash__ (inherited)
 memoryview.__buffer__
 memoryview.__release_buffer__
