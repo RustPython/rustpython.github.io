@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-03-28T20:23:16Z",
-  "rustpython_commit": "9a11d44a5c63fa30291651a5d51223d1aa32c19e",
-  "rustpython_ref": "copilot/fix-str-subclass-type-issue"
+  "generated_at": "2026-03-31T12:57:00Z",
+  "rustpython_commit": "39a6486a4cc32231943e14be8a435a68ae35aab0",
+  "rustpython_ref": "0.5.0"
 }
