@@ -53,6 +53,7 @@ memoryview._from_flags
 
 # stdlib items
 builtins.PythonFinalizationError
+argparse._identity
 array.__file__
 array.typecodes
 _asyncio.__file__
@@ -81,6 +82,7 @@ ctypes.c_double_complex
 ctypes.c_float_complex
 ctypes.c_longdouble_complex
 datetime.datetime_CAPI
+encodings._MAXCACHE
 errno.EHWPOISON
 faulthandler._stack_overflow
 faulthandler.dump_c_stack
@@ -817,6 +819,7 @@ tkinter.image_names
 tkinter.image_types
 tkinter.mainloop
 tkinter.wantobjects
+traceback._get_safe___dir__
 tty.CDSUSP
 tty.CEOF
 tty.CEOL
@@ -877,10 +880,10 @@ zoneinfo.TZPATH
 
 # summary
 #  cpython_modules 294
-#  implemented 162
+#  implemented 160
 #  not_implemented 42
 #  failed_to_import 0
-#  missing_items 70
+#  missing_items 73
 #  mismatched_items 45
-#  mismatched_doc_items 33
+#  mismatched_doc_items 35
 #  not_implementeds 4
