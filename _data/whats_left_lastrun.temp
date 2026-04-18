@@ -53,7 +53,6 @@ memoryview._from_flags
 
 # stdlib items
 builtins.PythonFinalizationError
-argparse._identity
 array.__file__
 array.typecodes
 _asyncio.__file__
@@ -880,10 +879,10 @@ zoneinfo.TZPATH
 
 # summary
 #  cpython_modules 294
-#  implemented 160
+#  implemented 161
 #  not_implemented 42
 #  failed_to_import 0
-#  missing_items 73
+#  missing_items 72
 #  mismatched_items 45
-#  mismatched_doc_items 35
+#  mismatched_doc_items 34
 #  not_implementeds 4
