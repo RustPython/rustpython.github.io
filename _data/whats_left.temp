@@ -817,7 +817,6 @@ tkinter.image_names
 tkinter.image_types
 tkinter.mainloop
 tkinter.wantobjects
-traceback._get_safe___dir__
 tty.CDSUSP
 tty.CEOF
 tty.CEOL
@@ -881,7 +880,7 @@ zoneinfo.TZPATH
 #  implemented 161
 #  not_implemented 42
 #  failed_to_import 0
-#  missing_items 72
+#  missing_items 71
 #  mismatched_items 45
 #  mismatched_doc_items 34
 #  not_implementeds 4
