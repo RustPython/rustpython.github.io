@@ -81,7 +81,6 @@ ctypes.c_double_complex
 ctypes.c_float_complex
 ctypes.c_longdouble_complex
 datetime.datetime_CAPI
-encodings._MAXCACHE
 errno.EHWPOISON
 faulthandler._stack_overflow
 faulthandler.dump_c_stack
@@ -212,9 +211,6 @@ pdb.parse_args
 pdb.set_default_backend
 pdb.set_trace_async
 pickle.PickleBuffer
-platform._main
-platform._parse_args
-platform.invalidate_caches
 posix.CLONE_NEWTIME
 posix.MFD_HUGE_16GB
 posix.MFD_HUGE_16MB
@@ -877,10 +873,10 @@ zoneinfo.TZPATH
 
 # summary
 #  cpython_modules 294
-#  implemented 161
+#  implemented 162
 #  not_implemented 42
 #  failed_to_import 0
-#  missing_items 71
+#  missing_items 69
 #  mismatched_items 45
 #  mismatched_doc_items 34
 #  not_implementeds 4
