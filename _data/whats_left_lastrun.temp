@@ -52,7 +52,6 @@ memoryview.__release_buffer__
 memoryview._from_flags
 
 # stdlib items
-builtins.PythonFinalizationError
 array.__file__
 array.typecodes
 _asyncio.__file__
@@ -585,7 +584,6 @@ sys._get_cpu_count_config
 sys._is_immortal
 sys._is_interned
 sys.activate_stack_trampoline
-sys.addaudithook
 sys.deactivate_stack_trampoline
 sys.getallocatedblocks
 sys.getdlopenflags
@@ -876,7 +874,7 @@ zoneinfo.TZPATH
 #  implemented 162
 #  not_implemented 42
 #  failed_to_import 0
-#  missing_items 69
+#  missing_items 68
 #  mismatched_items 45
 #  mismatched_doc_items 34
 #  not_implementeds 4
