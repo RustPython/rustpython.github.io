@@ -21,7 +21,6 @@ _interpreters
 _lsprof
 _multibytecodec
 _pickle
-_queue
 _sha2
 _sysconfigdata__linux_x86_64-linux-gnu
 _testclinic
@@ -34,10 +33,7 @@ _zstd
 cProfile
 curses
 idlelib
-profile
-pstats
 readline
-tracemalloc
 turtle
 turtledemo
 xxlimited_35

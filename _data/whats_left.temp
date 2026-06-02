@@ -24,9 +24,6 @@ _interpreters (entire module)
 _lsprof (entire module)
 _multibytecodec (entire module)
 _pickle (entire module)
-profile (entire module)
-pstats (entire module)
-_queue (entire module)
 readline (entire module)
 _sha2 (entire module)
 _sysconfigdata__linux_x86_64-linux-gnu (entire module)
@@ -35,7 +32,6 @@ _testclinic_limited (entire module)
 _testsinglephase (entire module)
 _tkinter (entire module)
 _tracemalloc (entire module)
-tracemalloc (entire module)
 turtle (entire module)
 turtledemo (entire module)
 xxlimited_35 (entire module)
@@ -80,7 +76,6 @@ ctypes.c_double_complex
 ctypes.c_float_complex
 ctypes.c_longdouble_complex
 datetime.datetime_CAPI
-errno.EHWPOISON
 faulthandler._stack_overflow
 faulthandler.dump_c_stack
 fcntl.DN_ACCESS
@@ -191,7 +186,6 @@ os.TMP_MAX
 os.XATTR_SIZE_MAX
 os.confstr_names
 os.supports_effective_ids
-pathlib.EHWPOISON
 pdb._ExecutableTarget
 pdb._ModuleTarget
 pdb._PdbClient
@@ -308,6 +302,7 @@ pyexpat.__file__
 pyexpat.expat_CAPI
 pyexpat.features
 pyexpat.native_encoding
+_queue.__file__
 _random.__file__
 _remote_debugging.PROCESS_VM_READV_SUPPORTED
 _remote_debugging.__file__
@@ -811,6 +806,26 @@ tkinter.image_names
 tkinter.image_types
 tkinter.mainloop
 tkinter.wantobjects
+tracemalloc.BaseFilter
+tracemalloc.DomainFilter
+tracemalloc.Filter
+tracemalloc.Frame
+tracemalloc.Snapshot
+tracemalloc.Statistic
+tracemalloc.StatisticDiff
+tracemalloc.Trace
+tracemalloc.Traceback
+tracemalloc._Traces
+tracemalloc.__builtins__
+tracemalloc.__cached__
+tracemalloc.__file__
+tracemalloc.__name__
+tracemalloc.__package__
+tracemalloc._compare_grouped_stats
+tracemalloc._format_size
+tracemalloc._normalize_filename
+tracemalloc.get_object_traceback
+tracemalloc.take_snapshot
 tty.CDSUSP
 tty.CEOF
 tty.CEOL
@@ -871,10 +886,10 @@ zoneinfo.TZPATH
 
 # summary
 #  cpython_modules 294
-#  implemented 162
-#  not_implemented 42
+#  implemented 166
+#  not_implemented 38
 #  failed_to_import 0
 #  missing_items 68
-#  mismatched_items 45
+#  mismatched_items 46
 #  mismatched_doc_items 34
 #  not_implementeds 4
