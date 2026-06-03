@@ -32,8 +32,6 @@ _testclinic_limited (entire module)
 _testsinglephase (entire module)
 _tkinter (entire module)
 _tracemalloc (entire module)
-turtle (entire module)
-turtledemo (entire module)
 xxlimited_35 (entire module)
 _zoneinfo (entire module)
 _zstd (entire module)
@@ -877,6 +875,165 @@ tty.TIOCSER_TEMT
 tty.TIOCSETD
 tty.TIOCSLCKTRMIOS
 tty.TIOCSSERIAL
+turtle.Pen
+turtle.RawPen
+turtle.RawTurtle
+turtle.Screen
+turtle.ScrolledCanvas
+turtle.Shape
+turtle.TNavigator
+turtle.TPen
+turtle.Tbuffer
+turtle.Terminator
+turtle.Turtle
+turtle.TurtleGraphicsError
+turtle.TurtleScreen
+turtle.TurtleScreenBase
+turtle.Vec2D
+turtle._CFG
+turtle._LANGUAGE
+turtle._Root
+turtle._Screen
+turtle._TurtleImage
+turtle.__all__
+turtle.__builtins__
+turtle.__cached__
+turtle.__file__
+turtle.__forwardmethods
+turtle.__func_body
+turtle.__methodDict
+turtle.__methods
+turtle.__name__
+turtle.__package__
+turtle.__stringBody
+turtle._alias_list
+turtle._make_global_funcs
+turtle._screen_docrevise
+turtle._tg_classes
+turtle._tg_screen_functions
+turtle._tg_turtle_functions
+turtle._tg_utilities
+turtle._turtle_docrevise
+turtle.addshape
+turtle.back
+turtle.backward
+turtle.begin_fill
+turtle.begin_poly
+turtle.bgcolor
+turtle.bgpic
+turtle.bk
+turtle.bye
+turtle.circle
+turtle.clear
+turtle.clearscreen
+turtle.clearstamp
+turtle.clearstamps
+turtle.clone
+turtle.color
+turtle.colormode
+turtle.config_dict
+turtle.degrees
+turtle.delay
+turtle.distance
+turtle.done
+turtle.dot
+turtle.down
+turtle.end_fill
+turtle.end_poly
+turtle.exitonclick
+turtle.fd
+turtle.fill
+turtle.fillcolor
+turtle.filling
+turtle.forward
+turtle.get_poly
+turtle.get_shapepoly
+turtle.getcanvas
+turtle.getmethparlist
+turtle.getpen
+turtle.getscreen
+turtle.getshapes
+turtle.getturtle
+turtle.goto
+turtle.heading
+turtle.hideturtle
+turtle.home
+turtle.ht
+turtle.isdown
+turtle.isvisible
+turtle.left
+turtle.listen
+turtle.lt
+turtle.mainloop
+turtle.mode
+turtle.no_animation
+turtle.numinput
+turtle.onclick
+turtle.ondrag
+turtle.onkey
+turtle.onkeypress
+turtle.onkeyrelease
+turtle.onrelease
+turtle.onscreenclick
+turtle.ontimer
+turtle.pd
+turtle.pen
+turtle.pencolor
+turtle.pendown
+turtle.pensize
+turtle.penup
+turtle.poly
+turtle.pos
+turtle.position
+turtle.pu
+turtle.radians
+turtle.read_docstrings
+turtle.readconfig
+turtle.register_shape
+turtle.reset
+turtle.resetscreen
+turtle.resizemode
+turtle.right
+turtle.rt
+turtle.save
+turtle.screensize
+turtle.seth
+turtle.setheading
+turtle.setpos
+turtle.setposition
+turtle.setundobuffer
+turtle.setup
+turtle.setworldcoordinates
+turtle.setx
+turtle.sety
+turtle.shape
+turtle.shapesize
+turtle.shapetransform
+turtle.shearfactor
+turtle.showturtle
+turtle.speed
+turtle.st
+turtle.stamp
+turtle.teleport
+turtle.textinput
+turtle.tilt
+turtle.tiltangle
+turtle.title
+turtle.towards
+turtle.tracer
+turtle.turtles
+turtle.turtlesize
+turtle.undo
+turtle.undobufferentries
+turtle.up
+turtle.update
+turtle.width
+turtle.window_height
+turtle.window_width
+turtle.write
+turtle.write_docstringdict
+turtle.xcor
+turtle.ycor
 typing.Match
 unicodedata.__file__
 unicodedata._ucnhash_CAPI
@@ -886,10 +1043,10 @@ zoneinfo.TZPATH
 
 # summary
 #  cpython_modules 294
-#  implemented 166
-#  not_implemented 38
+#  implemented 167
+#  not_implemented 36
 #  failed_to_import 0
-#  missing_items 68
+#  missing_items 69
 #  mismatched_items 46
 #  mismatched_doc_items 34
 #  not_implementeds 4
