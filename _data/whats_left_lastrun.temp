@@ -15,7 +15,6 @@ _dbm (entire module)
 _decimal (entire module)
 _elementtree (entire module)
 _gdbm (entire module)
-_heapq (entire module)
 _hmac (entire module)
 idlelib (entire module)
 _interpchannels (entire module)
@@ -51,15 +50,6 @@ array.typecodes
 _asyncio.__file__
 binascii.__file__
 _bisect.__file__
-_blake2.BLAKE2B_MAX_DIGEST_SIZE
-_blake2.BLAKE2B_MAX_KEY_SIZE
-_blake2.BLAKE2B_PERSON_SIZE
-_blake2.BLAKE2B_SALT_SIZE
-_blake2.BLAKE2S_MAX_DIGEST_SIZE
-_blake2.BLAKE2S_MAX_KEY_SIZE
-_blake2.BLAKE2S_PERSON_SIZE
-_blake2.BLAKE2S_SALT_SIZE
-_blake2._GIL_MINSIZE
 _blake2.__file__
 _bz2.__file__
 cmath.__file__
@@ -118,6 +108,8 @@ _functools.cmp_to_key
 grp.__file__
 _hashlib.__file__
 _hashlib.scrypt
+_heapq.__about__
+_heapq.__file__
 _imp._override_multi_interp_extensions_check
 _imp.create_dynamic
 _imp.exec_dynamic
@@ -1044,9 +1036,9 @@ zoneinfo.TZPATH
 # summary
 #  cpython_modules 294
 #  implemented 167
-#  not_implemented 36
+#  not_implemented 35
 #  failed_to_import 0
-#  missing_items 69
+#  missing_items 70
 #  mismatched_items 46
 #  mismatched_doc_items 34
 #  not_implementeds 4

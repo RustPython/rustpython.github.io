@@ -176,23 +176,6 @@ os.TMP_MAX
 os.XATTR_SIZE_MAX
 os.confstr_names
 os.supports_effective_ids
-pdb._ExecutableTarget
-pdb._ModuleTarget
-pdb._PdbClient
-pdb._PdbInteractiveConsole
-pdb._PdbServer
-pdb._ScriptTarget
-pdb._ZipTarget
-pdb._connect
-pdb._default_backend
-pdb._post_mortem
-pdb.attach
-pdb.exit_with_permission_help_text
-pdb.find_first_executable_line
-pdb.get_default_backend
-pdb.parse_args
-pdb.set_default_backend
-pdb.set_trace_async
 pickle.PickleBuffer
 posix.CLONE_NEWTIME
 posix.MFD_HUGE_16GB
@@ -231,7 +214,6 @@ posix.TMP_MAX
 posix.XATTR_SIZE_MAX
 posix._have_functions
 posix._inputhook
-posix._is_inputhook_installed
 posix._path_normpath
 posix._path_splitroot_ex
 posix.confstr
@@ -1026,7 +1008,6 @@ turtle.write
 turtle.write_docstringdict
 turtle.xcor
 turtle.ycor
-typing.Match
 unicodedata.__file__
 unicodedata._ucnhash_CAPI
 _uuid.__file__
@@ -1035,10 +1016,10 @@ zoneinfo.TZPATH
 
 # summary
 #  cpython_modules 294
-#  implemented 167
+#  implemented 168
 #  not_implemented 35
 #  failed_to_import 0
-#  missing_items 70
-#  mismatched_items 46
+#  missing_items 68
+#  mismatched_items 45
 #  mismatched_doc_items 34
 #  not_implementeds 4
