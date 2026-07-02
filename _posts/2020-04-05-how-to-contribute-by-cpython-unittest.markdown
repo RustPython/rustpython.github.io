@@ -63,4 +63,4 @@ def ...  # failed tests
 ```
 
 ## Development guide
-For a general introduction to RustPython development, please visit the [RustPython development guide](https://github.com/RustPython/RustPython/blob/master/DEVELOPMENT.md)
+For a general introduction to RustPython development, please visit the [RustPython development guide](https://github.com/RustPython/RustPython/blob/master/CONTRIBUTING.md#rustpython-development-guide-and-tips)
