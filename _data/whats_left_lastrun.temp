@@ -266,9 +266,6 @@ _posixshmem.__file__
 _posixsubprocess.__file__
 pyexpat.EXPAT_VERSION
 pyexpat.ErrorString
-pyexpat.XML_PARAM_ENTITY_PARSING_ALWAYS
-pyexpat.XML_PARAM_ENTITY_PARSING_NEVER
-pyexpat.XML_PARAM_ENTITY_PARSING_UNLESS_STANDALONE
 pyexpat.__file__
 pyexpat.expat_CAPI
 pyexpat.features
