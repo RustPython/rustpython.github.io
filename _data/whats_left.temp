@@ -609,8 +609,6 @@ termios.TIOCSLCKTRMIOS
 termios.TIOCSSERIAL
 termios._POSIX_VDISABLE
 termios.__file__
-termios.tcgetwinsize
-termios.tcsetwinsize
 _thread._NAME_MAXLEN
 _thread._get_name
 _thread.allocate
