@@ -59,6 +59,7 @@ _csv.Writer
 _csv.__file__
 _csv._dialects
 _ctypes.__file__
+_ctypes.dllist
 ctypes.c_double_complex
 ctypes.c_float_complex
 ctypes.c_longdouble_complex
@@ -109,6 +110,7 @@ _hashlib.__file__
 _hashlib.scrypt
 _heapq.__about__
 _heapq.__file__
+imaplib._paren_depth
 _imp._override_multi_interp_extensions_check
 _imp.create_dynamic
 _imp.exec_dynamic
@@ -556,6 +558,8 @@ sys.remote_exec
 sys.setdlopenflags
 syslog.LOG_FTP
 syslog.__file__
+tarfile._EXTHEADER_READ_CHUNK
+tarfile._safe_read
 termios.CDSUSP
 termios.CEOF
 termios.CEOL
@@ -1009,10 +1013,10 @@ zlib.__file__
 
 # summary
 #  cpython_modules 294
-#  implemented 169
+#  implemented 167
 #  not_implemented 34
 #  failed_to_import 0
-#  missing_items 67
+#  missing_items 69
 #  mismatched_items 45
-#  mismatched_doc_items 32
+#  mismatched_doc_items 33
 #  not_implementeds 4
