@@ -35,13 +35,7 @@ _zoneinfo (entire module)
 _zstd (entire module)
 
 # builtin items
-bytearray.__buffer__
-bytearray.__release_buffer__
-bytes.__buffer__
 dict_items.__hash__ (inherited)
-memoryview.__buffer__
-memoryview.__release_buffer__
-memoryview._from_flags
 
 # stdlib items
 array.__file__
@@ -491,39 +485,7 @@ socket.TIPC_WAIT_FOREVER
 socket.TIPC_WITHDRAWN
 socket.TIPC_ZONE_SCOPE
 socket.VMADDR_CID_LOCAL
-_sqlite3.SQLITE_DBCONFIG_DEFENSIVE
-_sqlite3.SQLITE_DBCONFIG_DQS_DDL
-_sqlite3.SQLITE_DBCONFIG_DQS_DML
-_sqlite3.SQLITE_DBCONFIG_ENABLE_FKEY
-_sqlite3.SQLITE_DBCONFIG_ENABLE_FTS3_TOKENIZER
-_sqlite3.SQLITE_DBCONFIG_ENABLE_LOAD_EXTENSION
-_sqlite3.SQLITE_DBCONFIG_ENABLE_QPSG
-_sqlite3.SQLITE_DBCONFIG_ENABLE_TRIGGER
-_sqlite3.SQLITE_DBCONFIG_ENABLE_VIEW
-_sqlite3.SQLITE_DBCONFIG_LEGACY_ALTER_TABLE
-_sqlite3.SQLITE_DBCONFIG_LEGACY_FILE_FORMAT
-_sqlite3.SQLITE_DBCONFIG_NO_CKPT_ON_CLOSE
-_sqlite3.SQLITE_DBCONFIG_RESET_DATABASE
-_sqlite3.SQLITE_DBCONFIG_TRIGGER_EQP
-_sqlite3.SQLITE_DBCONFIG_TRUSTED_SCHEMA
-_sqlite3.SQLITE_DBCONFIG_WRITABLE_SCHEMA
 _sqlite3.__file__
-sqlite3.SQLITE_DBCONFIG_DEFENSIVE
-sqlite3.SQLITE_DBCONFIG_DQS_DDL
-sqlite3.SQLITE_DBCONFIG_DQS_DML
-sqlite3.SQLITE_DBCONFIG_ENABLE_FKEY
-sqlite3.SQLITE_DBCONFIG_ENABLE_FTS3_TOKENIZER
-sqlite3.SQLITE_DBCONFIG_ENABLE_LOAD_EXTENSION
-sqlite3.SQLITE_DBCONFIG_ENABLE_QPSG
-sqlite3.SQLITE_DBCONFIG_ENABLE_TRIGGER
-sqlite3.SQLITE_DBCONFIG_ENABLE_VIEW
-sqlite3.SQLITE_DBCONFIG_LEGACY_ALTER_TABLE
-sqlite3.SQLITE_DBCONFIG_LEGACY_FILE_FORMAT
-sqlite3.SQLITE_DBCONFIG_NO_CKPT_ON_CLOSE
-sqlite3.SQLITE_DBCONFIG_RESET_DATABASE
-sqlite3.SQLITE_DBCONFIG_TRIGGER_EQP
-sqlite3.SQLITE_DBCONFIG_TRUSTED_SCHEMA
-sqlite3.SQLITE_DBCONFIG_WRITABLE_SCHEMA
 _sre.copyright
 _ssl.HOSTFLAG_ALWAYS_CHECK_SUBJECT
 _ssl.HOSTFLAG_MULTI_LABEL_WILDCARDS
@@ -1014,7 +976,7 @@ zlib.__file__
 #  implemented 167
 #  not_implemented 34
 #  failed_to_import 0
-#  missing_items 68
+#  missing_items 67
 #  mismatched_items 45
 #  mismatched_doc_items 32
-#  not_implementeds 4
+#  not_implementeds 1
