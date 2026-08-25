@@ -978,5 +978,5 @@ zlib.__file__
 #  failed_to_import 0
 #  missing_items 67
 #  mismatched_items 45
-#  mismatched_doc_items 32
+#  mismatched_doc_items 31
 #  not_implementeds 1
