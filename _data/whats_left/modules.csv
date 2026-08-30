@@ -14,9 +14,6 @@ _decimal
 _elementtree
 _gdbm
 _hmac
-_interpchannels
-_interpqueues
-_interpreters
 _lsprof
 _multibytecodec
 _pickle

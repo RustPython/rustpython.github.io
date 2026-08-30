@@ -16,9 +16,6 @@ _decimal (entire module)
 _elementtree (entire module)
 _gdbm (entire module)
 _hmac (entire module)
-_interpchannels (entire module)
-_interpqueues (entire module)
-_interpreters (entire module)
 _lsprof (entire module)
 _multibytecodec (entire module)
 _pickle (entire module)
@@ -104,10 +101,12 @@ _hashlib.__file__
 _hashlib.scrypt
 _heapq.__about__
 _heapq.__file__
-imaplib._paren_depth
 _imp._override_multi_interp_extensions_check
 _imp.create_dynamic
 _imp.exec_dynamic
+_interpchannels.__file__
+_interpqueues.__file__
+_interpreters.__file__
 _io._BytesIOBuffer
 _json.__file__
 _json.make_encoder
@@ -518,8 +517,6 @@ sys.remote_exec
 sys.setdlopenflags
 syslog.LOG_FTP
 syslog.__file__
-tarfile._EXTHEADER_READ_CHUNK
-tarfile._safe_read
 termios.CDSUSP
 termios.CEOF
 termios.CEOL
@@ -973,10 +970,10 @@ zlib.__file__
 
 # summary
 #  cpython_modules 294
-#  implemented 167
-#  not_implemented 34
+#  implemented 169
+#  not_implemented 31
 #  failed_to_import 0
-#  missing_items 67
-#  mismatched_items 45
-#  mismatched_doc_items 31
+#  missing_items 68
+#  mismatched_items 46
+#  mismatched_doc_items 32
 #  not_implementeds 1
