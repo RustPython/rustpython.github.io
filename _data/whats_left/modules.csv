@@ -1,10 +1,4 @@
 module
-_codecs_cn
-_codecs_hk
-_codecs_iso2022
-_codecs_jp
-_codecs_kr
-_codecs_tw
 _ctypes_test
 _curses
 _curses_panel
@@ -15,7 +9,6 @@ _elementtree
 _gdbm
 _hmac
 _lsprof
-_multibytecodec
 _pickle
 _sha2
 _sysconfigdata__linux_x86_64-linux-gnu

@@ -1,11 +1,5 @@
 # modules
 cProfile (entire module)
-_codecs_cn (entire module)
-_codecs_hk (entire module)
-_codecs_iso2022 (entire module)
-_codecs_jp (entire module)
-_codecs_kr (entire module)
-_codecs_tw (entire module)
 _ctypes_test (entire module)
 _curses (entire module)
 curses (entire module)
@@ -17,7 +11,6 @@ _elementtree (entire module)
 _gdbm (entire module)
 _hmac (entire module)
 _lsprof (entire module)
-_multibytecodec (entire module)
 _pickle (entire module)
 readline (entire module)
 _sha2 (entire module)
@@ -43,6 +36,35 @@ _bisect.__file__
 _blake2.__file__
 _bz2.__file__
 cmath.__file__
+_codecs_cn.__file__
+_codecs_cn.__map_gb18030ext
+_codecs_cn.__map_gb2312
+_codecs_cn.__map_gbcommon
+_codecs_cn.__map_gbkext
+_codecs_hk.__file__
+_codecs_hk.__map_big5hkscs
+_codecs_hk.__map_big5hkscs_bmp
+_codecs_hk.__map_big5hkscs_nonbmp
+_codecs_iso2022.__file__
+_codecs_jp.__file__
+_codecs_jp.__map_cp932ext
+_codecs_jp.__map_jisx0208
+_codecs_jp.__map_jisx0212
+_codecs_jp.__map_jisx0213_1_bmp
+_codecs_jp.__map_jisx0213_1_emp
+_codecs_jp.__map_jisx0213_2_bmp
+_codecs_jp.__map_jisx0213_2_emp
+_codecs_jp.__map_jisx0213_bmp
+_codecs_jp.__map_jisx0213_emp
+_codecs_jp.__map_jisx0213_pair
+_codecs_jp.__map_jisxcommon
+_codecs_kr.__file__
+_codecs_kr.__map_cp949
+_codecs_kr.__map_cp949ext
+_codecs_kr.__map_ksx1001
+_codecs_tw.__file__
+_codecs_tw.__map_big5
+_codecs_tw.__map_cp950ext
 _collections._count_elements
 copyreg.__cached__
 _csv.Reader
@@ -98,7 +120,6 @@ fcntl.__file__
 _functools.cmp_to_key
 grp.__file__
 _hashlib.__file__
-_hashlib.scrypt
 _heapq.__about__
 _heapq.__file__
 _imp._override_multi_interp_extensions_check
@@ -126,6 +147,7 @@ _md5.__file__
 mmap.MAP_32BIT
 mmap.MAP_NORESERVE
 mmap.__file__
+_multibytecodec.__file__
 _multiprocessing.__file__
 _operator.call
 _operator.inv
@@ -971,9 +993,9 @@ zlib.__file__
 # summary
 #  cpython_modules 294
 #  implemented 169
-#  not_implemented 31
+#  not_implemented 24
 #  failed_to_import 0
-#  missing_items 68
+#  missing_items 75
 #  mismatched_items 46
-#  mismatched_doc_items 32
+#  mismatched_doc_items 30
 #  not_implementeds 1
