@@ -86,7 +86,6 @@ fcntl.DN_DELETE
 fcntl.DN_MODIFY
 fcntl.DN_MULTISHOT
 fcntl.DN_RENAME
-fcntl.FASYNC
 fcntl.FICLONE
 fcntl.FICLONERANGE
 fcntl.F_EXLCK
@@ -240,7 +239,6 @@ posix.fdatasync
 posix.forkpty
 posix.getxattr
 posix.grantpt
-posix.killpg
 posix.listxattr
 posix.lockf
 posix.login_tty
@@ -291,15 +289,9 @@ _remote_debugging.PROCESS_VM_READV_SUPPORTED
 _remote_debugging.__file__
 resource.RLIMIT_OFILE
 resource.__file__
-resource.getpagesize
 resource.prlimit
-select.PIPE_BUF
 select.POLLMSG
-select.POLLRDBAND
 select.POLLRDHUP
-select.POLLRDNORM
-select.POLLWRBAND
-select.POLLWRNORM
 select.__file__
 _sha1.SHA1Type
 _sha1._GIL_MINSIZE
@@ -517,16 +509,12 @@ _ssl.HOSTFLAG_SINGLE_LABEL_SUBDOMAINS
 _ssl.OP_ENABLE_KTLS
 _ssl.__file__
 ssl.OP_ENABLE_KTLS
-_stat.UF_DATAVAULT
-_stat.UF_SETTABLE
-_stat.UF_TRACKED
 _statistics.__file__
 _struct.__file__
 sys._clear_internal_caches
 sys._clear_type_cache
 sys._debugmallocstats
 sys._dump_tracelets
-sys._get_cpu_count_config
 sys._is_immortal
 sys._is_interned
 sys.activate_stack_trampoline
@@ -992,10 +980,10 @@ zlib.__file__
 
 # summary
 #  cpython_modules 294
-#  implemented 169
+#  implemented 170
 #  not_implemented 24
 #  failed_to_import 0
-#  missing_items 75
+#  missing_items 74
 #  mismatched_items 46
 #  mismatched_doc_items 30
 #  not_implementeds 1
