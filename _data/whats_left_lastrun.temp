@@ -241,7 +241,6 @@ posix.getxattr
 posix.grantpt
 posix.listxattr
 posix.lockf
-posix.login_tty
 posix.major
 posix.makedev
 posix.memfd_create
@@ -579,8 +578,6 @@ termios.TIOCSLCKTRMIOS
 termios.TIOCSSERIAL
 termios._POSIX_VDISABLE
 termios.__file__
-_thread._NAME_MAXLEN
-_thread._get_name
 _thread.allocate
 _thread.exit_thread
 _thread.get_native_id
@@ -984,5 +981,5 @@ zlib.__file__
 #  failed_to_import 0
 #  missing_items 74
 #  mismatched_items 45
-#  mismatched_doc_items 30
+#  mismatched_doc_items 29
 #  not_implementeds 1

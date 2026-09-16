@@ -1,5 +1,11 @@
 # modules
 cProfile (entire module)
+_codecs_cn (entire module)
+_codecs_hk (entire module)
+_codecs_iso2022 (entire module)
+_codecs_jp (entire module)
+_codecs_kr (entire module)
+_codecs_tw (entire module)
 _ctypes_test (entire module)
 _curses (entire module)
 curses (entire module)
@@ -9,9 +15,18 @@ _dbm (entire module)
 _decimal (entire module)
 _elementtree (entire module)
 _gdbm (entire module)
+_heapq (entire module)
 _hmac (entire module)
+idlelib (entire module)
+_interpchannels (entire module)
+_interpqueues (entire module)
+_interpreters (entire module)
 _lsprof (entire module)
+_multibytecodec (entire module)
 _pickle (entire module)
+profile (entire module)
+pstats (entire module)
+_queue (entire module)
 readline (entire module)
 _sha2 (entire module)
 _sysconfigdata__linux_x86_64-linux-gnu (entire module)
@@ -20,51 +35,41 @@ _testclinic_limited (entire module)
 _testsinglephase (entire module)
 _tkinter (entire module)
 _tracemalloc (entire module)
+tracemalloc (entire module)
+turtle (entire module)
+turtledemo (entire module)
 xxlimited_35 (entire module)
 _zoneinfo (entire module)
 _zstd (entire module)
 
 # builtin items
+bytearray.__buffer__
+bytearray.__release_buffer__
+bytes.__buffer__
 dict_items.__hash__ (inherited)
+memoryview.__buffer__
+memoryview.__release_buffer__
+memoryview._from_flags
 
 # stdlib items
+builtins.PythonFinalizationError
 array.__file__
 array.typecodes
 _asyncio.__file__
 binascii.__file__
 _bisect.__file__
+_blake2.BLAKE2B_MAX_DIGEST_SIZE
+_blake2.BLAKE2B_MAX_KEY_SIZE
+_blake2.BLAKE2B_PERSON_SIZE
+_blake2.BLAKE2B_SALT_SIZE
+_blake2.BLAKE2S_MAX_DIGEST_SIZE
+_blake2.BLAKE2S_MAX_KEY_SIZE
+_blake2.BLAKE2S_PERSON_SIZE
+_blake2.BLAKE2S_SALT_SIZE
+_blake2._GIL_MINSIZE
 _blake2.__file__
 _bz2.__file__
 cmath.__file__
-_codecs_cn.__file__
-_codecs_cn.__map_gb18030ext
-_codecs_cn.__map_gb2312
-_codecs_cn.__map_gbcommon
-_codecs_cn.__map_gbkext
-_codecs_hk.__file__
-_codecs_hk.__map_big5hkscs
-_codecs_hk.__map_big5hkscs_bmp
-_codecs_hk.__map_big5hkscs_nonbmp
-_codecs_iso2022.__file__
-_codecs_jp.__file__
-_codecs_jp.__map_cp932ext
-_codecs_jp.__map_jisx0208
-_codecs_jp.__map_jisx0212
-_codecs_jp.__map_jisx0213_1_bmp
-_codecs_jp.__map_jisx0213_1_emp
-_codecs_jp.__map_jisx0213_2_bmp
-_codecs_jp.__map_jisx0213_2_emp
-_codecs_jp.__map_jisx0213_bmp
-_codecs_jp.__map_jisx0213_emp
-_codecs_jp.__map_jisx0213_pair
-_codecs_jp.__map_jisxcommon
-_codecs_kr.__file__
-_codecs_kr.__map_cp949
-_codecs_kr.__map_cp949ext
-_codecs_kr.__map_ksx1001
-_codecs_tw.__file__
-_codecs_tw.__map_big5
-_codecs_tw.__map_cp950ext
 _collections._count_elements
 copyreg.__cached__
 _csv.Reader
@@ -72,11 +77,11 @@ _csv.Writer
 _csv.__file__
 _csv._dialects
 _ctypes.__file__
-_ctypes.dllist
 ctypes.c_double_complex
 ctypes.c_float_complex
 ctypes.c_longdouble_complex
 datetime.datetime_CAPI
+errno.EHWPOISON
 faulthandler._stack_overflow
 faulthandler.dump_c_stack
 fcntl.DN_ACCESS
@@ -86,6 +91,7 @@ fcntl.DN_DELETE
 fcntl.DN_MODIFY
 fcntl.DN_MULTISHOT
 fcntl.DN_RENAME
+fcntl.FASYNC
 fcntl.FICLONE
 fcntl.FICLONERANGE
 fcntl.F_EXLCK
@@ -119,15 +125,13 @@ fcntl.__file__
 _functools.cmp_to_key
 grp.__file__
 _hashlib.__file__
-_heapq.__about__
-_heapq.__file__
+_hashlib.scrypt
 _imp._override_multi_interp_extensions_check
 _imp.create_dynamic
 _imp.exec_dynamic
-_interpchannels.__file__
-_interpqueues.__file__
-_interpreters.__file__
 _io._BytesIOBuffer
+itertools._tee
+itertools._tee_dataobject
 _json.__file__
 _json.make_encoder
 _locale._DATE_FMT
@@ -146,7 +150,6 @@ _md5.__file__
 mmap.MAP_32BIT
 mmap.MAP_NORESERVE
 mmap.__file__
-_multibytecodec.__file__
 _multiprocessing.__file__
 _operator.call
 _operator.inv
@@ -189,7 +192,28 @@ os.TMP_MAX
 os.XATTR_SIZE_MAX
 os.confstr_names
 os.supports_effective_ids
+pathlib.EHWPOISON
+pdb._ExecutableTarget
+pdb._ModuleTarget
+pdb._PdbClient
+pdb._PdbInteractiveConsole
+pdb._PdbServer
+pdb._ScriptTarget
+pdb._ZipTarget
+pdb._connect
+pdb._default_backend
+pdb._post_mortem
+pdb.attach
+pdb.exit_with_permission_help_text
+pdb.find_first_executable_line
+pdb.get_default_backend
+pdb.parse_args
+pdb.set_default_backend
+pdb.set_trace_async
 pickle.PickleBuffer
+platform._main
+platform._parse_args
+platform.invalidate_caches
 posix.CLONE_NEWTIME
 posix.MFD_HUGE_16GB
 posix.MFD_HUGE_16MB
@@ -227,6 +251,7 @@ posix.TMP_MAX
 posix.XATTR_SIZE_MAX
 posix._have_functions
 posix._inputhook
+posix._is_inputhook_installed
 posix._path_normpath
 posix._path_splitroot_ex
 posix.confstr
@@ -239,8 +264,10 @@ posix.fdatasync
 posix.forkpty
 posix.getxattr
 posix.grantpt
+posix.killpg
 posix.listxattr
 posix.lockf
+posix.login_tty
 posix.major
 posix.makedev
 posix.memfd_create
@@ -278,19 +305,28 @@ _posixshmem.__file__
 _posixsubprocess.__file__
 pyexpat.EXPAT_VERSION
 pyexpat.ErrorString
+pyexpat.XMLParserType
+pyexpat.XML_PARAM_ENTITY_PARSING_ALWAYS
+pyexpat.XML_PARAM_ENTITY_PARSING_NEVER
+pyexpat.XML_PARAM_ENTITY_PARSING_UNLESS_STANDALONE
 pyexpat.__file__
 pyexpat.expat_CAPI
 pyexpat.features
 pyexpat.native_encoding
-_queue.__file__
 _random.__file__
 _remote_debugging.PROCESS_VM_READV_SUPPORTED
 _remote_debugging.__file__
 resource.RLIMIT_OFILE
 resource.__file__
+resource.getpagesize
 resource.prlimit
+select.PIPE_BUF
 select.POLLMSG
+select.POLLRDBAND
 select.POLLRDHUP
+select.POLLRDNORM
+select.POLLWRBAND
+select.POLLWRNORM
 select.__file__
 _sha1.SHA1Type
 _sha1._GIL_MINSIZE
@@ -497,25 +533,63 @@ socket.TIPC_WAIT_FOREVER
 socket.TIPC_WITHDRAWN
 socket.TIPC_ZONE_SCOPE
 socket.VMADDR_CID_LOCAL
+_sqlite3.SQLITE_DBCONFIG_DEFENSIVE
+_sqlite3.SQLITE_DBCONFIG_DQS_DDL
+_sqlite3.SQLITE_DBCONFIG_DQS_DML
+_sqlite3.SQLITE_DBCONFIG_ENABLE_FKEY
+_sqlite3.SQLITE_DBCONFIG_ENABLE_FTS3_TOKENIZER
+_sqlite3.SQLITE_DBCONFIG_ENABLE_LOAD_EXTENSION
+_sqlite3.SQLITE_DBCONFIG_ENABLE_QPSG
+_sqlite3.SQLITE_DBCONFIG_ENABLE_TRIGGER
+_sqlite3.SQLITE_DBCONFIG_ENABLE_VIEW
+_sqlite3.SQLITE_DBCONFIG_LEGACY_ALTER_TABLE
+_sqlite3.SQLITE_DBCONFIG_LEGACY_FILE_FORMAT
+_sqlite3.SQLITE_DBCONFIG_NO_CKPT_ON_CLOSE
+_sqlite3.SQLITE_DBCONFIG_RESET_DATABASE
+_sqlite3.SQLITE_DBCONFIG_TRIGGER_EQP
+_sqlite3.SQLITE_DBCONFIG_TRUSTED_SCHEMA
+_sqlite3.SQLITE_DBCONFIG_WRITABLE_SCHEMA
 _sqlite3.__file__
+sqlite3.SQLITE_DBCONFIG_DEFENSIVE
+sqlite3.SQLITE_DBCONFIG_DQS_DDL
+sqlite3.SQLITE_DBCONFIG_DQS_DML
+sqlite3.SQLITE_DBCONFIG_ENABLE_FKEY
+sqlite3.SQLITE_DBCONFIG_ENABLE_FTS3_TOKENIZER
+sqlite3.SQLITE_DBCONFIG_ENABLE_LOAD_EXTENSION
+sqlite3.SQLITE_DBCONFIG_ENABLE_QPSG
+sqlite3.SQLITE_DBCONFIG_ENABLE_TRIGGER
+sqlite3.SQLITE_DBCONFIG_ENABLE_VIEW
+sqlite3.SQLITE_DBCONFIG_LEGACY_ALTER_TABLE
+sqlite3.SQLITE_DBCONFIG_LEGACY_FILE_FORMAT
+sqlite3.SQLITE_DBCONFIG_NO_CKPT_ON_CLOSE
+sqlite3.SQLITE_DBCONFIG_RESET_DATABASE
+sqlite3.SQLITE_DBCONFIG_TRIGGER_EQP
+sqlite3.SQLITE_DBCONFIG_TRUSTED_SCHEMA
+sqlite3.SQLITE_DBCONFIG_WRITABLE_SCHEMA
 _sre.copyright
 _ssl.HOSTFLAG_ALWAYS_CHECK_SUBJECT
 _ssl.HOSTFLAG_MULTI_LABEL_WILDCARDS
+_ssl.HOSTFLAG_NEVER_CHECK_SUBJECT
 _ssl.HOSTFLAG_NO_PARTIAL_WILDCARDS
 _ssl.HOSTFLAG_NO_WILDCARDS
 _ssl.HOSTFLAG_SINGLE_LABEL_SUBDOMAINS
 _ssl.OP_ENABLE_KTLS
 _ssl.__file__
 ssl.OP_ENABLE_KTLS
+_stat.UF_DATAVAULT
+_stat.UF_SETTABLE
+_stat.UF_TRACKED
 _statistics.__file__
 _struct.__file__
 sys._clear_internal_caches
 sys._clear_type_cache
 sys._debugmallocstats
 sys._dump_tracelets
+sys._get_cpu_count_config
 sys._is_immortal
 sys._is_interned
 sys.activate_stack_trampoline
+sys.addaudithook
 sys.deactivate_stack_trampoline
 sys.getallocatedblocks
 sys.getdlopenflags
@@ -578,6 +652,10 @@ termios.TIOCSLCKTRMIOS
 termios.TIOCSSERIAL
 termios._POSIX_VDISABLE
 termios.__file__
+termios.tcgetwinsize
+termios.tcsetwinsize
+_thread._NAME_MAXLEN
+_thread._get_name
 _thread.allocate
 _thread.exit_thread
 _thread.get_native_id
@@ -739,26 +817,6 @@ tkinter.image_names
 tkinter.image_types
 tkinter.mainloop
 tkinter.wantobjects
-tracemalloc.BaseFilter
-tracemalloc.DomainFilter
-tracemalloc.Filter
-tracemalloc.Frame
-tracemalloc.Snapshot
-tracemalloc.Statistic
-tracemalloc.StatisticDiff
-tracemalloc.Trace
-tracemalloc.Traceback
-tracemalloc._Traces
-tracemalloc.__builtins__
-tracemalloc.__cached__
-tracemalloc.__file__
-tracemalloc.__name__
-tracemalloc.__package__
-tracemalloc._compare_grouped_stats
-tracemalloc._format_size
-tracemalloc._normalize_filename
-tracemalloc.get_object_traceback
-tracemalloc.take_snapshot
 tty.CDSUSP
 tty.CEOF
 tty.CEOL
@@ -810,176 +868,19 @@ tty.TIOCSER_TEMT
 tty.TIOCSETD
 tty.TIOCSLCKTRMIOS
 tty.TIOCSSERIAL
-turtle.Pen
-turtle.RawPen
-turtle.RawTurtle
-turtle.Screen
-turtle.ScrolledCanvas
-turtle.Shape
-turtle.TNavigator
-turtle.TPen
-turtle.Tbuffer
-turtle.Terminator
-turtle.Turtle
-turtle.TurtleGraphicsError
-turtle.TurtleScreen
-turtle.TurtleScreenBase
-turtle.Vec2D
-turtle._CFG
-turtle._LANGUAGE
-turtle._Root
-turtle._Screen
-turtle._TurtleImage
-turtle.__all__
-turtle.__builtins__
-turtle.__cached__
-turtle.__file__
-turtle.__forwardmethods
-turtle.__func_body
-turtle.__methodDict
-turtle.__methods
-turtle.__name__
-turtle.__package__
-turtle.__stringBody
-turtle._alias_list
-turtle._make_global_funcs
-turtle._screen_docrevise
-turtle._tg_classes
-turtle._tg_screen_functions
-turtle._tg_turtle_functions
-turtle._tg_utilities
-turtle._turtle_docrevise
-turtle.addshape
-turtle.back
-turtle.backward
-turtle.begin_fill
-turtle.begin_poly
-turtle.bgcolor
-turtle.bgpic
-turtle.bk
-turtle.bye
-turtle.circle
-turtle.clear
-turtle.clearscreen
-turtle.clearstamp
-turtle.clearstamps
-turtle.clone
-turtle.color
-turtle.colormode
-turtle.config_dict
-turtle.degrees
-turtle.delay
-turtle.distance
-turtle.done
-turtle.dot
-turtle.down
-turtle.end_fill
-turtle.end_poly
-turtle.exitonclick
-turtle.fd
-turtle.fill
-turtle.fillcolor
-turtle.filling
-turtle.forward
-turtle.get_poly
-turtle.get_shapepoly
-turtle.getcanvas
-turtle.getmethparlist
-turtle.getpen
-turtle.getscreen
-turtle.getshapes
-turtle.getturtle
-turtle.goto
-turtle.heading
-turtle.hideturtle
-turtle.home
-turtle.ht
-turtle.isdown
-turtle.isvisible
-turtle.left
-turtle.listen
-turtle.lt
-turtle.mainloop
-turtle.mode
-turtle.no_animation
-turtle.numinput
-turtle.onclick
-turtle.ondrag
-turtle.onkey
-turtle.onkeypress
-turtle.onkeyrelease
-turtle.onrelease
-turtle.onscreenclick
-turtle.ontimer
-turtle.pd
-turtle.pen
-turtle.pencolor
-turtle.pendown
-turtle.pensize
-turtle.penup
-turtle.poly
-turtle.pos
-turtle.position
-turtle.pu
-turtle.radians
-turtle.read_docstrings
-turtle.readconfig
-turtle.register_shape
-turtle.reset
-turtle.resetscreen
-turtle.resizemode
-turtle.right
-turtle.rt
-turtle.save
-turtle.screensize
-turtle.seth
-turtle.setheading
-turtle.setpos
-turtle.setposition
-turtle.setundobuffer
-turtle.setup
-turtle.setworldcoordinates
-turtle.setx
-turtle.sety
-turtle.shape
-turtle.shapesize
-turtle.shapetransform
-turtle.shearfactor
-turtle.showturtle
-turtle.speed
-turtle.st
-turtle.stamp
-turtle.teleport
-turtle.textinput
-turtle.tilt
-turtle.tiltangle
-turtle.title
-turtle.towards
-turtle.tracer
-turtle.turtles
-turtle.turtlesize
-turtle.undo
-turtle.undobufferentries
-turtle.up
-turtle.update
-turtle.width
-turtle.window_height
-turtle.window_width
-turtle.write
-turtle.write_docstringdict
-turtle.xcor
-turtle.ycor
+typing.Match
 unicodedata.__file__
 unicodedata._ucnhash_CAPI
 _uuid.__file__
 zlib.__file__
+zoneinfo.TZPATH
 
 # summary
 #  cpython_modules 294
-#  implemented 170
-#  not_implemented 24
+#  implemented 162
+#  not_implemented 42
 #  failed_to_import 0
-#  missing_items 74
+#  missing_items 70
 #  mismatched_items 45
-#  mismatched_doc_items 29
-#  not_implementeds 1
+#  mismatched_doc_items 33
+#  not_implementeds 4
