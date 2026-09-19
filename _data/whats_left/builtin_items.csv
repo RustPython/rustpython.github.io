@@ -1,8 +1,2 @@
 builtin,name,is_inherited
-bytearray,bytearray.__buffer__,
-bytearray,bytearray.__release_buffer__,
-bytes,bytes.__buffer__,
 dict_items,dict_items.__hash__,(inherited)
-memoryview,memoryview.__buffer__,
-memoryview,memoryview.__release_buffer__,
-memoryview,memoryview._from_flags,
