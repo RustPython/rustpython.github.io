@@ -26,25 +26,10 @@ tracemalloc (exists but not importable: ModuleNotFoundError: No module named '_t
 turtle (exists but not importable: ModuleNotFoundError: No module named '_tkinter')
 
 # builtin items
-bool.__invert__ (inherited)
 dict_items.__hash__ (inherited)
 
 # stdlib items
 builtins.ExceptionGroup.__weakref__
-builtins.SyntaxError._metadata
-builtins.SyntaxError.print_file_and_line
-builtins.UnicodeDecodeError.encoding
-builtins.UnicodeDecodeError.end
-builtins.UnicodeDecodeError.reason
-builtins.UnicodeDecodeError.start
-builtins.UnicodeEncodeError.encoding
-builtins.UnicodeEncodeError.end
-builtins.UnicodeEncodeError.reason
-builtins.UnicodeEncodeError.start
-builtins.UnicodeTranslateError.encoding
-builtins.UnicodeTranslateError.end
-builtins.UnicodeTranslateError.reason
-builtins.UnicodeTranslateError.start
 builtins.type.__dictoffset__
 builtins.type.__sizeof__ (inherited)
 builtins.type.__weakrefoffset__
@@ -113,7 +98,6 @@ _codecs_kr.__map_ksx1001
 _codecs_tw.__file__
 _codecs_tw.__map_big5
 _codecs_tw.__map_cp950ext
-_collections._count_elements
 collections.defaultdict.__class_getitem__ (inherited)
 collections.deque.__sizeof__ (inherited)
 _contextvars.Token.__hash__ (inherited)
@@ -143,8 +127,6 @@ decimal.Context.capitals
 decimal.Context.clamp
 decimal.Context.prec
 decimal.Context.rounding
-decimal.Decimal.__sizeof__ (inherited)
-_elementtree.Element.__sizeof__ (inherited)
 _elementtree.ParseError.__weakref__
 _elementtree.__file__
 faulthandler._stack_overflow
@@ -198,15 +180,9 @@ _interpchannels.ChannelError.__weakref__
 _interpchannels.__file__
 _interpqueues.__file__
 _interpreters.__file__
-_io.BufferedRandom.__sizeof__ (inherited)
 _io.BufferedRandom._finalizing
-_io.BufferedRandom.readline (inherited)
-_io.BufferedReader.__sizeof__ (inherited)
 _io.BufferedReader._finalizing
-_io.BufferedReader.readline (inherited)
-_io.BufferedWriter.__sizeof__ (inherited)
 _io.BufferedWriter._finalizing
-_io.BytesIO.__sizeof__ (inherited)
 _io.BytesIO.readlines (inherited)
 _io.BytesIO.writelines (inherited)
 _io.FileIO._finalizing
@@ -383,7 +359,6 @@ re.Match.__deepcopy__
 re.Pattern.__copy__
 re.Pattern.__deepcopy__
 _remote_debugging.PROCESS_VM_READV_SUPPORTED
-_remote_debugging.RemoteUnwinder.__init__ (inherited)
 _remote_debugging.RemoteUnwinder.get_all_awaited_by
 _remote_debugging.RemoteUnwinder.get_async_stack_trace
 _remote_debugging.RemoteUnwinder.get_stack_trace
@@ -605,7 +580,6 @@ sqlite3.Connection.enable_load_extension
 sqlite3.Connection.load_extension
 sqlite3.Connection.serialize
 sqlite3.Error.__weakref__
-sqlite3.PrepareProtocol.__init__ (inherited)
 sqlite3.Warning.__weakref__
 _sre.copyright
 _ssl.HOSTFLAG_ALWAYS_CHECK_SUBJECT
@@ -699,7 +673,6 @@ termios._POSIX_VDISABLE
 termios.__file__
 termios.error.__weakref__
 _thread._ExceptHookArgs.__match_args__
-_thread._ExceptHookArgs.__reduce__ (inherited)
 _thread._ExceptHookArgs.__replace__
 _thread._ExceptHookArgs.n_fields
 _thread._ExceptHookArgs.n_sequence_fields
@@ -767,35 +740,15 @@ typing.ParamSpecKwargs.__hash__ (inherited)
 unicodedata.__file__
 unicodedata._ucnhash_CAPI
 _uuid.__file__
-weakref.CallableProxyType.__abs__ (inherited)
-weakref.CallableProxyType.__contains__ (inherited)
-weakref.CallableProxyType.__float__ (inherited)
-weakref.CallableProxyType.__iadd__ (inherited)
-weakref.CallableProxyType.__iand__ (inherited)
-weakref.CallableProxyType.__ifloordiv__ (inherited)
-weakref.CallableProxyType.__ilshift__ (inherited)
-weakref.CallableProxyType.__imatmul__ (inherited)
-weakref.CallableProxyType.__imod__ (inherited)
-weakref.CallableProxyType.__imul__ (inherited)
-weakref.CallableProxyType.__int__ (inherited)
-weakref.CallableProxyType.__invert__ (inherited)
-weakref.CallableProxyType.__ior__ (inherited)
-weakref.CallableProxyType.__ipow__ (inherited)
-weakref.CallableProxyType.__irshift__ (inherited)
-weakref.CallableProxyType.__isub__ (inherited)
-weakref.CallableProxyType.__itruediv__ (inherited)
-weakref.CallableProxyType.__ixor__ (inherited)
-weakref.CallableProxyType.__neg__ (inherited)
-weakref.CallableProxyType.__pos__ (inherited)
 zlib.__file__
 zlib.error.__weakref__
 
 # summary
 #  cpython_modules 294
-#  implemented 155
+#  implemented 180
 #  not_implemented 22
 #  failed_to_import 3
-#  missing_items 86
-#  mismatched_items 126
-#  mismatched_doc_items 101
-#  not_implementeds 2
+#  missing_items 84
+#  mismatched_items 12
+#  mismatched_doc_items 26
+#  not_implementeds 1

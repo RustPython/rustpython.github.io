@@ -7,11 +7,9 @@ _curses_panel (entire module)
 _datetime (entire module)
 _dbm (entire module)
 _decimal (entire module)
-_elementtree (entire module)
 _gdbm (entire module)
 _hmac (entire module)
 _lsprof (entire module)
-_pickle (entire module)
 readline (entire module)
 _sha2 (entire module)
 _sysconfigdata__linux_x86_64-linux-gnu (entire module)
@@ -23,14 +21,64 @@ _tracemalloc (entire module)
 xxlimited_35 (entire module)
 _zoneinfo (entire module)
 _zstd (entire module)
+tkinter (exists but not importable: ModuleNotFoundError: No module named '_tkinter')
+tracemalloc (exists but not importable: ModuleNotFoundError: No module named '_tracemalloc')
+turtle (exists but not importable: ModuleNotFoundError: No module named '_tkinter')
 
 # builtin items
+bool.__invert__ (inherited)
 dict_items.__hash__ (inherited)
 
 # stdlib items
+builtins.ExceptionGroup.__weakref__
+builtins.SyntaxError._metadata
+builtins.SyntaxError.print_file_and_line
+builtins.UnicodeDecodeError.encoding
+builtins.UnicodeDecodeError.end
+builtins.UnicodeDecodeError.reason
+builtins.UnicodeDecodeError.start
+builtins.UnicodeEncodeError.encoding
+builtins.UnicodeEncodeError.end
+builtins.UnicodeEncodeError.reason
+builtins.UnicodeEncodeError.start
+builtins.UnicodeTranslateError.encoding
+builtins.UnicodeTranslateError.end
+builtins.UnicodeTranslateError.reason
+builtins.UnicodeTranslateError.start
+builtins.type.__dictoffset__
+builtins.type.__sizeof__ (inherited)
+builtins.type.__weakrefoffset__
 array.__file__
+array.array.__sizeof__ (inherited)
 array.typecodes
+ast.alias.__weakref__
+ast.alias.end_col_offset
+ast.alias.end_lineno
+ast.arg.__weakref__
+ast.arg.end_col_offset
+ast.arg.end_lineno
+ast.arguments.__weakref__
+ast.boolop.__weakref__
+ast.cmpop.__weakref__
+ast.comprehension.__weakref__
+ast.excepthandler.__weakref__
+ast.expr.__weakref__
+ast.expr_context.__weakref__
+ast.keyword.__weakref__
+ast.keyword.end_col_offset
+ast.keyword.end_lineno
+ast.match_case.__weakref__
+ast.mod.__weakref__
+ast.operator.__weakref__
+ast.pattern.__weakref__
+ast.stmt.__weakref__
+ast.type_ignore.__weakref__
+ast.type_param.__weakref__
+ast.unaryop.__weakref__
+ast.withitem.__weakref__
 _asyncio.__file__
+binascii.Error.__weakref__
+binascii.Incomplete.__weakref__
 binascii.__file__
 _bisect.__file__
 _blake2.__file__
@@ -66,17 +114,39 @@ _codecs_tw.__file__
 _codecs_tw.__map_big5
 _codecs_tw.__map_cp950ext
 _collections._count_elements
+collections.defaultdict.__class_getitem__ (inherited)
+collections.deque.__sizeof__ (inherited)
+_contextvars.Token.__hash__ (inherited)
 copyreg.__cached__
+_csv.Dialect.__reduce__ (inherited)
+_csv.Dialect.__reduce_ex__ (inherited)
 _csv.Reader
 _csv.Writer
 _csv.__file__
 _csv._dialects
 _ctypes.__file__
 _ctypes.dllist
+ctypes.ArgumentError.__weakref__
 ctypes.c_double_complex
 ctypes.c_float_complex
 ctypes.c_longdouble_complex
+datetime.date.__rsub__
+datetime.datetime.__rsub__
 datetime.datetime_CAPI
+datetime.timedelta.__rdivmod__
+datetime.timedelta.__rfloordiv__
+datetime.timedelta.__rmod__
+datetime.timedelta.__rtruediv__
+decimal.Context.Emax
+decimal.Context.Emin
+decimal.Context.capitals
+decimal.Context.clamp
+decimal.Context.prec
+decimal.Context.rounding
+decimal.Decimal.__sizeof__ (inherited)
+_elementtree.Element.__sizeof__ (inherited)
+_elementtree.ParseError.__weakref__
+_elementtree.__file__
 faulthandler._stack_overflow
 faulthandler.dump_c_stack
 fcntl.DN_ACCESS
@@ -116,20 +186,40 @@ fcntl.RWH_WRITE_LIFE_NONE
 fcntl.RWH_WRITE_LIFE_NOT_SET
 fcntl.RWH_WRITE_LIFE_SHORT
 fcntl.__file__
-_functools.cmp_to_key
 grp.__file__
+_hashlib.UnsupportedDigestmodError.__weakref__
 _hashlib.__file__
 _heapq.__about__
 _heapq.__file__
 _imp._override_multi_interp_extensions_check
 _imp.create_dynamic
 _imp.exec_dynamic
+_interpchannels.ChannelError.__weakref__
 _interpchannels.__file__
 _interpqueues.__file__
 _interpreters.__file__
+_io.BufferedRandom.__sizeof__ (inherited)
+_io.BufferedRandom._finalizing
+_io.BufferedRandom.readline (inherited)
+_io.BufferedReader.__sizeof__ (inherited)
+_io.BufferedReader._finalizing
+_io.BufferedReader.readline (inherited)
+_io.BufferedWriter.__sizeof__ (inherited)
+_io.BufferedWriter._finalizing
+_io.BytesIO.__sizeof__ (inherited)
+_io.BytesIO.readlines (inherited)
+_io.BytesIO.writelines (inherited)
+_io.FileIO._finalizing
+_io.FileIO._isatty_open_only
+_io.FileIO.readall (inherited)
+_io.TextIOWrapper._finalizing
 _io._BytesIOBuffer
+io.UnsupportedOperation.__weakref__
+itertools.combinations.__sizeof__ (inherited)
+itertools.combinations_with_replacement.__sizeof__ (inherited)
+itertools.permutations.__sizeof__ (inherited)
+itertools.product.__sizeof__ (inherited)
 _json.__file__
-_json.make_encoder
 _locale._DATE_FMT
 _locale.bind_textdomain_codeset
 _locale.bindtextdomain
@@ -138,6 +228,8 @@ _locale.dgettext
 _locale.gettext
 _locale.nl_langinfo
 _locale.textdomain
+locale.Error.__weakref__
+_lzma.LZMAError.__weakref__
 _lzma.__file__
 math.__file__
 _md5.MD5Type
@@ -188,8 +280,14 @@ os.ST_WRITE
 os.TMP_MAX
 os.XATTR_SIZE_MAX
 os.confstr_names
+os.stat_result.st_rdev
 os.supports_effective_ids
-pickle.PickleBuffer
+_pickle.PickleError.__weakref__
+_pickle.Pickler.__sizeof__ (inherited)
+_pickle.Pickler.dispatch_table
+_pickle.Unpickler.__sizeof__ (inherited)
+_pickle.__file__
+pickle.PickleBuffer.__release_buffer__
 posix.CLONE_NEWTIME
 posix.MFD_HUGE_16GB
 posix.MFD_HUGE_16MB
@@ -236,7 +334,6 @@ posix.eventfd
 posix.eventfd_read
 posix.eventfd_write
 posix.fdatasync
-posix.forkpty
 posix.getxattr
 posix.grantpt
 posix.listxattr
@@ -278,9 +375,18 @@ pyexpat.__file__
 pyexpat.expat_CAPI
 pyexpat.features
 pyexpat.native_encoding
+_queue.Empty.__weakref__
 _queue.__file__
 _random.__file__
+re.Match.__copy__
+re.Match.__deepcopy__
+re.Pattern.__copy__
+re.Pattern.__deepcopy__
 _remote_debugging.PROCESS_VM_READV_SUPPORTED
+_remote_debugging.RemoteUnwinder.__init__ (inherited)
+_remote_debugging.RemoteUnwinder.get_all_awaited_by
+_remote_debugging.RemoteUnwinder.get_async_stack_trace
+_remote_debugging.RemoteUnwinder.get_stack_trace
 _remote_debugging.__file__
 resource.RLIMIT_OFILE
 resource.__file__
@@ -304,6 +410,7 @@ _signal.sigpending
 _signal.sigtimedwait
 _signal.sigwait
 _signal.sigwaitinfo
+signal.ItimerError.__weakref__
 signal.SIGCLD
 signal.SIGIOT
 signal.SIGPOLL
@@ -342,9 +449,6 @@ _socket.IP_RECVORIGDSTADDR
 _socket.IP_RECVRETOPTS
 _socket.IP_RECVTTL
 _socket.IP_UNBLOCK_SOURCE
-_socket.J1939_EE_INFO_NONE
-_socket.J1939_EE_INFO_TX_ABORT
-_socket.J1939_FILTER_MAX
 _socket.NI_IDN
 _socket.NI_MAXSERV
 _socket.PACKET_BROADCAST
@@ -403,6 +507,8 @@ _socket.TIPC_WITHDRAWN
 _socket.TIPC_ZONE_SCOPE
 _socket.VMADDR_CID_LOCAL
 _socket.__file__
+_socket.socket.recvmsg_into
+_socket.socket.timeout
 socket.AF_QIPCRTR
 socket.AF_ROSE
 socket.ALG_OP_SIGN
@@ -433,9 +539,6 @@ socket.IP_RECVORIGDSTADDR
 socket.IP_RECVRETOPTS
 socket.IP_RECVTTL
 socket.IP_UNBLOCK_SOURCE
-socket.J1939_EE_INFO_NONE
-socket.J1939_EE_INFO_TX_ABORT
-socket.J1939_FILTER_MAX
 socket.NI_IDN
 socket.NI_MAXSERV
 socket.PACKET_BROADCAST
@@ -493,7 +596,17 @@ socket.TIPC_WAIT_FOREVER
 socket.TIPC_WITHDRAWN
 socket.TIPC_ZONE_SCOPE
 socket.VMADDR_CID_LOCAL
+socket.gaierror.__weakref__
+socket.herror.__weakref__
 _sqlite3.__file__
+sqlite3.Connection.__del__
+sqlite3.Connection.deserialize
+sqlite3.Connection.enable_load_extension
+sqlite3.Connection.load_extension
+sqlite3.Connection.serialize
+sqlite3.Error.__weakref__
+sqlite3.PrepareProtocol.__init__ (inherited)
+sqlite3.Warning.__weakref__
 _sre.copyright
 _ssl.HOSTFLAG_ALWAYS_CHECK_SUBJECT
 _ssl.HOSTFLAG_MULTI_LABEL_WILDCARDS
@@ -501,10 +614,20 @@ _ssl.HOSTFLAG_NO_PARTIAL_WILDCARDS
 _ssl.HOSTFLAG_NO_WILDCARDS
 _ssl.HOSTFLAG_SINGLE_LABEL_SUBDOMAINS
 _ssl.OP_ENABLE_KTLS
+_ssl.SSLSession.__hash__ (inherited)
+_ssl._SSLContext.set_psk_client_callback
+_ssl._SSLContext.set_psk_server_callback
 _ssl.__file__
 ssl.OP_ENABLE_KTLS
+ssl.SSLCertVerificationError.__weakref__
+ssl.SSLEOFError.__weakref__
+ssl.SSLSyscallError.__weakref__
+ssl.SSLWantReadError.__weakref__
+ssl.SSLWantWriteError.__weakref__
+ssl.SSLZeroReturnError.__weakref__
 _statistics.__file__
 _struct.__file__
+struct.error.__weakref__
 sys._clear_internal_caches
 sys._clear_type_cache
 sys._debugmallocstats
@@ -574,187 +697,19 @@ termios.TIOCSLCKTRMIOS
 termios.TIOCSSERIAL
 termios._POSIX_VDISABLE
 termios.__file__
+termios.error.__weakref__
+_thread._ExceptHookArgs.__match_args__
+_thread._ExceptHookArgs.__reduce__ (inherited)
+_thread._ExceptHookArgs.__replace__
+_thread._ExceptHookArgs.n_fields
+_thread._ExceptHookArgs.n_sequence_fields
+_thread._ExceptHookArgs.n_unnamed_fields
 _thread.allocate
 _thread.exit_thread
-_thread.get_native_id
+_thread.lock.locked_lock
 _thread.start_new
 time.pthread_getcpuclockid
 time.tzset
-tkinter.ACTIVE
-tkinter.ALL
-tkinter.ANCHOR
-tkinter.ARC
-tkinter.BASELINE
-tkinter.BEVEL
-tkinter.BOTH
-tkinter.BOTTOM
-tkinter.BROWSE
-tkinter.BUTT
-tkinter.BaseWidget
-tkinter.BitmapImage
-tkinter.BooleanVar
-tkinter.Button
-tkinter.CASCADE
-tkinter.CENTER
-tkinter.CHAR
-tkinter.CHECKBUTTON
-tkinter.CHORD
-tkinter.COMMAND
-tkinter.CURRENT
-tkinter.CallWrapper
-tkinter.Canvas
-tkinter.Checkbutton
-tkinter.DISABLED
-tkinter.DOTBOX
-tkinter.DoubleVar
-tkinter.E
-tkinter.END
-tkinter.EW
-tkinter.EXCEPTION
-tkinter.EXTENDED
-tkinter.Entry
-tkinter.Event
-tkinter.EventType
-tkinter.FALSE
-tkinter.FIRST
-tkinter.FLAT
-tkinter.Frame
-tkinter.GROOVE
-tkinter.Grid
-tkinter.HIDDEN
-tkinter.HORIZONTAL
-tkinter.INSERT
-tkinter.INSIDE
-tkinter.Image
-tkinter.IntVar
-tkinter.LAST
-tkinter.LEFT
-tkinter.Label
-tkinter.LabelFrame
-tkinter.Listbox
-tkinter.MITER
-tkinter.MOVETO
-tkinter.MULTIPLE
-tkinter.Menu
-tkinter.Menubutton
-tkinter.Message
-tkinter.Misc
-tkinter.N
-tkinter.NE
-tkinter.NO
-tkinter.NONE
-tkinter.NORMAL
-tkinter.NS
-tkinter.NSEW
-tkinter.NUMERIC
-tkinter.NW
-tkinter.NoDefaultRoot
-tkinter.OFF
-tkinter.ON
-tkinter.OUTSIDE
-tkinter.OptionMenu
-tkinter.PAGES
-tkinter.PIESLICE
-tkinter.PROJECTING
-tkinter.Pack
-tkinter.PanedWindow
-tkinter.PhotoImage
-tkinter.Place
-tkinter.RADIOBUTTON
-tkinter.RAISED
-tkinter.READABLE
-tkinter.RIDGE
-tkinter.RIGHT
-tkinter.ROUND
-tkinter.Radiobutton
-tkinter.S
-tkinter.SCROLL
-tkinter.SE
-tkinter.SEL
-tkinter.SEL_FIRST
-tkinter.SEL_LAST
-tkinter.SEPARATOR
-tkinter.SINGLE
-tkinter.SOLID
-tkinter.SUNKEN
-tkinter.SW
-tkinter.Scale
-tkinter.Scrollbar
-tkinter.Spinbox
-tkinter.StringVar
-tkinter.TOP
-tkinter.TRUE
-tkinter.Tcl
-tkinter.TclVersion
-tkinter.Text
-tkinter.Tk
-tkinter.TkVersion
-tkinter.Toplevel
-tkinter.UNDERLINE
-tkinter.UNITS
-tkinter.VERTICAL
-tkinter.Variable
-tkinter.W
-tkinter.WORD
-tkinter.WRITABLE
-tkinter.Widget
-tkinter.Wm
-tkinter.X
-tkinter.XView
-tkinter.Y
-tkinter.YES
-tkinter.YView
-tkinter._VersionInfoType
-tkinter.__all__
-tkinter.__builtins__
-tkinter.__cached__
-tkinter.__file__
-tkinter.__name__
-tkinter.__package__
-tkinter.__path__
-tkinter._checkbutton_count
-tkinter._cnfmerge
-tkinter._debug
-tkinter._default_root
-tkinter._destroy_temp_root
-tkinter._exit
-tkinter._get_default_root
-tkinter._get_temp_root
-tkinter._join
-tkinter._parse_version
-tkinter._print_command
-tkinter._setit
-tkinter._splitdict
-tkinter._stringify
-tkinter._support_default_root
-tkinter._test
-tkinter._tkerror
-tkinter._varnum
-tkinter.getboolean
-tkinter.image_names
-tkinter.image_types
-tkinter.mainloop
-tkinter.wantobjects
-tracemalloc.BaseFilter
-tracemalloc.DomainFilter
-tracemalloc.Filter
-tracemalloc.Frame
-tracemalloc.Snapshot
-tracemalloc.Statistic
-tracemalloc.StatisticDiff
-tracemalloc.Trace
-tracemalloc.Traceback
-tracemalloc._Traces
-tracemalloc.__builtins__
-tracemalloc.__cached__
-tracemalloc.__file__
-tracemalloc.__name__
-tracemalloc.__package__
-tracemalloc._compare_grouped_stats
-tracemalloc._format_size
-tracemalloc._normalize_filename
-tracemalloc.get_object_traceback
-tracemalloc.take_snapshot
 tty.CDSUSP
 tty.CEOF
 tty.CEOL
@@ -806,176 +761,41 @@ tty.TIOCSER_TEMT
 tty.TIOCSETD
 tty.TIOCSLCKTRMIOS
 tty.TIOCSSERIAL
-turtle.Pen
-turtle.RawPen
-turtle.RawTurtle
-turtle.Screen
-turtle.ScrolledCanvas
-turtle.Shape
-turtle.TNavigator
-turtle.TPen
-turtle.Tbuffer
-turtle.Terminator
-turtle.Turtle
-turtle.TurtleGraphicsError
-turtle.TurtleScreen
-turtle.TurtleScreenBase
-turtle.Vec2D
-turtle._CFG
-turtle._LANGUAGE
-turtle._Root
-turtle._Screen
-turtle._TurtleImage
-turtle.__all__
-turtle.__builtins__
-turtle.__cached__
-turtle.__file__
-turtle.__forwardmethods
-turtle.__func_body
-turtle.__methodDict
-turtle.__methods
-turtle.__name__
-turtle.__package__
-turtle.__stringBody
-turtle._alias_list
-turtle._make_global_funcs
-turtle._screen_docrevise
-turtle._tg_classes
-turtle._tg_screen_functions
-turtle._tg_turtle_functions
-turtle._tg_utilities
-turtle._turtle_docrevise
-turtle.addshape
-turtle.back
-turtle.backward
-turtle.begin_fill
-turtle.begin_poly
-turtle.bgcolor
-turtle.bgpic
-turtle.bk
-turtle.bye
-turtle.circle
-turtle.clear
-turtle.clearscreen
-turtle.clearstamp
-turtle.clearstamps
-turtle.clone
-turtle.color
-turtle.colormode
-turtle.config_dict
-turtle.degrees
-turtle.delay
-turtle.distance
-turtle.done
-turtle.dot
-turtle.down
-turtle.end_fill
-turtle.end_poly
-turtle.exitonclick
-turtle.fd
-turtle.fill
-turtle.fillcolor
-turtle.filling
-turtle.forward
-turtle.get_poly
-turtle.get_shapepoly
-turtle.getcanvas
-turtle.getmethparlist
-turtle.getpen
-turtle.getscreen
-turtle.getshapes
-turtle.getturtle
-turtle.goto
-turtle.heading
-turtle.hideturtle
-turtle.home
-turtle.ht
-turtle.isdown
-turtle.isvisible
-turtle.left
-turtle.listen
-turtle.lt
-turtle.mainloop
-turtle.mode
-turtle.no_animation
-turtle.numinput
-turtle.onclick
-turtle.ondrag
-turtle.onkey
-turtle.onkeypress
-turtle.onkeyrelease
-turtle.onrelease
-turtle.onscreenclick
-turtle.ontimer
-turtle.pd
-turtle.pen
-turtle.pencolor
-turtle.pendown
-turtle.pensize
-turtle.penup
-turtle.poly
-turtle.pos
-turtle.position
-turtle.pu
-turtle.radians
-turtle.read_docstrings
-turtle.readconfig
-turtle.register_shape
-turtle.reset
-turtle.resetscreen
-turtle.resizemode
-turtle.right
-turtle.rt
-turtle.save
-turtle.screensize
-turtle.seth
-turtle.setheading
-turtle.setpos
-turtle.setposition
-turtle.setundobuffer
-turtle.setup
-turtle.setworldcoordinates
-turtle.setx
-turtle.sety
-turtle.shape
-turtle.shapesize
-turtle.shapetransform
-turtle.shearfactor
-turtle.showturtle
-turtle.speed
-turtle.st
-turtle.stamp
-turtle.teleport
-turtle.textinput
-turtle.tilt
-turtle.tiltangle
-turtle.title
-turtle.towards
-turtle.tracer
-turtle.turtles
-turtle.turtlesize
-turtle.undo
-turtle.undobufferentries
-turtle.up
-turtle.update
-turtle.width
-turtle.window_height
-turtle.window_width
-turtle.write
-turtle.write_docstringdict
-turtle.xcor
-turtle.ycor
+types.SimpleNamespace.__hash__ (inherited)
+typing.ParamSpecArgs.__hash__ (inherited)
+typing.ParamSpecKwargs.__hash__ (inherited)
 unicodedata.__file__
 unicodedata._ucnhash_CAPI
 _uuid.__file__
+weakref.CallableProxyType.__abs__ (inherited)
+weakref.CallableProxyType.__contains__ (inherited)
+weakref.CallableProxyType.__float__ (inherited)
+weakref.CallableProxyType.__iadd__ (inherited)
+weakref.CallableProxyType.__iand__ (inherited)
+weakref.CallableProxyType.__ifloordiv__ (inherited)
+weakref.CallableProxyType.__ilshift__ (inherited)
+weakref.CallableProxyType.__imatmul__ (inherited)
+weakref.CallableProxyType.__imod__ (inherited)
+weakref.CallableProxyType.__imul__ (inherited)
+weakref.CallableProxyType.__int__ (inherited)
+weakref.CallableProxyType.__invert__ (inherited)
+weakref.CallableProxyType.__ior__ (inherited)
+weakref.CallableProxyType.__ipow__ (inherited)
+weakref.CallableProxyType.__irshift__ (inherited)
+weakref.CallableProxyType.__isub__ (inherited)
+weakref.CallableProxyType.__itruediv__ (inherited)
+weakref.CallableProxyType.__ixor__ (inherited)
+weakref.CallableProxyType.__neg__ (inherited)
+weakref.CallableProxyType.__pos__ (inherited)
 zlib.__file__
+zlib.error.__weakref__
 
 # summary
 #  cpython_modules 294
-#  implemented 170
-#  not_implemented 24
-#  failed_to_import 0
-#  missing_items 74
-#  mismatched_items 45
-#  mismatched_doc_items 29
-#  not_implementeds 1
+#  implemented 155
+#  not_implemented 22
+#  failed_to_import 3
+#  missing_items 86
+#  mismatched_items 126
+#  mismatched_doc_items 101
+#  not_implementeds 2

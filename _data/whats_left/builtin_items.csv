@@ -1,3 +1,2 @@
 builtin,name,is_inherited
-bool,bool.__invert__,(inherited)
 dict_items,dict_items.__hash__,(inherited)
