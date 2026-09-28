@@ -1,2 +1,1 @@
 builtin,name,is_inherited
-dict_items,dict_items.__hash__,(inherited)

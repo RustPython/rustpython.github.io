@@ -26,7 +26,6 @@ tracemalloc (exists but not importable: ModuleNotFoundError: No module named '_t
 turtle (exists but not importable: ModuleNotFoundError: No module named '_tkinter')
 
 # builtin items
-dict_items.__hash__ (inherited)
 
 # stdlib items
 builtins.ExceptionGroup.__weakref__
@@ -588,7 +587,6 @@ _ssl.HOSTFLAG_NO_PARTIAL_WILDCARDS
 _ssl.HOSTFLAG_NO_WILDCARDS
 _ssl.HOSTFLAG_SINGLE_LABEL_SUBDOMAINS
 _ssl.OP_ENABLE_KTLS
-_ssl.SSLSession.__hash__ (inherited)
 _ssl._SSLContext.set_psk_client_callback
 _ssl._SSLContext.set_psk_server_callback
 _ssl.__file__
@@ -672,11 +670,6 @@ termios.TIOCSSERIAL
 termios._POSIX_VDISABLE
 termios.__file__
 termios.error.__weakref__
-_thread._ExceptHookArgs.__match_args__
-_thread._ExceptHookArgs.__replace__
-_thread._ExceptHookArgs.n_fields
-_thread._ExceptHookArgs.n_sequence_fields
-_thread._ExceptHookArgs.n_unnamed_fields
 _thread.allocate
 _thread.exit_thread
 _thread.lock.locked_lock
@@ -734,9 +727,6 @@ tty.TIOCSER_TEMT
 tty.TIOCSETD
 tty.TIOCSLCKTRMIOS
 tty.TIOCSSERIAL
-types.SimpleNamespace.__hash__ (inherited)
-typing.ParamSpecArgs.__hash__ (inherited)
-typing.ParamSpecKwargs.__hash__ (inherited)
 unicodedata.__file__
 unicodedata._ucnhash_CAPI
 _uuid.__file__
@@ -745,10 +735,10 @@ zlib.error.__weakref__
 
 # summary
 #  cpython_modules 294
-#  implemented 180
+#  implemented 182
 #  not_implemented 22
 #  failed_to_import 3
-#  missing_items 84
-#  mismatched_items 12
-#  mismatched_doc_items 26
-#  not_implementeds 1
+#  missing_items 82
+#  mismatched_items 13
+#  mismatched_doc_items 19
+#  not_implementeds 0
