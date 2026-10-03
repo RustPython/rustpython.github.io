@@ -2,7 +2,6 @@ module
 _ctypes_test
 _curses
 _curses_panel
-_datetime
 _dbm
 _decimal
 _gdbm
@@ -15,7 +14,6 @@ _testclinic_limited
 _testsinglephase
 _tkinter
 _tracemalloc
-_zoneinfo
 _zstd
 cProfile
 curses

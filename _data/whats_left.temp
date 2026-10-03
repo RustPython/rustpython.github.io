@@ -4,7 +4,6 @@ _ctypes_test (entire module)
 _curses (entire module)
 curses (entire module)
 _curses_panel (entire module)
-_datetime (entire module)
 _dbm (entire module)
 _decimal (entire module)
 _gdbm (entire module)
@@ -19,7 +18,6 @@ _testsinglephase (entire module)
 _tkinter (entire module)
 _tracemalloc (entire module)
 xxlimited_35 (entire module)
-_zoneinfo (entire module)
 _zstd (entire module)
 tkinter (exists but not importable: ModuleNotFoundError: No module named '_tkinter')
 tracemalloc (exists but not importable: ModuleNotFoundError: No module named '_tracemalloc')
@@ -113,19 +111,8 @@ ctypes.ArgumentError.__weakref__
 ctypes.c_double_complex
 ctypes.c_float_complex
 ctypes.c_longdouble_complex
-datetime.date.__rsub__
-datetime.datetime.__rsub__
+_datetime.datetime_CAPI
 datetime.datetime_CAPI
-datetime.timedelta.__rdivmod__
-datetime.timedelta.__rfloordiv__
-datetime.timedelta.__rmod__
-datetime.timedelta.__rtruediv__
-decimal.Context.Emax
-decimal.Context.Emin
-decimal.Context.capitals
-decimal.Context.clamp
-decimal.Context.prec
-decimal.Context.rounding
 _elementtree.ParseError.__weakref__
 _elementtree.__file__
 faulthandler._stack_overflow
@@ -173,8 +160,6 @@ _hashlib.__file__
 _heapq.__about__
 _heapq.__file__
 _imp._override_multi_interp_extensions_check
-_imp.create_dynamic
-_imp.exec_dynamic
 _interpchannels.ChannelError.__weakref__
 _interpchannels.__file__
 _interpqueues.__file__
@@ -732,13 +717,14 @@ unicodedata._ucnhash_CAPI
 _uuid.__file__
 zlib.__file__
 zlib.error.__weakref__
+_zoneinfo.__file__
 
 # summary
 #  cpython_modules 294
-#  implemented 182
-#  not_implemented 22
+#  implemented 187
+#  not_implemented 20
 #  failed_to_import 3
-#  missing_items 82
-#  mismatched_items 13
-#  mismatched_doc_items 19
+#  missing_items 83
+#  mismatched_items 7
+#  mismatched_doc_items 3
 #  not_implementeds 0
