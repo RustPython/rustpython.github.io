@@ -721,10 +721,10 @@ _zoneinfo.__file__
 
 # summary
 #  cpython_modules 294
-#  implemented 187
+#  implemented 183
 #  not_implemented 20
 #  failed_to_import 3
 #  missing_items 83
-#  mismatched_items 7
+#  mismatched_items 14
 #  mismatched_doc_items 3
 #  not_implementeds 0

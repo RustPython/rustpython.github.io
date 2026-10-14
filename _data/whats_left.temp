@@ -5,10 +5,12 @@ _curses (entire module)
 curses (entire module)
 _curses_panel (entire module)
 _dbm (entire module)
-_decimal (entire module)
 _gdbm (entire module)
 _hmac (entire module)
 _lsprof (entire module)
+_math_integer (entire module)
+_missing_stdlib_info (entire module)
+profiling (entire module)
 readline (entire module)
 _sha2 (entire module)
 _sysconfigdata__linux_x86_64-linux-gnu (entire module)
@@ -18,21 +20,35 @@ _testsinglephase (entire module)
 _tkinter (entire module)
 _tracemalloc (entire module)
 xxlimited_35 (entire module)
+xxlimited_3_13 (entire module)
 _zstd (entire module)
 tkinter (exists but not importable: ModuleNotFoundError: No module named '_tkinter')
 tracemalloc (exists but not importable: ModuleNotFoundError: No module named '_tracemalloc')
 turtle (exists but not importable: ModuleNotFoundError: No module named '_tkinter')
 
 # builtin items
+bytearray.take_bytes
+slice.__class_getitem__
 
 # stdlib items
 builtins.ExceptionGroup.__weakref__
+builtins.ImportCycleError
+builtins.__lazy_import__
+builtins.frozendict
 builtins.type.__dictoffset__
 builtins.type.__sizeof__ (inherited)
 builtins.type.__weakrefoffset__
+argparse._ColorlessTheme
+argparse.__getattr__
+argparse._colorless_theme
 array.__file__
 array.array.__sizeof__ (inherited)
 array.typecodes
+_ast._is_abstract
+ast.DictComp.value
+ast.Import.is_lazy
+ast.ImportFrom.is_lazy
+ast._convert_literal
 ast.alias.__weakref__
 ast.alias.end_col_offset
 ast.alias.end_lineno
@@ -58,14 +74,17 @@ ast.type_ignore.__weakref__
 ast.type_param.__weakref__
 ast.unaryop.__weakref__
 ast.withitem.__weakref__
-_asyncio.__file__
+base64._NOT_SPECIFIED
 binascii.Error.__weakref__
 binascii.Incomplete.__weakref__
 binascii.__file__
 _bisect.__file__
 _blake2.__file__
 _bz2.__file__
+calendar.standalone_month_abbr
+calendar.standalone_month_name
 cmath.__file__
+_codecs._normalize_encoding
 _codecs_cn.__file__
 _codecs_cn.__map_gb18030ext
 _codecs_cn.__map_gb2312
@@ -97,22 +116,50 @@ _codecs_tw.__map_big5
 _codecs_tw.__map_cp950ext
 collections.defaultdict.__class_getitem__ (inherited)
 collections.deque.__sizeof__ (inherited)
+_collections_abc.__getattr__
+_collections_abc._deprecated_ByteString
+_colorize.Ast
+_colorize.BackgroundStyle
+_colorize.Calendar
+_colorize.CursesColors
+_colorize.Difflib
+_colorize.FancyCompleter
+_colorize.HttpServer
+_colorize.LiveProfiler
+_colorize.LiveProfilerLight
+_colorize.Pickletools
+_colorize.ProfilerDump
+_colorize.Timeit
+_colorize.Tokenize
+_colorize.light_profiler_theme
+contextlib._lookup_special
+contextlib._sentinel
 _contextvars.Token.__hash__ (inherited)
-copyreg.__cached__
+copy._deepcopy_frozendict
 _csv.Dialect.__reduce__ (inherited)
 _csv.Dialect.__reduce_ex__ (inherited)
 _csv.Reader
 _csv.Writer
 _csv.__file__
 _csv._dialects
+csv.__getattr__
 _ctypes.__file__
+_ctypes.__getattr__
 _ctypes.dllist
 ctypes.ArgumentError.__weakref__
+ctypes.__getattr__
 ctypes.c_double_complex
 ctypes.c_float_complex
 ctypes.c_longdouble_complex
+dataclasses._AutoDocstring
+dataclasses._auto_docstring
+dataclasses._get_type_from_annotation
 _datetime.datetime_CAPI
 datetime.datetime_CAPI
+decimal.SPEC_VERSION
+decimal.__getattr__
+dis.IMPORT_NAME
+doctest._DocTestCaseRunner
 _elementtree.ParseError.__weakref__
 _elementtree.__file__
 faulthandler._stack_overflow
@@ -154,12 +201,23 @@ fcntl.RWH_WRITE_LIFE_NONE
 fcntl.RWH_WRITE_LIFE_NOT_SET
 fcntl.RWH_WRITE_LIFE_SHORT
 fcntl.__file__
+genericpath.ALL_BUT_LAST
+genericpath._commonprefix
+getpass._POSIX_CTRL_CHARS
+getpass._PasswordLineEditor
+getpass._get_terminal_ctrl_chars
 grp.__file__
+gzip._read_until_null
 _hashlib.UnsupportedDigestmodError.__weakref__
 _hashlib.__file__
 _heapq.__about__
 _heapq.__file__
+hmac._is_shake_constructor
+imaplib.__getattr__
 _imp._override_multi_interp_extensions_check
+inspect._get_details_for_cli
+inspect._getowndoc
+inspect._render_details_for_cli
 _interpchannels.ChannelError.__weakref__
 _interpchannels.__file__
 _interpqueues.__file__
@@ -175,11 +233,14 @@ _io.FileIO.readall (inherited)
 _io.TextIOWrapper._finalizing
 _io._BytesIOBuffer
 io.UnsupportedOperation.__weakref__
+ipaddress.__getattr__
 itertools.combinations.__sizeof__ (inherited)
 itertools.combinations_with_replacement.__sizeof__ (inherited)
 itertools.permutations.__sizeof__ (inherited)
 itertools.product.__sizeof__ (inherited)
 _json.__file__
+json.__getattr__
+linecache._bless_my_loader
 _locale._DATE_FMT
 _locale.bind_textdomain_codeset
 _locale.bindtextdomain
@@ -192,18 +253,32 @@ locale.Error.__weakref__
 _lzma.LZMAError.__weakref__
 _lzma.__file__
 math.__file__
+math.fmax
+math.fmin
+math.isnormal
+math.issubnormal
+math.signbit
 _md5.MD5Type
 _md5._GIL_MINSIZE
 _md5.__file__
 mmap.MAP_32BIT
 mmap.MAP_NORESERVE
+mmap.MS_ASYNC
+mmap.MS_INVALIDATE
+mmap.MS_SYNC
 mmap.__file__
+mmap.mmap.set_name
 _multibytecodec.__file__
 _multiprocessing.__file__
 _operator.call
 _operator.inv
 _operator.is_none
 _operator.is_not_none
+optparse.__getattr__
+os.AT_NO_AUTOMOUNT
+os.AT_STATX_DONT_SYNC
+os.AT_STATX_FORCE_SYNC
+os.AT_STATX_SYNC_AS_STAT
 os.CLONE_NEWTIME
 os.MFD_HUGE_16GB
 os.MFD_HUGE_16MB
@@ -218,6 +293,7 @@ os.MFD_HUGE_512MB
 os.MFD_HUGE_64KB
 os.MFD_HUGE_8MB
 os.NGROUPS_MAX
+os.NODEV
 os.O_ACCMODE
 os.O_FSYNC
 os.O_LARGEFILE
@@ -228,6 +304,22 @@ os.RWF_DSYNC
 os.RWF_HIPRI
 os.RWF_NOWAIT
 os.RWF_SYNC
+os.STATX_ATIME
+os.STATX_BASIC_STATS
+os.STATX_BLOCKS
+os.STATX_BTIME
+os.STATX_CTIME
+os.STATX_DIOALIGN
+os.STATX_GID
+os.STATX_INO
+os.STATX_MNT_ID
+os.STATX_MNT_ID_UNIQUE
+os.STATX_MODE
+os.STATX_MTIME
+os.STATX_NLINK
+os.STATX_SIZE
+os.STATX_TYPE
+os.STATX_UID
 os.ST_APPEND
 os.ST_MANDLOCK
 os.ST_NOATIME
@@ -241,13 +333,31 @@ os.TMP_MAX
 os.XATTR_SIZE_MAX
 os.confstr_names
 os.stat_result.st_rdev
+os.statx_result
 os.supports_effective_ids
+pathlib._Info
+pathlib._STAT_RESULT_ERROR
+pathlib._copy_info
+pdb.PdbPyReplInput
+pdb._pyrepl_available
 _pickle.PickleError.__weakref__
 _pickle.Pickler.__sizeof__ (inherited)
 _pickle.Pickler.dispatch_table
 _pickle.Unpickler.__sizeof__ (inherited)
 _pickle.__file__
 pickle.PickleBuffer.__release_buffer__
+pickle._MIN_READ_BUF_SIZE
+pickletools._main
+pickletools._opcode_categories
+pickletools._opcode_color_attr
+pkgutil._LENIENT_PATTERN
+pkgutil._STRICT_PATTERN
+platform._SIMPLE_SUBSTITUTIONS
+platform.__getattr__
+posix.AT_NO_AUTOMOUNT
+posix.AT_STATX_DONT_SYNC
+posix.AT_STATX_FORCE_SYNC
+posix.AT_STATX_SYNC_AS_STAT
 posix.CLONE_NEWTIME
 posix.MFD_HUGE_16GB
 posix.MFD_HUGE_16MB
@@ -262,6 +372,7 @@ posix.MFD_HUGE_512MB
 posix.MFD_HUGE_64KB
 posix.MFD_HUGE_8MB
 posix.NGROUPS_MAX
+posix.NODEV
 posix.O_ACCMODE
 posix.O_FSYNC
 posix.O_LARGEFILE
@@ -272,6 +383,22 @@ posix.RWF_DSYNC
 posix.RWF_HIPRI
 posix.RWF_NOWAIT
 posix.RWF_SYNC
+posix.STATX_ATIME
+posix.STATX_BASIC_STATS
+posix.STATX_BLOCKS
+posix.STATX_BTIME
+posix.STATX_CTIME
+posix.STATX_DIOALIGN
+posix.STATX_GID
+posix.STATX_INO
+posix.STATX_MNT_ID
+posix.STATX_MNT_ID_UNIQUE
+posix.STATX_MODE
+posix.STATX_MTIME
+posix.STATX_NLINK
+posix.STATX_SIZE
+posix.STATX_TYPE
+posix.STATX_UID
 posix.ST_APPEND
 posix.ST_MANDLOCK
 posix.ST_NOATIME
@@ -283,6 +410,7 @@ posix.ST_SYNCHRONOUS
 posix.ST_WRITE
 posix.TMP_MAX
 posix.XATTR_SIZE_MAX
+posix._clearenv
 posix._have_functions
 posix._inputhook
 posix._path_normpath
@@ -302,7 +430,6 @@ posix.major
 posix.makedev
 posix.memfd_create
 posix.minor
-posix.mkfifo
 posix.posix_fadvise
 posix.posix_fallocate
 posix.posix_openpt
@@ -317,6 +444,7 @@ posix.sched_setaffinity
 posix.setns
 posix.setxattr
 posix.splice
+posix.statx
 posix.timerfd_create
 posix.timerfd_gettime
 posix.timerfd_gettime_ns
@@ -329,6 +457,12 @@ posix.waitid_result
 posix.writev
 _posixshmem.__file__
 _posixsubprocess.__file__
+pstats.SampledStats
+pstats.StatsLoaderShim
+pstats.stats_factory
+_py_warnings._match_filename
+_pydecimal.SPEC_VERSION
+_pydecimal.__getattr__
 pyexpat.EXPAT_VERSION
 pyexpat.ErrorString
 pyexpat.__file__
@@ -336,18 +470,46 @@ pyexpat.expat_CAPI
 pyexpat.features
 pyexpat.native_encoding
 _queue.Empty.__weakref__
+_queue.SimpleQueue.__sizeof__ (inherited)
 _queue.__file__
 _random.__file__
 re.Match.__copy__
 re.Match.__deepcopy__
 re.Pattern.__copy__
 re.Pattern.__deepcopy__
+re.Pattern.prefixmatch
+re.__getattr__
+re.prefixmatch
+_remote_debugging.BinaryReader
+_remote_debugging.BinaryWriter
+_remote_debugging.FrameInfo.location
+_remote_debugging.FrameInfo.opcode
+_remote_debugging.GCMonitor
+_remote_debugging.GCStatsInfo
+_remote_debugging.InterpreterInfo
+_remote_debugging.LocationInfo
 _remote_debugging.PROCESS_VM_READV_SUPPORTED
 _remote_debugging.RemoteUnwinder.get_all_awaited_by
 _remote_debugging.RemoteUnwinder.get_async_stack_trace
 _remote_debugging.RemoteUnwinder.get_stack_trace
+_remote_debugging.RemoteUnwinder.get_stats
+_remote_debugging.RemoteUnwinder.pause_threads
+_remote_debugging.RemoteUnwinder.resume_threads
+_remote_debugging.THREAD_STATUS_GIL_REQUESTED
+_remote_debugging.THREAD_STATUS_HAS_EXCEPTION
+_remote_debugging.THREAD_STATUS_HAS_GIL
+_remote_debugging.THREAD_STATUS_MAIN_THREAD
+_remote_debugging.THREAD_STATUS_ON_CPU
+_remote_debugging.THREAD_STATUS_UNKNOWN
+_remote_debugging.ThreadInfo.status
 _remote_debugging.__file__
+_remote_debugging.get_child_pids
+_remote_debugging.get_gc_stats
+_remote_debugging.is_python_process
+_remote_debugging.zstd_available
 resource.RLIMIT_OFILE
+resource.RLIM_SAVED_CUR
+resource.RLIM_SAVED_MAX
 resource.__file__
 resource.prlimit
 select.POLLMSG
@@ -359,6 +521,7 @@ _sha1.__file__
 _sha3._GIL_MINSIZE
 _sha3.__file__
 _sha3.implementation
+shelve.ShelveError
 _signal.SIGCLD
 _signal.SIGIOT
 _signal.SIGPOLL
@@ -378,11 +541,43 @@ signal.SIGRTMIN
 signal.sigpending
 signal.sigwait
 signal.struct_siginfo
+site.StartupState
+site._print_error
+site._read_pthstart_file
+site._venv
+site._warn_future_us
 _socket.AF_QIPCRTR
 _socket.AF_ROSE
 _socket.ALG_OP_SIGN
 _socket.ALG_OP_VERIFY
 _socket.ALG_SET_PUBKEY
+_socket.CAN_ISOTP_CHK_PAD_DATA
+_socket.CAN_ISOTP_CHK_PAD_LEN
+_socket.CAN_ISOTP_DEFAULT_EXT_ADDRESS
+_socket.CAN_ISOTP_DEFAULT_FLAGS
+_socket.CAN_ISOTP_DEFAULT_FRAME_TXTIME
+_socket.CAN_ISOTP_DEFAULT_LL_MTU
+_socket.CAN_ISOTP_DEFAULT_LL_TX_DL
+_socket.CAN_ISOTP_DEFAULT_LL_TX_FLAGS
+_socket.CAN_ISOTP_DEFAULT_PAD_CONTENT
+_socket.CAN_ISOTP_DEFAULT_RECV_BS
+_socket.CAN_ISOTP_DEFAULT_RECV_STMIN
+_socket.CAN_ISOTP_DEFAULT_RECV_WFTMAX
+_socket.CAN_ISOTP_EXTEND_ADDR
+_socket.CAN_ISOTP_FORCE_RXSTMIN
+_socket.CAN_ISOTP_FORCE_TXSTMIN
+_socket.CAN_ISOTP_HALF_DUPLEX
+_socket.CAN_ISOTP_LISTEN_MODE
+_socket.CAN_ISOTP_LL_OPTS
+_socket.CAN_ISOTP_OPTS
+_socket.CAN_ISOTP_RECV_FC
+_socket.CAN_ISOTP_RX_EXT_ADDR
+_socket.CAN_ISOTP_RX_PADDING
+_socket.CAN_ISOTP_RX_STMIN
+_socket.CAN_ISOTP_SF_BROADCAST
+_socket.CAN_ISOTP_TX_PADDING
+_socket.CAN_ISOTP_TX_STMIN
+_socket.CAN_ISOTP_WAIT_TX_DONE
 _socket.CAPI
 _socket.EAI_ADDRFAMILY
 _socket.ETHERTYPE_ARP
@@ -391,6 +586,7 @@ _socket.ETHERTYPE_IPV6
 _socket.ETHERTYPE_VLAN
 _socket.ETH_P_ALL
 _socket.IOCTL_VM_SOCKETS_GET_LOCAL_CID
+_socket.IPV6_HDRINCL
 _socket.IPV6_JOIN_GROUP
 _socket.IPV6_LEAVE_GROUP
 _socket.IPV6_RECVERR
@@ -417,6 +613,7 @@ _socket.PACKET_LOOPBACK
 _socket.PACKET_MULTICAST
 _socket.PACKET_OTHERHOST
 _socket.PACKET_OUTGOING
+_socket.SOL_CAN_ISOTP
 _socket.SO_BINDTOIFINDEX
 _socket.SO_INCOMING_CPU
 _socket.SO_ORIGINAL_DST
@@ -473,6 +670,33 @@ socket.AF_ROSE
 socket.ALG_OP_SIGN
 socket.ALG_OP_VERIFY
 socket.ALG_SET_PUBKEY
+socket.CAN_ISOTP_CHK_PAD_DATA
+socket.CAN_ISOTP_CHK_PAD_LEN
+socket.CAN_ISOTP_DEFAULT_EXT_ADDRESS
+socket.CAN_ISOTP_DEFAULT_FLAGS
+socket.CAN_ISOTP_DEFAULT_FRAME_TXTIME
+socket.CAN_ISOTP_DEFAULT_LL_MTU
+socket.CAN_ISOTP_DEFAULT_LL_TX_DL
+socket.CAN_ISOTP_DEFAULT_LL_TX_FLAGS
+socket.CAN_ISOTP_DEFAULT_PAD_CONTENT
+socket.CAN_ISOTP_DEFAULT_RECV_BS
+socket.CAN_ISOTP_DEFAULT_RECV_STMIN
+socket.CAN_ISOTP_DEFAULT_RECV_WFTMAX
+socket.CAN_ISOTP_EXTEND_ADDR
+socket.CAN_ISOTP_FORCE_RXSTMIN
+socket.CAN_ISOTP_FORCE_TXSTMIN
+socket.CAN_ISOTP_HALF_DUPLEX
+socket.CAN_ISOTP_LISTEN_MODE
+socket.CAN_ISOTP_LL_OPTS
+socket.CAN_ISOTP_OPTS
+socket.CAN_ISOTP_RECV_FC
+socket.CAN_ISOTP_RX_EXT_ADDR
+socket.CAN_ISOTP_RX_PADDING
+socket.CAN_ISOTP_RX_STMIN
+socket.CAN_ISOTP_SF_BROADCAST
+socket.CAN_ISOTP_TX_PADDING
+socket.CAN_ISOTP_TX_STMIN
+socket.CAN_ISOTP_WAIT_TX_DONE
 socket.CAPI
 socket.EAI_ADDRFAMILY
 socket.ETHERTYPE_ARP
@@ -481,6 +705,7 @@ socket.ETHERTYPE_IPV6
 socket.ETHERTYPE_VLAN
 socket.ETH_P_ALL
 socket.IOCTL_VM_SOCKETS_GET_LOCAL_CID
+socket.IPV6_HDRINCL
 socket.IPV6_JOIN_GROUP
 socket.IPV6_LEAVE_GROUP
 socket.IPV6_RECVERR
@@ -507,6 +732,7 @@ socket.PACKET_LOOPBACK
 socket.PACKET_MULTICAST
 socket.PACKET_OTHERHOST
 socket.PACKET_OUTGOING
+socket.SOL_CAN_ISOTP
 socket.SO_BINDTOIFINDEX
 socket.SO_INCOMING_CPU
 socket.SO_ORIGINAL_DST
@@ -557,6 +783,8 @@ socket.TIPC_ZONE_SCOPE
 socket.VMADDR_CID_LOCAL
 socket.gaierror.__weakref__
 socket.herror.__weakref__
+socketserver.__getattr__
+_sqlite3.SQLITE_KEYWORDS
 _sqlite3.__file__
 sqlite3.Connection.__del__
 sqlite3.Connection.deserialize
@@ -564,17 +792,32 @@ sqlite3.Connection.enable_load_extension
 sqlite3.Connection.load_extension
 sqlite3.Connection.serialize
 sqlite3.Error.__weakref__
+sqlite3.SQLITE_KEYWORDS
 sqlite3.Warning.__weakref__
 _sre.copyright
+_ssl.HAS_PSK_TLS13
 _ssl.HOSTFLAG_ALWAYS_CHECK_SUBJECT
 _ssl.HOSTFLAG_MULTI_LABEL_WILDCARDS
 _ssl.HOSTFLAG_NO_PARTIAL_WILDCARDS
 _ssl.HOSTFLAG_NO_WILDCARDS
 _ssl.HOSTFLAG_SINGLE_LABEL_SUBDOMAINS
 _ssl.OP_ENABLE_KTLS
+_ssl._SSLContext.get_groups
+_ssl._SSLContext.set_ciphersuites
+_ssl._SSLContext.set_client_sigalgs
+_ssl._SSLContext.set_groups
 _ssl._SSLContext.set_psk_client_callback
 _ssl._SSLContext.set_psk_server_callback
+_ssl._SSLContext.set_server_sigalgs
+_ssl._SSLSocket.client_sigalg
+_ssl._SSLSocket.group
+_ssl._SSLSocket.sendfile
+_ssl._SSLSocket.server_sigalg
+_ssl._SSLSocket.uses_ktls_for_recv
+_ssl._SSLSocket.uses_ktls_for_send
 _ssl.__file__
+_ssl.get_sigalgs
+ssl.HAS_PSK_TLS13
 ssl.OP_ENABLE_KTLS
 ssl.SSLCertVerificationError.__weakref__
 ssl.SSLEOFError.__weakref__
@@ -582,25 +825,60 @@ ssl.SSLSyscallError.__weakref__
 ssl.SSLWantReadError.__weakref__
 ssl.SSLWantWriteError.__weakref__
 ssl.SSLZeroReturnError.__weakref__
+ssl._GiveupOnSSLSendfile
+ssl._check_sslobject_params
+stat.STATX_ATTR_APPEND
+stat.STATX_ATTR_AUTOMOUNT
+stat.STATX_ATTR_COMPRESSED
+stat.STATX_ATTR_DAX
+stat.STATX_ATTR_ENCRYPTED
+stat.STATX_ATTR_IMMUTABLE
+stat.STATX_ATTR_MOUNT_ROOT
+stat.STATX_ATTR_NODUMP
+stat.STATX_ATTR_VERITY
+stat.STATX_ATTR_WRITE_ATOMIC
 _statistics.__file__
+statistics._SQRT2PI
 _struct.__file__
 struct.error.__weakref__
+subprocess._CAN_USE_KQUEUE
+subprocess._CAN_USE_PIDFD_OPEN
+subprocess._MAXIMUM_WAIT_TIMEOUT
+subprocess._can_use_kqueue
+subprocess._can_use_pidfd_open
+subprocess._communicate_io_posix
+subprocess._deadline_remaining
+subprocess._flush_stdin
+subprocess._make_input_view
+subprocess._translate_newlines
 sys._clear_internal_caches
 sys._clear_type_cache
 sys._debugmallocstats
 sys._dump_tracelets
 sys._is_immortal
 sys._is_interned
+sys.abi_info
 sys.activate_stack_trampoline
 sys.deactivate_stack_trampoline
+sys.get_lazy_imports
+sys.get_lazy_imports_filter
 sys.getallocatedblocks
 sys.getdlopenflags
 sys.getunicodeinternedsize
 sys.is_stack_trampoline_active
+sys.lazy_modules
 sys.remote_exec
+sys.set_lazy_imports
+sys.set_lazy_imports_filter
 sys.setdlopenflags
 syslog.LOG_FTP
 syslog.__file__
+tarfile.__getattr__
+tempfile._nofollow_mode
+tempfile._resetflags
+tempfile._resetperms_at
+tempfile._resetperms_fd
+tempfile._rmtree_use_dir_fd
 termios.CDSUSP
 termios.CEOF
 termios.CEOL
@@ -659,8 +937,29 @@ _thread.allocate
 _thread.exit_thread
 _thread.lock.locked_lock
 _thread.start_new
+threading._concurrent_tee
+threading.concurrent_tee
+threading.serialize_iterator
+threading.synchronized_iterator
 time.pthread_getcpuclockid
 time.tzset
+timeit.default_target_time
+tokenize._format_tokens
+tokenize._get_token_colors
+traceback._CROSS_LANGUAGE_HINTS
+traceback._MISSING_STDLIB_MODULE_MESSAGES
+traceback._ShutdownTheme
+traceback._check_for_nested_attribute
+traceback._find_incompatible_extension_module
+traceback._format_note
+traceback._get_cross_language_hint
+traceback._is_lazy_import
+traceback._safe_can_colorize
+traceback._safe_get_theme
+traceback._shutdown_theme
+traceback._str_width
+traceback._wlen
+traceback._zip_display_width
 tty.CDSUSP
 tty.CEOF
 tty.CEOL
@@ -712,19 +1011,45 @@ tty.TIOCSER_TEMT
 tty.TIOCSETD
 tty.TIOCSLCKTRMIOS
 tty.TIOCSSERIAL
+typing.NoExtraItems
+typing.TypeForm
+typing.TypeVarTuple.__bound__
+typing.TypeVarTuple.__contravariant__
+typing.TypeVarTuple.__covariant__
+typing.TypeVarTuple.__infer_variance__
+typing._TypeFormForm
+typing._rebuild_generic_alias
+typing.disjoint_base
 unicodedata.__file__
 unicodedata._ucnhash_CAPI
+unicodedata.block
+unicodedata.extended_pictographic
+unicodedata.grapheme_cluster_break
+unicodedata.indic_conjunct_break
+unicodedata.isxidcontinue
+unicodedata.isxidstart
+unicodedata.iter_graphemes
 _uuid.__file__
+wave.WAVE_FORMAT_IEEE_FLOAT
+zipimport._get_zlib_decompress_func
+zipimport._get_zstd_decompressor_class
+zipimport._importing_zstd
+zipimport._zlib_decompress
+zipimport._zstd_decompress
+zipimport._zstd_decompressor_class
 zlib.__file__
+zlib.__getattr__
+zlib.adler32_combine
+zlib.crc32_combine
 zlib.error.__weakref__
 _zoneinfo.__file__
 
 # summary
 #  cpython_modules 294
-#  implemented 183
-#  not_implemented 20
+#  implemented 128
+#  not_implemented 23
 #  failed_to_import 3
-#  missing_items 83
-#  mismatched_items 14
-#  mismatched_doc_items 3
-#  not_implementeds 0
+#  missing_items 128
+#  mismatched_items 53
+#  mismatched_doc_items 59
+#  not_implementeds 2
