@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-15T15:56:49Z",
-  "rustpython_commit": "a2c11aa51d480c791c1ab6e38bb04be4ae0b62f8",
-  "rustpython_ref": "main"
+  "generated_at": "2026-10-15T21:40:33Z",
+  "rustpython_commit": "3cb22c477eba18836ad72064d55f753b616ee3a7",
+  "rustpython_ref": "codspeed/bench-build-memory"
 }
