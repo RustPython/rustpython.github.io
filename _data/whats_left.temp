@@ -897,10 +897,6 @@ _thread.allocate
 _thread.exit_thread
 _thread.lock.locked_lock
 _thread.start_new
-threading._concurrent_tee
-threading.concurrent_tee
-threading.serialize_iterator
-threading.synchronized_iterator
 time.pthread_getcpuclockid
 time.tzset
 timeit.default_target_time
@@ -1001,10 +997,10 @@ _zoneinfo.__file__
 
 # summary
 #  cpython_modules 294
-#  implemented 150
+#  implemented 151
 #  not_implemented 22
 #  failed_to_import 3
-#  missing_items 111
-#  mismatched_items 42
+#  missing_items 110
+#  mismatched_items 41
 #  mismatched_doc_items 53
 #  not_implementeds 1
