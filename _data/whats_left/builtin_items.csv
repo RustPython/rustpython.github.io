@@ -1,3 +1,2 @@
 builtin,name,is_inherited
-bytearray,bytearray.take_bytes,
 slice,slice.__class_getitem__,

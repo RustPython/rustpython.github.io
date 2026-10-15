@@ -8,7 +8,6 @@ _dbm (entire module)
 _gdbm (entire module)
 _hmac (entire module)
 _lsprof (entire module)
-_math_integer (entire module)
 _missing_stdlib_info (entire module)
 profiling (entire module)
 readline (entire module)
@@ -27,14 +26,12 @@ tracemalloc (exists but not importable: ModuleNotFoundError: No module named '_t
 turtle (exists but not importable: ModuleNotFoundError: No module named '_tkinter')
 
 # builtin items
-bytearray.take_bytes
 slice.__class_getitem__
 
 # stdlib items
 builtins.ExceptionGroup.__weakref__
 builtins.ImportCycleError
 builtins.__lazy_import__
-builtins.frozendict
 builtins.type.__dictoffset__
 builtins.type.__sizeof__ (inherited)
 builtins.type.__weakrefoffset__
@@ -74,7 +71,6 @@ ast.type_ignore.__weakref__
 ast.type_param.__weakref__
 ast.unaryop.__weakref__
 ast.withitem.__weakref__
-base64._NOT_SPECIFIED
 binascii.Error.__weakref__
 binascii.Incomplete.__weakref__
 binascii.__file__
@@ -84,7 +80,6 @@ _bz2.__file__
 calendar.standalone_month_abbr
 calendar.standalone_month_name
 cmath.__file__
-_codecs._normalize_encoding
 _codecs_cn.__file__
 _codecs_cn.__map_gb18030ext
 _codecs_cn.__map_gb2312
@@ -135,14 +130,12 @@ _colorize.light_profiler_theme
 contextlib._lookup_special
 contextlib._sentinel
 _contextvars.Token.__hash__ (inherited)
-copy._deepcopy_frozendict
 _csv.Dialect.__reduce__ (inherited)
 _csv.Dialect.__reduce_ex__ (inherited)
 _csv.Reader
 _csv.Writer
 _csv.__file__
 _csv._dialects
-csv.__getattr__
 _ctypes.__file__
 _ctypes.__getattr__
 _ctypes.dllist
@@ -156,9 +149,6 @@ dataclasses._auto_docstring
 dataclasses._get_type_from_annotation
 _datetime.datetime_CAPI
 datetime.datetime_CAPI
-decimal.SPEC_VERSION
-decimal.__getattr__
-dis.IMPORT_NAME
 doctest._DocTestCaseRunner
 _elementtree.ParseError.__weakref__
 _elementtree.__file__
@@ -201,13 +191,10 @@ fcntl.RWH_WRITE_LIFE_NONE
 fcntl.RWH_WRITE_LIFE_NOT_SET
 fcntl.RWH_WRITE_LIFE_SHORT
 fcntl.__file__
-genericpath.ALL_BUT_LAST
-genericpath._commonprefix
 getpass._POSIX_CTRL_CHARS
 getpass._PasswordLineEditor
 getpass._get_terminal_ctrl_chars
 grp.__file__
-gzip._read_until_null
 _hashlib.UnsupportedDigestmodError.__weakref__
 _hashlib.__file__
 _heapq.__about__
@@ -233,14 +220,11 @@ _io.FileIO.readall (inherited)
 _io.TextIOWrapper._finalizing
 _io._BytesIOBuffer
 io.UnsupportedOperation.__weakref__
-ipaddress.__getattr__
 itertools.combinations.__sizeof__ (inherited)
 itertools.combinations_with_replacement.__sizeof__ (inherited)
 itertools.permutations.__sizeof__ (inherited)
 itertools.product.__sizeof__ (inherited)
 _json.__file__
-json.__getattr__
-linecache._bless_my_loader
 _locale._DATE_FMT
 _locale.bind_textdomain_codeset
 _locale.bindtextdomain
@@ -253,28 +237,19 @@ locale.Error.__weakref__
 _lzma.LZMAError.__weakref__
 _lzma.__file__
 math.__file__
-math.fmax
-math.fmin
-math.isnormal
-math.issubnormal
-math.signbit
+_math_integer.__file__
 _md5.MD5Type
 _md5._GIL_MINSIZE
 _md5.__file__
 mmap.MAP_32BIT
 mmap.MAP_NORESERVE
-mmap.MS_ASYNC
-mmap.MS_INVALIDATE
-mmap.MS_SYNC
 mmap.__file__
-mmap.mmap.set_name
 _multibytecodec.__file__
 _multiprocessing.__file__
 _operator.call
 _operator.inv
 _operator.is_none
 _operator.is_not_none
-optparse.__getattr__
 os.AT_NO_AUTOMOUNT
 os.AT_STATX_DONT_SYNC
 os.AT_STATX_FORCE_SYNC
@@ -460,9 +435,6 @@ _posixsubprocess.__file__
 pstats.SampledStats
 pstats.StatsLoaderShim
 pstats.stats_factory
-_py_warnings._match_filename
-_pydecimal.SPEC_VERSION
-_pydecimal.__getattr__
 pyexpat.EXPAT_VERSION
 pyexpat.ErrorString
 pyexpat.__file__
@@ -827,18 +799,7 @@ ssl.SSLWantWriteError.__weakref__
 ssl.SSLZeroReturnError.__weakref__
 ssl._GiveupOnSSLSendfile
 ssl._check_sslobject_params
-stat.STATX_ATTR_APPEND
-stat.STATX_ATTR_AUTOMOUNT
-stat.STATX_ATTR_COMPRESSED
-stat.STATX_ATTR_DAX
-stat.STATX_ATTR_ENCRYPTED
-stat.STATX_ATTR_IMMUTABLE
-stat.STATX_ATTR_MOUNT_ROOT
-stat.STATX_ATTR_NODUMP
-stat.STATX_ATTR_VERITY
-stat.STATX_ATTR_WRITE_ATOMIC
 _statistics.__file__
-statistics._SQRT2PI
 _struct.__file__
 struct.error.__weakref__
 subprocess._CAN_USE_KQUEUE
@@ -873,7 +834,6 @@ sys.set_lazy_imports_filter
 sys.setdlopenflags
 syslog.LOG_FTP
 syslog.__file__
-tarfile.__getattr__
 tempfile._nofollow_mode
 tempfile._resetflags
 tempfile._resetperms_at
@@ -1013,10 +973,6 @@ tty.TIOCSLCKTRMIOS
 tty.TIOCSSERIAL
 typing.NoExtraItems
 typing.TypeForm
-typing.TypeVarTuple.__bound__
-typing.TypeVarTuple.__contravariant__
-typing.TypeVarTuple.__covariant__
-typing.TypeVarTuple.__infer_variance__
 typing._TypeFormForm
 typing._rebuild_generic_alias
 typing.disjoint_base
@@ -1030,7 +986,6 @@ unicodedata.isxidcontinue
 unicodedata.isxidstart
 unicodedata.iter_graphemes
 _uuid.__file__
-wave.WAVE_FORMAT_IEEE_FLOAT
 zipimport._get_zlib_decompress_func
 zipimport._get_zstd_decompressor_class
 zipimport._importing_zstd
@@ -1046,10 +1001,10 @@ _zoneinfo.__file__
 
 # summary
 #  cpython_modules 294
-#  implemented 128
-#  not_implemented 23
+#  implemented 150
+#  not_implemented 22
 #  failed_to_import 3
-#  missing_items 128
-#  mismatched_items 53
-#  mismatched_doc_items 59
-#  not_implementeds 2
+#  missing_items 111
+#  mismatched_items 42
+#  mismatched_doc_items 53
+#  not_implementeds 1
