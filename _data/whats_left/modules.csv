@@ -5,7 +5,6 @@ _curses_panel
 _dbm
 _gdbm
 _hmac
-_lsprof
 _sha2
 _sysconfigdata__linux_x86_64-linux-gnu
 _testclinic
@@ -14,9 +13,7 @@ _testsinglephase
 _tkinter
 _tracemalloc
 _zstd
-cProfile
 curses
-profiling
 readline
 xxlimited_35
 xxlimited_3_13

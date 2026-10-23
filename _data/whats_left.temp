@@ -1,5 +1,4 @@
 # modules
-cProfile (entire module)
 _ctypes_test (entire module)
 _curses (entire module)
 curses (entire module)
@@ -7,8 +6,6 @@ _curses_panel (entire module)
 _dbm (entire module)
 _gdbm (entire module)
 _hmac (entire module)
-_lsprof (entire module)
-profiling (entire module)
 readline (entire module)
 _sha2 (entire module)
 _sysconfigdata__linux_x86_64-linux-gnu (entire module)
@@ -106,10 +103,7 @@ _csv.Writer
 _csv.__file__
 _csv._dialects
 _ctypes.__file__
-_ctypes.__getattr__
-_ctypes.dllist
 ctypes.ArgumentError.__weakref__
-ctypes.__getattr__
 ctypes.c_double_complex
 ctypes.c_float_complex
 ctypes.c_longdouble_complex
@@ -191,6 +185,7 @@ _locale.gettext
 _locale.nl_langinfo
 _locale.textdomain
 locale.Error.__weakref__
+_lsprof.__file__
 _lzma.LZMAError.__weakref__
 _lzma.__file__
 math.__file__
@@ -267,18 +262,12 @@ os.confstr_names
 os.stat_result.st_rdev
 os.statx_result
 os.supports_effective_ids
-pdb.PdbPyReplInput
-pdb._pyrepl_available
 _pickle.PickleError.__weakref__
 _pickle.Pickler.__sizeof__ (inherited)
 _pickle.Pickler.dispatch_table
 _pickle.Unpickler.__sizeof__ (inherited)
 _pickle.__file__
 pickle.PickleBuffer.__release_buffer__
-pickle._MIN_READ_BUF_SIZE
-pickletools._main
-pickletools._opcode_categories
-pickletools._opcode_color_attr
 platform._SIMPLE_SUBSTITUTIONS
 platform.__getattr__
 posix.AT_NO_AUTOMOUNT
@@ -383,9 +372,6 @@ posix.waitid_result
 posix.writev
 _posixshmem.__file__
 _posixsubprocess.__file__
-pstats.SampledStats
-pstats.StatsLoaderShim
-pstats.stats_factory
 pyexpat.EXPAT_VERSION
 pyexpat.ErrorString
 pyexpat.__file__
@@ -400,14 +386,8 @@ re.Match.__copy__
 re.Match.__deepcopy__
 re.Pattern.__copy__
 re.Pattern.__deepcopy__
-_remote_debugging.BinaryReader
-_remote_debugging.BinaryWriter
-_remote_debugging.FrameInfo.location
-_remote_debugging.FrameInfo.opcode
 _remote_debugging.GCMonitor
 _remote_debugging.GCStatsInfo
-_remote_debugging.InterpreterInfo
-_remote_debugging.LocationInfo
 _remote_debugging.PROCESS_VM_READV_SUPPORTED
 _remote_debugging.RemoteUnwinder.get_all_awaited_by
 _remote_debugging.RemoteUnwinder.get_async_stack_trace
@@ -415,18 +395,10 @@ _remote_debugging.RemoteUnwinder.get_stack_trace
 _remote_debugging.RemoteUnwinder.get_stats
 _remote_debugging.RemoteUnwinder.pause_threads
 _remote_debugging.RemoteUnwinder.resume_threads
-_remote_debugging.THREAD_STATUS_GIL_REQUESTED
-_remote_debugging.THREAD_STATUS_HAS_EXCEPTION
-_remote_debugging.THREAD_STATUS_HAS_GIL
-_remote_debugging.THREAD_STATUS_MAIN_THREAD
-_remote_debugging.THREAD_STATUS_ON_CPU
-_remote_debugging.THREAD_STATUS_UNKNOWN
-_remote_debugging.ThreadInfo.status
 _remote_debugging.__file__
 _remote_debugging.get_child_pids
 _remote_debugging.get_gc_stats
 _remote_debugging.is_python_process
-_remote_debugging.zstd_available
 resource.RLIMIT_OFILE
 resource.RLIM_SAVED_CUR
 resource.RLIM_SAVED_MAX
@@ -582,7 +554,6 @@ _socket.TIPC_WITHDRAWN
 _socket.TIPC_ZONE_SCOPE
 _socket.VMADDR_CID_LOCAL
 _socket.__file__
-_socket.socket.recvmsg_into
 _socket.socket.timeout
 socket.AF_QIPCRTR
 socket.AF_ROSE
@@ -877,10 +848,10 @@ _zoneinfo.__file__
 
 # summary
 #  cpython_modules 294
-#  implemented 175
-#  not_implemented 21
+#  implemented 182
+#  not_implemented 18
 #  failed_to_import 3
-#  missing_items 88
-#  mismatched_items 30
+#  missing_items 86
+#  mismatched_items 29
 #  mismatched_doc_items 41
 #  not_implementeds 0

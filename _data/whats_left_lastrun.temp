@@ -8,7 +8,6 @@ _dbm (entire module)
 _gdbm (entire module)
 _hmac (entire module)
 _lsprof (entire module)
-_missing_stdlib_info (entire module)
 profiling (entire module)
 readline (entire module)
 _sha2 (entire module)
@@ -29,22 +28,13 @@ turtle (exists but not importable: ModuleNotFoundError: No module named '_tkinte
 
 # stdlib items
 builtins.ExceptionGroup.__weakref__
-builtins.ImportCycleError
-builtins.__lazy_import__
 builtins.type.__dictoffset__
 builtins.type.__sizeof__ (inherited)
 builtins.type.__weakrefoffset__
-argparse._ColorlessTheme
-argparse.__getattr__
-argparse._colorless_theme
 array.__file__
 array.array.__sizeof__ (inherited)
 array.typecodes
-_ast._is_abstract
 ast.DictComp.value
-ast.Import.is_lazy
-ast.ImportFrom.is_lazy
-ast._convert_literal
 ast.alias.__weakref__
 ast.alias.end_col_offset
 ast.alias.end_lineno
@@ -76,8 +66,6 @@ binascii.__file__
 _bisect.__file__
 _blake2.__file__
 _bz2.__file__
-calendar.standalone_month_abbr
-calendar.standalone_month_name
 cmath.__file__
 _codecs_cn.__file__
 _codecs_cn.__map_gb18030ext
@@ -110,24 +98,6 @@ _codecs_tw.__map_big5
 _codecs_tw.__map_cp950ext
 collections.defaultdict.__class_getitem__ (inherited)
 collections.deque.__sizeof__ (inherited)
-_collections_abc.__getattr__
-_collections_abc._deprecated_ByteString
-_colorize.Ast
-_colorize.BackgroundStyle
-_colorize.Calendar
-_colorize.CursesColors
-_colorize.Difflib
-_colorize.FancyCompleter
-_colorize.HttpServer
-_colorize.LiveProfiler
-_colorize.LiveProfilerLight
-_colorize.Pickletools
-_colorize.ProfilerDump
-_colorize.Timeit
-_colorize.Tokenize
-_colorize.light_profiler_theme
-contextlib._lookup_special
-contextlib._sentinel
 _contextvars.Token.__hash__ (inherited)
 _csv.Dialect.__reduce__ (inherited)
 _csv.Dialect.__reduce_ex__ (inherited)
@@ -143,12 +113,8 @@ ctypes.__getattr__
 ctypes.c_double_complex
 ctypes.c_float_complex
 ctypes.c_longdouble_complex
-dataclasses._AutoDocstring
-dataclasses._auto_docstring
-dataclasses._get_type_from_annotation
 _datetime.datetime_CAPI
 datetime.datetime_CAPI
-doctest._DocTestCaseRunner
 _elementtree.ParseError.__weakref__
 _elementtree.__file__
 faulthandler._stack_overflow
@@ -190,20 +156,12 @@ fcntl.RWH_WRITE_LIFE_NONE
 fcntl.RWH_WRITE_LIFE_NOT_SET
 fcntl.RWH_WRITE_LIFE_SHORT
 fcntl.__file__
-getpass._POSIX_CTRL_CHARS
-getpass._PasswordLineEditor
-getpass._get_terminal_ctrl_chars
 grp.__file__
 _hashlib.UnsupportedDigestmodError.__weakref__
 _hashlib.__file__
 _heapq.__about__
 _heapq.__file__
-hmac._is_shake_constructor
-imaplib.__getattr__
 _imp._override_multi_interp_extensions_check
-inspect._get_details_for_cli
-inspect._getowndoc
-inspect._render_details_for_cli
 _interpchannels.ChannelError.__weakref__
 _interpchannels.__file__
 _interpqueues.__file__
@@ -240,6 +198,7 @@ _math_integer.__file__
 _md5.MD5Type
 _md5._GIL_MINSIZE
 _md5.__file__
+_missing_stdlib_info.__file__
 mmap.MAP_32BIT
 mmap.MAP_NORESERVE
 mmap.__file__
@@ -308,9 +267,6 @@ os.confstr_names
 os.stat_result.st_rdev
 os.statx_result
 os.supports_effective_ids
-pathlib._Info
-pathlib._STAT_RESULT_ERROR
-pathlib._copy_info
 pdb.PdbPyReplInput
 pdb._pyrepl_available
 _pickle.PickleError.__weakref__
@@ -323,8 +279,6 @@ pickle._MIN_READ_BUF_SIZE
 pickletools._main
 pickletools._opcode_categories
 pickletools._opcode_color_attr
-pkgutil._LENIENT_PATTERN
-pkgutil._STRICT_PATTERN
 platform._SIMPLE_SUBSTITUTIONS
 platform.__getattr__
 posix.AT_NO_AUTOMOUNT
@@ -446,9 +400,6 @@ re.Match.__copy__
 re.Match.__deepcopy__
 re.Pattern.__copy__
 re.Pattern.__deepcopy__
-re.Pattern.prefixmatch
-re.__getattr__
-re.prefixmatch
 _remote_debugging.BinaryReader
 _remote_debugging.BinaryWriter
 _remote_debugging.FrameInfo.location
@@ -490,7 +441,6 @@ _sha1.__file__
 _sha3._GIL_MINSIZE
 _sha3.__file__
 _sha3.implementation
-shelve.ShelveError
 _signal.SIGCLD
 _signal.SIGIOT
 _signal.SIGPOLL
@@ -763,7 +713,6 @@ sqlite3.Error.__weakref__
 sqlite3.SQLITE_KEYWORDS
 sqlite3.Warning.__weakref__
 _sre.copyright
-_ssl.HAS_PSK_TLS13
 _ssl.HOSTFLAG_ALWAYS_CHECK_SUBJECT
 _ssl.HOSTFLAG_MULTI_LABEL_WILDCARDS
 _ssl.HOSTFLAG_NO_PARTIAL_WILDCARDS
@@ -771,21 +720,11 @@ _ssl.HOSTFLAG_NO_WILDCARDS
 _ssl.HOSTFLAG_SINGLE_LABEL_SUBDOMAINS
 _ssl.OP_ENABLE_KTLS
 _ssl._SSLContext.get_groups
-_ssl._SSLContext.set_ciphersuites
 _ssl._SSLContext.set_client_sigalgs
-_ssl._SSLContext.set_groups
 _ssl._SSLContext.set_psk_client_callback
 _ssl._SSLContext.set_psk_server_callback
-_ssl._SSLContext.set_server_sigalgs
-_ssl._SSLSocket.client_sigalg
-_ssl._SSLSocket.group
 _ssl._SSLSocket.sendfile
-_ssl._SSLSocket.server_sigalg
-_ssl._SSLSocket.uses_ktls_for_recv
-_ssl._SSLSocket.uses_ktls_for_send
 _ssl.__file__
-_ssl.get_sigalgs
-ssl.HAS_PSK_TLS13
 ssl.OP_ENABLE_KTLS
 ssl.SSLCertVerificationError.__weakref__
 ssl.SSLEOFError.__weakref__
@@ -793,48 +732,25 @@ ssl.SSLSyscallError.__weakref__
 ssl.SSLWantReadError.__weakref__
 ssl.SSLWantWriteError.__weakref__
 ssl.SSLZeroReturnError.__weakref__
-ssl._GiveupOnSSLSendfile
-ssl._check_sslobject_params
 _statistics.__file__
 _struct.__file__
 struct.error.__weakref__
-subprocess._CAN_USE_KQUEUE
-subprocess._CAN_USE_PIDFD_OPEN
-subprocess._MAXIMUM_WAIT_TIMEOUT
-subprocess._can_use_kqueue
-subprocess._can_use_pidfd_open
-subprocess._communicate_io_posix
-subprocess._deadline_remaining
-subprocess._flush_stdin
-subprocess._make_input_view
-subprocess._translate_newlines
 sys._clear_internal_caches
 sys._clear_type_cache
 sys._debugmallocstats
 sys._dump_tracelets
 sys._is_immortal
 sys._is_interned
-sys.abi_info
 sys.activate_stack_trampoline
 sys.deactivate_stack_trampoline
-sys.get_lazy_imports
-sys.get_lazy_imports_filter
 sys.getallocatedblocks
 sys.getdlopenflags
 sys.getunicodeinternedsize
 sys.is_stack_trampoline_active
-sys.lazy_modules
 sys.remote_exec
-sys.set_lazy_imports
-sys.set_lazy_imports_filter
 sys.setdlopenflags
 syslog.LOG_FTP
 syslog.__file__
-tempfile._nofollow_mode
-tempfile._resetflags
-tempfile._resetperms_at
-tempfile._resetperms_fd
-tempfile._rmtree_use_dir_fd
 termios.CDSUSP
 termios.CEOF
 termios.CEOL
@@ -895,23 +811,6 @@ _thread.lock.locked_lock
 _thread.start_new
 time.pthread_getcpuclockid
 time.tzset
-timeit.default_target_time
-tokenize._format_tokens
-tokenize._get_token_colors
-traceback._CROSS_LANGUAGE_HINTS
-traceback._MISSING_STDLIB_MODULE_MESSAGES
-traceback._ShutdownTheme
-traceback._check_for_nested_attribute
-traceback._find_incompatible_extension_module
-traceback._format_note
-traceback._get_cross_language_hint
-traceback._is_lazy_import
-traceback._safe_can_colorize
-traceback._safe_get_theme
-traceback._shutdown_theme
-traceback._str_width
-traceback._wlen
-traceback._zip_display_width
 tty.CDSUSP
 tty.CEOF
 tty.CEOL
@@ -963,23 +862,12 @@ tty.TIOCSER_TEMT
 tty.TIOCSETD
 tty.TIOCSLCKTRMIOS
 tty.TIOCSSERIAL
-typing.NoExtraItems
-typing.TypeForm
-typing._TypeFormForm
-typing._rebuild_generic_alias
-typing.disjoint_base
 unicodedata.__file__
 unicodedata._ucnhash_CAPI
 unicodedata.block
 unicodedata.isxidcontinue
 unicodedata.isxidstart
 _uuid.__file__
-zipimport._get_zlib_decompress_func
-zipimport._get_zstd_decompressor_class
-zipimport._importing_zstd
-zipimport._zlib_decompress
-zipimport._zstd_decompress
-zipimport._zstd_decompressor_class
 zlib.__file__
 zlib.__getattr__
 zlib.adler32_combine
@@ -989,10 +877,10 @@ _zoneinfo.__file__
 
 # summary
 #  cpython_modules 294
-#  implemented 152
-#  not_implemented 22
+#  implemented 175
+#  not_implemented 21
 #  failed_to_import 3
-#  missing_items 109
-#  mismatched_items 42
-#  mismatched_doc_items 54
+#  missing_items 88
+#  mismatched_items 30
+#  mismatched_doc_items 41
 #  not_implementeds 0
