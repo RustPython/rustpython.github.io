@@ -13,7 +13,6 @@ _testsinglephase
 _tkinter
 _tracemalloc
 _zstd
-curses
 readline
 xxlimited_35
 xxlimited_3_13
