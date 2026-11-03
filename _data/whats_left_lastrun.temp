@@ -1,7 +1,6 @@
 # modules
 _ctypes_test (entire module)
 _curses (entire module)
-curses (entire module)
 _curses_panel (entire module)
 _dbm (entire module)
 _gdbm (entire module)
@@ -17,6 +16,7 @@ _tracemalloc (entire module)
 xxlimited_35 (entire module)
 xxlimited_3_13 (entire module)
 _zstd (entire module)
+curses (exists but not importable: ModuleNotFoundError: No module named '_curses')
 tkinter (exists but not importable: ModuleNotFoundError: No module named '_tkinter')
 tracemalloc (exists but not importable: ModuleNotFoundError: No module named '_tracemalloc')
 turtle (exists but not importable: ModuleNotFoundError: No module named '_tkinter')
@@ -30,8 +30,6 @@ builtins.type.__sizeof__ (inherited)
 builtins.type.__weakrefoffset__
 array.__file__
 array.array.__sizeof__ (inherited)
-array.typecodes
-ast.DictComp.value
 ast.alias.__weakref__
 ast.alias.end_col_offset
 ast.alias.end_lineno
@@ -120,8 +118,7 @@ fcntl.DN_DELETE
 fcntl.DN_MODIFY
 fcntl.DN_MULTISHOT
 fcntl.DN_RENAME
-fcntl.FICLONE
-fcntl.FICLONERANGE
+fcntl.F_DUPFD_QUERY
 fcntl.F_EXLCK
 fcntl.F_GETLK64
 fcntl.F_GETOWN_EX
@@ -227,6 +224,8 @@ os.O_LARGEFILE
 os.POSIX_SPAWN_CLOSEFROM
 os.RTLD_DEEPBIND
 os.RWF_APPEND
+os.RWF_ATOMIC
+os.RWF_DONTCACHE
 os.RWF_DSYNC
 os.RWF_HIPRI
 os.RWF_NOWAIT
@@ -237,6 +236,7 @@ os.STATX_BLOCKS
 os.STATX_BTIME
 os.STATX_CTIME
 os.STATX_DIOALIGN
+os.STATX_DIO_READ_ALIGN
 os.STATX_GID
 os.STATX_INO
 os.STATX_MNT_ID
@@ -245,8 +245,10 @@ os.STATX_MODE
 os.STATX_MTIME
 os.STATX_NLINK
 os.STATX_SIZE
+os.STATX_SUBVOL
 os.STATX_TYPE
 os.STATX_UID
+os.STATX_WRITE_ATOMIC
 os.ST_APPEND
 os.ST_MANDLOCK
 os.ST_NOATIME
@@ -261,7 +263,6 @@ os.XATTR_SIZE_MAX
 os.confstr_names
 os.stat_result.st_rdev
 os.statx_result
-os.supports_effective_ids
 _pickle.PickleError.__weakref__
 _pickle.Pickler.__sizeof__ (inherited)
 _pickle.Pickler.dispatch_table
@@ -292,6 +293,8 @@ posix.O_LARGEFILE
 posix.POSIX_SPAWN_CLOSEFROM
 posix.RTLD_DEEPBIND
 posix.RWF_APPEND
+posix.RWF_ATOMIC
+posix.RWF_DONTCACHE
 posix.RWF_DSYNC
 posix.RWF_HIPRI
 posix.RWF_NOWAIT
@@ -302,6 +305,7 @@ posix.STATX_BLOCKS
 posix.STATX_BTIME
 posix.STATX_CTIME
 posix.STATX_DIOALIGN
+posix.STATX_DIO_READ_ALIGN
 posix.STATX_GID
 posix.STATX_INO
 posix.STATX_MNT_ID
@@ -310,8 +314,10 @@ posix.STATX_MODE
 posix.STATX_MTIME
 posix.STATX_NLINK
 posix.STATX_SIZE
+posix.STATX_SUBVOL
 posix.STATX_TYPE
 posix.STATX_UID
+posix.STATX_WRITE_ATOMIC
 posix.ST_APPEND
 posix.ST_MANDLOCK
 posix.ST_NOATIME
@@ -377,16 +383,10 @@ pyexpat.expat_CAPI
 pyexpat.features
 pyexpat.native_encoding
 _queue.Empty.__weakref__
-_queue.SimpleQueue.__sizeof__ (inherited)
 _queue.__file__
 _random.__file__
-re.Match.__copy__
-re.Match.__deepcopy__
-re.Pattern.__copy__
-re.Pattern.__deepcopy__
 _remote_debugging.GCMonitor
 _remote_debugging.GCStatsInfo
-_remote_debugging.PROCESS_VM_READV_SUPPORTED
 _remote_debugging.RemoteUnwinder.get_all_awaited_by
 _remote_debugging.RemoteUnwinder.get_async_stack_trace
 _remote_debugging.RemoteUnwinder.get_stack_trace
@@ -396,10 +396,7 @@ _remote_debugging.RemoteUnwinder.resume_threads
 _remote_debugging.__file__
 _remote_debugging.get_child_pids
 _remote_debugging.get_gc_stats
-_remote_debugging.is_python_process
 resource.RLIMIT_OFILE
-resource.RLIM_SAVED_CUR
-resource.RLIM_SAVED_MAX
 resource.__file__
 resource.prlimit
 select.POLLMSG
@@ -430,11 +427,6 @@ signal.SIGRTMIN
 signal.sigpending
 signal.sigwait
 signal.struct_siginfo
-site.StartupState
-site._print_error
-site._read_pthstart_file
-site._venv
-site._warn_future_us
 _socket.AF_QIPCRTR
 _socket.AF_ROSE
 _socket.ALG_OP_SIGN
@@ -506,6 +498,7 @@ _socket.SOL_CAN_ISOTP
 _socket.SO_BINDTOIFINDEX
 _socket.SO_INCOMING_CPU
 _socket.SO_ORIGINAL_DST
+_socket.SO_PASSRIGHTS
 _socket.TCP_CC_INFO
 _socket.TCP_FASTOPEN_CONNECT
 _socket.TCP_FASTOPEN_KEY
@@ -552,7 +545,6 @@ _socket.TIPC_WITHDRAWN
 _socket.TIPC_ZONE_SCOPE
 _socket.VMADDR_CID_LOCAL
 _socket.__file__
-_socket.socket.timeout
 socket.AF_QIPCRTR
 socket.AF_ROSE
 socket.ALG_OP_SIGN
@@ -624,6 +616,7 @@ socket.SOL_CAN_ISOTP
 socket.SO_BINDTOIFINDEX
 socket.SO_INCOMING_CPU
 socket.SO_ORIGINAL_DST
+socket.SO_PASSRIGHTS
 socket.TCP_CC_INFO
 socket.TCP_FASTOPEN_CONNECT
 socket.TCP_FASTOPEN_KEY
@@ -674,10 +667,8 @@ socket.herror.__weakref__
 _sqlite3.SQLITE_KEYWORDS
 _sqlite3.__file__
 sqlite3.Connection.__del__
-sqlite3.Connection.deserialize
 sqlite3.Connection.enable_load_extension
 sqlite3.Connection.load_extension
-sqlite3.Connection.serialize
 sqlite3.Error.__weakref__
 sqlite3.SQLITE_KEYWORDS
 sqlite3.Warning.__weakref__
@@ -709,7 +700,6 @@ sys._clear_type_cache
 sys._debugmallocstats
 sys._dump_tracelets
 sys._is_immortal
-sys._is_interned
 sys.activate_stack_trampoline
 sys.deactivate_stack_trampoline
 sys.getallocatedblocks
@@ -720,6 +710,10 @@ sys.remote_exec
 sys.setdlopenflags
 syslog.LOG_FTP
 syslog.__file__
+termios.B14400
+termios.B28800
+termios.B7200
+termios.B76800
 termios.CDSUSP
 termios.CEOF
 termios.CEOL
@@ -740,7 +734,6 @@ termios.FIOASYNC
 termios.IOCSIZE_MASK
 termios.IOCSIZE_SHIFT
 termios.IUTF8
-termios.NCC
 termios.N_MOUSE
 termios.N_PPP
 termios.N_SLIP
@@ -780,6 +773,10 @@ _thread.lock.locked_lock
 _thread.start_new
 time.pthread_getcpuclockid
 time.tzset
+tty.B14400
+tty.B28800
+tty.B7200
+tty.B76800
 tty.CDSUSP
 tty.CEOF
 tty.CEOL
@@ -800,7 +797,6 @@ tty.FIOASYNC
 tty.IOCSIZE_MASK
 tty.IOCSIZE_SHIFT
 tty.IUTF8
-tty.NCC
 tty.N_MOUSE
 tty.N_PPP
 tty.N_SLIP
@@ -833,23 +829,17 @@ tty.TIOCSLCKTRMIOS
 tty.TIOCSSERIAL
 unicodedata.__file__
 unicodedata._ucnhash_CAPI
-unicodedata.block
-unicodedata.isxidcontinue
-unicodedata.isxidstart
 _uuid.__file__
 zlib.__file__
-zlib.__getattr__
-zlib.adler32_combine
-zlib.crc32_combine
 zlib.error.__weakref__
 _zoneinfo.__file__
 
 # summary
 #  cpython_modules 294
-#  implemented 183
-#  not_implemented 18
-#  failed_to_import 3
-#  missing_items 85
-#  mismatched_items 29
+#  implemented 184
+#  not_implemented 17
+#  failed_to_import 4
+#  missing_items 83
+#  mismatched_items 27
 #  mismatched_doc_items 41
 #  not_implementeds 0
