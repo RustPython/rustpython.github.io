@@ -377,7 +377,6 @@ posix.writev
 _posixshmem.__file__
 _posixsubprocess.__file__
 pyexpat.EXPAT_VERSION
-pyexpat.ErrorString
 pyexpat.__file__
 pyexpat.expat_CAPI
 pyexpat.features
@@ -394,7 +393,6 @@ _remote_debugging.RemoteUnwinder.get_stats
 _remote_debugging.RemoteUnwinder.pause_threads
 _remote_debugging.RemoteUnwinder.resume_threads
 _remote_debugging.__file__
-_remote_debugging.get_child_pids
 _remote_debugging.get_gc_stats
 resource.RLIMIT_OFILE
 resource.__file__
@@ -836,10 +834,10 @@ _zoneinfo.__file__
 
 # summary
 #  cpython_modules 294
-#  implemented 184
+#  implemented 186
 #  not_implemented 17
 #  failed_to_import 4
 #  missing_items 83
-#  mismatched_items 27
+#  mismatched_items 18
 #  mismatched_doc_items 41
 #  not_implementeds 0

@@ -110,7 +110,6 @@ datetime.datetime_CAPI
 _elementtree.ParseError.__weakref__
 _elementtree.__file__
 faulthandler._stack_overflow
-faulthandler.dump_c_stack
 fcntl.DN_ACCESS
 fcntl.DN_ATTRIB
 fcntl.DN_CREATE
@@ -834,10 +833,14 @@ _zoneinfo.__file__
 
 # summary
 #  cpython_modules 294
-#  implemented 186
+#  implemented 146
 #  not_implemented 17
 #  failed_to_import 4
 #  missing_items 83
-#  mismatched_items 18
+#  mismatched_items 7
+#  uncomparable_signatures 118
 #  mismatched_doc_items 41
+#  cpython_failed_imports 0
+#  cpython_builtin_signatures 40
 #  not_implementeds 0
+# reference discovery: 305 names, 11 ignored, 4 scanner errors
