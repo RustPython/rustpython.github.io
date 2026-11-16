@@ -159,7 +159,6 @@ _interpreters.__file__
 _io.BufferedRandom._finalizing
 _io.BufferedReader._finalizing
 _io.BufferedWriter._finalizing
-_io.BytesIO.readlines (inherited)
 _io.BytesIO.writelines (inherited)
 _io.FileIO._finalizing
 _io.FileIO._isatty_open_only
@@ -663,7 +662,6 @@ socket.gaierror.__weakref__
 socket.herror.__weakref__
 _sqlite3.SQLITE_KEYWORDS
 _sqlite3.__file__
-sqlite3.Connection.__del__
 sqlite3.Connection.enable_load_extension
 sqlite3.Connection.load_extension
 sqlite3.Error.__weakref__
@@ -833,11 +831,11 @@ _zoneinfo.__file__
 
 # summary
 #  cpython_modules 294
-#  implemented 145
+#  implemented 146
 #  not_implemented 17
 #  failed_to_import 4
 #  missing_items 83
-#  mismatched_items 7
+#  mismatched_items 3
 #  uncomparable_signatures 118
 #  mismatched_doc_items 41
 #  cpython_failed_imports 0
