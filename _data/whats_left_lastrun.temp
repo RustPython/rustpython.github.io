@@ -160,7 +160,6 @@ _io.BufferedRandom._finalizing
 _io.BufferedReader._finalizing
 _io.BufferedWriter._finalizing
 _io.BytesIO.writelines (inherited)
-_io.FileIO._finalizing
 _io.FileIO._isatty_open_only
 _io.FileIO.readall (inherited)
 _io.TextIOWrapper._finalizing
@@ -823,7 +822,6 @@ tty.TIOCSETD
 tty.TIOCSLCKTRMIOS
 tty.TIOCSSERIAL
 unicodedata.__file__
-unicodedata._ucnhash_CAPI
 _uuid.__file__
 zlib.__file__
 zlib.error.__weakref__
@@ -835,9 +833,9 @@ _zoneinfo.__file__
 #  not_implemented 17
 #  failed_to_import 4
 #  missing_items 83
-#  mismatched_items 3
+#  mismatched_items 4
 #  uncomparable_signatures 118
-#  mismatched_doc_items 41
+#  mismatched_doc_items 44
 #  cpython_failed_imports 0
 #  cpython_builtin_signatures 40
 #  not_implementeds 0
