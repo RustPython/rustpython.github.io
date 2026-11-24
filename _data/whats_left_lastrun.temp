@@ -256,7 +256,6 @@ os.ST_RELATIME
 os.ST_SYNCHRONOUS
 os.ST_WRITE
 os.TMP_MAX
-os.XATTR_SIZE_MAX
 os.confstr_names
 os.stat_result.st_rdev
 os.statx_result
@@ -325,7 +324,6 @@ posix.ST_RELATIME
 posix.ST_SYNCHRONOUS
 posix.ST_WRITE
 posix.TMP_MAX
-posix.XATTR_SIZE_MAX
 posix._clearenv
 posix._have_functions
 posix._inputhook
@@ -338,9 +336,7 @@ posix.eventfd
 posix.eventfd_read
 posix.eventfd_write
 posix.fdatasync
-posix.getxattr
 posix.grantpt
-posix.listxattr
 posix.lockf
 posix.major
 posix.makedev
@@ -353,12 +349,10 @@ posix.preadv
 posix.ptsname
 posix.pwritev
 posix.readv
-posix.removexattr
 posix.sched_getaffinity
 posix.sched_rr_get_interval
 posix.sched_setaffinity
 posix.setns
-posix.setxattr
 posix.splice
 posix.statx
 posix.timerfd_create
@@ -833,9 +827,9 @@ _zoneinfo.__file__
 #  not_implemented 17
 #  failed_to_import 4
 #  missing_items 83
-#  mismatched_items 4
+#  mismatched_items 2
 #  uncomparable_signatures 118
-#  mismatched_doc_items 44
+#  mismatched_doc_items 43
 #  cpython_failed_imports 0
 #  cpython_builtin_signatures 40
 #  not_implementeds 0
