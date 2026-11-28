@@ -160,7 +160,6 @@ _io.BufferedRandom._finalizing
 _io.BufferedReader._finalizing
 _io.BufferedWriter._finalizing
 _io.BytesIO.writelines (inherited)
-_io.FileIO._isatty_open_only
 _io.FileIO.readall (inherited)
 _io.TextIOWrapper._finalizing
 _io._BytesIOBuffer
@@ -827,7 +826,7 @@ _zoneinfo.__file__
 #  not_implemented 17
 #  failed_to_import 4
 #  missing_items 83
-#  mismatched_items 2
+#  mismatched_items 1
 #  uncomparable_signatures 118
 #  mismatched_doc_items 43
 #  cpython_failed_imports 0
